@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106270220690",
+    "firebase_url": "https://parasitology-mobile-software.firebaseio.com",
+    "project_id": "parasitology-mobile-software",
+    "storage_bucket": "parasitology-mobile-software.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106270220690:android:57afa30aa11e5fd09f614b",
+        "android_client_info": {
+          "package_name": "com.android.parasitologymobilesoftware"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106270220690-jo86ulitl4066ojv597sdalnpam6hr4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkms1JlLCv6RYP3y2k6Lv7GfJhK3nfLjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106270220690-jo86ulitl4066ojv597sdalnpam6hr4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
