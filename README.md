@@ -28,4 +28,4 @@ Para fazer um commit, abra o terminal e digite:
   
 <code>git add *</code> (para todos os arquivos)  
 
-<code>git branch -m "comentário acerca das alterações do commit"</code>
+<code>git commit -m "comentário acerca das alterações do commit"</code>
