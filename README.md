@@ -21,3 +21,11 @@ Para fazer um pull request, abra o terminal e digite:
 Após fazer o <i>Pull Request</i>, deletar o branch
 
 <code>git branch -d nome-do-branch</code>
+
+Para fazer um commit, abra o terminal e digite:
+
+<code>git add [arquivo]</code>
+  
+<code>git add *</code> (para todos os arquivos)  
+
+<code>git branch -m "comentário acerca das alterações do commit"</code>
