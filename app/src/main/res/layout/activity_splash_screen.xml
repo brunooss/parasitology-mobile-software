@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#71D2E8">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="518.81dp"
+        android:layout_height="262.02dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/retangleup"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <ImageView
+        android:layout_width="637.38dp"
+        android:layout_height="306.41dp"
+        android:src="@drawable/retangledown"
+        tools:layout_editor_absoluteX="-171dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="51.5dp"
+        android:src="@drawable/microscopio"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="339dp" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:fontFamily="Futura"
+        android:textColor="#FFF"
+        android:text="PARASITE"
+        android:height="45dp"
+        android:width="158dp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="339dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
