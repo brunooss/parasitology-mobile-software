@@ -10,15 +10,20 @@
     <ImageView
         android:layout_width="637.38dp"
         android:layout_height="379.98dp"
-        android:src="@drawable/figura_amarela_splashscreen_b"
-        tools:layout_editor_absoluteX="-163.38dp"
-        tools:layout_editor_absoluteY="184.02dp" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" android:src="@drawable/figura_amarela_splashscreen_b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.498"
+        tools:layout_editor_absoluteX="-161dp"/>
     <!-- logo   -->
     <ImageView
-        android:layout_width="196dp"
-        android:layout_height="53dp"
-        android:src="@drawable/tituloparasitecombat_b"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="339dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+        android:src="@drawable/tituloparasitecombat_b" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
