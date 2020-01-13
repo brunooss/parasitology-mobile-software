@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
@@ -13,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         val database: FirebaseDatabase = FirebaseDatabase.getInstance()
         val reference = database.getReference("teste")
 
-
-
         reference.setValue("teste do firebase no aplicativo :D")
+
+
     }
 }
