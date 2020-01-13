@@ -6,40 +6,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent" android:background="#71D2E8">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="518.81dp"
-        android:layout_height="262.02dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/retangleup"
-        tools:layout_editor_absoluteY="167dp" />
-
+    <!-- figura amarela   -->
     <ImageView
         android:layout_width="637.38dp"
-        android:layout_height="306.41dp"
-        android:src="@drawable/retangledown"
-        tools:layout_editor_absoluteX="-171dp"
-        tools:layout_editor_absoluteY="258dp" />
-
+        android:layout_height="379.98dp"
+        android:src="@drawable/figura_amarela_splashscreen_b"
+        tools:layout_editor_absoluteX="-163.38dp"
+        tools:layout_editor_absoluteY="184.02dp" />
+    <!-- logo   -->
     <ImageView
-        android:layout_width="51dp"
-        android:layout_height="51.5dp"
-        android:src="@drawable/microscopio"
+        android:layout_width="196dp"
+        android:layout_height="53dp"
+        android:src="@drawable/tituloparasitecombat_b"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="339dp" />
 
-    <TextView
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:fontFamily="Futura"
-        android:textColor="#FFF"
-        android:text="PARASITE"
-        android:height="45dp"
-        android:width="158dp"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="339dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
