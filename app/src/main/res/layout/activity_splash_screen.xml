@@ -9,12 +9,13 @@
     <!-- figura amarela   -->
     <ImageView
         android:layout_width="637.38dp"
-        android:layout_height="379.98dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp" android:src="@drawable/figura_amarela_splashscreen_b"
+        android:layout_height="0dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="128dp" android:src="@drawable/figura_amarela_splashscreen_b"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.498"
-        tools:layout_editor_absoluteX="-161dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <!-- logo   -->
     <ImageView
         android:layout_width="wrap_content"
