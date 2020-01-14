@@ -2,6 +2,7 @@
 
 Este é o repositório do aplicativo **_Vermes & Márcia_**!
 
+
 ### 1. Clones, Commits e Pull Requests
 
 Para clonar o repositório na sua máquina local, digite no terminal:
@@ -31,6 +32,7 @@ Após fazer o _Pull Request_, delete o branch criado da seguinte forma:
 ```
 git branch -d nome-do-branch
 ```
+
 
 ### 2. Formatação de Commits e Pull Requests
 
@@ -67,3 +69,29 @@ brunooss-documentacao-1
 ```
 
 Por fim, o nome do _Pull Request_ deve ser o mesmo do commit efetuado.
+
+
+### 3. Formatação do código
+
+Para padronizar nomes de variáveis e funções, aplique o seguinte formato:
+
+- Inicie o nome com letra minúscula. Ex.: ```var name = 0```
+- As próximas palavras devem ser iniciadas com letra maiúscula. Ex.: ```var secondName = 1```
+- _Variables and functions **in english**_.
+
+Para padronizar nomes de classes, aplique o seguinte formato:
+
+- Inicie o nome com letra maiúscula. Ex.: ```class Name { }```
+- As próximas palavras devem ser iniciadas com letra maiúscula. Ex.: ```class SecondName { }```
+- _As well, Classes **in english**_.
+
+Para padronizar comentários, aplique o seguinte formato:
+
+- Em comentários acima do código, aplicar o padrão ```/* Comentário de mais de uma linha! */```.
+- Em comentários no código de apenas uma linha, aplicar o padrão ```// Comentário! ```.
+- Em comentários seguidos no código, manter a mesma distância. Ex.: 
+```
+val x = 2           // Declarar a variável.
+x += 2              // Atribuir outro valor.
+Log.d(x.toString()) // Imprimir no Log.
+```
