@@ -1,31 +1,47 @@
 # parasitology-mobile-software
 
-Este é o repositório do aplicativo <i>Vermes & Márcia</i>!
+Este é o repositório do aplicativo **_Vermes & Márcia_**!
 
-Para cloná-lo, abra o terminal e digite:
+### 1. Clones, Commits e Pull Requests
 
-<code>
+Para clonar o repositório na sua máquina local, digite no terminal:
+```
   git init
-  
   git clone https://github.com/brunooss/parasitology-mobile-software
-</code>
+```
 
-Para fazer um pull request, abra o terminal e digite:
+Para fazer um pull request, digite no terminal:
 
-<code>git checkout -b nome-do-branch</code>
+```
+git checkout -b nome-do-branch   (cria um novo branch)
+git chekout master               (retorna ao branch master)
+git push origin nome-do-branch   (atualiza o repositório remoto com o branch criado)
+```
 
-<code>git chekout master</code>
+Para fazer um commit, digite no terminal:
 
-<code>git push origin nome-do-branch</code>
+```
+git add [arquivo]
+git add *                        (para adicionar todos os arquivos)  
+git commit -m "comentário"
+```
 
-Após fazer o <i>Pull Request</i>, deletar o branch
+Após fazer o _Pull Request_, delete o branch criado da seguinte forma:
 
-<code>git branch -d nome-do-branch</code>
+```
+git branch -d nome-do-branch
+```
 
-Para fazer um commit, abra o terminal e digite:
+### 2. Formatação de Commits e Pull Requests
 
-<code>git add [arquivo]</code>
-  
-<code>git add *</code> (para todos os arquivos)  
-
-<code>git commit -m "comentário acerca das alterações do commit"</code>
+Para padronizar os commits, utilize as seguintes **_tags_** no início de cada commit:
+- **build: **
+- **alteração:**
+- **documentação:**
+- **funcionalidade:**
+- **bugfix:**
+- **performance:**
+- **refatoração:**
+- **reversão:**
+- **estilização:**
+- **teste:**
