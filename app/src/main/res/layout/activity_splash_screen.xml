@@ -6,8 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent" android:background="#71D2E8">
-    <!-- figura amarela   -->
 
+    <!-- figura amarela   -->
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="637.38dp"
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- logo   -->
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
@@ -32,6 +33,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/parasite_combat_white" />
 
-    <!-- logo   -->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

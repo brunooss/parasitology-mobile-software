@@ -18,4 +18,15 @@
         <item name="android:windowDisablePreview">true</item>
     </style>
 
+    <style name="StyledTilEditTextTheme">
+        <item name="colorControlNormal">#FFF</item> // Cor padrão da linha
+        <item name="colorControlActivated">#FFF</item> // Cor linha e texto quando recebe foco
+    </style>
+
+    <style name="StyledTilEditText">
+        <item name="android:theme">@style/StyledTilEditTextTheme</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textColorHint">#FFF</item> // Cor texto(hint) sem foco
+    </style>
+
 </resources>
