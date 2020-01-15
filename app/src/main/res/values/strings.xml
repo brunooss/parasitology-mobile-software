@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Parasitology Mobile Software</string>
+    <string name="email_B">Endereço de e-mail</string>
+    <string name="senha">Senha</string>
 </resources>
