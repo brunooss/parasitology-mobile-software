@@ -7,8 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageViewLogInLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo do aplicativo. Nome: Parasite Combat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/parasite_combat_black"/>
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewLogInWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -20,22 +32,10 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/parasite_combat_black"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogInLogo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewLogInWelcomeSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -43,32 +43,12 @@
         android:text="Insira seus dados para começar"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewLogInWelcome"
+        app:layout_constraintStart_toStartOf="@+id/textViewLogInWelcome"
+        app:layout_constraintTop_toTopOf="@+id/textViewLogInWelcome" />
 
     <EditText
-        android:id="@+id/emailText"
-        android:layout_width="305dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_edit_text_background"
-        android:drawableLeft="@drawable/custom_edit_text_icon_key"
-        android:ems="10"
-
-        android:fontFamily="@font/futura_light_bt"
-        android:hint="Senha"
-        android:inputType="textPassword"
-        android:textColor="@color/colorTextThird"
-        android:textColorHighlight="#53B3FB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailText2" />
-
-    <EditText
-        android:id="@+id/emailText2"
+        android:id="@+id/editTextLogInEmail"
         android:layout_width="305dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -85,10 +65,29 @@
         android:textColorHighlight="#53B3FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogInWelcomeSub"/>
+    <EditText
+        android:id="@+id/editTextLogInPassword"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_edit_text_background"
+        android:drawableLeft="@drawable/custom_edit_text_icon_key"
+        android:ems="10"
+
+        android:fontFamily="@font/futura_light_bt"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="@color/colorTextThird"
+        android:textColorHighlight="#53B3FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogInEmail" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewLogInForgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
@@ -98,10 +97,10 @@
         android:textColor="#4F4F4F"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogInPassword" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewLogInForgotButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -111,11 +110,11 @@
         android:text="Clique aqui."
         android:textColor="#53B3FB"
         android:textSize="13sp"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+        app:layout_constraintStart_toEndOf="@+id/textViewLogInForgot"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogInPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogIn"
         android:layout_width="126dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -123,15 +122,15 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_button_background"
         android:fontFamily="@font/futura_heavy"
+        android:onClick="onButtonLogInClick"
         android:text="@string/common_signin_button_text"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textViewLogInForgotButton"/>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewLogInRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -142,10 +141,10 @@
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogIn" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonLogInRegister"
         style="@android:style/Widget.Button.Inset"
         android:layout_width="78dp"
         android:layout_height="26dp"
@@ -154,21 +153,21 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_transparent_button_background"
         android:fontFamily="@font/futura_light_bt"
+        android:onClick="onButtonLogInRegisterClick"
         android:text="Cadastre-se"
         android:textColor="@color/colorTextThird"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textViewLogInRegister"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewLogInBalls"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonLogInRegister"
         app:layout_constraintVertical_bias="0.30000000" app:srcCompat="@drawable/circle_decoration"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
