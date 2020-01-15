@@ -4,27 +4,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="#71D2E8">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#71D2E8" android:orientation="vertical">
     <!-- figura amarela   -->
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="637.38dp"
         android:layout_height="0dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginBottom="128dp" android:src="@drawable/figura_amarela_splashscreen_b"
+        android:layout_marginTop="128dp" android:layout_marginBottom="128dp"
+        android:src="@drawable/figura_amarela_splashscreen_b"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
     <!-- logo   -->
     <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
-        android:src="@drawable/tituloparasitecombat_b" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_marginTop="8dp" android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" android:src="@drawable/tituloparasitecombat_b"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
