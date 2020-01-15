@@ -34,5 +34,4 @@
         app:srcCompat="@drawable/parasite_combat_white" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
