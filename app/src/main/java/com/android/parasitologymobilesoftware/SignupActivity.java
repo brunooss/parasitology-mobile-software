@@ -1,5 +1,6 @@
 package com.android.parasitologymobilesoftware;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,25 +14,50 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class SignupActivity extends AppCompatActivity {
 
-    private FirebaseAuth firebaseAuth;
+    /*variables*/
+
+        /*firebase*/
+            private FirebaseAuth firebaseAuth;
+
+        /*signup*/
+            EditText textName = findViewById(R.id.editTextSignUpName);
+            EditText textEmail = findViewById(R.id.editTextSignUpEmail);
+            EditText textPassword = findViewById(R.id.editTextSignUpPassword);
+            /*business rulles*/
+                boolean nameValidation = false;
+
+    /*methods*/
+        /*name - para validar o nome, chame a função e depois veja se a variável nameValidation é verdadeira ou falsa*/
+    public String getFirstName(String name){
+        String caracteresExcetoEspaco = "\\S+";
+
+        Pattern r = Pattern.compile(caracteresExcetoEspaco);
+        Matcher m = r.matcher(name);
+
+        if(m.find()){
+            int tam = m.group(0).length();
+            if(name.length() - tam >= 4) {
+                if(!name.substring(tam+2, tam+3).equalsIgnoreCase(" "))
+                    nameValidation = true;
+            }
+        }return(m.group(0));
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
         firebaseAuth = FirebaseAuth.getInstance();
-
     }
 
-    public void onButtonSignInClick(View view) {
-        final EditText editTextName = findViewById(R.id.editTextSignUpName);
-        EditText editTextEmail = findViewById(R.id.editTextSignUpEmail);
-        EditText editTextPassword = findViewById(R.id.editTextSignUpPassword);
-
-        firebaseAuth.createUserWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
+    public void onButtonSignUpClick(View view) {
+        firebaseAuth.createUserWithEmailAndPassword(textEmail.getText().toString(), textPassword.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -39,7 +65,7 @@ public class SignupActivity extends AppCompatActivity {
 
                         UserProfileChangeRequest profileChangeRequest = new UserProfileChangeRequest
                                 .Builder()
-                                .setDisplayName(editTextName.getText().toString())
+                                .setDisplayName(textName.getText().toString())
                                 .build();
                         user.updateProfile(profileChangeRequest);
 
@@ -50,4 +76,8 @@ public class SignupActivity extends AppCompatActivity {
                     }
                 });
     }
-}
+
+    }
+
+
+

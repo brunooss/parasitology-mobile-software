@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         firebaseAuth.signInWithEmailAndPassword(editTextEmail.text.toString(), editTextPassword.text.toString())
             .addOnCompleteListener(this) { Toast.makeText(this, "Sucesso! Logando com sua conta...", Toast.LENGTH_SHORT).show() }
             .addOnFailureListener(this) {Toast.makeText(this, "Falhou... Essa conta não existe.", Toast.LENGTH_SHORT).show() }
+
     }
 
     fun onButtonLogInRegisterClick(view: View) {
