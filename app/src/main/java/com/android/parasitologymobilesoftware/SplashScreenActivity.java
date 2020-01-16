@@ -9,6 +9,12 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
+    Bundle extras = getIntent().getExtras();
+    usuarioUsado usuarioUsado = null;
+    if(extras != null && extras.contains("usuario")) {
+        usuarioUsado = extras.getSerializable("usuario");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
