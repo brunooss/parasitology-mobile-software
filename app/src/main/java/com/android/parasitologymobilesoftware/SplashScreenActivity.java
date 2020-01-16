@@ -5,19 +5,16 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.io.Serializable;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
-    Bundle extras = getIntent().getExtras();
-    usuarioUsado usuarioUsado = null;
-    if(extras != null && extras.contains("usuario")) {
-        usuarioUsado = extras.getSerializable("usuario");
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_splash_screen);
         handler.postDelayed(new Runnable() {
             @Override
