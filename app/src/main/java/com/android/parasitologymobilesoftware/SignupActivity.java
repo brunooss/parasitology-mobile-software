@@ -20,33 +20,53 @@ import java.util.regex.Pattern;
 public class SignupActivity extends AppCompatActivity {
 
     /*variables*/
-
         /*firebase*/
             private FirebaseAuth firebaseAuth;
-
         /*signup*/
             EditText textName = findViewById(R.id.editTextSignUpName);
             EditText textEmail = findViewById(R.id.editTextSignUpEmail);
             EditText textPassword = findViewById(R.id.editTextSignUpPassword);
             /*business rulles*/
-                boolean nameValidation = false;
+                boolean nameValidation = false;  String firstName;
+                boolean emailValidation = false;
 
     /*methods*/
-        /*name - para validar o nome, chame a função e depois veja se a variável nameValidation é verdadeira ou falsa*/
-    public String getFirstName(String name){
-        String caracteresExcetoEspaco = "\\S+";
+        /*name*/
+    public boolean isNameValid(String name) {
+        String regexFirstName = "^(?:[\\p{Lu}&&[\\p{IsLatin}]])(?:(?:')?(?:[\\p{Ll}&&[\\p{IsLatin}]]))+(?:\\-(?:[\\p{Lu}&&[\\p{IsLatin}]])(?:(?:')?(?:[\\p{Ll}&&[\\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\\-))?(?:[\\p{Lu}&&[\\p{IsLatin}]])(?:(?:')?(?:[\\p{Ll}&&[\\p{IsLatin}]]))+|(?:[\\p{Lu}&&[\\p{IsLatin}]])(?:(?:')?(?:[\\p{Ll}&&[\\p{IsLatin}]]))+(?:\\-(?:[\\p{Lu}&&[\\p{IsLatin}]])(?:(?:')?(?:[\\p{Ll}&&[\\p{IsLatin}]]))+)*))+(?: (?:Jr\\.|II|III|IV))?$"; //essa regex pega todos os caracteres até chegar no espaço
 
-        Pattern r = Pattern.compile(caracteresExcetoEspaco);
+        Pattern r = Pattern.compile(regexFirstName);
         Matcher m = r.matcher(name);
 
+        if (m.find()) {
+            nameValidation = true;
+        }
+        return nameValidation;
+    } //valida o nome inserido, retornando true se válido e false se inválido
+    public String getFirstName(String name){
+        if (isNameValid()) {
+            String regexFirstName = "\\S+";
+
+            Pattern p = Pattern.compile(regexFirstName);
+            Matcher m = p.matcher(name);
+
+            m.find();
+            firstName = m.group(0);
+            return m.group(0);
+        }
+    } //só funciona se o nome for válido; retorna o primeiro nome.
+        /*email*/
+    public boolean isEmailValid(String email){
+        String regexEmail = "^\\w*(\\.\\w*)?@\\w*\\.[a-z]+(\\.[a-z]+)?$";
+
+        Pattern r = Pattern.compile(regexEmail);
+        Matcher m = r.matcher(email);
+
         if(m.find()){
-            int tam = m.group(0).length();
-            if(name.length() - tam >= 4) {
-                if(!name.substring(tam+2, tam+3).equalsIgnoreCase(" "))
-                    nameValidation = true;
-            }
-        }return(m.group(0));
-    }
+            emailValidation = true;
+        }
+        return emailValidation;
+    } //valida o e-mail, retornando true se válido e false se inválido
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -76,8 +96,7 @@ public class SignupActivity extends AppCompatActivity {
                     }
                 });
     }
-
-    }
+}
 
 
 
