@@ -58,9 +58,9 @@
         android:id="@+id/editTextSignInEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="245dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="16dp"
 
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
@@ -84,8 +84,8 @@
         android:id="@+id/editTextSignInPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
 
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
@@ -94,7 +94,8 @@
         android:textColor="@color/colorAccent"
         android:textColorHighlight="#53B3FB" android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textViewSignInPassword"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignInPassword"/>
 
     <TextView
         android:id="@+id/textViewSignInForgot"
@@ -128,8 +129,8 @@
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp" android:layout_marginBottom="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" android:layout_marginBottom="48dp"
         android:background="@drawable/custom_linear_layout_signup_background"
         app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
