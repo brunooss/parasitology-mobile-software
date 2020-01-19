@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground" tools:context=".SignupActivity">
 
+    <TextView
+        android:id="@+id/textViewSignUpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_light_bt"
+        android:text="Nome Completo"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSignUpName"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpName"/>
     <EditText
         android:id="@+id/editTextSignUpName"
         android:layout_width="0dp"
@@ -16,50 +26,78 @@
         android:layout_marginEnd="28dp"
         android:backgroundTint="@color/colorTextPrimary"
         android:ems="10" android:fontFamily="@font/futura_light_bt"
-        android:hint="Nome Completo" android:inputType="textPersonName"
+        android:inputType="textPersonName"
         android:textColor="@color/colorAccent" android:textColorHint="@color/colorTextPrimary"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textViewSignUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_light_bt"
+        android:text="@string/email_B" android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
     <EditText
         android:id="@+id/editTextSignUpEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp" android:layout_marginEnd="28dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="@color/colorWhite" android:ems="10"
-        android:fontFamily="@font/futura_light_bt" android:hint="Email"
+        android:fontFamily="@font/futura_light_bt"
         android:inputType="textEmailAddress"
         android:textColor="@color/colorAccent" android:textColorHint="@color/colorTextPrimary"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textViewSignUpEmail"/>
+    <TextView
+        android:id="@+id/textViewSignUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_light_bt"
+        android:text="@string/senha"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
     <EditText
         android:id="@+id/editTextSignUpPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp" android:layout_marginEnd="28dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
-        android:fontFamily="@font/futura_light_bt" android:hint="Senha"
+        android:fontFamily="@font/futura_light_bt"
         android:inputType="textPassword" android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorTextPrimary" app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpPassword"/>
+    <TextView
+        android:id="@+id/textViewSignUpConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_light_bt"
+        android:text="Confirmar Senha" android:textColor="@color/colorWhite"
+        android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
     <EditText
         android:id="@+id/editTextSignUpConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
         android:backgroundTint="@color/colorWhite"
         android:ems="10" android:fontFamily="@font/futura_light_bt"
-        android:hint="Confirmar Senha" android:inputType="textPassword"
+        android:inputType="textPassword"
         android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorTextPrimary"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpConfirmPassword"/>
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="wrap_content"
@@ -76,7 +114,7 @@
         android:layout_height="wrap_content" android:layout_marginTop="8dp"
         android:fontFamily="@font/futura_light_bt" android:text="Ano Escolar:"
         android:textColor="@color/colorTextPrimary"
-        android:textSize="20sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
+        android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword"/>
     <Spinner
         android:id="@+id/spinnerSignUpYear"
