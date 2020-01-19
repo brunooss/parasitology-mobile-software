@@ -1,173 +1,164 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:orientation="vertical">
-    <!--logo-->
+    android:background="@color/colorBackground" tools:context=".SigninActivity">
+
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="180dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/logo_parasitecombat_branca"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <!-- Welcome message -->
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/futura_heavy"
-        android:text="Seja muito bem-vindo!"
-        android:textColor="#FFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-    <!--introductory message-->
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/futura_medium_bt"
-        android:text="Insira seus dados para começar"
-        android:textColor="#FFF"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-    <!--Login-->
-    <EditText
-        android:id="@+id/editTextLogInEmail"
-        style="@style/StyledTilEditText"
-        android:layout_width="352.5dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="26dp"
-        android:backgroundTint="#FFF"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:textColor="#FFF"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="76dp"
-        android:fontFamily="@font/futura_light_bt"
-        android:text="@string/email_B"
-        android:textColor="@color/colorWhite"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextLogInEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextLogInEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <!--Password-->
-    <EditText
-        android:id="@+id/editTextLogInPassword"
-        style="@style/StyledTilEditText"
-        android:layout_width="352.5dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="26dp"
-        android:backgroundTint="#FFF"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:textColor="#FFF"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLogInEmail" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:fontFamily="@font/futura_light_bt"
-        android:text="@string/senha"
-        android:textColor="@color/colorWhite"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextLogInPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextLogInPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLogInEmail" />
-
-    <!--Forgot your password-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/futura_light_bt"
-        android:text="Esqueceu a senha?"
-        android:textColor="@color/colorWhite"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextLogInPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLogInPassword" />
-
-    <!--signin button-->
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="309dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/custom_buttom_yellow_background"
-        android:fontFamily="@font/futura_light_bt"
-        android:text="Signin"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLogInPassword" />
-    <!--sign up-->
-    <!--external rectangle-->
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/linearLayoutCompat"
-        android:layout_width="309dp"
-        android:layout_height="51dp"
-        android:background="@drawable/custom_linear_layout_signup_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.475"></androidx.appcompat.widget.LinearLayoutCompat>
-    <!--message-->
-    <TextView
+        android:id="@+id/imageViewSignInLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/futura_light_bt"
-        android:text="Não tem uma conta?"
-        android:textColor="@color/colorWhite"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo do aplicativo. Nome: Parasite Combat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/parasite_combat_white"/>
+    <TextView
+        android:id="@+id/textViewSignInWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/futura_heavy"
+        android:text="@string/app_welcome"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCompat"
-        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
-        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat" />
-    <!--button-->
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="86dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/custom_button_signup_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSignInLogo"/>
+
+    <TextView
+        android:id="@+id/textViewSignInWelcomeSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_medium_bt"
+        android:text="@string/app_data_to_start"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSignInWelcome"
+        app:layout_constraintStart_toStartOf="@+id/textViewSignInWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignInWelcome"/>
+
+    <TextView
+        android:id="@+id/textViewSignInEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/futura_light_bt"
-        android:onClick="onButtonLogInRegisterClick"
-        android:text="Signup"
-        android:textAllCaps="false"
+        android:text="@string/app_email_address"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCompat"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
-        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat" />
+        android:textSize="18sp" app:layout_constraintBottom_toTopOf="@+id/editTextSignInEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignInEmail"/>
+    <EditText
+        android:id="@+id/editTextSignInEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="16dp"
+
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:fontFamily="@font/futura_light_bt"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorAccent"
+        android:textColorHighlight="#53B3FB"
+        android:textColorHint="@color/colorWhite" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textViewSignInPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_light_bt"
+        android:text="@string/app_password"
+        android:textColor="@color/colorWhite" android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignInPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail"/>
+    <EditText
+        android:id="@+id/editTextSignInPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:fontFamily="@font/futura_light_bt"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        android:textColorHighlight="#53B3FB" android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignInPassword"/>
+
+    <TextView
+        android:id="@+id/textViewSignInForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/futura_light_bt"
+        android:text="@string/app_forgot_password"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSignInPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInPassword"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/custom_buttom_yellow_background"
+        android:fontFamily="@font/futura_light_bt"
+        android:onClick="onButtonLogInClick"
+        android:text="@string/common_signin_button_text"
+        android:textAppearance="@style/AlertDialog.AppCompat.Light"
+        android:textColor="#FFFFFF" android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignInForgot"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" android:layout_marginBottom="48dp"
+        android:background="@drawable/custom_linear_layout_signup_background"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/textViewLogInRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+            android:fontFamily="@font/futura_light_bt" android:text="@string/app_new_account"
+            android:textColor="@color/colorTextPrimary" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+            android:id="@+id/buttonLogInRegister"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="12dp"
+            android:background="@drawable/custom_button_signup_background" android:fontFamily="@font/futura_light_bt"
+            android:onClick="onButtonLogInRegisterClick"
+            android:text="@string/app_signup"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/textViewLogInRegister"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

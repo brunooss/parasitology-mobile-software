@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Parasitology Mobile Software</string>
-    <string name="email_B">Endereço de e-mail</string>
-    <string name="senha">Senha</string>
+    <string name="app_username">Nome Completo</string>
+    <string name="app_email_address">Endereço de e-mail</string>
+    <string name="app_password">Senha</string>
+    <string name="app_confirm_password">Confirmar Senha</string>
+    <string name="app_signup">Cadastrar-se</string>
+    <string name="app_welcome">Bem Vindo!</string>
+    <string name="app_data_to_start">Insira seus dados para começar</string>
+    <string name="app_forgot_password">Esqueceu a senha?</string>
+    <string name="app_new_account">Não possui uma conta?</string>
+    <string name="app_school_year">Ano Escolar:</string>
 </resources>

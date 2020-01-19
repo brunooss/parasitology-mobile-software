@@ -21,13 +21,13 @@ public class SigninActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signin);
 
     }
 
     public void onButtonLogInClick(View view) {
-        EditText editTextEmail = findViewById(R.id.editTextLogInEmail);
-        EditText editTextPassword = findViewById(R.id.editTextLogInPassword);
+        EditText editTextEmail = findViewById(R.id.editTextSignInEmail);
+        EditText editTextPassword = findViewById(R.id.editTextSignInPassword);
         firebaseAuth.signInWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
