@@ -11,7 +11,7 @@
     <style name="AppTheme.SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorAzulVersaoB</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -19,14 +19,21 @@
     </style>
 
     <style name="StyledTilEditTextTheme">
-        <item name="colorControlNormal">#FFF</item> // Cor padrão da linha
-        <item name="colorControlActivated">#FFF</item> // Cor linha e texto quando recebe foco
+        <item name="colorControlNormal">@color/colorWhite</item>     // Default objects color
+        <item name="colorControlActivated">@color/colorAccent</item> // Focused objects color
     </style>
 
     <style name="StyledTilEditText">
         <item name="android:theme">@style/StyledTilEditTextTheme</item>
         <item name="android:paddingTop">4dp</item>
-        <item name="android:textColorHint">#FFF</item> // Cor texto(hint) sem foco
+        <item name="android:textColorHint">@color/colorWhite</item>  // Hint text without being focused, also other texts
     </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    </style>
+
 
 </resources>

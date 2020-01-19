@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0699F7" tools:context=".LoginActivity">
+    android:background="@color/colorBackground" tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageViewLogInLogo"
@@ -69,18 +69,15 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="28dp"
-        android:backgroundTint="@color/colorWhite"
 
-        android:backgroundTintMode="screen"
+        android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:fontFamily="@font/futura_light_bt"
         android:hint="Senha"
         android:inputType="textPassword"
         android:textColor="@color/colorAccent"
-        android:textColorHighlight="#53B3FB"
-        android:textColorHint="@color/colorWhite" android:textColorLink="#444B54"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLogInEmail"/>
+        android:textColorHighlight="#53B3FB" android:textColorHint="@color/colorWhite" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/editTextLogInEmail"/>
 
     <TextView
         android:id="@+id/textViewLogInForgot"
@@ -96,7 +93,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" android:layout_marginBottom="48dp"
@@ -122,11 +119,10 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp" android:layout_marginBottom="12dp"
             android:background="@drawable/custom_button_signup_background" android:fontFamily="@font/futura_light_bt"
-            android:onClick="onButtonLogInRegisterClick" android:paddingStart="4dp"
-            android:paddingEnd="4dp"
+            android:onClick="onButtonLogInRegisterClick"
             android:text="Cadastre-se"
             android:textColor="@color/colorTextPrimary"
-            android:textSize="20sp" app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="14sp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/textViewLogInRegister"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -134,19 +130,17 @@
         android:id="@+id/buttonLogIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="32dp"
         android:layout_marginBottom="180dp"
         android:background="@drawable/custom_buttom_yellow_background"
         android:fontFamily="@font/futura_light_bt"
         android:onClick="onButtonLogInClick"
         android:text="@string/common_signin_button_text"
         android:textAppearance="@style/AlertDialog.AppCompat.Light"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FFFFFF" android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/textViewLogInForgot"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

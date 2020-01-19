@@ -4,8 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="@color/colorBackground">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground" android:orientation="vertical">
 
     <!-- figura amarela   -->
     <ImageView
@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"/>
 
     <!-- logo   -->
     <ImageView
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/parasite_combat_white" />
+        app:srcCompat="@drawable/parasite_combat_white"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
