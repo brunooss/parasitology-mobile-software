@@ -13,7 +13,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginActivity extends AppCompatActivity {
+public class SigninActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
@@ -21,13 +21,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signin);
 
     }
 
     public void onButtonLogInClick(View view) {
-        EditText editTextEmail = findViewById(R.id.editTextLogInEmail);
-        EditText editTextPassword = findViewById(R.id.editTextLogInPassword);
+        EditText editTextEmail = findViewById(R.id.editTextSignInEmail);
+        EditText editTextPassword = findViewById(R.id.editTextSignInPassword);
         firebaseAuth.signInWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

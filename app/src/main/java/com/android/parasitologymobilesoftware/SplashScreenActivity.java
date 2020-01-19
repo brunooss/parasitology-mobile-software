@@ -5,8 +5,6 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import java.io.Serializable;
-
 public class SplashScreenActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
@@ -19,7 +17,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent =  new Intent(getBaseContext(), LoginActivity.class);
+                Intent intent =  new Intent(getBaseContext(), SigninActivity.class);
                 startActivity(intent);
                 finish();
             }
