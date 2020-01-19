@@ -24,14 +24,15 @@ import java.util.regex.Pattern;
 public class SignupActivity extends AppCompatActivity {
 
     /* Variables */
-            private FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth;
+    EditText textName;
+    EditText textEmail;
+    EditText textPassword;
+    boolean nameValidation = false;
+    String firstName;
+    boolean emailValidation = false;
 
-            EditText textName;
-            EditText textEmail;
-            EditText textPassword;
-
-            boolean nameValidation = false;  String firstName;
-            boolean emailValidation = false;
+    public String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -119,22 +120,25 @@ public class SignupActivity extends AppCompatActivity {
         }
         return null;
     }
-    public boolean isEmailValid(String email){ // Validates the email input, returning true if it's valid or false if it's not.
-        String regexEmail = "^\\w*(\\.\\w*)?@\\w*\\.[a-z]+(\\.[a-z]+)?$";
+    public boolean isEmailValid(String email) { // Validates the email input, returning true if it's valid or false if it's not.
 
-        Pattern r = Pattern.compile(regexEmail);
-        Matcher m = r.matcher(email);
+        if(email != null) {
+            String regexEmail = "^\\w*(\\.\\w*)?@\\w*\\.[a-z]+(\\.[a-z]+)?$";
 
-        if(m.find()){
-            emailValidation = true;
+            Pattern r = Pattern.compile(regexEmail);
+            Matcher m = r.matcher(email);
+
+            if(m.find()){
+                emailValidation = true;
+            }
+            return emailValidation;
         }
-        return emailValidation;
+        return false;
     }
 
     public void onButtonSignUpClick(View view) {
         if(isEmailValid(textEmail.getText().toString()))
             Toast.makeText(this, "Email valid!", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "Name valid! Name: " + getFirstName(textName.getText().toString()), Toast.LENGTH_LONG).show();
         firebaseAuth.createUserWithEmailAndPassword(textEmail.getText().toString(), textPassword.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -147,7 +151,11 @@ public class SignupActivity extends AppCompatActivity {
                                 .build();
                         user.updateProfile(profileChangeRequest);
 
-                        // Toast.makeText(getBaseContext(), "Name: " +user.getDisplayName() + ", Email: " + user.getEmail(), Toast.LENGTH_SHORT).show();
+                        username = textName.getText().toString();
+
+                        Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
+                        startActivity(intent);
+                        finish();
 
                     }
                 });
