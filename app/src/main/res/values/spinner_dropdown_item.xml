@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="years_array">
+        <item>6° Ano</item>
+        <item>7° Ano</item>
+        <item>8° Ano</item>
+        <item>9° Ano</item>
+        <item>1° Ano</item>
+        <item>2° Ano</item>
+        <item>3° Ano</item>
+    </string-array>
+</resources>
