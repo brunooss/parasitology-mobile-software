@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futura_light_bt"
-        android:text="Nome Completo"
+        android:text="@string/app_username"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextSignUpName"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
-        android:text="@string/email_B" android:textColor="@color/colorWhite"
+        android:text="@string/app_email_address" android:textColor="@color/colorWhite"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
-        android:text="@string/senha"
+        android:text="@string/app_password"
         android:textColor="@color/colorWhite"
         android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
-        android:text="Confirmar Senha" android:textColor="@color/colorWhite"
+        android:text="@string/app_confirm_password" android:textColor="@color/colorWhite"
         android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
     <EditText
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content" android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" android:layout_marginBottom="48dp"
         android:background="@drawable/custom_buttom_yellow_background" android:fontFamily="@font/futura_light_bt"
-        android:onClick="onButtonSignUpClick" android:text="Cadastrar-se"
+        android:onClick="onButtonSignUpClick" android:text="@string/app_signup"
         android:textAppearance="@style/AlertDialog.AppCompat.Light" android:textColor="@color/colorTextPrimary"
         android:textSize="24sp" app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
@@ -112,7 +112,7 @@
         android:id="@+id/textViewSignUpYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginTop="8dp"
-        android:fontFamily="@font/futura_light_bt" android:text="Ano Escolar:"
+        android:fontFamily="@font/futura_light_bt" android:text="@string/app_school_year"
         android:textColor="@color/colorTextPrimary"
         android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword"/>
