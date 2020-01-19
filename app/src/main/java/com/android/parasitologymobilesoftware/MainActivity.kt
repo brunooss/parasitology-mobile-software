@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.login_activity_b) //trocar o layout a depender da versão [ATUAL: B]
 
         val database: FirebaseDatabase = FirebaseDatabase.getInstance()
         val reference = database.getReference("teste")

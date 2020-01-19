@@ -4,7 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorAzulVersaoB</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -19,13 +19,13 @@
     </style>
 
     <style name="StyledTilEditTextTheme">
-        <item name="colorControlNormal">#FFF</item> // Cor padrão da linha
+        <item name="colorControlNormal">#D3D3D3</item> // Cor padrão da linha
         <item name="colorControlActivated">#FFF</item> // Cor linha e texto quando recebe foco
     </style>
 
     <style name="StyledTilEditText">
         <item name="android:theme">@style/StyledTilEditTextTheme</item>
-        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingTop">8dp</item>
         <item name="android:textColorHint">#FFF</item> // Cor texto(hint) sem foco
     </style>
 
