@@ -15,4 +15,5 @@
     <color name="colorBackgroundIntroductionSecond">#9DE380</color>
     <color name="colorBackgroundIntroductionThird">#E8D171</color>
     <color name="colorBackgroundIntroductionFourth">#E89F71</color>
+    <color name="colorYellowButtonPressed">#FFA27C27</color>
 </resources>
