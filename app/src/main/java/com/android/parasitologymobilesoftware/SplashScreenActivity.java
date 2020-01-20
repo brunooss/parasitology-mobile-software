@@ -15,6 +15,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     /* Firebase instace variables */
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mFirebaseUser;
+    private boolean test = true; // Test even with authentication
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +30,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intentUnauthenticated =  new Intent(getBaseContext(), SigninActivity.class);
-                Intent intentAuthenticated = new Intent(getBaseContext(), MainActivity.class);
-                if(mFirebaseUser == null){                  // User is unauthenticated
+                Intent intentAuthenticated = new Intent(getBaseContext(), StudentPreferenceActivity.class);
+                if(mFirebaseUser == null || test){                  // User is unauthenticated
                     startActivity(intentUnauthenticated);  // Send him to SignIn Activity, so he can Authenticate
                 } else {                                        // User is authenticated
                     startActivity(intentUnauthenticated);         // Send him to Main Activity
