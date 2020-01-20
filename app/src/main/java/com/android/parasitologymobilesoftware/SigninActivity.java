@@ -52,18 +52,6 @@ public class SigninActivity extends AppCompatActivity {
 
     public void onButtonRecoverPassword(View view){
         Intent intent = new Intent(this, RecoverPasswordActivity.class);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Slide moveScreen = new Slide();
-            moveScreen.setDuration(500);
-
-            getWindow().setExitTransition(moveScreen);
-
-            ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-
-            startActivity(intent, options.toBundle());
-        } else {
-            startActivity(intent);
-        }
+        startActivity(intent);
     }
 }
