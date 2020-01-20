@@ -135,6 +135,16 @@
         android:textColor="@android:color/transparent"
         android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword"/>
+    <TextView
+        android:id="@+id/textViewSignUpErrorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Algo deu errado. Certifique-se de que o email utilizado existe e nunca foi cadastrado."
+        android:textAlignment="center"
+        android:textColor="@android:color/transparent" android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp" app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignUp"/>
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="0dp"

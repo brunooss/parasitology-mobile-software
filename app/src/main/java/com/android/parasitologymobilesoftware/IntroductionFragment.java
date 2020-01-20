@@ -63,6 +63,7 @@ public class IntroductionFragment extends Fragment {
                 imageViewIcon.setImageResource(R.drawable.icons8_books_100);
                 textViewTitle.setText(R.string.app_introduction_title_second);
 
+
                 break;
             case 3:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionThird, getResources().newTheme()));
