@@ -12,6 +12,7 @@
         <activity android:name=".IntroductionActivity">
         </activity>
         <activity android:name=".SigninActivity">
+            android:largeHeap="true"
         </activity>
         <activity android:name=".SignupActivity"/>
         <activity
@@ -24,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".RecoverPasswordActivity" android:largeHeap="true" />
     </application>
 
 </manifest>
