@@ -55,6 +55,8 @@
         android:textSize="18sp" app:layout_constraintBottom_toTopOf="@+id/editTextSignInEmail"
         app:layout_constraintStart_toStartOf="@+id/editTextSignInEmail"/>
     <EditText
+        style="@style/StyledTilEditText"
+
         android:id="@+id/editTextSignInEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -65,10 +67,11 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:fontFamily="@font/futura_light_bt"
+        android:textSize="18sp"
         android:inputType="textEmailAddress"
-        android:textColor="@color/colorAccent"
-        android:textColorHighlight="#53B3FB"
-        android:textColorHint="@color/colorWhite" app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFF"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:id="@+id/textViewSignInPassword"
@@ -81,6 +84,8 @@
         app:layout_constraintStart_toStartOf="@+id/editTextSignInPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail"/>
     <EditText
+        style="@style/StyledTilEditText"
+
         android:id="@+id/editTextSignInPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -90,9 +95,10 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:fontFamily="@font/futura_light_bt"
+        android:textSize="18sp"
         android:inputType="textPassword"
-        android:textColor="@color/colorAccent"
-        android:textColorHighlight="#53B3FB" android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSignInPassword"/>
@@ -104,8 +110,11 @@
         android:layout_marginTop="6dp"
         android:fontFamily="@font/futura_light_bt"
         android:text="@string/app_forgot_password"
+        android:textAllCaps="false"
         android:textColor="@color/colorWhite"
         android:textSize="16sp"
+        android:clickable="true"
+        android:onClick="onButtonRecoverPassword"
         app:layout_constraintEnd_toEndOf="@+id/editTextSignInPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignInPassword"/>
 
