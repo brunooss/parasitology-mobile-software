@@ -93,7 +93,6 @@ public class SignupActivity extends AppCompatActivity {
         spinner.setAdapter(stringArrayAdapter);
     }
 
-
     /* Methods */
     public boolean isNameValid(String name) { // Validates the name input, returning true if it's valid or false if it's not.
 

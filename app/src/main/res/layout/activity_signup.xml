@@ -26,10 +26,18 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorTextPrimary"
         android:ems="10" android:fontFamily="@font/futura_light_bt"
-        android:inputType="textPersonName" android:textSize="18sp"
-        android:textColor="@color/colorWhite" android:textCursorDrawable="@drawable/cursor"
+        android:inputType="textPersonName" android:textSize="18sp" android:textCursorDrawable="@drawable/cursor"
+        android:textColor="@color/colorTextPrimary" android:textColorHint="@color/colorTextPrimary"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textViewSignUpErrorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Insira um nome válido."
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
     <TextView
         android:id="@+id/textViewSignUpEmail"
         android:layout_width="wrap_content"
@@ -49,9 +57,17 @@
         android:backgroundTint="@color/colorWhite" android:ems="10"
         android:fontFamily="@font/futura_light_bt" android:textSize="18sp"
         android:inputType="textEmailAddress"
-        android:textColor="@color/colorWhite" android:textCursorDrawable="@drawable/cursor"
+        android:textColor="@color/colorTextPrimary" android:textColorHint="@color/colorTextPrimary" android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textViewSignUpEmail"/>
+    <TextView
+        android:id="@+id/textViewSignUpErrorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginStart="8dp"
+        android:text="Insira um endereço de e-mail válido."
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
     <TextView
         android:id="@+id/textViewSignUpPassword"
         android:layout_width="wrap_content"
@@ -71,10 +87,21 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:fontFamily="@font/futura_light_bt" android:textSize="18sp"
-        android:inputType="textPassword" android:textColor="@color/colorWhite"
-        android:textCursorDrawable="@drawable/cursor" app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword" android:textColor="@color/colorTextPrimary"
+        android:textColorHint="@color/colorTextPrimary" 
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUpPassword"/>
+    <TextView
+        android:id="@+id/textViewSignUpErrorPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Insira uma senha com no mínimo 8 caracteres."
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
     <TextView
         android:id="@+id/textViewSignUpConfirmPassword"
         android:layout_width="wrap_content"
@@ -93,11 +120,22 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10" android:fontFamily="@font/futura_light_bt"
         android:inputType="textPassword"
-        android:textColor="@color/colorWhite" android:textSize="18sp"
+        android:textColor="@color/colorTextPrimary"
+        android:textColorHint="@color/colorTextPrimary"
+        android:textSize="18sp"
         android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUpConfirmPassword"/>
+    <TextView
+        android:id="@+id/textViewSignUpErrorPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Insira uma senha com no mínimo 8 caracteres."
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword"/>
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="0dp"
@@ -111,11 +149,11 @@
     <TextView
         android:id="@+id/textViewSignUpYear"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_marginTop="8dp"
-        android:fontFamily="@font/futura_light_bt" android:text="@string/app_school_year"
-        android:textColor="@color/colorTextPrimary"
-        android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:fontFamily="@font/futura_light_bt"
+        android:text="@string/app_school_year"
+        android:textColor="@color/colorTextPrimary" android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword" app:layout_constraintTop_toBottomOf="@+id/textViewSignUpErrorPasswordConfirm"/>
     <Spinner
         android:id="@+id/spinnerSignUpYear"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
