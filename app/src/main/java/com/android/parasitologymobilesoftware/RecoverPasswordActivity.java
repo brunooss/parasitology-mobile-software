@@ -1,21 +1,16 @@
 package com.android.parasitologymobilesoftware;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.transition.Slide;
 import android.view.View;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 
 public class RecoverPasswordActivity extends AppCompatActivity {
@@ -54,7 +49,6 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         }
     }
     public void onButtonCloseWindow(View view){
-        Intent intent = new Intent(this, SigninActivity.class);
-        startActivity(intent);
+        finish(); // Easier way to go back to previous activity.
     }
 }
