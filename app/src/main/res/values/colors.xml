@@ -10,4 +10,8 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBackground">#0699F7</color>
     <color name="colorSecondBackground">#4DBAFF</color>
+    <color name="colorBackgroundIntroductionFirst">#71CBE8</color>
+    <color name="colorBackgroundIntroductionSecond">#9DE380</color>
+    <color name="colorBackgroundIntroductionThird">#E8D171</color>
+    <color name="colorBackgroundIntroductionFourth">#E89F71</color>
 </resources>

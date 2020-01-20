@@ -31,16 +31,16 @@ public class SignupActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         editTextName = findViewById(R.id.editTextSignUpName);
-
+        textViewNameError = findViewById(R.id.textViewN)
+        
         editTextEmail = findViewById(R.id.editTextSignUpEmail);
-
         ediTextPassword = findViewById(R.id.editTextSignUpPassword);
 
         editTextName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
                 if(!b) { // If is not focused
-                    if(isNameValid(editTextName.getText().toString()))
+                    if(isNameValid(editTextName.getText().toString())) 
                         Toast.makeText(getBaseContext(), "Valid Name!!!", Toast.LENGTH_LONG).show();
                     else
                         Toast.makeText(getBaseContext(), "Invalid Name...", Toast.LENGTH_LONG).show();
@@ -53,7 +53,7 @@ public class SignupActivity extends AppCompatActivity {
                 if(!b) { // If is not focused
                     if(isEmailValid(editTextName.getText().toString()))
                         Toast.makeText(getBaseContext(), "Valid Email!!!", Toast.LENGTH_LONG).show();
-                    else
+                    else 
                         Toast.makeText(getBaseContext(), "Invalid Email...", Toast.LENGTH_LONG).show();
                 }
             }
@@ -119,6 +119,3 @@ public class SignupActivity extends AppCompatActivity {
                 });
     }
 }
-
-
-
