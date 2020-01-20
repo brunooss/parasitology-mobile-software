@@ -31,7 +31,7 @@ class StudentPreferenceActivity : AppCompatActivity() {
             view.setBackgroundResource(R.drawable.custom_button_yellow_background_pressed)
         }
         constraintLayoutStudentSecond.setOnClickListener { view ->
-            if(studentPreference == 1) {
+            if(studentPreference == 1 || studentPreference == 0) {
                 constraintLayoutStudentFirst.setBackgroundResource(R.drawable.custom_buttom_yellow_background)
                 studentPreference = 2
             }

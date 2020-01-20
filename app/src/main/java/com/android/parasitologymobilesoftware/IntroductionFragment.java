@@ -3,6 +3,7 @@ package com.android.parasitologymobilesoftware;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,14 +68,14 @@ public class IntroductionFragment extends Fragment {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionThird, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_microscope_100);
                 textViewTitle.setText(R.string.app_introduction_title_third);
-                constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.TOP, R.id.constraindLayoutIntroduction, ConstraintSet.TOP, 0);
+                constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.TOP, R.id.constraindLayoutIntroduction, ConstraintSet.TOP, 16 * (getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT));
                 constraintSet.applyTo(constraintLayout);
                 break;
             case 4:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFourth, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_rocket_100);
                 textViewTitle.setText(R.string.app_introduction_title_fourth);
-                constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.BOTTOM, R.id.constraindLayoutIntroduction, ConstraintSet.BOTTOM, 0);
+                constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.BOTTOM, R.id.constraindLayoutIntroduction, ConstraintSet.BOTTOM, 16 * (getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT));
                 constraintSet.applyTo(constraintLayout);
                 break;
         }
