@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.widget.*;
 import androidx.annotation.NonNull;
@@ -10,10 +11,7 @@ import android.os.Bundle;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.auth.*;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +22,7 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
 
     private EditText editTextName, editTextEmail, editTextPassword, editTextPasswordConfirm;
-    private TextView textViewNameError, textViewEmailError, textViewPasswordError, textViewPasswordConfirmError;
+    private TextView textViewNameError, textViewEmailError, textViewPasswordError, textViewPasswordConfirmError, textViewButtonError;
     private ProgressBar progressBar;
 
     @Override
@@ -102,6 +100,8 @@ public class SignupActivity extends AppCompatActivity {
 
         progressBar = findViewById(R.id.progressBarSignUp);
         progressBar.setVisibility(View.INVISIBLE);
+
+        textViewButtonError = findViewById(R.id.textViewSignUpErrorButton);
     }
 
     /* Methods */
@@ -142,22 +142,36 @@ public class SignupActivity extends AppCompatActivity {
         if(isNameValid(editTextName.getText().toString()) && isEmailValid(editTextEmail.getText().toString())
                 && isPasswordValid(editTextPassword.getText().toString())
                 && isPasswordConfirmValid(editTextPassword.getText().toString(), editTextPasswordConfirm.getText().toString())) {
+            textViewButtonError.setTextColor(Color.TRANSPARENT);
             progressBar.setVisibility(View.VISIBLE);
 
             firebaseAuth.createUserWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            final FirebaseUser user = firebaseAuth.getCurrentUser();
-                            UserProfileChangeRequest profileChangeRequest = new UserProfileChangeRequest
-                                    .Builder()
-                                    .setDisplayName(editTextName.getText().toString())
-                                    .build();
-                            user.updateProfile(profileChangeRequest);
-                            progressBar.setVisibility(View.INVISIBLE);
+                            if(task.isSuccessful()) {
+                                final FirebaseUser user = firebaseAuth.getCurrentUser();
+                                UserProfileChangeRequest profileChangeRequest = new UserProfileChangeRequest
+                                        .Builder()
+                                        .setDisplayName(editTextName.getText().toString())
+                                        .build();
+                                user.updateProfile(profileChangeRequest);
+                                progressBar.setVisibility(View.INVISIBLE);
 
-                            Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
-                            startActivity(intent);
+                                Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
+                                startActivity(intent);
+                            } else {
+                                try { throw task.getException(); }
+                                catch (FirebaseAuthUserCollisionException existEmail) {
+                                    textViewButtonError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                                    progressBar.setVisibility(View.INVISIBLE);
+                                } catch (FirebaseAuthInvalidCredentialsException malformedEmail) {
+                                    textViewButtonError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                                    progressBar.setVisibility(View.INVISIBLE);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
                         }
                     }).addOnFailureListener(this, new OnFailureListener() {
                         @Override
