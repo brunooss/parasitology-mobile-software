@@ -1,11 +1,15 @@
 package com.android.parasitologymobilesoftware;
 
 import android.content.Intent;
+import android.os.Build;
+import android.transition.Slide;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+
 import android.os.Bundle;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -22,7 +26,6 @@ public class SigninActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_signin);
-
     }
 
     public void onButtonLogInClick(View view) {
@@ -45,5 +48,22 @@ public class SigninActivity extends AppCompatActivity {
     public void onButtonLogInRegisterClick(View view) {
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
+    }
+
+    public void onButtonRecoverPassword(View view){
+        Intent intent = new Intent(this, RecoverPasswordActivity.class);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Slide moveScreen = new Slide();
+            moveScreen.setDuration(500);
+
+            getWindow().setExitTransition(moveScreen);
+
+            ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(intent);
+        }
     }
 }
