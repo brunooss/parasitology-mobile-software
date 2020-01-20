@@ -8,6 +8,7 @@
     <color name="colorTextSecondary">#444B54</color>
     <color name="colorLightBlue">#4DBAFF</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRedError">#FFFF4444</color>
     <color name="colorBackground">#0699F7</color>
     <color name="colorSecondBackground">#4DBAFF</color>
     <color name="colorBackgroundIntroductionFirst">#71CBE8</color>
