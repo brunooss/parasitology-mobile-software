@@ -19,14 +19,17 @@
     </style>
 
     <style name="StyledTilEditTextTheme">
-        <item name="colorControlNormal">@color/colorWhite</item>     // Default objects color
-        <item name="colorControlActivated">@color/colorAccent</item> // Focused objects color
+        <item name="colorControlNormal">@color/colorWhite</item>
+        // Default objects color
+        <item name="colorControlActivated">@color/colorAccent</item>
+        // Focused objects color
     </style>
 
     <style name="StyledTilEditText">
         <item name="android:theme">@style/StyledTilEditTextTheme</item>
         <item name="android:paddingTop">4dp</item>
-        <item name="android:textColorHint">@color/colorWhite</item>  // Hint text without being focused, also other texts
+        <item name="android:textColorHint">@color/colorWhite</item>
+        // Hint text without being focused, also other texts
     </style>
 
     <style name="BaseAppTheme" parent="android:Theme.Material">
@@ -38,6 +41,12 @@
 
     <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
     </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 
 </resources>

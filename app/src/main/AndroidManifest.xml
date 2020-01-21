@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".IntroductionActivity">
         </activity>
         <activity android:name=".SigninActivity">
-            android:largeHeap="true"
         </activity>
         <activity android:name=".SignupActivity"/>
         <activity
@@ -27,7 +29,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".StudentPreferenceActivity"/>
-        <activity android:name=".RecoverPasswordActivity" android:largeHeap="true" />
+        <activity
+            android:name=".RecoverPasswordActivity"
+            android:largeHeap="true"/>
     </application>
 
 </manifest>

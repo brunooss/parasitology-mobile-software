@@ -36,6 +36,8 @@ public class SigninActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Toast.makeText(getBaseContext(), "Sucesso! Logando com sua conta...", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getBaseContext(), HomeActivity.class));
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
             @Override
