@@ -49,11 +49,13 @@
         android:id="@+id/textViewSignInEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:fontFamily="@font/futura_light_bt"
         android:text="@string/app_email_address"
         android:textColor="@color/colorWhite"
-        android:textSize="18sp" app:layout_constraintBottom_toTopOf="@+id/editTextSignInEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextSignInEmail"/>
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSignInEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignInEmail" />
     <EditText
         style="@style/StyledTilEditText"
 
@@ -73,16 +75,19 @@
         android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/textViewSignInPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
         android:text="@string/app_password"
-        android:textColor="@color/colorWhite" android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/editTextSignInPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail" />
     <EditText
         style="@style/StyledTilEditText"
 
