@@ -12,10 +12,10 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
-    /* Firebase instace variables */
+    /* Firebase instance variables */
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mFirebaseUser;
-    private boolean test = true; // Test even with authentication
+    private boolean test = false; // Test even with authentication
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +30,11 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intentUnauthenticated =  new Intent(getBaseContext(), SigninActivity.class);
-                Intent intentAuthenticated = new Intent(getBaseContext(), StudentPreferenceActivity.class);
-                if(mFirebaseUser == null || test){                  // User is unauthenticated
-                    startActivity(intentUnauthenticated);  // Send him to SignIn Activity, so he can Authenticate
+                Intent intentAuthenticated = new Intent(getBaseContext(),HomeActivity.class);
+                if(mFirebaseUser == null || test){              // User is unauthenticated
+                    startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
                 } else {                                        // User is authenticated
-                    startActivity(intentUnauthenticated);         // Send him to Main Activity
+                    startActivity(intentAuthenticated);         // Send him to Main Activity
                 }
                 finish();
             }
