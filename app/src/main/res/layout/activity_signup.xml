@@ -11,12 +11,13 @@
         android:id="@+id/textViewSignUpName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:fontFamily="@font/futura_light_bt"
         android:text="@string/app_username"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextSignUpName"
-        app:layout_constraintStart_toStartOf="@+id/editTextSignUpName"/>
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpName" />
     <EditText
         android:id="@+id/editTextSignUpName"
         android:layout_width="0dp"
@@ -37,16 +38,19 @@
         android:textColor="@android:color/transparent"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpName" app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
+
     <TextView
         android:id="@+id/textViewSignUpEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
-        android:text="@string/app_email_address" android:textColor="@color/colorWhite"
+        android:text="@string/app_email_address"
+        android:textColor="@color/colorWhite"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName" />
     <EditText
         android:id="@+id/editTextSignUpEmail"
         android:layout_width="0dp"
@@ -67,16 +71,19 @@
         android:textColor="@android:color/transparent"
         android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
+
     <TextView
         android:id="@+id/textViewSignUpPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
         android:text="@string/app_password"
         android:textColor="@color/colorWhite"
-        android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail" />
     <EditText
         android:id="@+id/editTextSignUpPassword"
         android:layout_width="0dp"
@@ -101,15 +108,19 @@
         android:textColor="@android:color/transparent"
         android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
+
     <TextView
         android:id="@+id/textViewSignUpConfirmPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_light_bt"
-        android:text="@string/app_confirm_password" android:textColor="@color/colorWhite"
-        android:textSize="18sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
+        android:text="@string/app_confirm_password"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword" />
     <EditText
         android:id="@+id/editTextSignUpConfirmPassword"
         android:layout_width="0dp"
@@ -126,6 +137,7 @@
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUpConfirmPassword"/>
+
     <TextView
         android:id="@+id/textViewSignUpErrorPasswordConfirm"
         android:layout_width="wrap_content"
@@ -133,8 +145,10 @@
         android:layout_marginStart="8dp"
         android:text="Insira a mesma senha do item anterior."
         android:textColor="@android:color/transparent"
-        android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword"/>
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword" />
+
     <TextView
         android:id="@+id/textViewSignUpErrorButton"
         android:layout_width="wrap_content"
@@ -155,23 +169,29 @@
         android:textAppearance="@style/AlertDialog.AppCompat.Light" android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
     <TextView
         android:id="@+id/textViewSignUpYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" android:fontFamily="@font/futura_light_bt"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_light_bt"
         android:text="@string/app_school_year"
-        android:textColor="@color/colorTextPrimary" android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword" app:layout_constraintTop_toBottomOf="@+id/textViewSignUpErrorPasswordConfirm"/>
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword" />
+
     <Spinner
         android:id="@+id/spinnerSignUpYear"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorWhite"
         app:layout_constraintStart_toEndOf="@+id/textViewSignUpYear"
-        app:layout_constraintTop_toTopOf="@+id/textViewSignUpYear"
-    />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword" />
     <ProgressBar
         android:id="@+id/progressBarSignUp"
         style="?android:attr/progressBarStyle"
