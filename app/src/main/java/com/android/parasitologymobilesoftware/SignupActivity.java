@@ -10,20 +10,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SignupActivity extends AppCompatActivity {
 
     /* Variables */
-    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth;   // Authentication
+    private FirebaseFirestore dataBase; // Data base
 
     private EditText editTextName, editTextEmail, editTextPassword, editTextPasswordConfirm;
     private TextView textViewNameError, textViewEmailError, textViewPasswordError, textViewPasswordConfirmError, textViewButtonError;
     private ProgressBar progressBar;
+    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -31,6 +38,7 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        dataBase = FirebaseFirestore.getInstance();
 
         editTextName = findViewById(R.id.editTextSignUpName);
         textViewNameError = findViewById(R.id.textViewSignUpErrorName);
@@ -89,7 +97,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        Spinner spinner = findViewById(R.id.spinnerSignUpYear);
+        spinner = findViewById(R.id.spinnerSignUpYear);
 
         ArrayAdapter<CharSequence> stringArrayAdapter = ArrayAdapter.createFromResource(
                 this,
@@ -157,6 +165,21 @@ public class SignupActivity extends AppCompatActivity {
                                         .build();
                                 user.updateProfile(profileChangeRequest);
                                 progressBar.setVisibility(View.INVISIBLE);
+
+                                /* User's complete name and school grande will be sent to Cloud Firestore */
+
+                                Map<String, Object> users = new HashMap<>();
+                                users.put("complete name", editTextName.getText().toString());
+                                users.put("school grade", spinner.getSelectedItem().toString());
+                                users.put("email", editTextEmail.getText().toString());
+
+                                dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
+                                        .set(users)
+                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                            @Override
+                                            public void onSuccess(Void aVoid) {
+                                            }
+                                        });
 
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
                                 startActivity(intent);
