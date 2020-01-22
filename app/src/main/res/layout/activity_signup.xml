@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Insira um nome válido."
         android:textColor="@android:color/transparent"
-        android:textSize="10sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpName" app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
 
     <TextView
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content" android:layout_marginStart="8dp"
         android:text="Insira um endereço de e-mail válido."
         android:textColor="@android:color/transparent"
-        android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
+        android:textSize="13sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
 
     <TextView
@@ -106,7 +106,7 @@
         android:layout_marginStart="8dp"
         android:text="Insira uma senha com no mínimo 8 caracteres."
         android:textColor="@android:color/transparent"
-        android:textSize="10sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
+        android:textSize="13sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
 
     <TextView
@@ -145,7 +145,7 @@
         android:layout_marginStart="8dp"
         android:text="Insira a mesma senha do item anterior."
         android:textColor="@android:color/transparent"
-        android:textSize="10sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword" />
 
@@ -156,7 +156,7 @@
         android:layout_marginBottom="16dp"
         android:text="Algo deu errado. Certifique-se de que o email utilizado existe e nunca foi cadastrado."
         android:textAlignment="center"
-        android:textColor="@android:color/transparent" android:textSize="10sp"
+        android:textColor="@android:color/transparent" android:textSize="13sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonSignUp" app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
         app:layout_constraintStart_toStartOf="@+id/buttonSignUp"/>
     <Button

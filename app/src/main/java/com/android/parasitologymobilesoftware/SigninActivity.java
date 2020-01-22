@@ -5,6 +5,7 @@ import android.os.Build;
 import android.transition.Slide;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,15 +21,21 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SigninActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    private ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_signin);
+
+        progressBar = findViewById(R.id.progressBarSignIn);
+        progressBar.setVisibility(View.INVISIBLE);
     }
 
     public void onButtonLogInClick(View view) {
+        progressBar.setVisibility(View.VISIBLE);
         EditText editTextEmail = findViewById(R.id.editTextSignInEmail);
         EditText editTextPassword = findViewById(R.id.editTextSignInPassword);
         firebaseAuth.signInWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())

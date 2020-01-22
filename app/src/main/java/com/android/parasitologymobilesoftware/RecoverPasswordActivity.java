@@ -20,8 +20,8 @@ public class RecoverPasswordActivity extends AppCompatActivity {
 
     SignupActivity signupActivity = new SignupActivity();
 
-    TextView textViewErrorButton; // Error message
-    ProgressBar progressBar;      // Progress Bar
+    private TextView textViewErrorButton; // Error message
+    private ProgressBar progressBar;      // Progress Bar
 
 
     @Override
