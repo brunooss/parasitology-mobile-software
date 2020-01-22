@@ -14,8 +14,8 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".IntroductionActivity">
-        </activity>
+        <activity android:name=".IntroductionActivity"
+            android:theme="@style/AppTheme.IntroductionActivity"/>
         <activity android:name=".SigninActivity">
         </activity>
         <activity android:name=".SignupActivity"/>

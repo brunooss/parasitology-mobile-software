@@ -18,6 +18,22 @@
         <item name="android:windowDisablePreview">true</item>
     </style>
 
+    <style name="AppTheme.IntroductionActivity" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorBackgroundIntroductionFirst</item>
+    </style>
+
+    <style name="AppTheme.IntroductionFragment2" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorBackgroundIntroductionSecond</item>
+    </style>
+
+    <style name="AppTheme.IntroductionFragment3" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorBackgroundIntroductionThird</item>
+    </style>
+
+    <style name="AppTheme.IntroductionFragment4" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorBackgroundIntroductionFourth</item>
+    </style>
+
     <style name="StyledTilEditTextTheme">
         <item name="colorControlNormal">@color/colorWhite</item>
         // Default objects color
