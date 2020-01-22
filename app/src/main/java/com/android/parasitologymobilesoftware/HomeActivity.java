@@ -2,9 +2,6 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 import androidx.viewpager.widget.ViewPager;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import android.view.View;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -31,6 +28,7 @@ public class HomeActivity extends AppCompatActivity
         ViewPager viewPager = findViewById(R.id.viewPagerHome);
         viewPager.setOffscreenPageLimit(2);
         viewPager.setAdapter(new HomeTabsAdapter(getSupportFragmentManager()));
+        viewPager.setCurrentItem(1);
 
         TabLayout tabLayout = findViewById(R.id.tabLayoutHome);
         tabLayout.setupWithViewPager(viewPager);
