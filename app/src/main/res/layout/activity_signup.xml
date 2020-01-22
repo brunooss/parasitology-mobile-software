@@ -206,4 +206,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/buttonSignUp"
         app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
         app:layout_constraintTop_toTopOf="@+id/buttonSignUp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
