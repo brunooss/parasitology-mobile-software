@@ -1,9 +1,11 @@
 package com.android.parasitologymobilesoftware;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,13 +58,11 @@ public class IntroductionFragment extends Fragment {
                 imageViewIcon.setImageResource(R.drawable.icons8_happy_100);
                 //TODO Change setText to string resource.
                 textViewTitle.setText("Olá, nome");
-
                 break;
             case 2:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionSecond, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_books_100);
                 textViewTitle.setText(R.string.app_introduction_title_second);
-
 
                 break;
             case 3:

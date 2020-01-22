@@ -10,6 +10,7 @@ public class IntroductionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_introduction);
         ViewPager viewPager = findViewById(R.id.viewPagerIntroduction);
         viewPager.setOffscreenPageLimit(3);
