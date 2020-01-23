@@ -3,6 +3,7 @@ package com.android.parasitologymobilesoftware;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.ContextThemeWrapper;
@@ -41,8 +42,15 @@ public class IntroductionFragment extends Fragment {
         TextView textViewTitle = view.findViewById(R.id.textViewIntroductionTitle);
         TextView textViewDescription = view.findViewById(R.id.textViewIntroductionDescription);
         TextView textViewSkip = view.findViewById(R.id.textViewIntroductionSkip);
+        TextView textViewStart = view.findViewById(R.id.textViewIntroductionStart);
 
         textViewSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), StudentPreferenceActivity.class));
+            }
+        });
+        textViewStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), StudentPreferenceActivity.class));
@@ -76,8 +84,10 @@ public class IntroductionFragment extends Fragment {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFourth, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_rocket_100);
                 textViewTitle.setText(R.string.app_introduction_title_fourth);
-                constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.BOTTOM, R.id.constraindLayoutIntroduction, ConstraintSet.BOTTOM, 16 * (getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT));
-                constraintSet.applyTo(constraintLayout);
+                textViewSkip.setVisibility(View.INVISIBLE);
+                textViewStart.setVisibility(View.VISIBLE);
+                //constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.BOTTOM, R.id.constraindLayoutIntroduction, ConstraintSet.BOTTOM, 16 * (getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT));
+                //constraintSet.applyTo(constraintLayout);
                 break;
         }
         return view;
