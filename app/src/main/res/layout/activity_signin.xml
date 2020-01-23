@@ -43,19 +43,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageViewSignInLogo"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginTop="55dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:contentDescription="Logo do aplicativo. Nome: Parasite Combat"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/parasite_combat_white"/>-->
-
     <TextView
         android:id="@+id/textViewSignInWelcome"
         android:layout_width="wrap_content"

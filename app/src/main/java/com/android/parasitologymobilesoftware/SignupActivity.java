@@ -193,6 +193,7 @@ public class SignupActivity extends AppCompatActivity {
 
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
                                 startActivity(intent);
+                                finish();
                             } else {
                                 try { throw task.getException(); }
                                 catch (FirebaseAuthUserCollisionException existEmail) {
