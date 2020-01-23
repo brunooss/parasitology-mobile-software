@@ -12,7 +12,6 @@ public class IntroductionTabsAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Fragment fragment = IntroductionFragment.newInstance(position);
-
         return fragment;
     }
 
