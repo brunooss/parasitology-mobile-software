@@ -1,6 +1,8 @@
 package com.android.parasitologymobilesoftware;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
@@ -25,7 +27,9 @@ public class SignupActivity extends AppCompatActivity {
 
     /* Variables */
     private FirebaseAuth firebaseAuth;   // Authentication
-    private FirebaseFirestore dataBase; // Data base
+    private FirebaseFirestore dataBase; // Database
+
+    private SharedPreferences prefs = null;
 
     private EditText editTextName, editTextEmail, editTextPassword, editTextPasswordConfirm;
     private TextView textViewNameError, textViewEmailError, textViewPasswordError, textViewPasswordConfirmError, textViewButtonError;
@@ -36,6 +40,8 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
+        prefs = getBaseContext().getSharedPreferences("com.android.parasitologymobilesoftware", Context.MODE_PRIVATE);
 
         firebaseAuth = FirebaseAuth.getInstance();
         dataBase = FirebaseFirestore.getInstance();
@@ -166,7 +172,7 @@ public class SignupActivity extends AppCompatActivity {
                                 user.updateProfile(profileChangeRequest);
                                 progressBar.setVisibility(View.INVISIBLE);
 
-                                /* User's complete name and school grande will be sent to Cloud Firestore */
+                                /* User's complete name and school grade will be sent to Cloud Firestore */
 
                                 Map<String, Object> users = new HashMap<>();
                                 users.put("complete name", editTextName.getText().toString());
@@ -180,6 +186,10 @@ public class SignupActivity extends AppCompatActivity {
                                             public void onSuccess(Void aVoid) {
                                             }
                                         });
+
+                                // Put values on SharedPreferences let you access them on other activities.
+                                prefs.edit().putString("school grade", spinner.getSelectedItem().toString()).apply();
+                                prefs.edit().putInt("passwordLength", editTextPassword.getText().toString().length()).apply();
 
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
                                 startActivity(intent);
