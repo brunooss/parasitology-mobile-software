@@ -16,7 +16,7 @@ public class HomeTabsAdapter extends FragmentPagerAdapter {
         } else if (position == 1) {
             return new HomeFragment();
         }
-        return new UserFragment();
+        return new StudentPreferencesFragment();
     }
 
     @Override

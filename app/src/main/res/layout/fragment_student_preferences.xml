@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".StudentPreferencesFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="@color/colorBackground">
+
+        <Button
+            android:id="@+id/buttonStudentPreferencesSetAlert"
+            style="@android:style/Widget.Holo.Button.Inset"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" android:layout_marginTop="32dp"
+            android:background="@drawable/custom_linear_layout_signup_background"
+            android:drawableLeft="@drawable/ic_add_alert_white_24dp" android:fontFamily="@font/futura_light_bt"
+            android:paddingLeft="10dp" android:paddingRight="10dp"
+            android:text=" Alertas" android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:onClick="onSetAlertButtonClick" />
+        <Button
+            android:id="@+id/buttonStudentPreferencesSetDate"
+            style="@android:style/Widget.Holo.Button.Inset"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_linear_layout_signup_background"
+            android:drawableLeft="@drawable/ic_today_white_24dp"
+            android:fontFamily="@font/futura_light_bt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" android:text=" Selecione a data da avaliação"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStudentPreferencesSetAlert"
+            android:onClick="onSetDateButtonClick" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_linear_layout_signup_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStudentPreferencesSetDate">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/ic_bubble_chart_white_24dp" android:fontFamily="@font/futura_light_bt"
+                android:text="Meta diária:"
+                android:textColor="@color/colorTextPrimary" android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/futura_light_bt" android:inputType="textPersonName"
+                android:textColor="@color/colorTextPrimary" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent" tools:text="10 Horas diárias"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
