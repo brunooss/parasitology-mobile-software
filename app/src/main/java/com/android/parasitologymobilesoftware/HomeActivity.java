@@ -111,4 +111,8 @@ public class HomeActivity extends AppCompatActivity
         startActivity(new Intent(this, SigninActivity.class));
         finish();
     }
+
+    public void onCategoryButtonClick(View view) {
+        startActivity(new Intent(this, SubjectActivity.class));
+    }
 }
