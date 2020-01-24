@@ -18,25 +18,32 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextSignUpName"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpName" />
+
     <EditText
         android:id="@+id/editTextSignUpName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="85dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorTextPrimary"
-        android:ems="10" android:fontFamily="@font/futura_light_bt"
-        android:inputType="textPersonName" android:textSize="18sp" android:textCursorDrawable="@drawable/cursor"
-        android:textColor="@color/colorTextPrimary" android:textColorHint="@color/colorTextPrimary"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        android:ems="10"
+        android:fontFamily="@font/futura_light_bt"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorTextPrimary"
+        android:textColorHint="@color/colorTextPrimary"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/textViewSignUpErrorName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Insira um nome válido."
         android:textColor="@android:color/transparent"
-        android:textSize="13sp"
+        android:textSize="12sp" android:fontFamily="@font/futura_medium_bt"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpName" app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName"/>
 
     <TextView
@@ -68,8 +75,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="8dp"
         android:text="Insira um endereço de e-mail válido."
-        android:textColor="@android:color/transparent"
-        android:textSize="13sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
+        android:textColor="@android:color/transparent" android:fontFamily="@font/futura_medium_bt"
+        android:textSize="12sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail"/>
 
     <TextView
@@ -105,8 +112,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Insira uma senha com no mínimo 8 caracteres."
-        android:textColor="@android:color/transparent"
-        android:textSize="13sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
+        android:textColor="@android:color/transparent" android:fontFamily="@font/futura_medium_bt"
+        android:textSize="12sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
 
     <TextView
@@ -145,7 +152,7 @@
         android:layout_marginStart="8dp"
         android:text="Insira a mesma senha do item anterior."
         android:textColor="@android:color/transparent"
-        android:textSize="13sp"
+        android:textSize="12sp" android:fontFamily="@font/futura_medium_bt"
         app:layout_constraintStart_toStartOf="@+id/editTextSignUpConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpConfirmPassword" />
 
@@ -153,12 +160,17 @@
         android:id="@+id/textViewSignUpErrorButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/futura_medium_bt"
         android:text="Algo deu errado. Certifique-se de que o email utilizado existe e nunca foi cadastrado."
         android:textAlignment="center"
-        android:textColor="@android:color/transparent" android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp" app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
-        app:layout_constraintStart_toStartOf="@+id/buttonSignUp"/>
+        android:textColor="@android:color/transparent"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignUp" />
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="0dp"
@@ -206,5 +218,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/buttonSignUp"
         app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
         app:layout_constraintTop_toTopOf="@+id/buttonSignUp"/>
+    <ImageView
+        android:id="@+id/imageViewWindowClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:clickable="true"
+        android:onClick="onButtonCloseWindow"
+        android:src="@drawable/close_window"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
