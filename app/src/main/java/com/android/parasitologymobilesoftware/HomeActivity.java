@@ -138,23 +138,6 @@ public class HomeActivity extends AppCompatActivity
             }
         }, hour, minute, true);
         timePickerDialog.show();
-
-        /*
-        TimePickerDialog.Builder builder = new TimePickerDialog.Builder(getBaseContext());
-        builder.setTitle("Definir alerta diário:");
-        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        })
-                .setPositiveButton("Alterar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-        builder.create().show(); */
     }
 
     public void onSetDateButtonClick(View view) {
@@ -170,23 +153,6 @@ public class HomeActivity extends AppCompatActivity
             }
         }, year, month, day);
         datePickerDialog.show();
-
-        /*
-        DatePickerDialog.Builder builder = new DatePickerDialog.Builder(getBaseContext());
-        builder.setTitle("Data da Avaliação:");
-        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        })
-                .setPositiveButton("Alterar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-        builder.create().show(); */
     }
 
     public void onCategoryButtonClick(View view) {
