@@ -25,12 +25,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         /* Initialize Firebase Auth */
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseUser = mFirebaseAuth.getCurrentUser();
-
+        
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intentUnauthenticated =  new Intent(getBaseContext(), SigninActivity.class);
-                Intent intentAuthenticated = new Intent(getBaseContext(), HomeActivity.class);
+                Intent intentAuthenticated = new Intent(getBaseContext(), SigninActivity.class);
                 if(mFirebaseUser == null){              // User is unauthenticated
                     startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
                 } else {                                        // User is authenticated

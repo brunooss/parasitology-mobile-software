@@ -37,7 +37,7 @@ public class SignupActivity extends AppCompatActivity {
     private Spinner spinner;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
@@ -48,7 +48,7 @@ public class SignupActivity extends AppCompatActivity {
 
         editTextName = findViewById(R.id.editTextSignUpName);
         textViewNameError = findViewById(R.id.textViewSignUpErrorName);
-        
+
         editTextEmail = findViewById(R.id.editTextSignUpEmail);
         textViewEmailError = findViewById(R.id.textViewSignUpErrorEmail);
 
@@ -61,8 +61,8 @@ public class SignupActivity extends AppCompatActivity {
         editTextName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                if(!b) { // If is not focused
-                    if(isNameValid(editTextName.getText().toString())) 
+                if (!b) { // If is not focused
+                    if (isNameValid(editTextName.getText().toString()))
                         textViewNameError.setTextColor(Color.TRANSPARENT);
                     else
                         textViewNameError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
@@ -72,8 +72,8 @@ public class SignupActivity extends AppCompatActivity {
         editTextEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                if(!b) { // If is not focused
-                    if(isEmailValid(editTextEmail.getText().toString()))
+                if (!b) { // If is not focused
+                    if (isEmailValid(editTextEmail.getText().toString()))
                         textViewEmailError.setTextColor(Color.TRANSPARENT);
                     else
                         textViewEmailError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
@@ -83,8 +83,8 @@ public class SignupActivity extends AppCompatActivity {
         editTextPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                if(!b) { // If is not focused
-                    if(isPasswordValid(editTextPassword.getText().toString()))
+                if (!b) { // If is not focused
+                    if (isPasswordValid(editTextPassword.getText().toString()))
                         textViewPasswordError.setTextColor(Color.TRANSPARENT);
                     else
                         textViewPasswordError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
@@ -94,8 +94,8 @@ public class SignupActivity extends AppCompatActivity {
         editTextPasswordConfirm.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                if(!b) { // If is not focused
-                    if(isPasswordConfirmValid(editTextPassword.getText().toString(), editTextPasswordConfirm.getText().toString()))
+                if (!b) { // If is not focused
+                    if (isPasswordConfirmValid(editTextPassword.getText().toString(), editTextPasswordConfirm.getText().toString()))
                         textViewPasswordConfirmError.setTextColor(Color.TRANSPARENT);
                     else
                         textViewPasswordConfirmError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
@@ -127,7 +127,8 @@ public class SignupActivity extends AppCompatActivity {
 
         return !(name.startsWith(" ") || m.find() || name.equals("")); // Returns true only if the name neither starts with a blank space nor has numbers.
     }
-    public boolean isEmailValid(String email){ // Validates the email input, returning true if it's valid or false if it's not.
+
+    public boolean isEmailValid(String email) { // Validates the email input, returning true if it's valid or false if it's not.
         String regexEmail = "^\\w*(\\.\\w*)?@\\w*\\.[a-z]+(\\.[a-z]+)?$";
 
         Pattern r = Pattern.compile(regexEmail);
@@ -135,25 +136,33 @@ public class SignupActivity extends AppCompatActivity {
 
         return m.find();
     }
+
     public boolean isPasswordValid(String password) { //Validates the password, returning true if it's valid or false if it's not.
         return password.length() > 7; // Returns true only if the password length is longer than 7 chars.
     }
+
     public boolean isPasswordConfirmValid(String password, String passwordConfirm) { //Validates the password confirmation, returning true if it's valid or false if it's not.
         return password.equals(passwordConfirm); // Returns true only if the password is equals to the confirmation.
     }
+
     public String getFirstName(String name) { // If name is valid, returns the first name.
         if (isNameValid(name)) {
             String regexName = "\\S+"; //Capture only blank spaces.
 
             Pattern pattern = Pattern.compile(regexName);
             Matcher matcher = pattern.matcher(name);
-            if(matcher.find()) return matcher.group(0); else return name; // Returns the name before the blank space or the entire name.
+            if (matcher.find()) return matcher.group(0);
+            else return name; // Returns the name before the blank space or the entire name.
         }
         return null;
     }
 
+    public void onButtonCloseWindow(View view) {
+        finish();
+    }
+
     public void onButtonSignUpClick(View view) {
-        if(isNameValid(editTextName.getText().toString()) && isEmailValid(editTextEmail.getText().toString())
+        if (isNameValid(editTextName.getText().toString()) && isEmailValid(editTextEmail.getText().toString())
                 && isPasswordValid(editTextPassword.getText().toString())
                 && isPasswordConfirmValid(editTextPassword.getText().toString(), editTextPasswordConfirm.getText().toString())) {
             textViewButtonError.setTextColor(Color.TRANSPARENT);
@@ -163,7 +172,7 @@ public class SignupActivity extends AppCompatActivity {
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful()) {
+                            if (task.isSuccessful()) {
                                 final FirebaseUser user = firebaseAuth.getCurrentUser();
                                 UserProfileChangeRequest profileChangeRequest = new UserProfileChangeRequest
                                         .Builder()
@@ -195,8 +204,9 @@ public class SignupActivity extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                             } else {
-                                try { throw task.getException(); }
-                                catch (FirebaseAuthUserCollisionException existEmail) {
+                                try {
+                                    throw task.getException();
+                                } catch (FirebaseAuthUserCollisionException existEmail) {
                                     textViewButtonError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
                                     progressBar.setVisibility(View.INVISIBLE);
                                 } catch (FirebaseAuthInvalidCredentialsException malformedEmail) {
@@ -208,11 +218,11 @@ public class SignupActivity extends AppCompatActivity {
                             }
                         }
                     }).addOnFailureListener(this, new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
+                @Override
+                public void onFailure(@NonNull Exception e) {
 
-                        }
-                    });
+                }
+            });
         } else {
             if (!isNameValid(editTextName.getText().toString()))
                 textViewNameError.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));

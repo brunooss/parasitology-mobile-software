@@ -37,6 +37,8 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
 
@@ -187,4 +189,7 @@ public class HomeActivity extends AppCompatActivity
         builder.create().show(); */
     }
 
+    public void onCategoryButtonClick(View view) {
+        startActivity(new Intent(this, SubjectActivity.class));
+    }
 }

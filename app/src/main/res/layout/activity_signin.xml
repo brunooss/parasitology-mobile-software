@@ -215,4 +215,43 @@
         app:layout_constraintStart_toStartOf="@+id/buttonSignIn"
         app:layout_constraintTop_toTopOf="@+id/buttonSignIn" />
 
+<!-- ERROR MESSAGES -->
+    <TextView
+        android:id="@+id/textViewSignInInvalidEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/futura_medium_bt"
+        android:text="Insira um endereço de e-mail válido."
+        android:textColor="@color/colorRedError"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignInEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail" />
+    <TextView
+        android:id="@+id/textViewSignInEmailNonexistent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/futura_medium_bt"
+        android:text="Este e-mail não está cadastrado."
+        android:textColor="@color/colorRedError"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignInEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail" />
+    <TextView
+        android:id="@+id/textViewSignInWrongPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/futura_medium_bt"
+        android:textSize="12sp"
+        android:text="Senha incorreta."
+        android:textColor="@color/colorRedError"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignInPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInPassword" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
