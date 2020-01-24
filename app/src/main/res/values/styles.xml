@@ -17,6 +17,15 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowDisablePreview">true</item>
     </style>
+    <style name="AppTheme.Home" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
 
     <style name="AppTheme.IntroductionActivity" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimaryDark">@color/colorBackgroundIntroductionFirst</item>

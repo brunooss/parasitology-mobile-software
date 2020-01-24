@@ -152,6 +152,10 @@ public class SignupActivity extends AppCompatActivity {
         return null;
     }
 
+    public void onButtonCloseWindow(View view){
+        finish();
+    }
+
     public void onButtonSignUpClick(View view) {
         if(isNameValid(editTextName.getText().toString()) && isEmailValid(editTextEmail.getText().toString())
                 && isPasswordValid(editTextPassword.getText().toString())

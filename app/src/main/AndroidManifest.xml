@@ -12,7 +12,7 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.Home">
         </activity>
         <activity android:name=".IntroductionActivity"
             android:theme="@style/AppTheme.IntroductionActivity"/>
