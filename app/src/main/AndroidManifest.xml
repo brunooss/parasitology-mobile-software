@@ -9,32 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubjectActivity" android:parentActivityName=".HomeActivity">
+        <activity android:name=".SubjectActivity" android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.Home">
+            android:theme="@style/AppTheme.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".IntroductionActivity"
-            android:theme="@style/AppTheme.IntroductionActivity"/>
-        <activity android:name=".SigninActivity">
+            android:theme="@style/AppTheme.IntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SigninActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SignupActivity"/>
+        <activity android:name=".SignupActivity" android:screenOrientation="portrait" />
         <activity
             android:name=".SplashScreenActivity"
-            android:theme="@style/AppTheme.SplashScreen">
+            android:theme="@style/AppTheme.SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".StudentPreferenceActivity"/>
+        <activity android:name=".StudentPreferenceActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RecoverPasswordActivity"
-            android:largeHeap="true"/>
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
