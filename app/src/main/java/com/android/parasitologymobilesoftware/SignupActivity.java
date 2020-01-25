@@ -138,7 +138,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public boolean isPasswordValid(String password) { //Validates the password, returning true if it's valid or false if it's not.
-        return password.length() > 7; // Returns true only if the password length is longer than 7 chars.
+        return password.length() > 5; // Returns true only if the password length is longer than 7 chars.
     }
 
     public boolean isPasswordConfirmValid(String password, String passwordConfirm) { //Validates the password confirmation, returning true if it's valid or false if it's not.
