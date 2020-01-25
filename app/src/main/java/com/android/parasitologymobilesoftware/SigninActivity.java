@@ -82,11 +82,11 @@ public class SigninActivity extends AppCompatActivity {
             public void onFocusChange(View view, boolean b) {
                 if (!b) { // If is not focused
                     if (isEmailValid(editTextEmail.getText().toString())) {
-                        textViewInvalidEmail.setVisibility(View.INVISIBLE);
-                        textViewEmailNonexistent.setVisibility(View.INVISIBLE);
+                        textViewInvalidEmail.setTextColor(Color.TRANSPARENT);
+                        textViewEmailNonexistent.setTextColor(Color.TRANSPARENT);
                     } else {
-                        textViewInvalidEmail.setVisibility(View.VISIBLE);
-                        textViewEmailNonexistent.setVisibility(View.VISIBLE);
+                        textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                        textViewEmailNonexistent.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
                     }
                 }
             }
@@ -95,9 +95,9 @@ public class SigninActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View view, boolean b) {
                 if (!b) // If is not focused
-                    textViewWrongPassword.setVisibility(View.INVISIBLE);
+                    textViewWrongPassword.setTextColor(Color.TRANSPARENT);
                 else
-                    textViewWrongPassword.setVisibility(View.VISIBLE);
+                    textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
             }
         });
     }
@@ -117,24 +117,8 @@ public class SigninActivity extends AppCompatActivity {
                                     startActivity(new Intent(getBaseContext(), HomeActivity.class));
                                     finish();
                                 } else {
-<<<<<<< HEAD
-=======
-                                    try {
-                                        throw task.getException();
-                                    }
-                                    catch (FirebaseAuthInvalidUserException invalidEmail){
-                                      Log.d(TAG, "Invalid Email");
-                                      textViewEmailNonexistent.setVisibility(View.VISIBLE);
-                                    }
-                                    catch (FirebaseAuthInvalidCredentialsException wrongPassword){
-                                        Log.d(TAG, "Wrong Password");
-                                        textViewWrongPassword.setVisibility(View.VISIBLE);
-                                    } catch (Exception e) {
-                                        e.printStackTrace();
-                                    }
->>>>>>> master
+                                    openDialog();
                                     progressBar.setVisibility(View.INVISIBLE);
-                                    Toast.makeText(getBaseContext(), "Essa conta não existe", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }).addOnFailureListener(new OnFailureListener() {
