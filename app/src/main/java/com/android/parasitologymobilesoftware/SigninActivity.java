@@ -43,7 +43,7 @@ public class SigninActivity extends AppCompatActivity {
 
 
     public boolean isPasswordValid(String password) { //Validates the password, returning true if it's valid or false if it's not.
-        return password.length() > 7; // Returns true only if the password length is longer than 7 chars.
+        return password.length() > 5; // Returns true only if the password length is longer than 7 chars.
     }
 
     public boolean isEmailValid(String email) { // Validates the email input, returning true if it's valid or false if it's not.
@@ -129,6 +129,7 @@ public class SigninActivity extends AppCompatActivity {
                     }
                 });
             } else {      //Invalid email's string and password
+                //TODO Set error red messages on specific cases
                 openDialog();
                 progressBar.setVisibility(View.INVISIBLE);
             }
