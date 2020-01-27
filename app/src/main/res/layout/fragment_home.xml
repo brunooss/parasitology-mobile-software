@@ -9,11 +9,74 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" android:background="@color/colorBackground">
-        <include layout="@layout/home_category_button" android:layout_width="wrap_content"
-                 android:layout_height="wrap_content" android:layout_marginStart="8dp"
-                 android:layout_marginTop="32dp" android:layout_marginEnd="8dp"
+        <include android:id="@+id/categoryHomeFragmentArtropodes" layout="@layout/home_category_button"
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_marginStart="8dp" android:layout_marginTop="32dp"
+                 android:layout_marginEnd="8dp"
                  app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
                  app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/textViewCategoryArtropodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:fontFamily="@font/futura_medium_bt"
+            android:text="TextView"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes"
+            app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes"
+            app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes"/>
+        <include android:id="@+id/categoryHomeFragmentArtropodes1" layout="@layout/home_category_button"
+                 android:layout_width="78dp" android:layout_height="54dp"
+                 android:layout_marginStart="8dp"
+                 android:layout_marginEnd="8dp"
+                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentArtropodes2"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodes2"/>
+        <TextView
+            android:id="@+id/textViewSubcategoryArtropodes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="TextView"
+            android:textColor="@color/colorTextPrimary" android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes1"
+            app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes1" app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes1"/>
+        <include android:id="@+id/categoryHomeFragmentArtropodes2" layout="@layout/home_category_button"
+                 android:layout_width="78dp" android:layout_height="54dp"
+                 android:layout_marginTop="24dp"
+                 app:layout_constraintEnd_toEndOf="@+id/textViewCategoryArtropodes"
+                 app:layout_constraintStart_toStartOf="@+id/textViewCategoryArtropodes"
+                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodes"/>
+        <TextView
+            android:id="@+id/textViewSubcategoryArtropodes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="TextView"
+            android:textColor="@color/colorTextPrimary" android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes2" app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes2"
+            app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes2"/>
+        <include android:id="@+id/categoryHomeFragmentArtropodes3" layout="@layout/home_category_button"
+                 android:layout_width="78dp"
+                 android:layout_height="54dp"
+                 android:layout_marginStart="8dp"
+                 android:layout_marginEnd="8dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentArtropodes2"
+                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodes2"/>
+        <TextView
+            android:id="@+id/textViewSubcategoryArtropodes3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/futura_medium_bt" android:text="TextView"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes3" app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes3"
+            app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes3"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

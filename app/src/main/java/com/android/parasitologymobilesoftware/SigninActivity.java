@@ -115,6 +115,8 @@ public class SigninActivity extends AppCompatActivity {
                                     catch (FirebaseAuthInvalidCredentialsException wrongPassword){
                                         Log.d(TAG, "Wrong Password");
                                         textViewWrongPassword.setVisibility(View.VISIBLE);
+                                    } catch (Exception e) {
+
                                     }
                                     progressBar.setVisibility(View.INVISIBLE);
                                     Toast.makeText(getBaseContext(), "Essa conta não existe", Toast.LENGTH_SHORT).show();
