@@ -1,10 +1,15 @@
 package com.android.parasitologymobilesoftware;
 
+import android.app.AlertDialog;
+import android.app.LauncherActivity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Layout;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,6 +38,13 @@ public class RecoverPasswordActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
+    private AlertDialog.Builder builder;
+    private View dialogView;
+    private TextView dialogInfo;
+    private String inicio = "Enviamos um e-mail para ";
+    private String fim = ". Caso não tenha recebido, verifique sua caixa de spam ou tente novamente.";
+
+
 
 
     @Override
@@ -48,6 +60,11 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBarRecoverPassword);
         progressBar.setVisibility(View.INVISIBLE);
         buttonSendEmail = findViewById(R.id.buttonSendEmail);
+
+        builder = new AlertDialog.Builder(getBaseContext());
+        LayoutInflater inflater = getLayoutInflater();
+        dialogView = inflater.inflate(R.layout.dialog_recover_password, null);
+        dialogInfo = dialogView.findViewById(R.id.TextViewDialogInfo);
     }
 
     public void onButtonSendEmail(View view){
@@ -57,23 +74,31 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);                          // Loading...
         FirebaseAuth auth = FirebaseAuth.getInstance();                  // Instantiating Firebase
         EditText editTextEmail = findViewById(R.id.SendEmailToRecover); // Taking the email that the User inserted
-        String emailAdress = editTextEmail.getText().toString();       // Taking the email String
-
-        RecoverPasswordDialog recoverPasswordDialog = new RecoverPasswordDialog();
-        recoverPasswordDialog.setTextEmailSent(emailAdress);
-
+        final String emailAdress = editTextEmail.getText().toString();       // Taking the email String
         if(signupActivity.isEmailValid(emailAdress)){                // Checks whether the user har entered a valid email
             auth.sendPasswordResetEmail(emailAdress)
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()){
-                                progressBar.setVisibility(View.INVISIBLE);         // Already loaded
+                                progressBar.setVisibility(View.INVISIBLE);             // Already loaded
                                 textViewErrorButton.setTextColor(Color.TRANSPARENT);
-                                openDialog();
+
+                                dialogInfo.setText(inicio.concat(emailAdress.concat(fim)));
+                                builder.setView(dialogView);
+                                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        Intent intent = new Intent(getBaseContext(), SigninActivity.class);
+                                        startActivity(intent);
+                                    }
+                                });
+                                AlertDialog alertDialog = builder.create();
+                                alertDialog.show();
+
                             } else {                                         // An error has occurred while sending the email
                                 progressBar.setVisibility(View.INVISIBLE);  // Already loaded
-                                textViewErrorButton.setText("Algo deu errado. Certifique-se de que o email utilizado está cadastrado.");
+                                textViewErrorButton.setText("O email utilizado não está cadastrado.");
                                 textViewErrorButton.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));  //Error Message
                             }
                         }
@@ -84,17 +109,6 @@ public class RecoverPasswordActivity extends AppCompatActivity {
             textViewErrorButton.setText("E-mail inválido");
             textViewErrorButton.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
         }
-    }
-
-    public void sendDataToFragment(String message, Fragment fragment){   // Function that passes the email's string to the dialog fragment
-        Bundle bundle = new Bundle();
-        bundle.putString("emailAdress", message);
-        fragment.setArguments(bundle);
-    }
-
-    public void openDialog(){
-        RecoverPasswordDialog recoverPasswordDialog = new RecoverPasswordDialog();
-        recoverPasswordDialog.show(getSupportFragmentManager(), "emailSentMessage");
     }
 
     public void onButtonCloseWindow(View view){

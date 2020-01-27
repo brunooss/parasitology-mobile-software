@@ -21,15 +21,8 @@ public class RecoverPasswordDialog extends AppCompatDialogFragment {
 
     private String inicio = "Enviamos um e-mail para ";
     private String fim = ". Caso não tenha recebido, verifique sua caixa de spam ou tente novamente.";
-
     private TextView textEmailSent;
-    private String dialogEmail;
-    private String emailAdress;
-
-    public void setTextEmailSent(String email){
-        textEmailSent = dialogView.findViewById(R.id.TextDialogEmail);
-        textEmailSent.setText(inicio.concat(email).concat(fim));
-    }
+    //private String emailAdress;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -37,6 +30,7 @@ public class RecoverPasswordDialog extends AppCompatDialogFragment {
 
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         dialogView = inflater.inflate(R.layout.dialog_recover_password, null);
+
         builder.setView(dialogView);
 
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
