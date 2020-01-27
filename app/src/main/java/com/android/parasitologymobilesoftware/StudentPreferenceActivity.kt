@@ -39,7 +39,7 @@ class StudentPreferenceActivity : AppCompatActivity() {
         }
     }
 
-    public fun onButtonStudentPreferenceClick(view: View) {
+    fun onButtonStudentPreferenceClick(@Suppress("UNUSED_PARAMETER")view: View) {
         startActivity(Intent(this, HomeActivity::class.java))
     }
 }
