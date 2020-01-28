@@ -4,44 +4,61 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".StudentPreferencesFragment">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                      android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:background="@color/colorBackground">
+                android:layout_height="817dp"
+                android:background="@color/colorBackground">
 
                 <Button
                     android:id="@+id/buttonStudentPreferencesSetAlert"
                     style="@android:style/Widget.Holo.Button.Inset"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp" android:layout_marginTop="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
                     android:background="@drawable/custom_linear_layout_signup_background"
-                    android:drawableLeft="@drawable/ic_add_alert_white_24dp" android:fontFamily="@font/futura_light_bt"
-                    android:onClick="onSetAlertButtonClick" android:paddingLeft="10dp"
-                    android:paddingRight="10dp" android:text=" Alertas"
-                    android:textColor="@color/colorTextPrimary" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    android:drawableLeft="@drawable/ic_add_alert_white_24dp"
+                    android:fontFamily="@font/futura_light_bt"
+                    android:onClick="onSetAlertButtonClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=" Alertas"
+                    android:textColor="@color/colorTextPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <Button
                     android:id="@+id/buttonStudentPreferencesSetDate"
                     style="@android:style/Widget.Holo.Button.Inset"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/custom_linear_layout_signup_background"
                     android:drawableLeft="@drawable/ic_today_white_24dp"
                     android:fontFamily="@font/futura_light_bt"
                     android:onClick="onSetDateButtonClick"
-                    android:paddingLeft="10dp" android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:text=" Selecione a data da avaliação"
                     android:textColor="@color/colorTextPrimary"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/buttonStudentPreferencesSetAlert"/>
+                    app:layout_constraintTop_toBottomOf="@+id/buttonStudentPreferencesSetAlert" />
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout4"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
@@ -54,15 +71,19 @@
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:drawableLeft="@drawable/ic_bubble_chart_white_24dp"
                         android:fontFamily="@font/futura_light_bt"
                         android:text="Meta diária:"
-                        android:textColor="@color/colorTextPrimary" android:textSize="18sp"
-                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
                     <EditText
                         android:id="@+id/editText"
                         android:layout_width="wrap_content"
@@ -70,12 +91,18 @@
                         android:layout_marginStart="1dp"
                         android:backgroundTint="@android:color/transparent"
                         android:ems="10"
-                        android:fontFamily="@font/futura_light_bt" android:inputType="textPersonName"
-                        android:textColor="@color/colorTextPrimary" app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/textView4"
-                        app:layout_constraintTop_toTopOf="parent" tools:text="10 Horas diárias"/>
+                        android:fontFamily="@font/futura_light_bt"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorTextPrimary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="10 Horas diárias" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -89,18 +116,25 @@
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/futura_light_bt"
-                        android:text="Metodologia de sua Preferência" android:textColor="@color/colorTextPrimary"
+                        android:text="Metodologia de sua Preferência"
+                        android:textColor="@color/colorTextPrimary"
                         android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
-                    <View android:id="@+id/view" android:layout_width="match_parent"
-                          android:layout_height="1dp"
-                          android:layout_marginTop="8dp"
-                          android:background="@color/colorWhite"
-                          app:layout_constraintTop_toBottomOf="@+id/textView5" tools:layout_editor_absoluteX="0dp"/>
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorWhite"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        tools:layout_editor_absoluteX="0dp" />
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayoutStudentFirst"
                         android:layout_width="wrap_content"
@@ -110,9 +144,10 @@
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/custom_buttom_yellow_background"
                         android:clickable="true"
-                        android:elevation="5dp"
+                        android:elevation="2dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/view">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view">
 
                         <TextView
                             android:id="@+id/textViewStudentCardFirst"
@@ -125,7 +160,7 @@
                             android:textColor="@color/colorTextPrimary"
                             android:textSize="20sp"
                             app:layout_constraintStart_toStartOf="@+id/textViewStudentCardSecond"
-                            app:layout_constraintTop_toTopOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/textViewStudentCardSecond"
@@ -140,19 +175,20 @@
                             android:textSize="20sp"
                             app:layout_constraintEnd_toStartOf="@+id/imageViewStudentCardFirst"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardFirst"/>
+                            app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardFirst" />
 
                         <TextView
                             android:id="@+id/textViewStudentCardThird"
-                            android:layout_width="120dp"
-                            android:layout_height="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
                             android:layout_marginTop="8dp"
                             android:fontFamily="@font/futura_medium_bt"
                             android:text="3• REVISÃO"
                             android:textColor="@color/colorTextPrimary"
                             android:textSize="20sp"
-                            app:layout_constraintStart_toStartOf="@+id/textViewStudentCardSecond"
-                            app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardSecond"/>
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardSecond" />
 
                         <ImageView
                             android:id="@+id/imageViewStudentCardFirst"
@@ -165,18 +201,17 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.0"
-                            app:srcCompat="@drawable/icons8_classroom_100"/>
+                            app:srcCompat="@drawable/icons8_classroom_100" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayoutStudentSecond"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
                         android:background="@drawable/custom_buttom_yellow_background"
                         android:clickable="true"
-                        android:elevation="5dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:elevation="2dp"
                         app:layout_constraintEnd_toEndOf="@+id/constraintLayoutStudentFirst"
                         app:layout_constraintStart_toStartOf="@+id/constraintLayoutStudentFirst"
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStudentFirst">
@@ -194,7 +229,7 @@
                             android:textSize="20sp"
                             app:layout_constraintEnd_toStartOf="@+id/imageViewStudentCardFirst2"
                             app:layout_constraintStart_toStartOf="@+id/textViewStudentCardSecond2"
-                            app:layout_constraintTop_toTopOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/textViewStudentCardSecond2"
@@ -212,7 +247,7 @@
                             app:layout_constraintEnd_toStartOf="@+id/imageViewStudentCardFirst2"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardFirst2"/>
+                            app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardFirst2" />
 
                         <ImageView
                             android:id="@+id/imageViewStudentCardFirst2"
@@ -225,9 +260,104 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.0"
-                            app:srcCompat="@drawable/icons8_inovation100"/>
+                            app:srcCompat="@drawable/icons8_inovation100" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/custom_buttom_blue_background"
+
+                        android:elevation="10dp"
+                        android:fontFamily="@font/futura_light_bt"
+                        android:onClick="onButtonTest"
+                        android:text="Confirmar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStudentSecond" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_linear_layout_signup_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/futura_light_bt"
+                        android:text="Progresso"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progressApp"
+                        style="?android:progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="16dp"
+
+
+                        android:max="100"
+                        android:progressDrawable="@drawable/green_progress_drawable"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="16dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:layout_marginEnd="16dp"-->
+                <!--                    android:background="@drawable/custom_linear_layout_signup_background"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="10dp"-->
+                <!--                        android:layout_marginTop="8dp"-->
+                <!--                        android:fontFamily="@font/futura_light_bt"-->
+                <!--                        android:text="Revisão pré-prova"-->
+                <!--                        android:textColor="@color/colorTextPrimary"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+                <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
