@@ -1,31 +1,21 @@
 package com.android.parasitologymobilesoftware;
 
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.DatePicker;
-import android.widget.TimePicker;
-import android.widget.Toast;
-import androidx.annotation.NonNull;
+import android.view.*;
+import android.webkit.WebView;
+import android.widget.*;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import android.view.MenuItem;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import android.view.Menu;
 import com.google.android.material.tabs.TabLayout;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Calendar;
@@ -156,6 +146,11 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onCategoryButtonClick(View view) {
-        startActivity(new Intent(this, SubjectActivity.class));
+        Intent intent = new Intent(this, SubjectActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putInt("id", view.getId());
+        intent.putExtras(bundle);
+        startActivity(intent);
+
     }
 }

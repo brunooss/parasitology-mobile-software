@@ -117,6 +117,19 @@ public class SigninActivity extends AppCompatActivity {
                                     startActivity(new Intent(getBaseContext(), HomeActivity.class));
                                     finish();
                                 } else {
+                                    try {
+                                        throw task.getException();
+                                    }
+                                    catch (FirebaseAuthInvalidUserException invalidEmail){
+                                      Log.d(TAG, "Invalid Email");
+                                      textViewEmailNonexistent.setVisibility(View.VISIBLE);
+                                    }
+                                    catch (FirebaseAuthInvalidCredentialsException wrongPassword){
+                                        Log.d(TAG, "Wrong Password");
+                                        textViewWrongPassword.setVisibility(View.VISIBLE);
+                                    } catch (Exception e) {
+
+                                    }
                                     openDialog();
                                     progressBar.setVisibility(View.INVISIBLE);
                                 }
