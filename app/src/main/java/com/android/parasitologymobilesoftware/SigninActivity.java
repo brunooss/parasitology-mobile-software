@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
 
@@ -33,11 +34,17 @@ import java.util.regex.Pattern;
 public class SigninActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+
     private ProgressBar progressBar;
+
     private EditText editTextEmail, editTextPassword;
-    private FirebaseAuthInvalidUserException firebaseAuthInvalidUserException;
-    private static final String TAG = "SigninActivity";
+
     private TextView textViewInvalidEmail, textViewEmailNonexistent, textViewWrongPassword;  // Error messages
+
+
+    public boolean isPasswordValid(String password) { //Validates the password, returning true if it's valid or false if it's not.
+        return password.length() > 5; // Returns true only if the password length is longer than 7 chars.
+    }
 
     public boolean isEmailValid(String email) { // Validates the email input, returning true if it's valid or false if it's not.
         String regexEmail = "^\\w*(\\.\\w*)?@\\w*\\.[a-z]+(\\.[a-z]+)?$";
@@ -46,6 +53,11 @@ public class SigninActivity extends AppCompatActivity {
         Matcher m = r.matcher(email);
 
         return m.find();
+    }
+
+    public void openDialog(){
+        SigninDialog signinDialog = new SigninDialog();
+        signinDialog.show(getSupportFragmentManager(), "errorMessage");
     }
 
 
@@ -94,7 +106,7 @@ public class SigninActivity extends AppCompatActivity {
             progressBar.setVisibility(View.VISIBLE);
             EditText editTextEmail = findViewById(R.id.editTextSignInEmail);
             EditText editTextPassword = findViewById(R.id.editTextSignInPassword);
-            if (isEmailValid(editTextEmail.getText().toString())) {   // if Email's string matches with regexEmail
+            if (isEmailValid(editTextEmail.getText().toString()) && isPasswordValid(editTextPassword.getText().toString())) {   // if Email's string matches with regexEmail
                 firebaseAuth.signInWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
@@ -118,20 +130,20 @@ public class SigninActivity extends AppCompatActivity {
                                     } catch (Exception e) {
 
                                     }
+                                    openDialog();
                                     progressBar.setVisibility(View.INVISIBLE);
-                                    Toast.makeText(getBaseContext(), "Essa conta não existe", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        String errorCode = firebaseAuthInvalidUserException.getErrorCode();
-                        Toast.makeText(getBaseContext(), "Falhou... Essa conta não existe.", Toast.LENGTH_SHORT).show();
+                            openDialog();
+                            Toast.makeText(getBaseContext(), "Falhou... Essa conta não existe.", Toast.LENGTH_SHORT).show();
                     }
                 });
-            } else {      //Invalid email's string
-                textViewInvalidEmail.setVisibility(View.VISIBLE);
-                textViewWrongPassword.setVisibility(View.VISIBLE);
+            } else {      //Invalid email's string and password
+                //TODO Set error red messages on specific cases
+                openDialog();
                 progressBar.setVisibility(View.INVISIBLE);
             }
         }
