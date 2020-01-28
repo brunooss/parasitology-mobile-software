@@ -4,9 +4,12 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.*;
 import android.webkit.WebView;
 import android.widget.*;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -23,11 +26,15 @@ import java.util.Calendar;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Handler handler;
+
+    private int progressStatus = 0;
+    private ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
@@ -143,6 +150,15 @@ public class HomeActivity extends AppCompatActivity
             }
         }, year, month, day);
         datePickerDialog.show();
+    }
+
+    public void onButtonTest(View view){
+
+    }
+
+    public void settingProgress(int progressToGo){                      // Call this function to change the bar progress, passing an int variable that goes from 0 to 100
+        progressBar = (ProgressBar) findViewById(R.id.progressApp);
+        progressBar.setProgress(progressToGo, true);
     }
 
     public void onCategoryButtonClick(View view) {

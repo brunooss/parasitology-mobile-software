@@ -39,6 +39,8 @@ public class SigninActivity extends AppCompatActivity {
 
     private EditText editTextEmail, editTextPassword;
 
+    private static final String TAG = "SigninActivity";
+
     private TextView textViewInvalidEmail, textViewEmailNonexistent, textViewWrongPassword;  // Error messages
 
 
@@ -86,7 +88,7 @@ public class SigninActivity extends AppCompatActivity {
                         textViewEmailNonexistent.setTextColor(Color.TRANSPARENT);
                     } else {
                         textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                        textViewEmailNonexistent.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                        //textViewEmailNonexistent.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
                     }
                 }
             }
@@ -94,15 +96,15 @@ public class SigninActivity extends AppCompatActivity {
         editTextPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                if (!b) // If is not focused
+                if (b) // If is focused
                     textViewWrongPassword.setTextColor(Color.TRANSPARENT);
-                else
-                    textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
             }
         });
     }
 
         public void onButtonLogInClick (View view){
+            editTextEmail.clearFocus();
+            editTextPassword.clearFocus();
             progressBar.setVisibility(View.VISIBLE);
             EditText editTextEmail = findViewById(R.id.editTextSignInEmail);
             EditText editTextPassword = findViewById(R.id.editTextSignInPassword);
@@ -137,14 +139,26 @@ public class SigninActivity extends AppCompatActivity {
                         }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        if(textViewWrongPassword.getCurrentTextColor() == Color.TRANSPARENT && textViewEmailNonexistent.getCurrentTextColor() == Color.TRANSPARENT) {
+                            progressBar.setVisibility(View.INVISIBLE);
                             openDialog();
-                            Toast.makeText(getBaseContext(), "Falhou... Essa conta não existe.", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             } else {      //Invalid email's string and password
-                //TODO Set error red messages on specific cases
-                openDialog();
                 progressBar.setVisibility(View.INVISIBLE);
+                if (isEmailValid(editTextEmail.getText().toString()) && !isPasswordValid(editTextEmail.getText().toString())) {
+                    textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                    textViewWrongPassword.setTextColor(Color.TRANSPARENT);
+                }
+                else if (isPasswordValid(editTextPassword.getText().toString()) && !isEmailValid(editTextEmail.getText().toString())){
+                    textViewInvalidEmail.setTextColor(Color.TRANSPARENT);
+                    textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                }
+                else {
+                    textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                    textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+                }
             }
         }
 

@@ -12,4 +12,5 @@
         android:layout_height="40dp"
         android:layout_gravity="center|center_horizontal|center_vertical"
         android:src="@drawable/parasite_combate_white_cropped"/>
+
 </androidx.appcompat.widget.Toolbar>
