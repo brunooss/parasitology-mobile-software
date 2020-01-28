@@ -121,11 +121,11 @@ public class SigninActivity extends AppCompatActivity {
                                         throw task.getException();
                                     }
                                     catch (FirebaseAuthInvalidUserException invalidEmail){
-                                      Log.d(TAG, "Invalid Email");
+                                      Log.d("Tag", "Invalid Email");
                                       textViewEmailNonexistent.setVisibility(View.VISIBLE);
                                     }
                                     catch (FirebaseAuthInvalidCredentialsException wrongPassword){
-                                        Log.d(TAG, "Wrong Password");
+                                        Log.d("Tag", "Wrong Password");
                                         textViewWrongPassword.setVisibility(View.VISIBLE);
                                     } catch (Exception e) {
 

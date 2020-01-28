@@ -61,7 +61,7 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         progressBar.setVisibility(View.INVISIBLE);
         buttonSendEmail = findViewById(R.id.buttonSendEmail);
 
-        builder = new AlertDialog.Builder(getBaseContext());
+        builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
         dialogView = inflater.inflate(R.layout.dialog_recover_password, null);
         dialogInfo = dialogView.findViewById(R.id.TextViewDialogInfo);
