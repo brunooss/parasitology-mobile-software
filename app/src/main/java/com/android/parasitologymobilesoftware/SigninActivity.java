@@ -118,31 +118,31 @@ public class SigninActivity extends AppCompatActivity {
                                     Toast.makeText(getBaseContext(), "Sucesso! Logando com sua conta...", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(getBaseContext(), HomeActivity.class));
                                     finish();
-                                } //else {
-//                                    try {
-//                                        throw task.getException();
-//                                    }
-//                                    catch (FirebaseAuthInvalidUserException invalidEmail){
-//                                        Log.d(TAG, "Invalid Email");
-//                                        //textViewEmailNonexistent.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-//                                        openDialog();
-//                                    }
-//                                    catch (FirebaseAuthInvalidCredentialsException wrongPassword){
-//                                        Log.d(TAG, "Wrong Password");
-//                                        //textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-//                                        openDialog();
-//                                    } catch (Exception e) {
-//                                    }
-                                    //openDialog();
+                                } else {
+                                    try {
+                                        throw task.getException();
+                                    }
+                                    catch (FirebaseAuthInvalidUserException invalidEmail){
+                                      Log.d("Tag", "Invalid Email");
+                                      textViewEmailNonexistent.setVisibility(View.VISIBLE);
+                                    }
+                                    catch (FirebaseAuthInvalidCredentialsException wrongPassword){
+                                        Log.d("Tag", "Wrong Password");
+                                        textViewWrongPassword.setVisibility(View.VISIBLE);
+                                    } catch (Exception e) {
+
+                                    }
+                                    openDialog();
                                     progressBar.setVisibility(View.INVISIBLE);
-                                //}
+                                }
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                            //if(textViewWrongPassword.getCurrentTextColor() == Color.TRANSPARENT && textViewEmailNonexistent.getCurrentTextColor() == Color.TRANSPARENT)
-                        progressBar.setVisibility(View.INVISIBLE);
-                        openDialog();
+                        if(textViewWrongPassword.getCurrentTextColor() == Color.TRANSPARENT && textViewEmailNonexistent.getCurrentTextColor() == Color.TRANSPARENT) {
+                            progressBar.setVisibility(View.INVISIBLE);
+                            openDialog();
+                        }
                     }
                 });
             } else {      //Invalid email's string and password
