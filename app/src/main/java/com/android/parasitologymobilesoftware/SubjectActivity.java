@@ -1,5 +1,7 @@
 package com.android.parasitologymobilesoftware;
 
+import android.view.View;
+import android.view.ViewTreeObserver;
 import android.webkit.WebView;
 import android.widget.ScrollView;
 import android.widget.Toast;
@@ -20,7 +22,52 @@ public class SubjectActivity extends AppCompatActivity {
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
-        final DotIndicator dotIndicator = findViewById(R.id.dotIndicatorSubject);
+        WebView webView = findViewById(R.id.webViewSubject);
+        webView.getSettings().setJavaScriptEnabled(true);
+
+        final ScrollView scrollView = findViewById(R.id.scrollViewSubject);
+
+        int id = getIntent().getIntExtra("id", 1);
+
+        if (id == R.id.categoryHomeFragmentArtropodes1) {
+            scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    scrollView.post(new Runnable() {
+                        public void run() {
+                            scrollView.scrollTo(0, 0);
+                        }
+                    });
+                }
+            });
+        }
+        else if(id == R.id.categoryHomeFragmentArtropodes2) {
+            scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    scrollView.post(new Runnable() {
+                        public void run() {
+                            scrollView.scrollTo(0, 600);
+                        }
+                    });
+                }
+            });
+        }
+        else if(id == R.id.categoryHomeFragmentArtropodes3) {
+            scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    scrollView.post(new Runnable() {
+                        public void run() {
+                            scrollView.scrollTo(0, 1400);
+                        }
+                    });
+                }
+            });
+        }
+        webView.loadUrl("file:///android_asset/index.html");
+
+        // final DotIndicator dotIndicator = findViewById(R.id.dotIndicatorSubject);
 
         ViewPager viewPager = findViewById(R.id.viewPagerSubject);
         viewPager.setAdapter(new ImageSubjectFragmentPagerAdapter(getSupportFragmentManager()));
@@ -32,7 +79,7 @@ public class SubjectActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                dotIndicator.setSelectedItem(position, true);
+                //dotIndicator.setSelectedItem(position, true);
             }
 
             @Override
@@ -40,23 +87,5 @@ public class SubjectActivity extends AppCompatActivity {
 
             }
         });
-
-        WebView webView = findViewById(R.id.webViewSubject);
-        webView.getSettings().setJavaScriptEnabled(true);
-
-        ScrollView scrollView = findViewById(R.id.scrollViewSubject);
-        scrollView.setSmoothScrollingEnabled(true);
-
-        int id = getIntent().getIntExtra("id", 1);
-
-        if(id == R.id.categoryHomeFragmentArtropodes1)
-            scrollView.scrollTo(0, 0);
-        else if(id == R.id.categoryHomeFragmentArtropodes2)
-            scrollView.smoothScrollTo(0, 600);
-        else if(id == R.id.categoryHomeFragmentArtropodes3)
-            scrollView.smoothScrollTo(0, 1400);
-        else Toast.makeText(this, id, Toast.LENGTH_SHORT).show();
-
-        webView.loadUrl("file:///android_asset/index.html");
     }
 }
