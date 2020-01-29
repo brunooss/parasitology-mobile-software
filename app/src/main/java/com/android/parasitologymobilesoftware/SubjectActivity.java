@@ -21,6 +21,8 @@ public class SubjectActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbarSubject);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         WebView webView = findViewById(R.id.webViewSubject);
         webView.getSettings().setJavaScriptEnabled(true);
