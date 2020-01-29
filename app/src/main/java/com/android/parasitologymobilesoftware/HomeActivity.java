@@ -30,6 +30,9 @@ public class HomeActivity extends AppCompatActivity
 
     private int progressStatus = 0;
     private ProgressBar progressBar;
+    private Button buttonAlert;
+    private Button buttonDate;
+    boolean alert = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,17 +127,27 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onSetAlertButtonClick(View view) {
-        final Calendar calendar = Calendar.getInstance();
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int minute = calendar.get(Calendar.MINUTE);
+        buttonAlert = (Button) findViewById(R.id.buttonStudentPreferencesSetAlert);
+        buttonDate = (Button) findViewById(R.id.buttonStudentPreferencesSetDate);
+        if (alert == true) {
+            buttonAlert.setBackground(getResources().getDrawable(R.drawable.custom_linear_layout_alert_false, getTheme()));
+            alert = false;
+        } else {
+            buttonAlert.setBackground(getResources().getDrawable(R.drawable.custom_linear_layout_alert_true, getTheme()));
+            alert = true;
+        }
 
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this, R.style.PickerTheme, new TimePickerDialog.OnTimeSetListener() {
-            @Override
-            public void onTimeSet(TimePicker timePicker, int i, int i1) {
-
-            }
-        }, hour, minute, true);
-        timePickerDialog.show();
+//        final Calendar calendar = Calendar.getInstance();
+//        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+//        int minute = calendar.get(Calendar.MINUTE);
+//
+//        TimePickerDialog timePickerDialog = new TimePickerDialog(this, R.style.PickerTheme, new TimePickerDialog.OnTimeSetListener() {
+//            @Override
+//            public void onTimeSet(TimePicker timePicker, int i, int i1) {
+//
+//            }
+//        }, hour, minute, true);
+//        timePickerDialog.show();
     }
 
     public void onSetDateButtonClick(View view) {
@@ -153,7 +166,11 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onButtonTest(View view){
-
+        progressBar = (ProgressBar) findViewById(R.id.progressApp);
+        if (progressBar.getProgress() == 100)
+            settingProgress(0);
+        else
+            settingProgress(100);
     }
 
     public void settingProgress(int progressToGo){                      // Call this function to change the bar progress, passing an int variable that goes from 0 to 100
