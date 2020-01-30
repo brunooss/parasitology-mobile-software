@@ -10,6 +10,8 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,9 +24,11 @@ public class IntroductionFragment extends Fragment {
 
     private int page;
     private String username;
+    private String hello = "Olá, ";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         if(getArguments() != null) {
             page = getArguments().getInt("page") + 1;
@@ -65,20 +69,17 @@ public class IntroductionFragment extends Fragment {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFirst, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_happy_100);
                 //TODO Change setText to string resource.
-                textViewTitle.setText("Olá, nome");
+                textViewTitle.setText(hello);
                 break;
             case 2:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionSecond, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_books_100);
                 textViewTitle.setText(R.string.app_introduction_title_second);
-
                 break;
             case 3:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionThird, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_microscope_100);
                 textViewTitle.setText(R.string.app_introduction_title_third);
-                constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.TOP, R.id.constraindLayoutIntroduction, ConstraintSet.TOP, 16 * (getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT));
-                constraintSet.applyTo(constraintLayout);
                 break;
             case 4:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFourth, getResources().newTheme()));
@@ -86,8 +87,6 @@ public class IntroductionFragment extends Fragment {
                 textViewTitle.setText(R.string.app_introduction_title_fourth);
                 textViewSkip.setVisibility(View.INVISIBLE);
                 textViewStart.setVisibility(View.VISIBLE);
-                //constraintSet.connect(R.id.textViewIntroductionSkip, ConstraintSet.BOTTOM, R.id.constraindLayoutIntroduction, ConstraintSet.BOTTOM, 16 * (getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT));
-                //constraintSet.applyTo(constraintLayout);
                 break;
         }
         return view;
