@@ -4,11 +4,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
 import android.os.Bundle;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -17,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +33,7 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;   // Authentication
     private FirebaseFirestore dataBase; // Database
 
-    private SharedPreferences prefs = null;
+    private UserFragment userFragment;
 
     private EditText editTextName, editTextEmail, editTextPassword, editTextPasswordConfirm;
     private TextView textViewNameError, textViewEmailError, textViewPasswordError, textViewPasswordConfirmError, textViewButtonError;
@@ -40,8 +44,6 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
-        prefs = getBaseContext().getSharedPreferences("com.android.parasitologymobilesoftware", Context.MODE_PRIVATE);
 
         firebaseAuth = FirebaseAuth.getInstance();
         dataBase = FirebaseFirestore.getInstance();
@@ -162,6 +164,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void onButtonSignUpClick(View view) {
+        userFragment = new UserFragment();
         if (isNameValid(editTextName.getText().toString()) && isEmailValid(editTextEmail.getText().toString())
                 && isPasswordValid(editTextPassword.getText().toString())
                 && isPasswordConfirmValid(editTextPassword.getText().toString(), editTextPasswordConfirm.getText().toString())) {
@@ -196,9 +199,16 @@ public class SignupActivity extends AppCompatActivity {
                                             }
                                         });
 
-                                // Put values on SharedPreferences let you access them on other activities.
-                                prefs.edit().putString("school grade", spinner.getSelectedItem().toString()).apply();
-                                prefs.edit().putInt("passwordLength", editTextPassword.getText().toString().length()).apply();
+                                Map<String, Object> recoveringInfo = new HashMap<>();
+                                recoveringInfo.put("school grade", spinner.getSelectedItem().toString());
+
+                                dataBase.collection("generalUserInfo").document(editTextName.getText().toString())
+                                        .set(recoveringInfo)
+                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                            @Override
+                                            public void onSuccess(Void aVoid) {
+                                            }
+                                        });
 
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
                                 startActivity(intent);

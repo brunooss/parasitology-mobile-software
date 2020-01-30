@@ -6,6 +6,7 @@ import android.os.Build;
 import android.transition.Slide;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -79,29 +80,22 @@ public class SigninActivity extends AppCompatActivity {
         editTextEmail = findViewById(R.id.editTextSignInEmail);
         editTextPassword = findViewById(R.id.editTextSignInPassword);
 
-        editTextEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if (!b) { // If is not focused
-                    if (isEmailValid(editTextEmail.getText().toString())) {
-                        textViewInvalidEmail.setTextColor(Color.TRANSPARENT);
-                        textViewEmailNonexistent.setTextColor(Color.TRANSPARENT);
-                    } else {
-                        textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                        //textViewEmailNonexistent.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                    }
-                }
-            }
-        });
-        editTextPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if (b) // If is focused
-                    textViewWrongPassword.setTextColor(Color.TRANSPARENT);
-            }
-        });
+//        editTextEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View view, boolean b) {
+//                if (b) { // If isfocused
+//                    textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
+//                }
+//            }
+//        });
+//        editTextPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View view, boolean b) {
+//                if (b)  // If is focused
+//                    textViewWrongPassword.setTextColor(Color.TRANSPARENT);
+//            }
+//        });
     }
-
         public void onButtonLogInClick (View view){
             editTextEmail.clearFocus();
             editTextPassword.clearFocus();
@@ -118,22 +112,6 @@ public class SigninActivity extends AppCompatActivity {
                                     Toast.makeText(getBaseContext(), "Sucesso! Logando com sua conta...", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(getBaseContext(), HomeActivity.class));
                                     finish();
-                                } else {
-                                    try {
-                                        throw task.getException();
-                                    }
-                                    catch (FirebaseAuthInvalidUserException invalidEmail){
-                                      Log.d("Tag", "Invalid Email");
-                                      textViewEmailNonexistent.setVisibility(View.VISIBLE);
-                                    }
-                                    catch (FirebaseAuthInvalidCredentialsException wrongPassword){
-                                        Log.d("Tag", "Wrong Password");
-                                        textViewWrongPassword.setVisibility(View.VISIBLE);
-                                    } catch (Exception e) {
-
-                                    }
-                                    openDialog();
-                                    progressBar.setVisibility(View.INVISIBLE);
                                 }
                             }
                         }).addOnFailureListener(new OnFailureListener() {
@@ -146,19 +124,8 @@ public class SigninActivity extends AppCompatActivity {
                     }
                 });
             } else {      //Invalid email's string and password
+                openDialog();
                 progressBar.setVisibility(View.INVISIBLE);
-                if (isEmailValid(editTextEmail.getText().toString()) && !isPasswordValid(editTextEmail.getText().toString())) {
-                    textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                    textViewWrongPassword.setTextColor(Color.TRANSPARENT);
-                }
-                else if (isPasswordValid(editTextPassword.getText().toString()) && !isEmailValid(editTextEmail.getText().toString())){
-                    textViewInvalidEmail.setTextColor(Color.TRANSPARENT);
-                    textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                }
-                else {
-                    textViewInvalidEmail.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                    textViewWrongPassword.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
-                }
             }
         }
 

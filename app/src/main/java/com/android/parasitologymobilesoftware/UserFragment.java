@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.security.keystore.UserNotAuthenticatedException;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -23,6 +24,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -36,11 +39,9 @@ public class UserFragment extends Fragment {
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore database;
 
-    private SharedPreferences prefs = null;
+    private String schoolYear;
 
-    private String schoolYear = "";
-
-    private  AlertDialog.Builder builder;
+    private AlertDialog.Builder builder;
     private View dialogView;
 
     private TextView dialogTitle;
@@ -51,13 +52,12 @@ public class UserFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        firebaseAuth = FirebaseAuth.getInstance();
-        if (getArguments() != null) {
 
-        }
+        firebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
-        prefs = getContext().getSharedPreferences("com.android.parasitologymobilesoftware", Context.MODE_PRIVATE);
-        schoolYear = prefs.getString("school grade", "string");
+
+        if (getArguments() != null) { }
+
 
         builder = new AlertDialog.Builder(getContext());
 
@@ -69,7 +69,7 @@ public class UserFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_user, container, false);
@@ -127,7 +127,7 @@ public class UserFragment extends Fragment {
         imageViewIconPassword.setImageResource(R.drawable.icons8_password_);
         TextView textViewTitlePassword = rootView.findViewById(R.id.includeFieldUserInformationPassword).findViewById(R.id.textViewUserInformationTitle);
         StringBuilder length = new StringBuilder();
-        for(int i = 0; i < prefs.getInt("passwordLength", 8); i++) length.append("*");
+        for(int i = 0; i < 8; i++) length.append("*");
         textViewTitlePassword.setText(length.toString());
         final TextView textViewChangePassword = rootView.findViewById(R.id.includeFieldUserInformationPassword).findViewById(R.id.textViewUserInformationChange);
         textViewChangePassword.setOnClickListener(new View.OnClickListener() {
@@ -149,4 +149,5 @@ public class UserFragment extends Fragment {
         // Inflate the layout for this fragment
         return rootView;
     }
+
 }
