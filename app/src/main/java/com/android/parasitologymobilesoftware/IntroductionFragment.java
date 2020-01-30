@@ -69,7 +69,7 @@ public class IntroductionFragment extends Fragment {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFirst, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_happy_100);
                 //TODO Change setText to string resource.
-                textViewTitle.setText(hello.concat());
+                textViewTitle.setText(hello);
                 break;
             case 2:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionSecond, getResources().newTheme()));
