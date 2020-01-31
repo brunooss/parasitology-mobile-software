@@ -200,7 +200,10 @@ public class SignupActivity extends AppCompatActivity {
                                         });
 
                                 SharedPreferences.Editor editor = preferences.edit();
-                                editor.putString("first_name", getFirstName(editTextName.getText().toString()));
+                                editor.putString("first name", getFirstName(editTextName.getText().toString()));
+                                editor.putString("complete name", editTextName.getText().toString());
+                                editor.putString("school grade", spinner.getSelectedItem().toString());
+                                editor.putString("email", editTextEmail.getText().toString());
                                 editor.apply();
                                 progressBar.setVisibility(View.INVISIBLE);
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);

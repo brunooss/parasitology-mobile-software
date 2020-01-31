@@ -39,10 +39,14 @@ public class UserFragment extends Fragment {
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore database;
 
-    private String schoolYear;
+    private String schoolGrade;
+    private String email;
+    private String completeName;
 
     private AlertDialog.Builder builder;
     private View dialogView;
+
+    private SharedPreferences preferences;
 
     private TextView dialogTitle;
     private EditText dialogChange, dialogChange2;
@@ -72,13 +76,22 @@ public class UserFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        preferences = this.getActivity().getSharedPreferences("prefs", 0);
+        final SharedPreferences.Editor editor = preferences.edit();
+
+        schoolGrade = preferences.getString("school grade", "");
+        email = preferences.getString("email", "");
+        completeName = preferences.getString("complete name", "");
+
+
+
         View rootView = inflater.inflate(R.layout.fragment_user, container, false);
 
         // Username field.
         ImageView imageViewIconName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.imageViewUserInformationIcon);
         imageViewIconName.setImageResource(R.drawable.icons8_user_40);
-        TextView textViewTitleName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.textViewUserInformationTitle);
-        textViewTitleName.setText(firebaseAuth.getCurrentUser().getDisplayName());
+        final TextView textViewTitleName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.textViewUserInformationTitle);
+        textViewTitleName.setText(completeName);
         TextView textViewChangeName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.textViewUserInformationChange);
         textViewChangeName.setTextColor(Color.TRANSPARENT);
 
@@ -86,11 +99,12 @@ public class UserFragment extends Fragment {
         ImageView imageViewIconEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.imageViewUserInformationIcon);
         imageViewIconEmail.setImageResource(R.drawable.icons8_mail_40);
         textViewTitleEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.textViewUserInformationTitle);
-        textViewTitleEmail.setText(firebaseAuth.getCurrentUser().getEmail());
+        textViewTitleEmail.setTextSize(16);
+        textViewTitleEmail.setText(email);   // it is a better option we use shared preferences to set the textView, because of the Internet connection issue.
         final TextView textViewChangeEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.textViewUserInformationChange);
         textViewChangeEmail.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {    //TODO: solve bug at the second time the user opens this click listener - an option is taking this method out of the onCreateView
                 dialogTitle.setText("Alterar Email");
                 builder.setView(dialogView);
                 builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
@@ -110,9 +124,12 @@ public class UserFragment extends Fragment {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             FirebaseAuth.getInstance().getCurrentUser().updateEmail(dialogChange.getText().toString());
-                                            textViewChangeEmail.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
                                         }
                                     });
+                            email = dialogChange.getText().toString();
+                            editor.putString("email", email);
+                            editor.apply();
+                            textViewTitleEmail.setText(email);
                         }
                         else Toast.makeText(getContext(), "Insira um email válido.", Toast.LENGTH_SHORT).show();
                     }
@@ -141,7 +158,7 @@ public class UserFragment extends Fragment {
         ImageView imageViewIconSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.imageViewUserInformationIcon);
         imageViewIconSchoolYear.setImageResource(R.drawable.icons8_graduation_hat_100);
         TextView textViewTitleSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.textViewUserInformationTitle);
-        textViewTitleSchoolYear.setText(schoolYear);
+        textViewTitleSchoolYear.setText(schoolGrade);
         TextView textViewChangeSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.textViewUserInformationChange);
         textViewChangeSchoolYear.setTextColor(Color.TRANSPARENT);
 
