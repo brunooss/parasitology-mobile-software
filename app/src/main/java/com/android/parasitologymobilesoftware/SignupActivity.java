@@ -33,7 +33,7 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;   // Authentication
     private FirebaseFirestore dataBase; // Database
 
-    private UserFragment userFragment;
+    private SharedPreferences preferences;
 
     private EditText editTextName, editTextEmail, editTextPassword, editTextPasswordConfirm;
     private TextView textViewNameError, textViewEmailError, textViewPasswordError, textViewPasswordConfirmError, textViewButtonError;
@@ -44,6 +44,8 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
+        preferences = getSharedPreferences("prefs", 0);  // 0 = MODE_PRIVATE
 
         firebaseAuth = FirebaseAuth.getInstance();
         dataBase = FirebaseFirestore.getInstance();
@@ -164,7 +166,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void onButtonSignUpClick(View view) {
-        userFragment = new UserFragment();
         if (isNameValid(editTextName.getText().toString()) && isEmailValid(editTextEmail.getText().toString())
                 && isPasswordValid(editTextPassword.getText().toString())
                 && isPasswordConfirmValid(editTextPassword.getText().toString(), editTextPasswordConfirm.getText().toString())) {
@@ -182,7 +183,6 @@ public class SignupActivity extends AppCompatActivity {
                                         .setDisplayName(editTextName.getText().toString())
                                         .build();
                                 user.updateProfile(profileChangeRequest);
-                                progressBar.setVisibility(View.INVISIBLE);
 
                                 /* User's complete name and school grade will be sent to Cloud Firestore */
 
@@ -199,17 +199,10 @@ public class SignupActivity extends AppCompatActivity {
                                             }
                                         });
 
-                                Map<String, Object> recoveringInfo = new HashMap<>();
-                                recoveringInfo.put("school grade", spinner.getSelectedItem().toString());
-
-                                dataBase.collection("generalUserInfo").document(editTextName.getText().toString())
-                                        .set(recoveringInfo)
-                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void aVoid) {
-                                            }
-                                        });
-
+                                SharedPreferences.Editor editor = preferences.edit();
+                                editor.putString("first_name", getFirstName(editTextName.getText().toString()));
+                                editor.apply();
+                                progressBar.setVisibility(View.INVISIBLE);
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
                                 startActivity(intent);
                                 finish();

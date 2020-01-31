@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -24,7 +25,11 @@ public class IntroductionFragment extends Fragment {
 
     private int page;
     private String username;
+
     private String hello = "Olá, ";
+    private String firstName;
+    private SharedPreferences preferences;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,6 +39,8 @@ public class IntroductionFragment extends Fragment {
             page = getArguments().getInt("page") + 1;
             username = getArguments().getString("username");
         }
+
+        preferences = this.getActivity().getSharedPreferences("prefs", 0);
     }
 
     @Nullable
@@ -41,7 +48,9 @@ public class IntroductionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_introduction, container, false);
 
-        ConstraintLayout constraintLayout = view.findViewById(R.id.constraindLayoutIntroduction);
+        firstName = preferences.getString("first_name", "");
+
+       ConstraintLayout constraintLayout = view.findViewById(R.id.constraindLayoutIntroduction);
         ImageView imageViewIcon = view.findViewById(R.id.imageViewIntroductionIcon);
         TextView textViewTitle = view.findViewById(R.id.textViewIntroductionTitle);
         TextView textViewDescription = view.findViewById(R.id.textViewIntroductionDescription);
@@ -69,7 +78,7 @@ public class IntroductionFragment extends Fragment {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFirst, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_happy_100);
                 //TODO Change setText to string resource.
-                textViewTitle.setText(hello);
+                textViewTitle.setText(hello.concat(firstName));
                 break;
             case 2:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionSecond, getResources().newTheme()));
