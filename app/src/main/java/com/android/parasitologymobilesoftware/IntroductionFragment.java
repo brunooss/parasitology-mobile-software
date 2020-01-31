@@ -48,7 +48,7 @@ public class IntroductionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_introduction, container, false);
 
-        firstName = preferences.getString("first_name", "");
+        firstName = preferences.getString("first name", "");
 
        ConstraintLayout constraintLayout = view.findViewById(R.id.constraindLayoutIntroduction);
         ImageView imageViewIcon = view.findViewById(R.id.imageViewIntroductionIcon);
