@@ -42,6 +42,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.viewpager:viewpager:1.0.0'
     implementation 'com.google.firebase:firebase-firestore:21.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

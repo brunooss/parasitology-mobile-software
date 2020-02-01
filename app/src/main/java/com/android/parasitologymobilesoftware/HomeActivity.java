@@ -1,15 +1,13 @@
 package com.android.parasitologymobilesoftware;
 
 import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.*;
 import android.webkit.WebView;
 import android.widget.*;
-
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -26,13 +24,16 @@ import java.util.Calendar;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Handler handler;
-
     private int progressStatus = 0;
     private ProgressBar progressBar;
     private Button buttonAlert;
-    private Button buttonDate;
     boolean alert = true;
+
+    public String searchSubcategories[][] = {
+            {"Protozoários", "Amebíase", "Giardíase", "Doença de Chagas", "Malária", "Toxoplasmose", "Leishmanioses"},
+            {"Helmintos", "Esquistossomose mansoni", "Teníase", "Cisticercose", "Ascaridíase", "Enterobíase", "Hidatidose"},
+            {"Artrópodes", "Hemípteros", "Mosquitos", "Moscas", "Piolhos", "Pulgas", "Ácaros"}
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +80,60 @@ public class HomeActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.home, menu);
+
+        final ListView listView = findViewById(R.id.listViewHome);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String selected = adapterView.getItemAtPosition(i).toString();
+
+                Intent intent = new Intent(getBaseContext(), SubjectActivity.class);
+                if (selected.contains("Protozoários"))
+                    intent.putExtra("index", "protozoarios.html");
+                else if (selected.contains("Helmintos"))
+                    intent.putExtra("index", "helmintos.html");
+                else if (selected.contains("Artrópodes"))
+                    intent.putExtra("index", "artropodes.html");
+
+                startActivity(intent);
+            }
+        });
+
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                if(s != null && !s.isEmpty()) {
+                    ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<>(getBaseContext(), android.R.layout.simple_list_item_1);
+                    for (String[] searchSubcategory : searchSubcategories) {
+                        for (int j = 1; j <= searchSubcategory.length - 1; j++) {
+                            if (searchSubcategory[j].toLowerCase().contains(s.toLowerCase()))
+                                stringArrayAdapter.add(searchSubcategory[j] + "\nEm " + searchSubcategory[0]);
+                        }
+                    }
+                    listView.setVisibility(View.VISIBLE);
+                    listView.setAdapter(stringArrayAdapter);
+                }
+                else {
+                    return false;
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
+            }
+        });
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                listView.setVisibility(View.INVISIBLE);
+                return true;
+            }
+        });
         return true;
     }
 
@@ -89,13 +144,10 @@ public class HomeActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        // if (id == R.id.action_settings) {return true; }
 
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -128,7 +180,6 @@ public class HomeActivity extends AppCompatActivity
 
     public void onSetAlertButtonClick(View view) {
         buttonAlert = (Button) findViewById(R.id.buttonStudentPreferencesSetAlert);
-        buttonDate = (Button) findViewById(R.id.buttonStudentPreferencesSetDate);
         if (alert == true) {
             buttonAlert.setBackground(getResources().getDrawable(R.drawable.custom_linear_layout_alert_false, getTheme()));
             alert = false;
@@ -166,7 +217,7 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onButtonTest(View view){
-        progressBar = (ProgressBar) findViewById(R.id.progressApp);
+        progressBar = findViewById(R.id.progressApp);
         if (progressBar.getProgress() == 100)
             settingProgress(0);
         else
@@ -174,7 +225,7 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void settingProgress(int progressToGo){                      // Call this function to change the bar progress, passing an int variable that goes from 0 to 100
-        progressBar = (ProgressBar) findViewById(R.id.progressApp);
+        progressBar = findViewById(R.id.progressApp);
         progressBar.setProgress(progressToGo, true);
     }
 
@@ -182,6 +233,12 @@ public class HomeActivity extends AppCompatActivity
         Intent intent = new Intent(this, SubjectActivity.class);
         Bundle bundle = new Bundle();
         bundle.putInt("id", view.getId());
+        if(getResources().getResourceEntryName(view.getId()).contains("Artropodes"))
+            bundle.putString("index", "artropodes.html");
+        else if(getResources().getResourceEntryName(view.getId()).contains("Protozoarios"))
+            bundle.putString("index", "protozoarios.html");
+        else if(getResources().getResourceEntryName(view.getId()).contains("Helmintos"))
+            bundle.putString("index", "helmintos.html");
         intent.putExtras(bundle);
         startActivity(intent);
 
