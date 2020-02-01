@@ -11,6 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SubjectActivity" android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".HomeActivity"

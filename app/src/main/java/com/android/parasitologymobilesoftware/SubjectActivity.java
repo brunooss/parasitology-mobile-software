@@ -1,9 +1,15 @@
 package com.android.parasitologymobilesoftware;
 
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.webkit.WebView;
 import android.widget.ScrollView;
+import android.widget.SearchView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,10 +19,13 @@ import com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator;
 
 public class SubjectActivity extends AppCompatActivity {
 
+    private WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subject);
+
 
         Toolbar toolbar = findViewById(R.id.toolbarSubject);
         toolbar.setTitle("");
@@ -24,54 +33,10 @@ public class SubjectActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        WebView webView = findViewById(R.id.webViewSubject);
-        webView.getSettings().setJavaScriptEnabled(true);
 
-        final ScrollView scrollView = findViewById(R.id.scrollViewSubject);
+        final DotIndicator dotIndicator = findViewById(R.id.dotIndicatorSubject);
 
-        int id = getIntent().getIntExtra("id", 1);
-
-        if (id == R.id.categoryHomeFragmentArtropodes1) {
-            scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    scrollView.post(new Runnable() {
-                        public void run() {
-                            scrollView.scrollTo(0, 0);
-                        }
-                    });
-                }
-            });
-        }
-        else if(id == R.id.categoryHomeFragmentArtropodes2) {
-            scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    scrollView.post(new Runnable() {
-                        public void run() {
-                            scrollView.scrollTo(0, 600);
-                        }
-                    });
-                }
-            });
-        }
-        else if(id == R.id.categoryHomeFragmentArtropodes3) {
-            scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    scrollView.post(new Runnable() {
-                        public void run() {
-                            scrollView.scrollTo(0, 1400);
-                        }
-                    });
-                }
-            });
-        }
-        webView.loadUrl("file:///android_asset/index.html");
-
-        // final DotIndicator dotIndicator = findViewById(R.id.dotIndicatorSubject);
-
-        ViewPager viewPager = findViewById(R.id.viewPagerSubject);
+        final ViewPager viewPager = findViewById(R.id.viewPagerSubject);
         viewPager.setAdapter(new ImageSubjectFragmentPagerAdapter(getSupportFragmentManager()));
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -81,7 +46,7 @@ public class SubjectActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                //dotIndicator.setSelectedItem(position, true);
+                dotIndicator.setSelectedItem(position, true);
             }
 
             @Override
@@ -89,5 +54,70 @@ public class SubjectActivity extends AppCompatActivity {
 
             }
         });
+
+
+        webView = findViewById(R.id.webViewSubject);
+
+        String index = getIntent().getStringExtra("index");
+        int id = getIntent().getIntExtra("id", 1);
+
+        if (id == R.id.categoryHomeFragmentArtropodes1) {
+            webView.findAllAsync("1.1. Mosquitos");
+            webView.findNext(true);
+        }
+        else if(id == R.id.categoryHomeFragmentArtropodes2) {
+            webView.findAllAsync("1.2. Besouros");
+            webView.findNext(true);
+        }
+        else if(id == R.id.categoryHomeFragmentArtropodes3) {
+            webView.findAllAsync("1.3. Moscas");
+            webView.findNext(true);
+        }
+        webView.loadUrl("file:///android_asset/".concat(index));
+
+        webView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(View view, int i, int i1, int i2, int i3) {
+                viewPager.scrollTo(0, view.getScrollY());
+            }
+        });
+
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.home, menu);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                if(s != null && !s.isEmpty()) {
+                    webView.findAllAsync(s);
+                    webView.findNext(true);
+                }
+                else {
+                    return false;
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
+            }
+        });
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }
