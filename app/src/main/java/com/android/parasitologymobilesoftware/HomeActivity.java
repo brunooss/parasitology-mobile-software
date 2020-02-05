@@ -4,13 +4,21 @@ import android.app.DatePickerDialog;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.icu.util.BuddhistCalendar;
 import android.os.Bundle;
 import android.view.*;
 import android.webkit.WebView;
 import android.widget.*;
+
+import androidx.annotation.NonNull;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -18,6 +26,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.Calendar;
 
@@ -27,7 +39,11 @@ public class HomeActivity extends AppCompatActivity
     private int progressStatus = 0;
     private ProgressBar progressBar;
     private Button buttonAlert;
+    private String schoolGrade;
     boolean alert = true;
+
+    private FirebaseAuth firebaseAuth;
+    private FirebaseFirestore dataBase;
 
     public String searchSubcategories[][] = {
             {"Protozoários", "Amebíase", "Giardíase", "Doença de Chagas", "Malária", "Toxoplasmose", "Leishmanioses"},
@@ -39,6 +55,9 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        dataBase = FirebaseFirestore.getInstance();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");

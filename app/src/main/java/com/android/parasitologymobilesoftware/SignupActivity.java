@@ -199,6 +199,14 @@ public class SignupActivity extends AppCompatActivity {
                                             }
                                         });
 
+                                dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
+                                        .set(users)
+                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                            @Override
+                                            public void onSuccess(Void aVoid) {
+                                            }
+                                        });
+
                                 SharedPreferences.Editor editor = preferences.edit();
                                 editor.putString("first name", getFirstName(editTextName.getText().toString()));
                                 editor.putString("complete name", editTextName.getText().toString());
