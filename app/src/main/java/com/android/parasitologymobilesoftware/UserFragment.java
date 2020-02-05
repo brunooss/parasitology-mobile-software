@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
 import com.google.firebase.firestore.CollectionReference;
@@ -37,9 +38,11 @@ import java.util.Map;
 public class UserFragment extends Fragment {
 
     private FirebaseAuth firebaseAuth;
-    private FirebaseFirestore database;
+    private FirebaseFirestore dataBase;
 
+    private Bundle data;
     private String schoolGrade;
+    private String fdp;
     private String email;
     private String completeName;
 
@@ -57,8 +60,9 @@ public class UserFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        dataBase = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
-        database = FirebaseFirestore.getInstance();
+
 
         if (getArguments() != null) { }
 
@@ -70,22 +74,22 @@ public class UserFragment extends Fragment {
         dialogTitle = dialogView.findViewById(R.id.textViewDialogTitle);
         dialogChange = dialogView.findViewById(R.id.editTextDialogChange);
         dialogChange2 = dialogView.findViewById(R.id.editTextDialogChange2);
+
+
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_user, container, false);
+
+        email = firebaseAuth.getCurrentUser().getEmail();
+        completeName = firebaseAuth.getCurrentUser().getDisplayName();
+
 
         preferences = this.getActivity().getSharedPreferences("prefs", 0);
         final SharedPreferences.Editor editor = preferences.edit();
-
-        schoolGrade = preferences.getString("school grade", "");
-        email = preferences.getString("email", "");
-        completeName = preferences.getString("complete name", "");
-
-
-
-        View rootView = inflater.inflate(R.layout.fragment_user, container, false);
 
         // Username field.
         ImageView imageViewIconName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.imageViewUserInformationIcon);
@@ -101,7 +105,7 @@ public class UserFragment extends Fragment {
         textViewTitleEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.textViewUserInformationTitle);
         textViewTitleEmail.setTextSize(16);
         textViewTitleEmail.setText(email);   // it is a better option we use shared preferences to set the textView, because of the Internet connection issue.
-        final TextView textViewChangeEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.textViewUserInformationChange);
+        TextView textViewChangeEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.textViewUserInformationChange);
         textViewChangeEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {    //TODO: solve bug at the second time the user opens this click listener - an option is taking this method out of the onCreateView
@@ -110,7 +114,6 @@ public class UserFragment extends Fragment {
                 builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
                     }
                 }).setPositiveButton("Alterar", new DialogInterface.OnClickListener() {
                     @Override
@@ -129,9 +132,10 @@ public class UserFragment extends Fragment {
                             email = dialogChange.getText().toString();
                             editor.putString("email", email);
                             editor.apply();
-                            textViewTitleEmail.setText(email);
+                            textViewTitleEmail.setText(firebaseAuth.getCurrentUser().getEmail());
                         }
-                        else Toast.makeText(getContext(), "Insira um email válido.", Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(getContext(), "Insira um email válido.", Toast.LENGTH_SHORT).show();
                     }
                 });
                 AlertDialog alertDialog = builder.create();
@@ -157,8 +161,23 @@ public class UserFragment extends Fragment {
         // School Year field.
         ImageView imageViewIconSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.imageViewUserInformationIcon);
         imageViewIconSchoolYear.setImageResource(R.drawable.icons8_graduation_hat_100);
-        TextView textViewTitleSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.textViewUserInformationTitle);
-        textViewTitleSchoolYear.setText(schoolGrade);
+        final TextView textViewTitleSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.textViewUserInformationTitle);
+
+        DocumentReference docRef = dataBase.collection("generalUserInfo").document(firebaseAuth.getCurrentUser().getEmail());
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.exists()) {
+                    schoolGrade = documentSnapshot.getString("school grade");
+                    textViewTitleSchoolYear.setText(schoolGrade);
+                }
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                    }
+                });
         TextView textViewChangeSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.textViewUserInformationChange);
         textViewChangeSchoolYear.setTextColor(Color.TRANSPARENT);
 
@@ -166,5 +185,7 @@ public class UserFragment extends Fragment {
         // Inflate the layout for this fragment
         return rootView;
     }
+
+
 
 }
