@@ -124,15 +124,16 @@
                         tools:layout_editor_absoluteX="0dp" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayoutStudentFirst"
+                        android:id="@+id/constraintLayoutStudentFirstFrag"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="32dp"
                         android:layout_marginEnd="16dp"
-                        android:background="@drawable/custom_buttom_yellow_background"
+                        android:background="@drawable/custom_buttom_blue_background"
                         android:clickable="true"
                         android:elevation="2dp"
+                        android:onClick="onButtonStudentFirstFrag"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/view">
@@ -141,12 +142,12 @@
                             android:id="@+id/textViewStudentCardFirst"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:fontFamily="@font/futura_medium_bt"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/futura_light_bt"
                             android:text="1• TEORIA"
                             android:textAlignment="center"
                             android:textColor="@color/colorTextPrimary"
-                            android:textSize="20sp"
+                            android:textSize="17sp"
                             app:layout_constraintStart_toStartOf="@+id/textViewStudentCardSecond"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -156,11 +157,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="16dp"
-                            android:fontFamily="@font/futura_medium_bt"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/futura_light_bt"
                             android:text="2• EXERCÍCIOS"
                             android:textColor="@color/colorTextPrimary"
-                            android:textSize="20sp"
+                            android:textSize="17sp"
                             app:layout_constraintEnd_toStartOf="@+id/imageViewStudentCardFirst"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardFirst" />
@@ -171,20 +172,22 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/futura_medium_bt"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/futura_light_bt"
                             android:text="3• REVISÃO"
                             android:textColor="@color/colorTextPrimary"
-                            android:textSize="20sp"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textViewStudentCardSecond" />
 
                         <ImageView
                             android:id="@+id/imageViewStudentCardFirst"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="102dp"
+                            android:layout_height="76dp"
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -193,28 +196,31 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayoutStudentSecond"
+                        android:id="@+id/constraintLayoutStudentSecondFrag"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:background="@drawable/custom_buttom_yellow_background"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:background="@drawable/custom_buttom_blue_background"
                         android:clickable="true"
                         android:elevation="2dp"
-                        app:layout_constraintEnd_toEndOf="@+id/constraintLayoutStudentFirst"
-                        app:layout_constraintStart_toStartOf="@+id/constraintLayoutStudentFirst"
-                        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStudentFirst">
+                        android:onClick="onButtonStudentSecondFrag"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayoutStudentFirstFrag"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayoutStudentFirstFrag"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStudentFirstFrag">
 
                         <TextView
                             android:id="@+id/textViewStudentCardFirst2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="16dp"
-                            android:fontFamily="@font/futura_medium_bt"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/futura_light_bt"
                             android:text="1• TEORIA E EXERCÍCIOS SIMULTÂNEOS"
                             android:textAlignment="textStart"
                             android:textColor="@color/colorTextPrimary"
-                            android:textSize="20sp"
+                            android:textSize="17sp"
                             app:layout_constraintEnd_toStartOf="@+id/imageViewStudentCardFirst2"
                             app:layout_constraintStart_toStartOf="@+id/textViewStudentCardSecond2"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -227,10 +233,10 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="8dp"
-                            android:fontFamily="@font/futura_medium_bt"
+                            android:fontFamily="@font/futura_light_bt"
                             android:text="2• REVISÃO"
                             android:textColor="@color/colorTextPrimary"
-                            android:textSize="20sp"
+                            android:textSize="17sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/imageViewStudentCardFirst2"
                             app:layout_constraintHorizontal_bias="0.0"
@@ -239,39 +245,14 @@
 
                         <ImageView
                             android:id="@+id/imageViewStudentCardFirst2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
+                            android:layout_width="102dp"
+                            android:layout_height="76dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="16dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.0"
                             app:srcCompat="@drawable/icons8_inovation100" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="120dp"
-                        android:layout_marginTop="24dp"
-                        android:layout_marginEnd="120dp"
-                        android:layout_marginBottom="16dp"
-                        android:background="@drawable/custom_buttom_blue_background"
-
-                        android:elevation="10dp"
-                        android:fontFamily="@font/futura_light_bt"
-                        android:onClick="onButtonTest"
-                        android:text="Confirmar"
-                        android:textAllCaps="false"
-                        android:textColor="@color/colorTextPrimary"
-                        android:textSize="18sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStudentSecond" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

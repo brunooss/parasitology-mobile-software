@@ -56,8 +56,10 @@ public class StudentPreferenceActivity extends AppCompatActivity {
 
     public void onButtonStudentFirst(View view){
         if (studentPreference == 0 || studentPreference == 2) {
-            studentFirstPref.setBackground(getDrawable(R.drawable.custom_button_yellow_background_pressed));
-            studentSecondPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
+            //studentFirstPref.setBackground(getDrawable(R.drawable.custom_button_yellow_background_pressed));
+            studentFirstPref.setElevation(30);
+            //studentSecondPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
+            studentSecondPref.setElevation(1);
             studentPreference = 1;
         }
         else {  // The student preference is already this one (1)
@@ -68,12 +70,15 @@ public class StudentPreferenceActivity extends AppCompatActivity {
 
     public void onButtonStudentSecond(View view){
         if (studentPreference == 0 || studentPreference == 1) {
-            studentFirstPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
-            studentSecondPref.setBackground(getDrawable(R.drawable.custom_button_yellow_background_pressed));
+            //studentFirstPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
+            studentFirstPref.setElevation(1);
+            //studentSecondPref.setBackground(getDrawable(R.drawable.custom_button_yellow_background_pressed));
+            studentSecondPref.setElevation(30);
             studentPreference = 2;
         }
         else {  // The student preference is already this one (2)
-            studentSecondPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
+            //studentSecondPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
+            studentSecondPref.setElevation(1);
             studentPreference = 0;
         }
     }

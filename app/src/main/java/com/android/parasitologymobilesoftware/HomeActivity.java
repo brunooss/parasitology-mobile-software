@@ -11,6 +11,7 @@ import android.webkit.WebView;
 import android.widget.*;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -44,6 +45,9 @@ public class HomeActivity extends AppCompatActivity
 
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore dataBase;
+
+    private ConstraintLayout constraintLayoutStudentFirst;
+    private ConstraintLayout constraintLayoutStudentSecond;
 
     public String searchSubcategories[][] = {
             {"Protozoários", "Amebíase", "Giardíase", "Doença de Chagas", "Malária", "Toxoplasmose", "Leishmanioses"},
@@ -263,6 +267,5 @@ public class HomeActivity extends AppCompatActivity
             bundle.putString("index", "helmintos.html");
         intent.putExtras(bundle);
         startActivity(intent);
-
     }
 }
