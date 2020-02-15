@@ -46,11 +46,6 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        Toolbar myToolbar = findViewById(R.id.toolbarSignUp);
-        myToolbar.setTitle("");
-        setSupportActionBar(myToolbar);
-
-
         preferences = getSharedPreferences("prefs", 0);  // 0 = MODE_PRIVATE
 
         firebaseAuth = FirebaseAuth.getInstance();
