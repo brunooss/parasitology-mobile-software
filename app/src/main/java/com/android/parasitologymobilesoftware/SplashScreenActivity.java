@@ -33,7 +33,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         /* Initialize Firebase Auth */
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseUser = mFirebaseAuth.getCurrentUser();
-
         dataBase = FirebaseFirestore.getInstance();
 
         handler.postDelayed(new Runnable() {
