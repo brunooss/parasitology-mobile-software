@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.*;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -44,6 +45,11 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
+        Toolbar myToolbar = findViewById(R.id.toolbarSignUp);
+        myToolbar.setTitle("");
+        setSupportActionBar(myToolbar);
+
 
         preferences = getSharedPreferences("prefs", 0);  // 0 = MODE_PRIVATE
 
@@ -191,6 +197,9 @@ public class SignupActivity extends AppCompatActivity {
                                 users.put("school grade", spinner.getSelectedItem().toString());
                                 users.put("email", editTextEmail.getText().toString());
 
+                                Map<String, Object> auth = new HashMap<>();
+                                auth.put("preferenceState", false);
+
                                 dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
                                         .set(users)
                                         .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -200,12 +209,10 @@ public class SignupActivity extends AppCompatActivity {
                                         });
 
                                 dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
-                                        .set(users)
-                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void aVoid) {
-                                            }
-                                        });
+                                        .set(users);
+                                dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
+                                        .set(auth);
+
 
                                 SharedPreferences.Editor editor = preferences.edit();
                                 editor.putString("first name", getFirstName(editTextName.getText().toString()));

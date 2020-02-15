@@ -16,7 +16,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="892dp"
+                android:layout_height="801dp"
                 android:background="@color/colorBackground">
 
                 <Button
@@ -326,6 +326,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
+                        android:id="@+id/buttonReview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="120dp"
@@ -336,7 +337,7 @@
                         android:background="@drawable/custom_buttom_blue_background"
                         android:elevation="10dp"
                         android:fontFamily="@font/futura_light_bt"
-                        android:onClick="onButtonTest"
+                        android:onClick="onButtonReview"
                         android:text="Iniciar"
                         android:textAllCaps="false"
                         android:textColor="@color/colorTextPrimary"

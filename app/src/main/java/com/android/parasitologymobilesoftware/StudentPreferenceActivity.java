@@ -56,28 +56,23 @@ public class StudentPreferenceActivity extends AppCompatActivity {
 
     public void onButtonStudentFirst(View view){
         if (studentPreference == 0 || studentPreference == 2) {
-            //studentFirstPref.setBackground(getDrawable(R.drawable.custom_button_yellow_background_pressed));
             studentFirstPref.setElevation(30);
-            //studentSecondPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
             studentSecondPref.setElevation(1);
             studentPreference = 1;
         }
         else {  // The student preference is already this one (1)
-            studentFirstPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
+            studentFirstPref.setElevation(1);
             studentPreference = 0;
         }
     }
 
     public void onButtonStudentSecond(View view){
         if (studentPreference == 0 || studentPreference == 1) {
-            //studentFirstPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
             studentFirstPref.setElevation(1);
-            //studentSecondPref.setBackground(getDrawable(R.drawable.custom_button_yellow_background_pressed));
             studentSecondPref.setElevation(30);
             studentPreference = 2;
         }
         else {  // The student preference is already this one (2)
-            //studentSecondPref.setBackground(getDrawable(R.drawable.custom_buttom_yellow_background));
             studentSecondPref.setElevation(1);
             studentPreference = 0;
         }
@@ -87,34 +82,51 @@ public class StudentPreferenceActivity extends AppCompatActivity {
         if (studentPreference != 0) {
             progressBar.setVisibility(View.VISIBLE);
 
-            if (studentPreference == 1) studentPref = "tradicional";
-            else studentPref = "modern";
-
-            Map<String, Object> studentPrefInt = new HashMap<>();
-            studentPrefInt.put("student preference", studentPreference);
-
-            dataBase.collection("generalUserInfo").document(email)
-                    .set(studentPrefInt, SetOptions.merge());
-
             DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);       // Getting the school grade from the data base
             docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
-                    schoolGrade = documentSnapshot.getString("school grade");
+                    setSchoolGrade(documentSnapshot.getString("school grade"));
+
+
+                    Map<String, Object> progressStatus = new HashMap<>();
+                    progressStatus.put("progress status", 0);
+                    dataBase.collection("generalUserInfo").document(email)
+                            .set(progressStatus, SetOptions.merge());
+                    dataBase.collection(schoolGrade).document(completeName)
+                            .set(progressStatus, SetOptions.merge());
+
+                    if (studentPreference == 1) studentPref = "tradicional";
+                    else studentPref = "modern";
+
+                    Map<String, Object> studentPrefInt = new HashMap<>();
+                    studentPrefInt.put("student preference", studentPreference);
+
+                    Map<String, Object> auth = new HashMap<>();
+                    auth.put("preferenceState", true);
+
+                    dataBase.collection("generalUserInfo").document(email)
+                            .set(auth, SetOptions.merge());
+
+                    dataBase.collection("generalUserInfo").document(email)
+                            .set(studentPrefInt, SetOptions.merge());
 
                     Map<String, Object> studentPrefString = new HashMap<>();
                     studentPrefString.put("student preference", studentPref);
 
                     dataBase.collection(schoolGrade).document(completeName)
                             .set(studentPrefString, SetOptions.merge());
+
+                    Intent intent = new Intent(getBaseContext(), HomeActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
             });
-
-            Intent intent = new Intent(getBaseContext(), HomeActivity.class);
-            startActivity(intent);
-            finish();
         }
     }
 
+    public void setSchoolGrade(String schoolGrade){
+        this.schoolGrade = schoolGrade;
+    }
 }
 
