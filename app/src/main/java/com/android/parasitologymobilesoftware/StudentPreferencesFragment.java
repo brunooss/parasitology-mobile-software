@@ -29,6 +29,9 @@ public class StudentPreferencesFragment extends Fragment {
     private FirebaseFirestore dataBase;
     private FirebaseAuth firebaseAuth;
 
+    private int progressStatus;
+    private ProgressBar progressBar;
+
     private int studentPreference;
     private int studentPreferenceDataBase;
     private String studentPref;
@@ -38,6 +41,8 @@ public class StudentPreferencesFragment extends Fragment {
 
     private ConstraintLayout constraintLayoutStudentFirst;
     private ConstraintLayout constraintLayoutStudentSecond;
+
+    private Button buttonReview;
 
     private String schoolGrade;
 
@@ -60,6 +65,8 @@ public class StudentPreferencesFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_student_preferences, container, false);
 
+        buttonReview = rootView.findViewById(R.id.buttonReview);
+        progressBar = rootView.findViewById(R.id.progressApp);
         constraintLayoutStudentFirst = rootView.findViewById(R.id.constraintLayoutStudentFirstFrag);
         constraintLayoutStudentSecond = rootView.findViewById(R.id.constraintLayoutStudentSecondFrag);
 
@@ -67,9 +74,13 @@ public class StudentPreferencesFragment extends Fragment {
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
+                setStudentPreference(documentSnapshot.getLong("student preference").intValue());    // Student's preference
                 studentPreference = documentSnapshot.getLong("student preference").intValue();
-                setStudentPreference(documentSnapshot.getLong("student preference").intValue());
-                setSchoolGrade(documentSnapshot.get("school grade").toString());
+
+                setProgressStatus(documentSnapshot.getLong("progress status").intValue());        // Progress
+                progressBar.setProgress(progressStatus, true);
+
+                setSchoolGrade(documentSnapshot.get("school grade").toString());                     // School Grade
                 if (studentPreference == 1) {
                     constraintLayoutStudentFirst.setElevation(30);
                     constraintLayoutStudentSecond.setElevation(1);
@@ -130,7 +141,6 @@ public class StudentPreferencesFragment extends Fragment {
                 }
             }
         });
-
         // Inflate the layout for this fragment
         return rootView;
     }
@@ -139,7 +149,12 @@ public class StudentPreferencesFragment extends Fragment {
         this.schoolGrade = schoolGrade;
         //Toast.makeText(getActivity(), schoolGrade, Toast.LENGTH_SHORT).show();
     }
+
     public void setStudentPreference(int studentPreference){
         this.studentPreferenceDataBase = studentPreference;
+    }
+
+    public void setProgressStatus(int progressStatus){
+        this.progressStatus = progressStatus;
     }
 }

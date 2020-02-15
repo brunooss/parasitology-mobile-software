@@ -218,17 +218,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/buttonSignUp"
         app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
         app:layout_constraintTop_toTopOf="@+id/buttonSignUp"/>
-    <ImageView
-        android:id="@+id/imageViewWindowClose"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
 
-        android:clickable="true"
-        android:onClick="onButtonCloseWindow"
-        android:src="@drawable/close_window"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -33,18 +33,23 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.auth.User;
 
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private int progressStatus = 0;
+    private int progressStatus;
     private ProgressBar progressBar;
     private Button buttonAlert;
-    private String schoolGrade;
     boolean alert = true;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore dataBase;
+
+    private String email;
+    private String schoolGrade;
+    private String completeName;
 
     private ConstraintLayout constraintLayoutStudentFirst;
     private ConstraintLayout constraintLayoutStudentSecond;
@@ -62,6 +67,17 @@ public class HomeActivity extends AppCompatActivity
 
         firebaseAuth = FirebaseAuth.getInstance();
         dataBase = FirebaseFirestore.getInstance();
+
+        email = firebaseAuth.getCurrentUser().getEmail();
+        completeName = firebaseAuth.getCurrentUser().getDisplayName();
+
+        DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                setSchoolGrade(documentSnapshot.get("school grade").toString());
+            }
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
@@ -242,19 +258,6 @@ public class HomeActivity extends AppCompatActivity
         datePickerDialog.show();
     }
 
-    public void onButtonTest(View view){
-        progressBar = findViewById(R.id.progressApp);
-        if (progressBar.getProgress() == 100)
-            settingProgress(0);
-        else
-            settingProgress(100);
-    }
-
-    public void settingProgress(int progressToGo){                      // Call this function to change the bar progress, passing an int variable that goes from 0 to 100
-        progressBar = findViewById(R.id.progressApp);
-        progressBar.setProgress(progressToGo, true);
-    }
-
     public void onCategoryButtonClick(View view) {
         Intent intent = new Intent(this, SubjectActivity.class);
         Bundle bundle = new Bundle();
@@ -267,5 +270,43 @@ public class HomeActivity extends AppCompatActivity
             bundle.putString("index", "helmintos.html");
         intent.putExtras(bundle);
         startActivity(intent);
+    }
+
+    public void settingProgress(int progressToGo){                      // Call this function to change the progress bar, passing an int variable that goes from 0 to 100
+        DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                setProgressStatus(documentSnapshot.getLong("progress status").intValue());
+            }
+        });
+        progressStatus += progressToGo;         // Old Progress (progressStatus) + New Progress (progressToGo) = progressStatus
+        if (progressStatus <= 100) {
+            progressBar = findViewById(R.id.progressApp);
+            progressBar.setProgress(progressStatus, true);
+
+            /* Updating the database with */
+            Map<String, Object> updateProgress = new HashMap<>();
+            updateProgress.put("progress status", progressStatus);
+
+            /* Updating the progress status in the both collections's kind */
+            dataBase.collection("generalUserInfo").document(email)
+                    .update(updateProgress);
+            dataBase.collection(schoolGrade).document(completeName)
+                    .update(updateProgress);
+        }
+    }
+
+    public void onButtonReview(View view){
+        Toast.makeText(this, "estranho", Toast.LENGTH_SHORT).show();
+        settingProgress(10);
+    }
+
+    public void setProgressStatus(int progressStatus){
+        this.progressStatus = progressStatus;
+    }
+
+    public void setSchoolGrade(String schoolGrade){
+        this.schoolGrade = schoolGrade;
     }
 }

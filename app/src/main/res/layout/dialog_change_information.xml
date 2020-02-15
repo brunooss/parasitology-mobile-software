@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="16dp"
         android:layout_marginTop="16dp" android:fontFamily="@font/futura_heavy"
-        android:text="Aterar Nome" android:textColor="@color/colorTextPrimary"
+        android:text="Alterar Email" android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <EditText
@@ -21,7 +21,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp" android:backgroundTint="@color/colorWhite" android:ems="10"
-        android:fontFamily="@font/futura_light_bt" android:hint="Novo endereço de email"
+        android:fontFamily="@font/futura_light_bt" android:hint="Novo endereço de e-mail"
         android:inputType="textPersonName"
         android:textColor="@color/colorTextPrimary" app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textViewDialogTitle"/>
@@ -33,7 +33,7 @@
         android:layout_marginTop="8dp" android:layout_marginEnd="16dp" android:backgroundTint="@color/colorWhite"
         android:ems="10" android:fontFamily="@font/futura_light_bt"
         android:hint="Senha"
-        android:inputType="textPersonName" android:textColor="@color/colorTextPrimary"
+        android:inputType="textPassword" android:textColor="@color/colorTextPrimary"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/editTextDialogChange"/>
     <ImageView
