@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.icu.util.BuddhistCalendar;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.*;
 import android.webkit.WebView;
 import android.widget.*;
@@ -195,18 +196,20 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_about) {
+            // Open the AboutActivity //@Todo
+        } else if (id == R.id.nav_feedback) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_out) {
+            Toast.makeText(this, "Aguarde, saindo de sua conta.", Toast.LENGTH_SHORT).show();
+            FirebaseAuth.getInstance().signOut();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    finish();
+                    System.exit(0);
+                }
+            }, 2000);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

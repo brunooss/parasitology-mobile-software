@@ -28,7 +28,7 @@
         <activity android:name=".SigninActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SignupActivity" android:screenOrientation="portrait" />
+        <activity android:name=".SignupActivity" android:screenOrientation="portrait" android:parentActivityName=".SigninActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppTheme.SplashScreen"
@@ -44,7 +44,7 @@
         <activity
             android:name=".RecoverPasswordActivity"
             android:largeHeap="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" android:parentActivityName=".SigninActivity"  />
     </application>
 
 </manifest>

@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -53,6 +54,14 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_recoverpassword);
+
+
+        final Toolbar toolbar = findViewById(R.id.toolbarRecoverPassword);
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close_close_24dp);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
         /* Instantiating components */
@@ -109,9 +118,5 @@ public class RecoverPasswordActivity extends AppCompatActivity {
             textViewErrorButton.setText("E-mail inválido");
             textViewErrorButton.setTextColor(getResources().getColor(R.color.colorRedError, getTheme()));
         }
-    }
-
-    public void onButtonCloseWindow(View view){
-        finish();                                             // Easier way to go back to previous activity.
     }
 }
