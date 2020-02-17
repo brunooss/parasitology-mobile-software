@@ -3,10 +3,7 @@ package com.android.parasitologymobilesoftware;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewTreeObserver;
+import android.view.*;
 import android.webkit.WebView;
 import android.widget.ScrollView;
 import android.widget.SearchView;
@@ -27,7 +24,7 @@ public class SubjectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_subject);
 
 
-        Toolbar toolbar = findViewById(R.id.toolbarSubject);
+        final Toolbar toolbar = findViewById(R.id.toolbarSubject);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -78,7 +75,12 @@ public class SubjectActivity extends AppCompatActivity {
         webView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
             @Override
             public void onScrollChange(View view, int i, int i1, int i2, int i3) {
-                viewPager.scrollTo(0, view.getScrollY());
+            }
+        });
+        webView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                return (motionEvent.getAction() == MotionEvent.ACTION_MOVE);
             }
         });
 
