@@ -103,10 +103,10 @@ public class StudentPreferenceActivity extends AppCompatActivity {
                     studentPrefInt.put("student preference", studentPreference);
 
                     Map<String, Object> auth = new HashMap<>();
-                    auth.put("preferenceState", true);
+                    auth.put("preference state", true);
 
                     dataBase.collection("generalUserInfo").document(email)
-                            .set(auth, SetOptions.merge());
+                            .update(auth);
 
                     dataBase.collection("generalUserInfo").document(email)
                             .set(studentPrefInt, SetOptions.merge());

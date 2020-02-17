@@ -1,10 +1,16 @@
 package com.android.parasitologymobilesoftware;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Handler;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,7 +28,6 @@ public class SplashScreenActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
     private FirebaseFirestore dataBase;
     private FirebaseUser mFirebaseUser;
-    private boolean test = false; // Test even with authentication
     private boolean studentPrefSetted = false;
 
     @Override
@@ -35,6 +40,16 @@ public class SplashScreenActivity extends AppCompatActivity {
         mFirebaseUser = mFirebaseAuth.getCurrentUser();
         dataBase = FirebaseFirestore.getInstance();
 
+        if (mFirebaseUser != null) {
+            DocumentReference docRef = dataBase.collection("generalUserInfo").document(mFirebaseUser.getEmail());
+            docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    setStudentPrefSetted(documentSnapshot.getBoolean("preference state"));
+                }
+            });
+        }
+
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -44,17 +59,10 @@ public class SplashScreenActivity extends AppCompatActivity {
                 if(mFirebaseUser == null){              // User is unauthenticated
                     startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
                 } else {                    // User is authenticated
-                    DocumentReference docRef = dataBase.collection("generalUserInfo").document(mFirebaseAuth.getCurrentUser().getEmail());
-                    docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                        @Override
-                        public void onSuccess(DocumentSnapshot documentSnapshot) {
-                            setStudentPrefSetted(documentSnapshot.getBoolean("preferenceState").booleanValue());
-                        }
-                    });
-                    if (studentPrefSetted == false){
+                    if (!studentPrefSetted){
                         startActivity(intentAuthenticatedWithoutPreference);
                     }
-                    else startActivity(intentAuthenticated);         // Send him to Home Activity
+                    else if (studentPrefSetted) startActivity(intentAuthenticated);         // Send him to Home Activity
                 }
                 finish();
             }

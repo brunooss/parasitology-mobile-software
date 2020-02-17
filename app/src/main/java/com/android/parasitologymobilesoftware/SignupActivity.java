@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
 import com.google.firebase.firestore.auth.User;
 
 import java.util.HashMap;
@@ -193,7 +194,7 @@ public class SignupActivity extends AppCompatActivity {
                                 users.put("email", editTextEmail.getText().toString());
 
                                 Map<String, Object> auth = new HashMap<>();
-                                auth.put("preferenceState", false);
+                                auth.put("preference state", false);
 
                                 dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
                                         .set(users)
@@ -206,7 +207,7 @@ public class SignupActivity extends AppCompatActivity {
                                 dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
                                         .set(users);
                                 dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
-                                        .set(auth);
+                                        .set(auth, SetOptions.merge());
 
 
                                 SharedPreferences.Editor editor = preferences.edit();

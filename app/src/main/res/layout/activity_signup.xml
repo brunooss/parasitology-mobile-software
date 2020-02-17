@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Insira uma senha com no mínimo 8 caracteres."
+        android:text="Insira uma senha com no mínimo 6 caracteres."
         android:textColor="@android:color/transparent" android:fontFamily="@font/futura_medium_bt"
         android:textSize="12sp" app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword"/>
