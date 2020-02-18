@@ -207,9 +207,11 @@ public class HomeActivity extends AppCompatActivity
                 @Override
                 public void run() {
                     finish();
+                    Intent intent = new Intent(getBaseContext(), SigninActivity.class);
+                    startActivity(intent);
                     System.exit(0);
                 }
-            }, 2000);
+            }, 1000);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -301,7 +303,6 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onButtonReview(View view){
-        Toast.makeText(this, "estranho", Toast.LENGTH_SHORT).show();
         settingProgress(10);
     }
 

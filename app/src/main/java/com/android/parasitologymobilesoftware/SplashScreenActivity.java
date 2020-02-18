@@ -52,7 +52,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
                 } else {                                        // User is authenticated
                     if (!studentPrefSetted) {
-                        Toast.makeText(getBaseContext(), mFirebaseUser.toString(), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getBaseContext(), mFirebaseUser.toString(), Toast.LENGTH_SHORT).show();
                         startActivity(intentAuthenticatedWithoutPreference);
                     }
                     else if (studentPrefSetted) startActivity(intentAuthenticated);         // Send him to Home Activity

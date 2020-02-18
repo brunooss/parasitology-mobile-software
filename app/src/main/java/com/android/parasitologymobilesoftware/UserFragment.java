@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -117,7 +118,7 @@ public class UserFragment extends Fragment {
 
         // Username field.
         ImageView imageViewIconName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.imageViewUserInformationIcon);
-        imageViewIconName.setImageResource(R.drawable.icons8_user_40);
+        imageViewIconName.setImageResource(R.drawable.icons8_user);
         final TextView textViewTitleName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.textViewUserInformationTitle);
         textViewTitleName.setText(completeName);
         TextView textViewChangeName = rootView.findViewById(R.id.includeFieldUserInformationName).findViewById(R.id.textViewUserInformationChange);
@@ -125,7 +126,7 @@ public class UserFragment extends Fragment {
 
         // Email field.
         ImageView imageViewIconEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.imageViewUserInformationIcon);
-        imageViewIconEmail.setImageResource(R.drawable.icons8_mail_40);
+        imageViewIconEmail.setImageResource(R.drawable.icons8_email);
         textViewTitleEmail = rootView.findViewById(R.id.includeFieldUserInformationEmail).findViewById(R.id.textViewUserInformationTitle);
         textViewTitleEmail.setTextSize(16);
         textViewTitleEmail.setText(email);   // it is a better option we use shared preferences to set the textView, because of the Internet connection issue.
@@ -199,7 +200,7 @@ public class UserFragment extends Fragment {
 
         // Password field.
         ImageView imageViewIconPassword = rootView.findViewById(R.id.includeFieldUserInformationPassword).findViewById(R.id.imageViewUserInformationIcon);
-        imageViewIconPassword.setImageResource(R.drawable.icons8_password_);
+        imageViewIconPassword.setImageResource(R.drawable.icons8_password);
         TextView textViewTitlePassword = rootView.findViewById(R.id.includeFieldUserInformationPassword).findViewById(R.id.textViewUserInformationTitle);
         StringBuilder length = new StringBuilder();
         for (int i = 0; i < 8; i++) length.append("*");
@@ -252,7 +253,7 @@ public class UserFragment extends Fragment {
 
         // School Year field.
         ImageView imageViewIconSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.imageViewUserInformationIcon);
-        imageViewIconSchoolYear.setImageResource(R.drawable.icons8_graduation_hat_100);
+        imageViewIconSchoolYear.setImageResource(R.drawable.icons8_schoolgrade);
         final TextView textViewTitleSchoolYear = rootView.findViewById(R.id.includeFieldUserInformationYear).findViewById(R.id.textViewUserInformationTitle);
 
         DocumentReference docRef = dataBase.collection("generalUserInfo").document(firebaseAuth.getCurrentUser().getEmail());
