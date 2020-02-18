@@ -1,24 +1,16 @@
 package com.android.parasitologymobilesoftware;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Handler;
-
-import androidx.annotation.NonNull;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import org.w3c.dom.Document;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -56,10 +48,11 @@ public class SplashScreenActivity extends AppCompatActivity {
                 Intent intentUnauthenticated =  new Intent(getBaseContext(), SigninActivity.class);
                 Intent intentAuthenticated = new Intent(getBaseContext(), HomeActivity.class);
                 Intent intentAuthenticatedWithoutPreference = new Intent(getBaseContext(), StudentPreferenceActivity.class);
-                if(mFirebaseUser == null){              // User is unauthenticated
+                if(mFirebaseUser == null || mFirebaseUser.isAnonymous()){                      // User is unauthenticated
                     startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
-                } else {                    // User is authenticated
-                    if (!studentPrefSetted){
+                } else {                                        // User is authenticated
+                    if (!studentPrefSetted) {
+                        Toast.makeText(getBaseContext(), mFirebaseUser.toString(), Toast.LENGTH_SHORT).show();
                         startActivity(intentAuthenticatedWithoutPreference);
                     }
                     else if (studentPrefSetted) startActivity(intentAuthenticated);         // Send him to Home Activity
