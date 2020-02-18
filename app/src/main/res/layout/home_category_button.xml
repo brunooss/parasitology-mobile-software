@@ -5,17 +5,21 @@
                                                    android:id="@+id/constraintLayout4"
                                                    android:layout_width="wrap_content"
                                                    android:layout_height="wrap_content"
+    android:elevation="4dp"
+                                                   android:background="@drawable/category_button_background_filled"
                                                    android:onClick="onCategoryButtonClick">
-    <ImageView
-        android:id="@+id/imageView3" android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewCategoryBackgroundIcon"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewCategoryBackgroundIcon"
-        app:layout_constraintStart_toStartOf="@+id/imageViewCategoryBackgroundIcon"
-        app:layout_constraintTop_toTopOf="@+id/imageViewCategoryBackgroundIcon"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/category_button_background_filled"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3" android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:elevation="4dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageViewCategoryBackgroundIcon"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/imageViewCategoryBackgroundIcon"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imageViewCategoryBackgroundIcon"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imageViewCategoryBackgroundIcon"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        app:srcCompat="@drawable/category_button_background_filled"/>-->
+
     <ImageView
         android:id="@+id/imageViewCategoryBackgroundIcon"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
