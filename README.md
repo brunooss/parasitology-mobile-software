@@ -1,6 +1,6 @@
 # parasitology-mobile-software
 
-Este é o repositório do aplicativo **_Vermes & Márcia_**!
+Este é o repositório do aplicativo **_Parasite Combat_**!
 
 
 ### 1. Clones, Commits e Pull Requests
