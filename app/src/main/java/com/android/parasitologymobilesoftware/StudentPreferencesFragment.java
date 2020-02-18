@@ -109,7 +109,7 @@ public class StudentPreferencesFragment extends Fragment {
                     studentPreferenceString.put("student preference", "tradicional");
                     dataBase.collection(schoolGrade).document(completeName)
                             .update(studentPreferenceString);
-                    Toast.makeText(getActivity(), "metodologia alterada com sucesso: tradicional", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "metodologia alterada com sucesso: tradicional", Toast.LENGTH_SHORT).show();
 
                     constraintLayoutStudentFirst.setElevation(30);
                     constraintLayoutStudentSecond.setElevation(1);
@@ -134,7 +134,7 @@ public class StudentPreferencesFragment extends Fragment {
                     studentPreferenceString.put("student preference", "modern");
                     dataBase.collection(schoolGrade).document(completeName)
                             .update(studentPreferenceString);
-                    Toast.makeText(getActivity(), "metodologia alterada com sucesso: modern", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "metodologia alterada com sucesso: modern", Toast.LENGTH_SHORT).show();
 
                     constraintLayoutStudentSecond.setElevation(30);
                     constraintLayoutStudentFirst.setElevation(1);
