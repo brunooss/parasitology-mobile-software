@@ -72,21 +72,27 @@ public class IntroductionFragment extends Fragment {
                 imageViewIcon.setImageResource(R.drawable.icons8_happy_100);
                 //TODO Change setText to string resource.
                 textViewTitle.setText(hello.concat(firstName));
+                textViewDescription.setText("Seja muito bem-vindo ao Parasite Combat, é um imenso prazer tê-lo conosco!");
                 break;
             case 2:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionSecond, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_books_100);
                 textViewTitle.setText(R.string.app_introduction_title_second);
+                textViewDescription.setText("Nossa metodologia de ensino aumenta a autonomia dos estudantes e promove um maior interesse pelo conteúdo, inovando o processo ensino-aprendizagem.");
+                //textViewDescription.setText("Inovação do processo ensino-aprendizagem, aumentando a autonomia dos estudantes e o interesse pelo conteúdo.");
                 break;
             case 3:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionThird, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_microscope_100);
                 textViewTitle.setText(R.string.app_introduction_title_third);
+                textViewDescription.setText("A pesquisa científica prepara cidadãos mais conscientes, críticos e participativos, que contribuirão ativamente para a solução de problemas da sociedade.");
+                //textViewDescription.setText("");
                 break;
             case 4:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionFourth, getResources().newTheme()));
                 imageViewIcon.setImageResource(R.drawable.icons8_rocket_100);
                 textViewTitle.setText(R.string.app_introduction_title_fourth);
+                textViewDescription.setText("Esperamos que tenha uma experiência inovadora no estudo de Parasitologia.");
                 textViewSkip.setVisibility(View.INVISIBLE);
                 textViewStart.setVisibility(View.VISIBLE);
                 break;
