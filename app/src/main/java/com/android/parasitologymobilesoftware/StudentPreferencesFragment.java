@@ -82,11 +82,11 @@ public class StudentPreferencesFragment extends Fragment {
 
                 setSchoolGrade(documentSnapshot.get("school grade").toString());                     // School Grade
                 if (studentPreference == 1) {
-                    constraintLayoutStudentFirst.setElevation(30);
+                    constraintLayoutStudentFirst.setElevation(20);
                     constraintLayoutStudentSecond.setElevation(1);
                 }
                 else if (studentPreference == 2) {
-                    constraintLayoutStudentSecond.setElevation(30);
+                    constraintLayoutStudentSecond.setElevation(20);
                     constraintLayoutStudentFirst.setElevation(1);
                 }
             }
@@ -111,7 +111,7 @@ public class StudentPreferencesFragment extends Fragment {
                             .update(studentPreferenceString);
                     //Toast.makeText(getActivity(), "metodologia alterada com sucesso: tradicional", Toast.LENGTH_SHORT).show();
 
-                    constraintLayoutStudentFirst.setElevation(30);
+                    constraintLayoutStudentFirst.setElevation(20);
                     constraintLayoutStudentSecond.setElevation(1);
                 }
             }
@@ -136,7 +136,7 @@ public class StudentPreferencesFragment extends Fragment {
                             .update(studentPreferenceString);
                     //Toast.makeText(getActivity(), "metodologia alterada com sucesso: modern", Toast.LENGTH_SHORT).show();
 
-                    constraintLayoutStudentSecond.setElevation(30);
+                    constraintLayoutStudentSecond.setElevation(20);
                     constraintLayoutStudentFirst.setElevation(1);
                 }
             }

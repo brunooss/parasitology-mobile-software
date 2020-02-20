@@ -207,8 +207,6 @@ public class HomeActivity extends AppCompatActivity
                 @Override
                 public void run() {
                     finish();
-                    Intent intent = new Intent(getBaseContext(), SigninActivity.class);
-                    startActivity(intent);
                     System.exit(0);
                 }
             }, 1000);
