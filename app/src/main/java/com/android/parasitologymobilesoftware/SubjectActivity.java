@@ -54,6 +54,9 @@ public class SubjectActivity extends AppCompatActivity {
 
 
         webView = findViewById(R.id.webViewSubject);
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.getSettings().setAppCacheEnabled(true);
+        webView.getSettings().setLoadsImagesAutomatically(true);
 
         String index = getIntent().getStringExtra("index");
         int id = getIntent().getIntExtra("id", 1);
