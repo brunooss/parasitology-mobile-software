@@ -206,6 +206,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_about) {
+            startActivity(new Intent(this, AboutActivity.class));
             // Open the AboutActivity //@Todo
         } else if (id == R.id.nav_feedback) {
             AlertDialog.Builder builder;
