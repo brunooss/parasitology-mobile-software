@@ -1,8 +1,10 @@
 package com.android.parasitologymobilesoftware;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.icu.util.BuddhistCalendar;
 import android.os.Bundle;
@@ -27,10 +29,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
 import com.google.firebase.firestore.auth.User;
 
 import java.util.Calendar;
@@ -54,6 +59,8 @@ public class HomeActivity extends AppCompatActivity
 
     private ConstraintLayout constraintLayoutStudentFirst;
     private ConstraintLayout constraintLayoutStudentSecond;
+
+    private View dialogView;
 
     public String searchSubcategories[][] = {
             {"Protozoários", "Amebíase", "Giardíase", "Doença de Chagas", "Malária", "Toxoplasmose", "Leishmanioses"},
@@ -107,6 +114,8 @@ public class HomeActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        dialogView = getLayoutInflater().inflate(R.layout.dialog_feedback, null);
     }
 
     @Override
@@ -199,7 +208,21 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_about) {
             // Open the AboutActivity //@Todo
         } else if (id == R.id.nav_feedback) {
+            AlertDialog.Builder builder;
+            builder = new AlertDialog.Builder(this);
+            builder.setView(dialogView);
+            builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                }
+            }).setPositiveButton("Enviar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
 
+                }
+            });
+            final AlertDialog alertDialogFeedback = builder.create();
+            alertDialogFeedback.show();
         } else if (id == R.id.nav_out) {
             Toast.makeText(this, "Aguarde, saindo de sua conta.", Toast.LENGTH_SHORT).show();
             FirebaseAuth.getInstance().signOut();
