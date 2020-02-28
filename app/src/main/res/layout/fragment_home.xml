@@ -13,6 +13,447 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorBackground">
+            
+    <!--    Chapter 1   -->
+            <include
+                android:id="@+id/categoryHomeFragmentIntroduction"
+                layout="@layout/home_category_button"
+                android:layout_width="91dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewCategoryIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="INTRODUÇÃO"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroduction"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroduction"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentIntroduction" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentIntroductionHistoria"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentIntroductionCientistas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentIntroductionCientistas" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryIntroductionHistoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="HISTÓRIA"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroductionHistoria"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroductionHistoria"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentIntroductionHistoria" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentIntroductionCientistas"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryIntroduction"
+                app:layout_constraintStart_toStartOf="@+id/textViewCategoryIntroduction"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryIntroduction" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryIntroductionCientistas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="CIENTISTAS"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroductionCientistas"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroductionCientistas"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentIntroductionCientistas" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentIntroductionAtualidades"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentIntroductionCientistas"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentIntroductionCientistas" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryIntroductionAtualidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="ATUALIDADES"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroductionAtualidades"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroductionAtualidades"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentIntroductionAtualidades" />
+            
+    <!--    Chapter 2   -->
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoarios"
+                layout="@layout/home_category_button"
+                android:layout_width="91dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryIntroductionAtualidades" />
+
+            <TextView
+                android:id="@+id/textViewCategoryProtozoarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="PROTOZOÁRIOS"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoariosAmebiase"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosGiardiase" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryProtozoariosAmebiase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="AMEBÍASE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosAmebiase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosAmebiase"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoariosAmebiase" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryProtozoarios"
+                app:layout_constraintStart_toStartOf="@+id/textViewCategoryProtozoarios"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryProtozoarios" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryProtozoariosGiardiase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="GIARDÍASE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoariosGiardiase" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoariosChagas"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosGiardiase" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryProtozoariosChagas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:gravity="center"
+                android:text="DOENÇA DE CHAGAS"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosChagas"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosChagas"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoariosChagas" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoariosMalaria"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosLeishmaniose" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryProtozoariosMalaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="MALÁRIA"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosMalaria"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosMalaria"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoariosMalaria" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoariosToxoplasmose"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosLeishmaniose" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryProtozoariosToxoplasmose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="TOXOPLASMOSE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosToxoplasmose"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosToxoplasmose"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoariosToxoplasmose" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentProtozoariosLeishmaniose"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentProtozoariosToxoplasmose"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryProtozoariosChagas" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryProtozoariosLeishmaniose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="LEISHMANIOSE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosLeishmaniose"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosLeishmaniose"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoariosLeishmaniose" />
+            
+    <!--    Chapter 3   -->        
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintos"
+                layout="@layout/home_category_button"
+                android:layout_width="91dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryProtozoariosToxoplasmose" />
+
+            <TextView
+                android:id="@+id/textViewCategoryHelmintos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="HELMINTOS"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintosEsquistossomose"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosTeniase" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryArtropodesEsquistossomose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="ESQUISTOSSOMOSE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosEsquistossomose"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosEsquistossomose"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosEsquistossomose" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintosTeniase"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryHelmintos"
+                app:layout_constraintStart_toStartOf="@+id/textViewCategoryHelmintos"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryHelmintos" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryHelmintosTeniase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="TENÍASE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosTeniase" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintosCisticercose"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosTeniase" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryHelmintosCisticercose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="CISTICERCOSE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosCisticercose"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosCisticercose"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosCisticercose" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintosAscaridiase"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryArtropodesEsquistossomose" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryHelmintosAscaridiase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="ASCARDISÍASE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosAscaridiase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosAscaridiase"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosAscaridiase" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintosEnterobiase"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosTeniase"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosTeniase" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryHelmintosEnterobiase"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="ENTEROBÍASE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosEnterobiase"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosEnterobiase"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosEnterobiase" />
+
+            <include
+                android:id="@+id/categoryHomeFragmentHelmintosHidatidose"
+                layout="@layout/home_category_button"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintosEnterobiase"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosCisticercose" />
+
+            <TextView
+                android:id="@+id/textViewSubcategoryHelmintosHidatidose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="HIDATIDOSE"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosHidatidose"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosHidatidose"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosHidatidose" />
 
             <include
                 android:id="@+id/categoryHomeFragmentArtropodes"
@@ -23,451 +464,12 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintos5" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosEnterobiase" />
 
+    <!--    Chapter 4   -->
             <TextView
                 android:id="@+id/textViewCategoryArtropodes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="HELMINTOS"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes1"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodes2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryArtropodes1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="ESQUISTOSSOMOSE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes1"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes1"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes1" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes2"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryArtropodes"
-                app:layout_constraintStart_toStartOf="@+id/textViewCategoryArtropodes"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodes" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryArtropodes2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="TENÍASE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes2" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes3"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodes2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryArtropodes3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="CISTICERCOSE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes3"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes3"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes3" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes4"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintHorizontal_bias="0.493"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryArtropodes1" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryArtropodes4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="ASCARDISÍASE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes4"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes4"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes4" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes5"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes2"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryArtropodes2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryArtropodes5"
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="ENTEROBÍASE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes5"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes5"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes5" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes6"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentArtropodes5"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryArtropodes3" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryArtropodes6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="HIDATIDOSE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes6"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes6"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes6" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentProtozoarios"
-                layout="@layout/home_category_button"
-                android:layout_width="91dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textViewCategoryProtozoarios"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="INTRODUÇÃO"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentProtozoarios1"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentProtozoarios2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoarios2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryProtozoarios1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="HISTÓRIA"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios1"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios1"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios1" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentProtozoarios2"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryProtozoarios"
-                app:layout_constraintStart_toStartOf="@+id/textViewCategoryProtozoarios"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryProtozoarios" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryProtozoarios2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="CIENTISTAS"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios2"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios2"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios2" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentProtozoarios3"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentProtozoarios2"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoarios2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryProtozoarios3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="ATUALIDADES"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios3"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios3"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios3" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos"
-                layout="@layout/home_category_button"
-                android:layout_width="91dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryProtozoarios3" />
-
-            <TextView
-                android:id="@+id/textViewCategoryHelmintos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="PROTOZOÁRIOS"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos1"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintos2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryHelmintos1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="AMEBÍASE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos1"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos1"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos1" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos2"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryHelmintos"
-                app:layout_constraintStart_toStartOf="@+id/textViewCategoryHelmintos"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryHelmintos" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryHelmintos2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="GIARDÍASE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos2" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos3"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintos2" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryHelmintos3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:gravity="center"
-                android:text="DOENÇA DE CHAGAS"
-                android:textAlignment="center"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos3"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos3"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos3" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos4"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintHorizontal_bias="0.493"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintos6" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryHelmintos4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="MALÁRIA"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos4"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos4"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos4" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos5"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos2"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintos6" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryHelmintos5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="TOXOPLASMOSE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos5"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos5"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos5" />
-
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintos6"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintos5"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintos3" />
-
-            <TextView
-                android:id="@+id/textViewSubcategoryHelmintos6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="LEISHMANIOSE"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos6"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos6"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos6" />
-
-            <!--            Chapter IV              -->
-            <include
-                android:id="@+id/categoryHomeFragmentChapterIV"
-                layout="@layout/home_category_button"
-                android:layout_width="91dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryArtropodes5" />
-
-
-            <TextView
-                android:id="@+id/textViewCategoryChapterIV_Artropodes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -475,22 +477,22 @@
                 android:text="ARTRÓPODES"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes" />
 
             <include
-                android:id="@+id/categoryHomeFragmentChapterIV_MOSQUITOS"
+                android:id="@+id/categoryHomeFragmentArtropodesMosquitos"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryChapterIV_Artropodes" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodes" />
 
             <TextView
-                android:id="@+id/textViewCategoryChapterIV_MOSQUITOS"
+                android:id="@+id/textViewCategoryArtropodesMosquitos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -498,22 +500,22 @@
                 android:text="MOSQUITOS"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesMosquitos"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesMosquitos"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesMosquitos" />
 
             <include
-                android:id="@+id/categoryHomeFragmentChapterIV_HEMIPTEROS"
+                android:id="@+id/categoryHomeFragmentArtropodesHemipteros"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentArtropodesMosquitos"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS" />
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodesMosquitos" />
 
             <TextView
-                android:id="@+id/textViewCategoryChapterIV_HEMIPTEROS"
+                android:id="@+id/textViewCategoryArtropodesHemipteros"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -521,12 +523,12 @@
                 android:text="HEMÍPTEROS"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV_HEMIPTEROS"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV_HEMIPTEROS"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV_HEMIPTEROS" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesHemipteros"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesHemipteros"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesHemipteros" />
 
             <include
-                android:id="@+id/categoryHomeFragmentChapterIV_MOSCAS"
+                android:id="@+id/categoryHomeFragmentArtropodesMoscas"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
@@ -534,11 +536,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentChapterIV_MOSQUITOS" />
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentArtropodesMosquitos"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodesMosquitos" />
 
             <TextView
-                android:id="@+id/textViewCategoryChapterIV_MOSCAS"
+                android:id="@+id/textViewCategoryArtropodesMoscas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -546,24 +548,24 @@
                 android:text="MOSCAS"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV_MOSCAS"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV_MOSCAS"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV_MOSCAS" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesMoscas"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesMoscas"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesMoscas" />
 
             <include
-                android:id="@+id/categoryHomeFragmentChapterIV_PIOLHOS"
+                android:id="@+id/categoryHomeFragmentArtropodesPiolhos"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
 
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentChapterIV_PULGAS"
+                app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentArtropodesPulgas"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentChapterIV_PULGAS" />
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodesPulgas" />
 
             <TextView
-                android:id="@+id/textViewCategoryChapterIV_PIOLHOS"
+                android:id="@+id/textViewCategoryArtropodesPiolhos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -571,12 +573,12 @@
                 android:text="PIOLHOS"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV_PIOLHOS"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV_PIOLHOS"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV_PIOLHOS" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesPiolhos"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesPiolhos"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesPiolhos" />
 
             <include
-                android:id="@+id/categoryHomeFragmentChapterIV_PULGAS"
+                android:id="@+id/categoryHomeFragmentArtropodesPulgas"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
@@ -585,10 +587,10 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryChapterIV_MOSQUITOS" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodesMosquitos" />
 
             <TextView
-                android:id="@+id/textViewCategoryChapterIV_PULGAS"
+                android:id="@+id/textViewCategoryArtropodesPulgas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -596,12 +598,12 @@
                 android:text="PULGAS"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV_PULGAS"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV_PULGAS"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV_PULGAS" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesPulgas"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesPulgas"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesPulgas" />
 
             <include
-                android:id="@+id/categoryHomeFragmentChapterIV_ACAROS"
+                android:id="@+id/categoryHomeFragmentArtropodesAcaros"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
@@ -609,11 +611,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentChapterIV_PULGAS"
-                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentChapterIV_PULGAS" />
+                app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentArtropodesPulgas"
+                app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodesPulgas" />
 
             <TextView
-                android:id="@+id/textViewCategoryChapterIV_ACAROS"
+                android:id="@+id/textViewCategoryArtropodesAcaros"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -621,9 +623,9 @@
                 android:text="ÁCAROS"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentChapterIV_ACAROS"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentChapterIV_ACAROS"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentChapterIV_ACAROS" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesAcaros"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesAcaros"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesAcaros" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

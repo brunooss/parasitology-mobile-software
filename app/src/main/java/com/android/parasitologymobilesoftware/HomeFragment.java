@@ -22,6 +22,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
+        ImageView imageViewIconIntroduction = rootView.findViewById(R.id.inc)
+
         HomeActivity activity = new HomeActivity();
         String text[][] = activity.searchSubcategories;
 

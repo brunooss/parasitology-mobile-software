@@ -62,6 +62,8 @@ public class HomeActivity extends AppCompatActivity
 
     private View dialogView;
 
+    private AlertDialog alertDialogFeedback;
+
     public String searchSubcategories[][] = {
             {"Protozoários", "Doença de Chagas", "Tricomonose", "Balantidíase","Malária", "Giardíase", "Leishmanioses"},
             {"Helmintos", "Esquistossomose mansoni", "Teníase", "Cisticercose", "Ascaridíase", "Enterobíase", "Hidatidose"},
@@ -116,6 +118,21 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         dialogView = getLayoutInflater().inflate(R.layout.dialog_feedback, null);
+
+        AlertDialog.Builder builder;
+        builder = new AlertDialog.Builder(this);
+        builder.setView(dialogView);
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+            }
+        }).setPositiveButton("Enviar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        alertDialogFeedback = builder.create();
     }
 
     @Override
@@ -208,20 +225,6 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_about) {
             // Open the AboutActivity //@Todo
         } else if (id == R.id.nav_feedback) {
-            AlertDialog.Builder builder;
-            builder = new AlertDialog.Builder(this);
-            builder.setView(dialogView);
-            builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                }
-            }).setPositiveButton("Enviar", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-
-                }
-            });
-            final AlertDialog alertDialogFeedback = builder.create();
             alertDialogFeedback.show();
         } else if (id == R.id.nav_out) {
             Toast.makeText(this, "Aguarde, saindo de sua conta.", Toast.LENGTH_SHORT).show();

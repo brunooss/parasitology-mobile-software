@@ -7,11 +7,11 @@
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_info_outline_black_24dp"
-            android:title="Sobre o App"/>
+            android:title="Sobre"/>
         <item
             android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_feedback_black_24dp"
-            android:title="Dúvidas ou Feedback"/>
+            android:title="Feedback"/>
     </group>
 
     <item android:title="Avançado">

@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="16dp"
         android:layout_marginTop="16dp" android:fontFamily="@font/futura_heavy"
-        android:text="Dê o seu Feedback" android:textColor="@color/colorTextPrimary"
+        android:text="Seu feedback é muito importante para nós!" android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <EditText
@@ -32,7 +32,7 @@
         android:layout_marginTop="16dp" android:layout_marginEnd="16dp" android:backgroundTint="@color/colorWhite"
         android:ems="10" android:fontFamily="@font/futura_light_bt"
         android:hint="O que está achando do aplicativo?"
-        android:inputType="textPassword" android:textColor="@color/colorTextPrimary"
+        android:inputType="textLongMessage" android:textColor="@color/colorTextPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDialogTitleFeedback"/>
