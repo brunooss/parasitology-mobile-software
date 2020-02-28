@@ -8,12 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" android:background="@color/colorBackground">
 
-        <include android:id="@+id/includeFieldUserInformationName" layout="@layout/user_information_field"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content" android:layout_marginStart="16dp"
-                 android:layout_marginTop="32dp" android:layout_marginEnd="16dp"
-                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toTopOf="parent"/>
+        <include
+            android:id="@+id/includeFieldUserInformationName"
+            layout="@layout/user_information_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <include android:id="@+id/includeFieldUserInformationEmail" layout="@layout/user_information_field"
                  android:layout_width="0dp"
                  android:layout_height="wrap_content"
