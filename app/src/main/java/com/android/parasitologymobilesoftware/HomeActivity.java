@@ -102,8 +102,6 @@ public class HomeActivity extends AppCompatActivity
         TabLayout tabLayout = findViewById(R.id.tabLayoutHome);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.setElevation(2);
-
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_person_white_24dp);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_home_white_24dp);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_book_white_24dp);

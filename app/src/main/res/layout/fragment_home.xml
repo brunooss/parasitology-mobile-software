@@ -27,18 +27,35 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textViewCategoryIntroduction"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="INTRODUÇÃO"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroduction"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroduction"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentIntroduction" />
+                <ProgressBar
+                    android:id="@+id/progressAppIntroduction"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+
+
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:max="100"
+                    android:progress="33"
+                    android:progressDrawable="@drawable/green_progress_drawable"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroduction"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroduction"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentIntroduction" />
+
+                <TextView
+                    android:id="@+id/textViewCategoryIntroduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="INTRODUÇÃO"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroduction"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroduction"
+                    app:layout_constraintTop_toBottomOf="@+id/progressAppIntroduction" />
 
             <include
                 android:id="@+id/categoryHomeFragmentIntroductionHistoria"
@@ -125,20 +142,38 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryIntroductionAtualidades" />
 
-            <TextView
-                android:id="@+id/textViewCategoryProtozoarios"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="PROTOZOÁRIOS"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios" />
+                <ProgressBar
+                    android:id="@+id/progressAppProtozoarios"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
 
-            <include
+
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/green_progress_drawable"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentProtozoarios" />
+
+                <TextView
+                    android:id="@+id/textViewCategoryProtozoarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="PROTOZOÁRIOS"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoarios"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoarios"
+                    app:layout_constraintTop_toBottomOf="@+id/progressAppProtozoarios" />
+
+                <include
                 android:id="@+id/categoryHomeFragmentProtozoariosAmebiase"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
@@ -297,18 +332,35 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryProtozoariosToxoplasmose" />
 
-            <TextView
-                android:id="@+id/textViewCategoryHelmintos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="HELMINTOS"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos" />
+                <ProgressBar
+                    android:id="@+id/progressAppHelmintos"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+
+
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/green_progress_drawable"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintos" />
+
+                <TextView
+                    android:id="@+id/textViewCategoryHelmintos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="HELMINTOS"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintos"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintos"
+                    app:layout_constraintTop_toBottomOf="@+id/progressAppHelmintos" />
 
             <include
                 android:id="@+id/categoryHomeFragmentHelmintosEsquistossomose"
@@ -334,15 +386,15 @@
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosEsquistossomose"
                 app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosEsquistossomose" />
 
-            <include
-                android:id="@+id/categoryHomeFragmentHelmintosTeniase"
-                layout="@layout/home_category_button"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/textViewCategoryHelmintos"
-                app:layout_constraintStart_toStartOf="@+id/textViewCategoryHelmintos"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryHelmintos" />
+                <include
+                    android:id="@+id/categoryHomeFragmentHelmintosTeniase"
+                    layout="@layout/home_category_button"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewCategoryHelmintos"
+                    app:layout_constraintStart_toStartOf="@+id/textViewCategoryHelmintos"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCategoryHelmintos" />
 
             <TextView
                 android:id="@+id/textViewSubcategoryHelmintosTeniase"
@@ -455,31 +507,47 @@
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosHidatidose"
                 app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentHelmintosHidatidose" />
 
-            <include
-                android:id="@+id/categoryHomeFragmentArtropodes"
-                layout="@layout/home_category_button"
-                android:layout_width="91dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosEnterobiase" />
-
     <!--    Chapter 4   -->
-            <TextView
-                android:id="@+id/textViewCategoryArtropodes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="ARTRÓPODES"
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes" />
+             <include
+                 android:id="@+id/categoryHomeFragmentArtropodes"
+                 layout="@layout/home_category_button"
+                 android:layout_width="91dp"
+                 android:layout_height="63dp"
+                 android:layout_marginStart="8dp"
+                 android:layout_marginTop="32dp"
+                 android:layout_marginEnd="8dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosEnterobiase" />
+
+                <ProgressBar
+                    android:id="@+id/progressAppArtropodes"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+
+
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:max="100"
+                    android:progressDrawable="@drawable/green_progress_drawable"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodes" />
+
+                <TextView
+                    android:id="@+id/textViewCategoryArtropodes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="ARTRÓPODES"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodes"
+                    app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodes"
+                    app:layout_constraintTop_toBottomOf="@+id/progressAppArtropodes" />
 
             <include
                 android:id="@+id/categoryHomeFragmentArtropodesMosquitos"
