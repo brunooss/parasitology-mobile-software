@@ -452,7 +452,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/futura_medium_bt"
-                android:text="ASCARDISÍASE"
+                android:text="ASCARIDISÍASE"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosAscaridiase"
