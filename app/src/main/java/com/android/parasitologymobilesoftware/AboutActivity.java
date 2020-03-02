@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 
+import com.google.android.material.appbar.AppBarLayout;
+
 public class AboutActivity extends AppCompatActivity {
 
     @Override
@@ -12,7 +14,8 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
 
         final Toolbar toolbar = findViewById(R.id.toolbarAbout);
-        toolbar.setTitle("Sobre o Parasite Combat");
+        toolbar.setTitle("SOBRE");
+        toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
