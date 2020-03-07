@@ -132,7 +132,6 @@ public class SignupActivity extends AppCompatActivity {
 
         textViewButtonError = findViewById(R.id.textViewSignUpErrorButton);
     }
-
     /* Methods */
     public boolean isNameValid(String name) { // Validates the name input, returning true if it's valid or false if it's not.
         String regexName = "\\d+"; // Capture only numbers.
@@ -204,6 +203,7 @@ public class SignupActivity extends AppCompatActivity {
 
                                 Map<String, Object> auth = new HashMap<>();
                                 auth.put("preference state", false);
+                                auth.put("alert state", false);
 
                                 dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
                                         .set(users)

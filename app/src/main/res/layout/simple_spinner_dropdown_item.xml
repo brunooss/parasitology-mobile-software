@@ -5,6 +5,8 @@
                  android:layout_width="match_parent"
                  android:layout_height="32dp"
                  android:layout_margin="8dp"
+                 android:paddingTop="6dp" android:paddingRight="6dp"
+                 android:paddingBottom="6dp" android:paddingLeft="6dp"
                  android:fontFamily="@font/futura_light_bt" android:textSize="18sp"
                  android:ellipsize="marquee" android:singleLine="true" android:textAlignment="center"
                  android:textColor="@color/colorWhite"  />

@@ -10,7 +10,6 @@
         <include
             android:id="@+id/toolbarAbout"
             layout="@layout/include_toolbar_alternative" />
-
     <ScrollView
         android:layout_below="@+id/toolbarAbout"
         android:layout_width="match_parent"
@@ -41,6 +40,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <TextView
+                android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/futura_light_bt"
