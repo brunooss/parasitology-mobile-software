@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback_array">
+        <item>Feedback Geral</item>
+        <item>Reportar Bug</item>
+        <item>Sugestões</item>
+        <item>Outros</item>
+    </string-array>
+</resources>

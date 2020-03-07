@@ -274,6 +274,7 @@ public class UserFragment extends Fragment {
         return rootView;
     }
 
+    /* Function that allows email change sending user data to his new document */
     public void moveFirestoreDocument(final DocumentReference fromPath, final DocumentReference toPath) {
         fromPath.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override

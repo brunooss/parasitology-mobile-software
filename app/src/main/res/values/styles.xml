@@ -37,6 +37,16 @@
         <item name="android:windowDisablePreview">true</item>
     </style>
 
+    <style name="AppTheme.Feedback" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorYellowButtonPressed</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
     <style name="AppTheme.IntroductionActivity" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
@@ -85,6 +95,10 @@
     <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
         <item name="android:background">@color/colorBackground</item>
         <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="spinnerDropDownItemFeedbackStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:background">#F0F0F0</item>
+        <item name="android:textColor">@color/colorAccent</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

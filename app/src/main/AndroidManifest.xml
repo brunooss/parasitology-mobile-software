@@ -11,7 +11,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AboutActivity"
             android:theme="@style/AppTheme.About"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName=".AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FeedbackActivity"
+            android:theme="@style/AppTheme.Feedback"
+            android:parentActivityName=".FeedbackActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity

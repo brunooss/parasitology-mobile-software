@@ -32,6 +32,8 @@ public class StudentPreferencesFragment extends Fragment {
     private int progressStatus;
     private ProgressBar progressBar;
 
+    private Button buttonSetCalendar;
+
     private int studentPreference;
     private int studentPreferenceDataBase;
     private String studentPref;
@@ -45,6 +47,9 @@ public class StudentPreferencesFragment extends Fragment {
     private Button buttonReview;
 
     private String schoolGrade;
+
+    private Button buttonAlert;
+    private Boolean alertState;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,6 +70,8 @@ public class StudentPreferencesFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_student_preferences, container, false);
 
+        buttonSetCalendar = rootView.findViewById(R.id.buttonStudentPreferencesSetDate);
+        buttonAlert = rootView.findViewById(R.id.buttonStudentPreferencesSetAlert);
         buttonReview = rootView.findViewById(R.id.buttonReview);
         progressBar = rootView.findViewById(R.id.progressApp);
         constraintLayoutStudentFirst = rootView.findViewById(R.id.constraintLayoutStudentFirstFrag);
@@ -76,6 +83,15 @@ public class StudentPreferencesFragment extends Fragment {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 setStudentPreference(documentSnapshot.getLong("student preference").intValue());    // Student's preference
                 studentPreference = documentSnapshot.getLong("student preference").intValue();
+
+                alertState = documentSnapshot.getBoolean("alert state");
+                if (alertState)
+                    buttonAlert.setBackground(getActivity().getDrawable(R.drawable.custom_linear_layout_alert_true));
+                else {
+                    buttonAlert.setBackground(getActivity().getDrawable(R.drawable.custom_linear_layout_alert_false));
+                    buttonSetCalendar.setElevation(0);
+                    buttonSetCalendar.setClickable(false);
+                }
 
                 setProgressStatus(documentSnapshot.getLong("progress status").intValue());        // Progress
                 progressBar.setProgress(progressStatus, true);
@@ -109,7 +125,6 @@ public class StudentPreferencesFragment extends Fragment {
                     studentPreferenceString.put("student preference", "tradicional");
                     dataBase.collection(schoolGrade).document(completeName)
                             .update(studentPreferenceString);
-                    //Toast.makeText(getActivity(), "metodologia alterada com sucesso: tradicional", Toast.LENGTH_SHORT).show();
 
                     constraintLayoutStudentFirst.setElevation(20);
                     constraintLayoutStudentSecond.setElevation(1);
@@ -134,7 +149,6 @@ public class StudentPreferencesFragment extends Fragment {
                     studentPreferenceString.put("student preference", "modern");
                     dataBase.collection(schoolGrade).document(completeName)
                             .update(studentPreferenceString);
-                    //Toast.makeText(getActivity(), "metodologia alterada com sucesso: modern", Toast.LENGTH_SHORT).show();
 
                     constraintLayoutStudentSecond.setElevation(20);
                     constraintLayoutStudentFirst.setElevation(1);
@@ -147,11 +161,14 @@ public class StudentPreferencesFragment extends Fragment {
 
     public void setSchoolGrade(String schoolGrade){
         this.schoolGrade = schoolGrade;
-        //Toast.makeText(getActivity(), schoolGrade, Toast.LENGTH_SHORT).show();
     }
 
     public void setStudentPreference(int studentPreference){
         this.studentPreferenceDataBase = studentPreference;
+    }
+
+    public void setAlertState(boolean alertState){
+        this.alertState = alertState;
     }
 
     public void setProgressStatus(int progressStatus){
