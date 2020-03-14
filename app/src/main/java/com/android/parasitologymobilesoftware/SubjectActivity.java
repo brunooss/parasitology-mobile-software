@@ -65,10 +65,10 @@ public class SubjectActivity extends AppCompatActivity {
             webView.findAllAsync("1.1. Mosquitos");
             webView.findNext(true);
         }
-        else if(id == R.id.categoryHomeFragmentArtropodesAcaros) {
-            webView.findAllAsync("1.2. Besouros");
-            webView.findNext(true);
-        }
+//        else if(id == R.id.categoryHomeFragmentArtropodesAcaros) {
+//            webView.findAllAsync("1.2. Besouros");
+//            webView.findNext(true);
+//        }
         else if(id == R.id.categoryHomeFragmentArtropodesMoscas) {
             webView.findAllAsync("1.3. Moscas");
             webView.findNext(true);
