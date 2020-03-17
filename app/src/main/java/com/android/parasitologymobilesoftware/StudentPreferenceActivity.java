@@ -91,9 +91,12 @@ public class StudentPreferenceActivity extends AppCompatActivity {
 
                     Map<String, Object> progressStatus = new HashMap<>();
                     progressStatus.put("progress status", 0);
-                    dataBase.collection("generalUserInfo").document(email)
-                            .set(progressStatus, SetOptions.merge());
-                    dataBase.collection(schoolGrade).document(completeName)
+                    progressStatus.put("progress introduction", 0);
+                    progressStatus.put("progress protozoarios", 0);
+                    progressStatus.put("progress helmintos", 0);
+                    progressStatus.put("progress artropodes", 0);
+
+                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
                             .set(progressStatus, SetOptions.merge());
 
                     if (studentPreference == 1) studentPref = "tradicional";
@@ -102,13 +105,13 @@ public class StudentPreferenceActivity extends AppCompatActivity {
                     Map<String, Object> studentPrefInt = new HashMap<>();
                     studentPrefInt.put("student preference", studentPreference);
 
-                    Map<String, Object> auth = new HashMap<>();
-                    auth.put("preference state", true);
+                    Map<String, Object> prefereState = new HashMap<>();
+                    prefereState.put("preference state", true);
 
-                    dataBase.collection("generalUserInfo").document(email)
-                            .update(auth);
+                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
+                            .update(prefereState);
 
-                    dataBase.collection("generalUserInfo").document(email)
+                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                             .set(studentPrefInt, SetOptions.merge());
 
                     Map<String, Object> studentPrefString = new HashMap<>();

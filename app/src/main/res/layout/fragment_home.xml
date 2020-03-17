@@ -707,7 +707,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/futura_medium_bt"
                 android:gravity="center"
-                android:text="ANCILOSTOMÍAE"
+                android:text="ANCILOSTOMÍASE"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosAncilostomiase"
@@ -966,7 +966,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesMoscas" />
 
             <include
-                android:id="@+id/categoryHomeFragmentEctoparasitos"
+                android:id="@+id/categoryHomeFragmentArtropodesEctoparasitos"
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
@@ -985,9 +985,9 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentEctoparasitos"
-                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentEctoparasitos"
-                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentEctoparasitos" />
+                app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesEctoparasitos"
+                app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesEctoparasitos"
+                app:layout_constraintTop_toBottomOf="@+id/categoryHomeFragmentArtropodesEctoparasitos" />
 
 
 

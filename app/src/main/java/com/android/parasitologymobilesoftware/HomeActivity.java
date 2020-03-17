@@ -80,6 +80,8 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
+
         firebaseAuth = FirebaseAuth.getInstance();
         dataBase = FirebaseFirestore.getInstance();
 
@@ -91,6 +93,13 @@ public class HomeActivity extends AppCompatActivity
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 setSchoolGrade(documentSnapshot.get("school grade").toString());
+            }
+        });
+
+        docRef = docRef.collection("specific info").document("state");
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
                 setAlertState(documentSnapshot.getBoolean("alert state"));
             }
         });
@@ -266,7 +275,7 @@ public class HomeActivity extends AppCompatActivity
 
             Map<String, Object> alertStateMap = new HashMap<>();
             alertStateMap.put("alert state", alertState);
-            dataBase.collection("generalUserInfo").document(email)
+            dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                     .update(alertStateMap);
         } else {
             buttonAlert.setBackground(getDrawable(R.drawable.custom_linear_layout_alert_true));
@@ -276,7 +285,7 @@ public class HomeActivity extends AppCompatActivity
 
             Map<String, Object> alertStateMap = new HashMap<>();
             alertStateMap.put("alert state", alertState);
-            dataBase.collection("generalUserInfo").document(email)
+            dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                     .update(alertStateMap);
         }
     }
@@ -320,7 +329,7 @@ public class HomeActivity extends AppCompatActivity
         });
         progressStatus += progressToGo;         // Old Progress (progressStatus) + New Progress (progressToGo) = progressStatus
         if (progressStatus <= 100) {
-            progressBar = findViewById(R.id.progressApp);
+            //progressBar = findViewById(R.id.progressApp);
             progressBar.setProgress(progressStatus, true);
 
             /* Updating the database with */
