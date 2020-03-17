@@ -33,7 +33,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         dataBase = FirebaseFirestore.getInstance();
 
         if (mFirebaseUser != null) {
-            DocumentReference docRef = dataBase.collection("generalUserInfo").document(mFirebaseUser.getEmail());
+            DocumentReference docRef = dataBase.collection("generalUserInfo").document(mFirebaseUser.getEmail()).collection("specific info").document("state");
             docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -47,7 +47,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
                 Intent intentUnauthenticated =  new Intent(getBaseContext(), SigninActivity.class);
                 Intent intentAuthenticated = new Intent(getBaseContext(), HomeActivity.class);
-                Intent intentAuthenticatedWithoutPreference = new Intent(getBaseContext(), StudentPreferenceActivity.class);
+                Intent intentAuthenticatedWithoutPreference = new Intent(getBaseContext(), HomeActivity.class);
                 if(mFirebaseUser == null){                      // User is unauthenticated
                     startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
                 } else {                                        // User is authenticated

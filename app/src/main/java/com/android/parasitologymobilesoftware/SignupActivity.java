@@ -201,30 +201,19 @@ public class SignupActivity extends AppCompatActivity {
                                 users.put("school grade", spinner.getSelectedItem().toString());
                                 users.put("email", editTextEmail.getText().toString());
 
-                                Map<String, Object> auth = new HashMap<>();
-                                auth.put("preference state", false);
-                                auth.put("alert state", false);
+                                Map<String, Object> state = new HashMap<>();
+                                state.put("preference state", false);
+                                state.put("alert state", false);
 
                                 dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
-                                        .set(users)
-                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void aVoid) {
-                                            }
-                                        });
+                                        .set(users);
 
                                 dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
                                         .set(users);
-                                dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString())
-                                        .set(auth, SetOptions.merge());
 
+                                dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString()).collection("specific info").document("state")
+                                        .set(state);
 
-                                SharedPreferences.Editor editor = preferences.edit();
-                                editor.putString("first name", getFirstName(editTextName.getText().toString()));
-                                editor.putString("complete name", editTextName.getText().toString());
-                                editor.putString("school grade", spinner.getSelectedItem().toString());
-                                editor.putString("email", editTextEmail.getText().toString());
-                                editor.apply();
                                 progressBar.setVisibility(View.INVISIBLE);
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
                                 startActivity(intent);

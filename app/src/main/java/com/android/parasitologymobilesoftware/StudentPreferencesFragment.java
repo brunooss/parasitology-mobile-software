@@ -62,6 +62,14 @@ public class StudentPreferencesFragment extends Fragment {
 
         email = firebaseAuth.getCurrentUser().getEmail();
         completeName = firebaseAuth.getCurrentUser().getDisplayName();
+
+        DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                setSchoolGrade(documentSnapshot.get("school grade").toString());                     // School Grade
+            }
+        });
     }
 
     @Override
@@ -73,11 +81,11 @@ public class StudentPreferencesFragment extends Fragment {
         buttonSetCalendar = rootView.findViewById(R.id.buttonStudentPreferencesSetDate);
         buttonAlert = rootView.findViewById(R.id.buttonStudentPreferencesSetAlert);
         buttonReview = rootView.findViewById(R.id.buttonReview);
-        progressBar = rootView.findViewById(R.id.progressApp);
+
         constraintLayoutStudentFirst = rootView.findViewById(R.id.constraintLayoutStudentFirstFrag);
         constraintLayoutStudentSecond = rootView.findViewById(R.id.constraintLayoutStudentSecondFrag);
 
-        DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);
+        final DocumentReference docRef = dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state");
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -93,10 +101,6 @@ public class StudentPreferencesFragment extends Fragment {
                     buttonSetCalendar.setClickable(false);
                 }
 
-                setProgressStatus(documentSnapshot.getLong("progress status").intValue());        // Progress
-                progressBar.setProgress(progressStatus, true);
-
-                setSchoolGrade(documentSnapshot.get("school grade").toString());                     // School Grade
                 if (studentPreference == 1) {
                     constraintLayoutStudentFirst.setElevation(20);
                     constraintLayoutStudentSecond.setElevation(1);
@@ -117,7 +121,7 @@ public class StudentPreferencesFragment extends Fragment {
                     /* Sending int preference to data base*/
                     Map<String, Object> studentPreferenceInt = new HashMap<>();
                     studentPreferenceInt.put("student preference", studentPreference);
-                    dataBase.collection("generalUserInfo").document(email)
+                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                             .update(studentPreferenceInt);
 
                     /* Sending String preference to data base*/
@@ -141,7 +145,7 @@ public class StudentPreferencesFragment extends Fragment {
                     /* Sending int preference to data base */
                     Map<String, Object> studentPreferenceInt = new HashMap<>();
                     studentPreferenceInt.put("student preference", studentPreference);
-                    dataBase.collection("generalUserInfo").document(email)
+                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                             .update(studentPreferenceInt);
 
                     /* Sending String preference to data base*/
