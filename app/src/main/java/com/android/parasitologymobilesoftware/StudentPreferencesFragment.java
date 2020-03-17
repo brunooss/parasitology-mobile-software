@@ -70,6 +70,7 @@ public class StudentPreferencesFragment extends Fragment {
                 setSchoolGrade(documentSnapshot.get("school grade").toString());                     // School Grade
             }
         });
+
     }
 
     @Override
@@ -81,9 +82,19 @@ public class StudentPreferencesFragment extends Fragment {
         buttonSetCalendar = rootView.findViewById(R.id.buttonStudentPreferencesSetDate);
         buttonAlert = rootView.findViewById(R.id.buttonStudentPreferencesSetAlert);
         buttonReview = rootView.findViewById(R.id.buttonReview);
+        progressBar = rootView.findViewById(R.id.progressApp);
 
         constraintLayoutStudentFirst = rootView.findViewById(R.id.constraintLayoutStudentFirstFrag);
         constraintLayoutStudentSecond = rootView.findViewById(R.id.constraintLayoutStudentSecondFrag);
+
+        DocumentReference docRefProgress = dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress");
+                docRefProgress.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                progressStatus = documentSnapshot.getLong("progress status").intValue();
+                progressBar.setProgress(progressStatus, true);
+            }
+        });
 
         final DocumentReference docRef = dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state");
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {

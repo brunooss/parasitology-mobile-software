@@ -63,8 +63,6 @@ public class HomeFragment extends Fragment {
 
         email = firebaseAuth.getCurrentUser().getEmail();
         nome = firebaseAuth.getCurrentUser().getDisplayName();
-
-
     }
 
     @Override
@@ -618,11 +616,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        progressBarIntroduction.setProgress(progressBarIntroductionValue, true);
-        progressBarProtozoarios.setProgress(progressBarProtozoariosValue, true);
-        progressBarHelmintos.setProgress(progressBarHelmintosValue, true);
-        progressBarArtropodes.setProgress(progressBarArtropodesValue, true);
-
         textViewCategoryIntroduction = rootView.findViewById(R.id.categoryHomeFragmentIntroduction).findViewById(R.id.textViewCategory);
         textViewCategoryIntroduction.setText("1"); // I
         textViewCategoryIntroduction.setVisibility(View.VISIBLE);
@@ -660,6 +653,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void setProgressIntroduction(){
+        // DRY measure
         constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -669,6 +663,7 @@ public class HomeFragment extends Fragment {
         constraintLayoutIntroductionAtualidades.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
     }
     public void setProgressProtozoarios(){
+        // DRY measure
         constraintLayoutProtozoarios.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -681,6 +676,7 @@ public class HomeFragment extends Fragment {
         constraintLayoutProtozoariosProtozooses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
     }
     public void setProgressHelmintos(){
+        // DRY measure
         constraintLayoutHelmintos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
