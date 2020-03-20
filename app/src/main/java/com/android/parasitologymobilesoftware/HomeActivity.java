@@ -1,11 +1,10 @@
 package com.android.parasitologymobilesoftware;
 
-import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.SearchManager;
+import android.app.*;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.icu.util.BuddhistCalendar;
 import android.media.MediaPlayer;
 import android.media.effect.Effect;
@@ -17,6 +16,7 @@ import android.widget.*;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.NotificationCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -287,6 +287,14 @@ public class HomeActivity extends AppCompatActivity
             alertStateMap.put("alert state", alertState);
             dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                     .update(alertStateMap);
+            sendNotification(0,
+                    "CHANNEL_ID",
+                    "CHANNEL_NAME",
+                    "Notificação de Teste!",
+                    "Subtítulo com sucesso!",
+                    "Essa notificação será responsável por notificar quantos módulos você ainda precisa estudar.",
+                     NotificationCompat.PRIORITY_HIGH,
+                     Color.parseColor("#FF4500"));
         }
     }
 
@@ -357,6 +365,23 @@ public class HomeActivity extends AppCompatActivity
 
     public void setAlertState(boolean alertState){
         this.alertState = alertState;
+    }
+
+    public void sendNotification(int id, String channelId, String channelName, String contentTitle, String contentSubText, String contentText, int priority, int color) {
+        NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
+        NotificationManager manager = getSystemService(NotificationManager.class);
+        manager.createNotificationChannel(channel);
+
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channelId);
+        builder.setSmallIcon(R.drawable.icons8_microscope_splashscreen_100)
+                .setContentTitle(contentTitle)
+                .setSubText(contentSubText)
+                .setContentText(contentText)
+                .setPriority(priority)
+                .setColor(color);
+
+        manager.notify(id, builder.build());
     }
 }
 
