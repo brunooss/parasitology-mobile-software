@@ -1,0 +1,55 @@
+[
+  {
+    "categoryName" : "Ascaridíase",
+      "numberOfTabs" : 9,
+      "tabs" : [
+        {
+          "title" : "Introdução:",
+          "type" : "text",
+          "text" : "<p>    A ascaridíase é uma doença pelo <i>Ascaris lumbricoides</i>. Este parasito possui distribuição geográfica mundial, e seus ovos foram encontrados em coprólitos1, acompanhando a humanidade desde os primórdios – tal como o <i>Trichuris trichiura</i>, que será mencionado posteriormente. De acordo com estimativas, três a cada dez pessoas no mundo estão parasitadas por este helminto, sendo este o mais prevalente dentre a população. A doença é grave e ainda acomete milhões de pessoas, causando problemas físicos e intelectuais, sendo assim, uma causa e uma consequência do subdesenvolvimento de países e regiões. \n    Esse helminto também é denominado lombriga – por tal motivo, os vermífugos possuem como sinônimo “lombrigueiro”.\n</p>"
+        },
+        {
+          "title" : "Morfologia do Agente:",
+          "type" : "textAndImage",
+          "text" : "<p>    Do Filo Nematoda, classe Secernentea, família Ascarididae, o <i>Ascaris lumbricoides</i> em sua forma adulta é grande, de modo que a fêmea mede aproximadamente 35 cm de comprimento, enquanto o macho mede cerca de 20cm. Vivem no intestino delgado de humanos, produzindo muitos ovos, que são cobertos por uma camada externa mamilonada e de cor castanha (como a casca de um abacaxi). O verme é um geo-helminto, isto é, necessitam do solo para amadurecer e formar suas larvas.\n    Os suínos podem ser infectados por um parasito semelhante, denominado <i>Ascaris suum</i>, que pode parasitar humanos, porém, neste caso, é eliminado espontaneamente.\n</p>",
+          "imageAddress" : "ascaridiase1"
+        },
+        {
+          "title" : "Ciclo Biológico:",
+          "type" : "textAndImage",
+          "text" : "<p>    Os machos e as fêmeas acasalam no intestino delgado, e estas botam muitos ovos (até 200 mil por dia), que chegam ao exterior com embriões do helminto. Em um ambiente úmido e sombreado, após 15 dias as larvas (L1) se formam dentro de cada ovo, e após mais 15 dias se transformam em L2 e, em mais 15 dias, se tornam larvas infectantes (L3) ainda dentro do ovo. Esses ovos serão ingeridos por um novo hospedeiro humano, onde as larvas irão eclodir no intestino delgado e, devido ao seu metabolismo aeróbio, penetrarão na mucosa intestinal e cairão na circulação sanguínea. Passam pelo fígado, depões vão ao coração e aos pulmões, ao que é dado o nome de ciclo pulmonar (ciclo de Loss). Nos pulmões, as larvas perfuram os alvéolos pulmonares, sobem a árvore brônquica e chegam à faringe, podendo ser expelidas, junto com o muco que é produzido; ou ingeridas, dirigindo-se ao intestino delgado, onde se transformarão em vermes adultos que, após 30 dias, iniciam a ovoposição (desde a ingestão, demora cerca de 60 dias), reiniciando o ciclo.\n</p>",
+          "imageAddress" : "ascaridiase2"
+        },
+        {
+          "title" : "Patogenia:",
+          "type" : "text",
+          "text" : "<p>    A ascaridíase ocorre com frequência no mundo todo e, em conjunto com a ancilostomíase e a necatoríase, é importante para a saúde pública, devido às alterações que causa nos pacientes, sobretudo nas crianças.\n    A patogenia dessa doença se dá por duas fases:\n•\tPulmonar: durante a passagem das larvas, ocorrem manifestações semelhantes às dos helmintos que realizam ciclo pulmonar: tosse produtiva, febre e síndrome de Löffler (pneumonite alérgica).\n•\tIntestinal: de acordo com o número de parasitos (ao que é dado o nome de carga parasitária), variam as consequências, de maneira que, em infecções mais numerosas (100 ou mais vermes), os indivíduos podem apresentar depauperamento físico (enfraquecimento), magreza, palidez e barriga com volume estufado. Isso ocorre em decorrência da alimentação dos vermes, que consome uma grande quantidade de proteínas, lipídios, carboidratos e vitamina A. A carência dessa vitamina pode gerar manchas na pele das pessoas parasitadas. Além disso, os vermes podem provocar irritações na parede do intestino, que ocasiona manifestações nervosas, incluindo ataques epiléticos.\n    Eventualmente, esse indivíduo pode se enovelar no intestino delgado, gerando obstruções e um quadro denominado “abdome agudo”, uma forte dor que necessita de intervenção cirúrgica imediata.\n    O verme pode ser encontrado em locais ectópicos (também chamado de “Ascaris errático”), quando o verme se encontra ora do seu habitat, podendo ser até fatal. Os helmintos podem entrar no apêndice cecal (apendicite aguda), canal colédoco (ducto que transporta a bile), vesícula biliar (colecistite), ducto pancreático (pancreatite aguda), trompa de Eustáquio e e até mesmo no canal lacrimal.\n</p>"
+        },
+        {
+          "title" : "Imunidade:",
+          "type" : "text",
+          "text" : "<p>    A resposta imune das helmintoses é muito semelhante, apresentando a eosifilina elevada, assim como a participação de macrófagos. As larvas, quando estão na corrente sanguínea, morrem por toxicidade, causada pelos eosinófilos. A resposta imune é do tipo Th2 e presença de IgE. A IL-4 estimula a produção de IgE, que implica na expulsão dos vermes adultos, e a IL-13 também o faz. Os mastócitos promovem o aumento da secreção dos locais mediadores da inflamação, como o muco e o aumento da contratilidade da musculatura intestinal. \n    Na ascaridíase, ocorre a eliminação “espontânea” de vermes adultos em pessoas anteriormente infectadas, devido à reativação do sistema imune, por meio de células da memória imunológica.\n    Nessa e em outras helmintoses que apresenta, ciclo pulmonar, ocorre a síndrome de Löffler, uma reação imunológica decorrente das larvas que passaram pelos pulmões e de seus resíduos. Como consequência, o individuo apresenta um infiltrado eosinofílico alérgico, que causa tosse, dispneia e anorexia, que podem regredir em poucos dias após a conclusão dessa fase do ciclo.\n</p>"
+        },
+        {
+          "title" : "Diagnóstico:",
+          "type" : "text",
+          "text" : "<p>    O diagnóstico da ascaridíase é feito por meio de um exame de fezes, utilizando métodos de localização dos ovos característicos desse parasito. Exames por imagens podem ser úteis para visualizar o helminto e possíveis obstruções\n</p>"
+        },
+        {
+          "title" : "Epidemiologia:",
+          "type" : "text",
+          "text" : "<p>    Quanto à distribuição geográfica, a doença é encontrada no mundo todo. Em se tratando de sua fonte de infecção, o <i>Ascaris lumbricoides</i> infecta apenas os humanos, apesar de suínos possuírem um parasito semelhante: <i>Ascaris suum.</i>\n    A forma de transmissão se dá por ovos que contenham larvas infectantes, e o seu veículo são mãos sujas, alimentos ou água contaminados com os ovos, poeira ou moscas. Sua via de penetração é oral.\n    A prevalência dessa helmintose pode ser explicada pelo aspecto dos ovos que permanecem viáveis por mais de um ano, em ambientes domésticos e peridomésticos. Acredita-se que aproximadamente 30% da população mundial esteja parasitada pelo <i>A. lumbricoides</i>, cuja distribuição mundial não é uniforme, sendo mais presente dentre a população mais carente. Estudos evidenciam a presença da ascaridíase em populações de idosos no Brasil.\n</p>"
+        },
+        {
+          "title" : "Profilaxia:",
+          "type" : "text",
+          "text" : "<p>    A profilaxia requer a melhora de fatores sociais como higiene pessoal, lavar corretamente as mãos e verduras, beber somente água filtrada, proteger alimentos contra moscas, educação sanitária, cívica e ambiental. Fatores esses ainda ausentes em muitas localidades, o que contribui para a perpetuação dessa doença.\n</p>"
+        },
+        {
+          "title" : "Tratamento:",
+          "type" : "text",
+          "text" : "<p>    O tratamento da ascaridíase se dá por medicamentos específicos, hidratação e jejum, no caso de obstruções. Não se deve utilizar anti-helmínticos sem antes fazer um exame de fezes, uma vez que não é indicado o uso de remédios sem uma razão certa ou prescrição médica.\n</p>"
+        }
+      ]
+  }
+]
