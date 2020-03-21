@@ -1,44 +1,32 @@
 package com.android.parasitologymobilesoftware;
 
-import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.SearchManager;
+import android.app.*;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.icu.util.BuddhistCalendar;
-import android.media.MediaPlayer;
-import android.media.effect.Effect;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.*;
-import android.webkit.WebView;
 import android.widget.*;
 
-import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.NotificationCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.tabs.TabLayout;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.SetOptions;
-import com.google.firebase.firestore.auth.User;
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -169,7 +157,7 @@ public class HomeActivity extends AppCompatActivity
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String selected = adapterView.getItemAtPosition(i).toString();
 
-                Intent intent = new Intent(getBaseContext(), SubjectActivity.class);
+                Intent intent = new Intent(getBaseContext(), CategoryActivity.class);
                 if (selected.contains("Protozoários"))
                     intent.putExtra("index", "protozoarios.html");
                 else if (selected.contains("Helmintos"))
@@ -287,6 +275,14 @@ public class HomeActivity extends AppCompatActivity
             alertStateMap.put("alert state", alertState);
             dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                     .update(alertStateMap);
+            sendNotification(0,
+                    "CHANNEL_ID",
+                    "CHANNEL_NAME",
+                    "Notificação de Teste!",
+                    "Subtítulo com sucesso!",
+                    "Essa notificação será responsável por notificar quantos módulos você ainda precisa estudar.",
+                     NotificationCompat.PRIORITY_HIGH,
+                     Color.parseColor("#FF4500"));
         }
     }
 
@@ -306,16 +302,9 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onCategoryButtonClick(View view) {
-        Intent intent = new Intent(this, SubjectActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putInt("id", view.getId());
-        if(getResources().getResourceEntryName(view.getId()).contains("Artropodes"))
-            bundle.putString("index", "helmintos.html");
-        else if(getResources().getResourceEntryName(view.getId()).contains("ChapterIV"))
-            bundle.putString("index", "artropodes.html");
-        else if(getResources().getResourceEntryName(view.getId()).contains("Helmintos"))
-            bundle.putString("index", "protozoarios.html");
-        intent.putExtras(bundle);
+        Intent intent = new Intent(this, CategoryActivity.class);
+        if(getResources().getResourceEntryName(view.getId()).contains("Ascaridiase"))
+            intent.putExtra("fragment", "Ascaridíase");
         startActivity(intent);
     }
 
@@ -357,6 +346,23 @@ public class HomeActivity extends AppCompatActivity
 
     public void setAlertState(boolean alertState){
         this.alertState = alertState;
+    }
+
+    public void sendNotification(int id, String channelId, String channelName, String contentTitle, String contentSubText, String contentText, int priority, int color) {
+        NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
+        NotificationManager manager = getSystemService(NotificationManager.class);
+        manager.createNotificationChannel(channel);
+
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channelId);
+        builder.setSmallIcon(R.drawable.icons8_microscope_splashscreen_100)
+                .setContentTitle(contentTitle)
+                .setSubText(contentSubText)
+                .setContentText(contentText)
+                .setPriority(priority)
+                .setColor(color);
+
+        manager.notify(id, builder.build());
     }
 }
 

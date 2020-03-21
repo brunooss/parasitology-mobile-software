@@ -2,165 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.parasitologymobilesoftware">
     <application
-
+        android:name="com.android.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".categoryartropodes.CategoryArtropodesEctoparasitosActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryartropodes.CategoryArtropodesMoscasActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryartropodes.CategoryArtropodesMosquitosActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryartropodes.CategoryArtropodesHemipterosActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryartropodes.CategoryArtropodesActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosOutrasHelmintosesActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosFilariosesActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosLarvaMigransActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosAscaridiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosEnterobiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosNecatoriaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosAncilostomiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosTricuriaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosEstrongiloidiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosHimenolepiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosHidatidoseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosCisticercoseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosTeniaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosFascioliaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosEsquistossomoseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryhelmintos.CategoryHelmintosActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosProtozoosesActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosBalantidiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosToxoplasmoseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosMalariaActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosChagasActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosTricomonoseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosLeishmaniosesActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosGiardiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosAmebiaseActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryprotozoarios.CategoryProtozoariosActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionAtualidadesActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionCicloActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionReproducaoActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionClassificacaoActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionConceitosActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionEcologiaActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".categoryintroduction.CategoryIntroductionActivity"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait">
-        </activity>
         <activity
             android:name=".AboutActivity"
             android:parentActivityName=".AboutActivity"
@@ -172,7 +20,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Feedback" />
         <activity
-            android:name=".SubjectActivity"
+            android:name=".CategoryActivity"
             android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>

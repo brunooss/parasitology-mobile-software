@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class ImageSubjectFragmentPagerAdapter extends FragmentPagerAdapter {
-    public ImageSubjectFragmentPagerAdapter(FragmentManager fm) {
+public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
+    public CategoryFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -14,13 +14,13 @@ public class ImageSubjectFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         Bundle args = new Bundle();
         args.putInt("subject", 1); // @Todo ADD SHARED PREFERENCES TO DETECT WHICH SUBJECT IS THE FRAGMENT IN!!!
-        SubjectImageFragment subjectImageFragment = SubjectImageFragment.newInstance(position);
-        subjectImageFragment.setArguments(args);
-        return subjectImageFragment;
+
+        CategoryFragment categoryFragment = CategoryFragment.newInstance(position);
+        return categoryFragment;
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return 9;
     }
 }
