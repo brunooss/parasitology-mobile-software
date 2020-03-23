@@ -48,7 +48,7 @@ public class CategoryFragment extends Fragment {
 
     public static CategoryFragment newInstance(int position) {
         Bundle args = new Bundle();
-        CategoryActivity activity = new CategoryActivity();
+        HomeActivity activity = new HomeActivity();
 
         try {
             inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");

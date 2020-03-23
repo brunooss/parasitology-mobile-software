@@ -1,5 +1,91 @@
 [
   {
+    "categoryName" : "Amebíase",
+    "numberOfTabs" : 7,
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "textAndImage",
+        "text" : "<p>    Amebíase é uma infecção intestinal e extra intestinal, causada pela <i>Entamoeba histolytica</i>. Como outras infecções intestinais a amebíase tem divergências e controvérsias, isso ocorre devido a variação entre as manifestações da doença, que podem variar principalmente pela virulência das cepas e localização}.    Apesar de ser a segunda parasitose que mais mata no mundo, apenas atrás da malária, {tendo elevada letalidade em países como México e Índia,} sua gravidade tem grande variação no próprio Brasil {gerando colites mais graves na região amazônica}.\n</p>"
+      },
+      {
+        "title" : "Morfologia do Agente:",
+        "type" : "textAndImage",
+        "text" : "<p>    A <i>E. histolytica</i> é a única ameba que causa patologias na espécie humana. Apesar de existir outra como <i>Endolimax nana</i>, <i>E. hartmanni</i>, <i>E. díspar</i>, <i>Iodamoeba butschlli</i> e <i>E. coli</i> que vivem no intestino grosso e ainda a <i>E. hartmanni</i> (*não parece ser tanto assim apesar do livro falar que é*) e <i>E. díspar</i> serem morfologicamente iguais a <i>E. histolytica</i> nenhuma outra é patogênica. Também há amebas na cavidade bucal da espécie <i>E. gengivalis</i> que não é patogênica, além de não formar cistos.} Sendo um protozoário do filo Sarcomastigophora, do subfilo Sarcodina, da família Endamoebidae, a <i>Entamoeba histolytica</i> possui duas formas básicas e duas intermediárias, sendo essas:\n            \uF076\tO trofozoíto, sendo a fase ativa que é capaz de se reproduzir e se alimentar, vivendo na mucosa ou na luz do intestino grosso {, principalmente nas regiões do ceco e retossigmoide,} formando colônias. Possui cerca de 20 a 40 µm de diâmetro, tendo uma forma ameboide, movimentando do se por pseudópodes.    {Possui duas regiões plasmática bem explicitas o endoplasma, denso, e o ectoplasma, menos denso e mais claro, ainda com um só núcleo com uma cromatina central e ademais aderidas a carioteca.\n    \uF076\tO cisto, a forma de resistência, é elimina junto as fezes, pode apresentar até 4 núcleos.    Possui cerca de 8 a 20 µm de diâmetro e formato esférico.\n    \uF076\tFormas intermediárias:\n    o\tPré-cisto forma anterior ao cisto que pode aparecer nas fezes\n    o\tmetacisto, por posterior ao desencistamento, tetranucleada\n</p>",
+        "imageAddress" : "ascaridiase2"
+      },
+      {
+        "title" : "Ciclo Biológico:",
+        "type" : "textAndImage",
+        "text" : "<p>    \"Os trofozoítos que vivem no intestino grosso, especialmente na luz o ceco e do retossigmoide, formam colônias oriundas da divisão binária dessas formas. Esses trofozoítos, posteriormente e seguindo a progressão do bolo fecal, desidratam-se e tomam a forma arredondada, transformando-se em “cistos”, que usualmente são eliminados junto com as fezes formandas. Conforme será mostrado em “patogenia”, os trofozoítos presentes nas úlceras, não formam cistos.\n    Os trofozoítos apresentam movimentos ameboides típicos, através dos pseudópodes lançados pelo citoplasma. É através desses pseudópodes que a ameba se movimenta e ingere partículas alimentares(fagocitose), incluindo bactérias da microbiota intestinal.\n    Os cistos eliminados nas fezes permanecem viáveis por cerca de 10 a 30 dias, contaminando o ambiente (água, alimentos, poeira etc.) e podendo ser ingeridos. Resistem ao suco gástrico e, chegando ao final do intestino delgado, desencistam-se e cada cisto tetranucleado dá origem a quatro amebas uninucleadas (trofozoítos). Estes se alimentam, reproduzem por divisão binária e colonizam o intestino grosso.\n    Os trofozoítos se desprendem da parede do intestino e, ao caírem na luz, secretam uma membrana cística transformando-se em cistos, reiniciando o ciclo”\n</p>",
+        "imageAddress" : "ameba3"
+      },
+      {
+        "title" : "Patogenia e Sintomatologia:",
+        "type" : "text",
+        "text" : "<p>    Apesar de poder formar extensas colônias sem provocar lesão ou manifestação alguma no indivíduo infectado, a <i>E. histolytica</i>, em sua forma de trofozoítos pode atacar a parede do intestino, células epiteliais, e a mucosa, assim invadindo a submucosa e provocando úlceras. Essa atividade que manifesta quadro clínico pode ocorrer desde dias a meses da ingestão dos cistos. {Após liberar os amebaporos e penetrarem por algum orifício na mucosa, os trofozoítos formam colônias que destroem os tecidos. Essa úlcera é leva o nome de “úlcera botão de camisa” por possuir uma área necrosada ao redor da pequena úlcera. Apesar ser possível a aparição isolada das úlceras, essas podem se fundir ou coalescer, aumentando seu tamanho}. Os sintomas ligados a essas úlceras são:\n    \uF076\tColite (dor no baixo ventre sem diarreia)\n    \uF076\tColite disentérica (com diarreia)\n    {Em locais como México, África do Sul, Tailândia, Egito e Brasil (Pará e Amazonas) há casos de amebíase extraintestinal. Nesses casos há formação de lesões no fígado, pulmão e cérebro por meio da via hematogênica. Essa amebíase geralmente não ocorre em outros locais, já que é causada por cepas específicas.</p>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p><i>   “É interessante o que ocorre com a imunidade na amebíase. Sabe se que pacientes que tiveram infecções intestinais ou hepáticas, dificilmente apresentam recidivas graves. Ou seja, na primo-infecção pela <b>E. histolytica</b>, as formas invasivas estimulam o sistema imune, protegendo o paciente de reinfecções. O sistema complemento é um importante componente do sistema imunológico inato, iniciando uma resposta inflamatória local e remoção dos patógenos. Entretanto, ainda não estão totalmente esclarecidos os mecanismos imunes envolvidos, quer sejam humorais, quer sejam citológicos, tornando difícil demonstrar uma correlação exata entre as reações imunológicas ocorridas e a resistência dos pacientes. Por outro lado, sabe-se que portadores de amebas não patogênicas (E. díspar ou E. coli) não apresentam anticorpos específicos, pois colonizam apenas a luz intestinal.\n    Tanto a imunidade inata humoral quanto a mediada por células estão envolvidas na patogênese da amebíase. De toda forma, nos pacientes com amebíase invasiva (intestinal ou hepática) é possível demonstrar a presença de anticorpos no soro sanguíneo das classes IgG, IgA e IgE. Nas fezes de pacientes também são detectados anticorpos IgA e IgG (o que permite o diagnóstico imunológico através da hemaglutinação indireta ou ELISA). Já os mecanismos celulares de defesa são discretos e pouco conhecidos.”\n</i></p>"
+      },
+      {
+        "title" : "Profilaxia:",
+        "type" : "text",
+        "text" : "<p>    A profilaxia da amebíase consiste em:\n    \uF076\tTratamento dos doentes\n    \uF076\tRede sanitária (de esgoto, lixo e água)\n    \uF076\tTroca periódica de filtros\n    \uF076\tLimpeza de caixas d’água\n    \uF076\tHigienização de verduras\n</p>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "<p>    A amebíase pode ser curada espontaneamente, por ação do sistema imune. Porém quando constatada a infecção é recomendado uma dieta mais leve, com vasta reposição de líquidos e sais minerais, entretanto pobre em fibras e entrada com a via medicamentosa. {A ingestão medicamentosa pode ser de Secnidazol, e como segunda opção Metronidazol, que também é usado nas formas extraintestinais, assim como a terceira opção o Tinidazol a quarta, o Teclozam, é indicado nas formas assintomáticas ou brandas. Há também o Nitazoxanida para a forma intestinal aguda. Todos esses contraindicados para gravidas e mães em estágio de amamentação.\n</p>"
+      }
+    ]
+  },
+  {
+    "categoryName" : "Balantidíase",
+    "numberOfTabs" : 7,
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "textAndImage",
+        "text" : "<p>    A balantidíase é uma doença causa pelo protozoário ciliado Balantidium coli, que é caracterizada por uma infecção no intestino grosso, por ser habitual em porcos, acidental em humanos, é uma infecção zoonótica, uma antropozoonoze. Pode ser transmitida pela via fecal-oral, a partir do contato direto ou indireto com as fezes de humanos ou suínos contaminados. Foi encontrado em 1857 por Malmsten, em dois pacientes com disenteria. O gênero Balantidium pode ser encontrado em outros animais, geralmente em parcerias mutualísticas. Na espécie humano, raramente provocando lesões no intestino grosso, o B. coli é o único protozoário ciliado que pode causar doenças. Por ter seus casos muito raros é negligenciada, além de ter divergência em sua patogenicidade e provavelmente atingir mais pacientes imunodeprimidos, como soros positivos a AIDS(SIDA).\n</p>"
+      },
+      {
+        "title" : "Morfologia do Agente:",
+        "type" : "textAndImage",
+        "text" : "<p>    Sendo do filo Ciliophora, classe Kinetofragminophorea, subclasse Holotrichia, ordem Trichostomatida, o protozoário anaeróbio facultativo <i>Balantidium coli</i> apresenta duas formas:\n    \uF076O trofozoíto apresenta cílios por todo corpo, e entre suas organelas um vacúolo digestivo e dois núcleos, o macronúcleo, que controla o metabolismo e o micronúcleo, responsável pela conjugação sexual. Habitando normal a luz do intestino grosso de suínos e de humanos. Possui cerca de 60 a 100 µm de comprimento e 50 a 80 µm. \n\uF076O cisto com formato próximo ao esférico e parede lisa, sem cílios, e de 40 a 60 µm de diâmetro.</p>",
+        "imageAddress" : "bala1"
+      },
+      {
+        "title" : "Ciclo Biológico:",
+        "type" : "textAndImage",
+        "text" : "<p>    O <i>B. coli</i> apresenta ciclo biológico monoxênico, e reprodução tanto sexuada quando assexuada. A reprodução assexuada ocorre por divisão binária, com a bipartição do protozoário em sentido transversal. Já a sexuada, por conjugação, ocorre quando dois organismos se unem em um curto período de tempo de citóstoma (não altera o movimento), assim promovendo troca de material genético. No processo o macronúcleo se degenera e some no citoplasma, porém os micronúcleos crescem e realizam uma meiose seguida por uma mitose migrando para diferentes citoplasmas. A reprodução continua com a reformação dos macronúcleos. Os protozoários reorganizados podem ou não sofrer divisão binária e promover seu encistamento formando os cistos, forma mais resistente que o trofozoíto. A reprodução assexuada tem como função ampliar a colônia já a sexuada, por possibilitar a troca genética e a formação de cistos para disseminação da espécie.</p>",
+        "imageAddress" : "bala3"
+      },
+      {
+        "title" : "Patogenia e Sintomatologia:",
+        "type" : "text",
+        "text" : "<p>    O <i>B. coli</i> vive geralmente na luz do intestino grosso, sendo aparentemente, incapaz de penetrar mucosas intactas, porém quando já há lesão ele é capaz adentrar até as camadas musculares causando lesões do tipo necrótico. A proteólise é considerada como o fator de digestão das mucosas de revestimento do cólon, isso facilita a invasão dos tecidos. O B. coli tem a capacidade de produzir enzimas proteolíticas e com padrão de patogenia próximo da Entamoeba histolytica. A penetração do intestino pode progredir para infecção da pleura, do fígado, dos linfonodos mesentéricos, da vagina, da bexiga ou do ureter. Os casos mais graves em maior ocorrência em pacientes imunodeprimidos como portadores neoplasias, doenças do colágeno, anemia falciforme, tuberculose, AIDS, desnutridos, ou pacientes com uso em longos períodos de corticoides ou imunossupressores. A doença possui 3 categorias: <br />\uF076 No paciente assintomático o <i>B. coli</i> pode estar presente apesar de não causar dano algum, também sendo semelhante a amebíase.<br />\uF076 No paciente crônico há um ciclo de alternância entre diarreia e constipação, o que causa perda de peso e dor abdominal. <br />\uF076 No paciente agudo, considerada como uma infecção leve, há uma síndrome disentérica constituída de muco e material purulento, além de sangue, nas fezes. Em casos graves pode vir conjugados a anorexia, náuseas, perda de peso, caquexia, palidez, cefaleia, insônia, vômito, anemia. Ainda nestes casos podendo ocorrer perfuração intestinal, peritonite, invasão extraintestinal, com contaminação de outros órgãos (pulmões e fígado) pelo parasito podendo o paciente se desenvolver ao óbito.\n</p>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p><i>    “Conforme foi dito anteriormente, o gênero Balantidium ocorre em uma grande variedade de animais, usualmente como participantes mutualísticos intestinais, porém a espécie B. coli já ocorre em poucos mamíferos podendo desencadear alguma patogenia. Nas infecções em humanos e suínos raramente provoca alguma sintomatologia e mais raramente ainda surtos graves. Isso provavelmente se deve à defesa inespecífica (imunológica inata), impedindo a colonização do parasito na mucosa do intestino grosso do hospedeiro. Nesses casos há participação das imunidades humoral e celular, que estão ainda carecendo de estudos profundos”</i>\n</p>"
+      },
+      {
+        "title" : "Profilaxia:",
+        "type" : "text",
+        "text" : "<p>    A profilaxia pode ser baseada nas ações de: \n\uF076 Criação de suínos com melhores condições sanitárias, impedindo a disseminação das fezes.\n \uF076 Educação higiênico-sanitária para a população\n \uF076 Treinamento para higienização de alimentos em estabelecimentos comerciais e industriais\n \uF076 Tratamento dos doentes, humanos e suínos\n \uF076 Higiene dos profissionais que tratam com suínos\n</p>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "<p>     Nos casos sintomáticos pode ser feita uma dieta láctea por alguns dias, devido à restrição alimentar de amido do protozoário, porém em alguns casos deve ser ministrado medicamentos, como tetraciclinas para adultos (contraindicação para mulheres grávidas), e para crianças metronidazol. Os pacientes assintomáticos podem espontaneamente se curar.</p>"
+      }
+    ]
+  },
+  {
     "categoryName" : "Ascaridíase",
       "numberOfTabs" : 9,
       "tabs" : [
