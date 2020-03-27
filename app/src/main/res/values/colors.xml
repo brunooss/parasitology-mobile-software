@@ -17,4 +17,5 @@
     <color name="colorBackgroundIntroductionFourth">#E89F71</color>
     <color name="colorYellowButtonPressed">#CCA03D</color>
     <color name="colorShadowBackground">#023E63</color>
+    <color name="colorGrayWhiteSquare">#F7F7F7</color>
 </resources>

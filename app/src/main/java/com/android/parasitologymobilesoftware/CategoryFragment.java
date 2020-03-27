@@ -22,6 +22,7 @@ import java.io.InputStream;
 public class CategoryFragment extends Fragment {
 
     static InputStream inputStream;
+    public static String category;
 
     @Nullable
     @Override
@@ -31,6 +32,9 @@ public class CategoryFragment extends Fragment {
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
         TextView textViewText = rootView.findViewById(R.id.textViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
+
+        Bundle extras = getArguments();
+        category = extras.getString("fragment");
 
         if(getArguments().getString("type").equals("textAndImage")) {
             textViewTitle.setText(this.getArguments().getString("title"));
@@ -64,7 +68,7 @@ public class CategoryFragment extends Fragment {
             for(int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-                if(jsonObject.getString("categoryName").equals(activity.fragment) && !jsonObject.get("numberOfTabs").equals(position)) {
+                if(jsonObject.getString("categoryName").equals("Ascaridíase") && !jsonObject.get("numberOfTabs").equals(position)) {
                     JSONObject tab = jsonObject.getJSONArray("tabs").getJSONObject(position);
                     args.putString("title", tab.getString("title"));
                     args.putString("type", tab.getString("type"));

@@ -5,8 +5,8 @@
              android:layout_height="match_parent"
              tools:context=".CategoryFragment">
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" android:layout_margin="8dp" android:elevation="2dp">
+        android:layout_width="match_parent" android:background="@color/colorWhite"
+        android:layout_height="match_parent" android:layout_margin="8dp" android:elevation="5dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -16,7 +16,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp" android:fontFamily="@font/futura_heavy"
-                android:text="TextView" android:textSize="36sp"
+                android:text="TextView" android:textSize="36sp" android:textColor="@color/colorAccent"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                 android:id="@+id/textViewCategoryText"

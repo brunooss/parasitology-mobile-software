@@ -302,10 +302,25 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onCategoryButtonClick(View view) {
-        Intent intent = new Intent(this, CategoryActivity.class);
-        if(getResources().getResourceEntryName(view.getId()).contains("Ascaridiase"))
-            intent.putExtra("fragment", "Ascaridíase");
-        startActivity(intent);
+        if (view.getBackground().getConstantState() == getDrawable(R.drawable.category_button_background_blocked).getConstantState()){
+            //TODO OR NOT: user is not able to get into this category because he has not accomplished the previous one
+        } else {
+
+            switch (view.getId()) {
+                case R.id.categoryHomeFragmentIntroduction:
+                    Toast.makeText(this, "introduction", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(this, CategoryActivity.class);
+                    intent.putExtra("fragment", "Ascaridíase");
+                    startActivity(intent);
+                    break;
+                case R.id.categoryHomeFragmentIntroductionEcologia:
+                    Toast.makeText(this, "ecologia", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.categoryHomeFragmentIntroductionConceitosGerais:
+                    Toast.makeText(this, "conceitos", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
     }
 
     public void settingProgress(int progressToGo){                      // Call this function to change the progress bar, passing an int variable that goes from 0 to 100
