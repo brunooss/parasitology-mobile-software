@@ -5,14 +5,14 @@
     "tabs" : [
       {
         "title" : "Introdução:",
-        "type" : "textAndImage",
+        "type" : "text",
         "text" : "<p>    Amebíase é uma infecção intestinal e extra intestinal, causada pela <i>Entamoeba histolytica</i>. Como outras infecções intestinais a amebíase tem divergências e controvérsias, isso ocorre devido a variação entre as manifestações da doença, que podem variar principalmente pela virulência das cepas e localização}.    Apesar de ser a segunda parasitose que mais mata no mundo, apenas atrás da malária, {tendo elevada letalidade em países como México e Índia,} sua gravidade tem grande variação no próprio Brasil {gerando colites mais graves na região amazônica}.\n</p>"
       },
       {
         "title" : "Morfologia do Agente:",
         "type" : "textAndImage",
         "text" : "<p>    A <i>E. histolytica</i> é a única ameba que causa patologias na espécie humana. Apesar de existir outra como <i>Endolimax nana</i>, <i>E. hartmanni</i>, <i>E. díspar</i>, <i>Iodamoeba butschlli</i> e <i>E. coli</i> que vivem no intestino grosso e ainda a <i>E. hartmanni</i> (*não parece ser tanto assim apesar do livro falar que é*) e <i>E. díspar</i> serem morfologicamente iguais a <i>E. histolytica</i> nenhuma outra é patogênica. Também há amebas na cavidade bucal da espécie <i>E. gengivalis</i> que não é patogênica, além de não formar cistos.} Sendo um protozoário do filo Sarcomastigophora, do subfilo Sarcodina, da família Endamoebidae, a <i>Entamoeba histolytica</i> possui duas formas básicas e duas intermediárias, sendo essas:\n            \uF076\tO trofozoíto, sendo a fase ativa que é capaz de se reproduzir e se alimentar, vivendo na mucosa ou na luz do intestino grosso {, principalmente nas regiões do ceco e retossigmoide,} formando colônias. Possui cerca de 20 a 40 µm de diâmetro, tendo uma forma ameboide, movimentando do se por pseudópodes.    {Possui duas regiões plasmática bem explicitas o endoplasma, denso, e o ectoplasma, menos denso e mais claro, ainda com um só núcleo com uma cromatina central e ademais aderidas a carioteca.\n    \uF076\tO cisto, a forma de resistência, é elimina junto as fezes, pode apresentar até 4 núcleos.    Possui cerca de 8 a 20 µm de diâmetro e formato esférico.\n    \uF076\tFormas intermediárias:\n    o\tPré-cisto forma anterior ao cisto que pode aparecer nas fezes\n    o\tmetacisto, por posterior ao desencistamento, tetranucleada\n</p>",
-        "imageAddress" : "ascaridiase2"
+        "imageAddress" : "ameba2"
       },
       {
         "title" : "Ciclo Biológico:",
@@ -48,7 +48,7 @@
     "tabs" : [
       {
         "title" : "Introdução:",
-        "type" : "textAndImage",
+        "type" : "text",
         "text" : "<p>    A balantidíase é uma doença causa pelo protozoário ciliado Balantidium coli, que é caracterizada por uma infecção no intestino grosso, por ser habitual em porcos, acidental em humanos, é uma infecção zoonótica, uma antropozoonoze. Pode ser transmitida pela via fecal-oral, a partir do contato direto ou indireto com as fezes de humanos ou suínos contaminados. Foi encontrado em 1857 por Malmsten, em dois pacientes com disenteria. O gênero Balantidium pode ser encontrado em outros animais, geralmente em parcerias mutualísticas. Na espécie humano, raramente provocando lesões no intestino grosso, o B. coli é o único protozoário ciliado que pode causar doenças. Por ter seus casos muito raros é negligenciada, além de ter divergência em sua patogenicidade e provavelmente atingir mais pacientes imunodeprimidos, como soros positivos a AIDS(SIDA).\n</p>"
       },
       {

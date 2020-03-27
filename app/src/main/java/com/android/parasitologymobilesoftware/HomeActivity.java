@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity
     private String schoolGrade;
     private String completeName;
 
-    public String fragment;
+    public static String fragment = "notNull";
 
     private View dialogView;
 
@@ -364,6 +364,7 @@ public class HomeActivity extends AppCompatActivity
             fragment = "Moscas";
         else if(getResources().getResourceEntryName(view.getId()).contains("Ectoparasitos"))
             fragment = "Ectoparasitos";
+
         startActivity(intent);
     }
 
