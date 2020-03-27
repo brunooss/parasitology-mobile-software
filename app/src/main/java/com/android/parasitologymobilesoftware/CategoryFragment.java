@@ -32,15 +32,18 @@ public class CategoryFragment extends Fragment {
         TextView textViewText = rootView.findViewById(R.id.textViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
 
-        if(getArguments().getString("type").equals("textAndImage")) {
-            textViewTitle.setText(this.getArguments().getString("title"));
-            textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
-            imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
+        if (getArguments().getString("type") != null) {
+            Toast.makeText(MyApplication.getMyApplicationContext(), getArguments().getString("type"), Toast.LENGTH_LONG).show();
+            if(getArguments().getString("type").equals("textAndImage")) {
+                textViewTitle.setText(this.getArguments().getString("title"));
+                textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+                imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
-        } else if (getArguments().getString("type").equals("text")) {
-            textViewTitle.setText(this.getArguments().getString("title"));
-            textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
-            imageView.setVisibility(ImageView.INVISIBLE);
+            } else if (getArguments().getString("type").equals("text")) {
+                textViewTitle.setText(this.getArguments().getString("title"));
+                textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+                imageView.setVisibility(ImageView.INVISIBLE);
+            }
         }
 
         return rootView;
@@ -48,7 +51,7 @@ public class CategoryFragment extends Fragment {
 
     public static CategoryFragment newInstance(int position) {
         Bundle args = new Bundle();
-        CategoryActivity activity = new CategoryActivity();
+        HomeActivity activity = new HomeActivity();
 
         try {
             inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");
@@ -58,7 +61,6 @@ public class CategoryFragment extends Fragment {
             inputStream.close();
             String JSON = new String(buffer, "UTF-8");
             JSONArray jsonArray = new JSONArray(JSON);
-
 
 
             for(int i = 0; i < jsonArray.length(); i++) {
@@ -73,12 +75,14 @@ public class CategoryFragment extends Fragment {
                         tab.get("imageAddress");
                         args.putString("imageAddress", tab.getString("imageAddress"));
                     } catch (JSONException ignored) { }
+                    Toast.makeText(MyApplication.getMyApplicationContext(), activity.fragment, Toast.LENGTH_LONG).show();
                 }
             }
 
 
         } catch (IOException e) {
             e.printStackTrace();
+            Toast.makeText(MyApplication.getMyApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -86,6 +90,8 @@ public class CategoryFragment extends Fragment {
         }
 
         args.putInt("position", position);
+
+        Toast.makeText(MyApplication.getMyApplicationContext(), activity.fragment, Toast.LENGTH_LONG).show();
 
         CategoryFragment fragment = new CategoryFragment();
         fragment.setArguments(args);
