@@ -56,6 +56,11 @@
         <item name="colorPrimaryDark">@color/colorBackgroundIntroductionSecond</item>
     </style>
 
+    <style name="AppTheme.CategoryActivity" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorYellowButtonPressed</item>
+        <item name="android:colorBackground">@color/colorGrayWhiteSquare</item>
+    </style>
+
     <style name="AppTheme.IntroductionFragment3" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimaryDark">@color/colorBackgroundIntroductionThird</item>
     </style>
@@ -97,7 +102,7 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
     <style name="spinnerDropDownItemFeedbackStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
-        <item name="android:background">#F0F0F0</item>
+        <item name="android:background">@color/colorWhite</item>
         <item name="android:textColor">@color/colorAccent</item>
     </style>
     <style name="AppTheme.NoActionBar">
@@ -109,6 +114,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="FuturaMediumTextAppearance">
         <item name="android:fontFamily">@font/futura_medium_bt</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
 

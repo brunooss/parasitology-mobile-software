@@ -12,15 +12,21 @@ import androidx.viewpager.widget.ViewPager;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    public String fragment = "Ascaridíase";
+    //public String fragment = "Ascaridíase";
+    public String fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
+        Bundle extras = getIntent().getExtras();
+        fragment = extras.getString("fragment");
+
+
         final Toolbar toolbar = findViewById(R.id.toolbarSubject);
-        toolbar.setTitle("");
+        toolbar.setTitle(fragment);
+        toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

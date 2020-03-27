@@ -301,71 +301,75 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onCategoryButtonClick(View view) {
-        Intent intent = new Intent(this, CategoryActivity.class);
-        if(getResources().getResourceEntryName(view.getId()).contains("Ecologia"))
-            fragment = "Ecologia Parasitária";
-        else if(getResources().getResourceEntryName(view.getId()).contains("ConceitosGerais"))
-            fragment = "Conceitos Gerais";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Classificacao"))
-            fragment = "Classificação dos Parasitos";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Atualidades"))
-            fragment = "Atualidades";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Amebiase"))
-            fragment = "Amebíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Giardiase"))
-            fragment = "Giardíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Leishmanioses"))
-            fragment = "Leishmanioses";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Tricomonose"))
-            fragment = "Tricomonose";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Chagas"))
-            fragment = "Doença de Chagas";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Malaria"))
-            fragment = "Malária";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Toxoplasmose"))
-            fragment = "Toxoplasmose";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Balantidiase"))
-            fragment = "Balantidíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Protozooses"))
-            fragment = "Protozooses";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Esquistossomose"))
-            fragment = "Esquistossomose";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Fascioliase"))
-            fragment = "Fasciolíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Teniase"))
-            fragment = "Teníase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Cisticercose"))
-            fragment = "Cisticercose";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Hidatidose"))
-            fragment = "Hidatidose";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Himenolepiase"))
-            fragment = "Himenoleíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Estrongiloidíase"))
-            fragment = "Estrongiloidíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Tricuriase"))
-            fragment = "Tricuríase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Ancilostomiase"))
-            fragment = "Ancilostomíase e Necatoriase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Enterobiase"))
-            fragment = "Enterobíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Ascaridiase"))
-            fragment = "Ascaridíase";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Migrans"))
-            fragment = "Larva Migrans";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Filarioses"))
-            fragment = "Filarioses";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Outras"))
-            fragment = "Outras Helmintoses";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Hemipteros"))
-            fragment = "Hemípteros";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Mosquitos"))
-            fragment = "Mosquitos";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Moscas"))
-            fragment = "Moscas";
-        else if(getResources().getResourceEntryName(view.getId()).contains("Ectoparasitos"))
-            fragment = "Ectoparasitos";
+        if (view.getBackground().getConstantState() == getDrawable(R.drawable.category_button_background_blocked).getConstantState()){
+            //TODO OR NOT: user is not able to get into this category because he has not accomplished the previous one
+        } else {
+            Intent intent = new Intent(this, CategoryActivity.class);
+            if (getResources().getResourceEntryName(view.getId()).contains("Ecologia"))
+                fragment = "Ecologia Parasitária";
+            else if (getResources().getResourceEntryName(view.getId()).contains("ConceitosGerais"))
+                fragment = "Conceitos Gerais";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Classificacao"))
+                fragment = "Classificação dos Parasitos";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Atualidades"))
+                fragment = "Atualidades";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Amebiase"))
+                fragment = "Amebíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Giardiase"))
+                fragment = "Giardíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Leishmanioses"))
+                fragment = "Leishmanioses";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Tricomonose"))
+                fragment = "Tricomonose";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Chagas"))
+                fragment = "Doença de Chagas";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Malaria"))
+                fragment = "Malária";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Toxoplasmose"))
+                fragment = "Toxoplasmose";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Balantidiase"))
+                fragment = "Balantidíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Protozooses"))
+                fragment = "Protozooses";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Esquistossomose"))
+                fragment = "Esquistossomose";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Fascioliase"))
+                fragment = "Fasciolíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Teniase"))
+                fragment = "Teníase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Cisticercose"))
+                fragment = "Cisticercose";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Hidatidose"))
+                fragment = "Hidatidose";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Himenolepiase"))
+                fragment = "Himenoleíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Estrongiloidíase"))
+                fragment = "Estrongiloidíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Tricuriase"))
+                fragment = "Tricuríase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Ancilostomiase"))
+                fragment = "Ancilostomíase e Necatoriase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Enterobiase"))
+                fragment = "Enterobíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Ascaridiase"))
+                fragment = "Ascaridíase";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Migrans"))
+                fragment = "Larva Migrans";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Filarioses"))
+                fragment = "Filarioses";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Outras"))
+                fragment = "Outras Helmintoses";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Hemipteros"))
+                fragment = "Hemípteros";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Mosquitos"))
+                fragment = "Mosquitos";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Moscas"))
+                fragment = "Moscas";
+            else if (getResources().getResourceEntryName(view.getId()).contains("Ectoparasitos"))
+                fragment = "Ectoparasitos";
 
-        startActivity(intent);
+            startActivity(intent);
+        }
     }
 
     public void settingProgress(int progressToGo){                      // Call this function to change the progress bar, passing an int variable that goes from 0 to 100
