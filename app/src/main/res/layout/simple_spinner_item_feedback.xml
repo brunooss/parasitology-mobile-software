@@ -4,7 +4,7 @@
     style="@style/spinnerItemStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#F0F0F0" android:ellipsize="marquee"
+    android:background="@color/colorWhite" android:ellipsize="marquee"
     android:fontFamily="@font/futura_light_bt" android:textStyle="bold"
     android:singleLine="true"
     android:textColor="@color/colorAccent" android:textSize="15sp"

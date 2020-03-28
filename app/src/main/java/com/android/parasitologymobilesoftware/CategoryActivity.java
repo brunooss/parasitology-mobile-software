@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.util.Log;
 import android.view.*;
 import android.webkit.WebView;
 import android.widget.SearchView;
@@ -12,8 +13,9 @@ import androidx.viewpager.widget.ViewPager;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    //public String fragment = "Ascaridíase";
-    public String fragment;
+    //public String category = "Ascaridíase";
+    public String category;
+    private static final String TAG = "CategoryActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +23,11 @@ public class CategoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_category);
 
         Bundle extras = getIntent().getExtras();
-        fragment = extras.getString("fragment");
-
+        category = extras.getString("category");
+        Log.d(TAG, "Category received: " +category);
 
         final Toolbar toolbar = findViewById(R.id.toolbarSubject);
-        toolbar.setTitle(fragment);
+        toolbar.setTitle(category);
         toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

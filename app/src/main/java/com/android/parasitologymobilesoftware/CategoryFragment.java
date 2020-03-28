@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,6 +65,10 @@ public class CategoryFragment extends Fragment {
         Bundle args = new Bundle();
         HomeActivity activity = new HomeActivity();
 
+        category = activity.getCategory();
+        Log.d("CategoryFragment", "Category's name received: " +category);
+
+
         try {
             inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");
             int size = inputStream.available();
@@ -77,7 +82,7 @@ public class CategoryFragment extends Fragment {
             for(int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-                if(jsonObject.getString("categoryName").equals("Ascaridíase") && !jsonObject.get("numberOfTabs").equals(position)) {
+                if(jsonObject.getString("categoryName").equals(category) && !jsonObject.get("numberOfTabs").equals(position)) {
                     JSONObject tab = jsonObject.getJSONArray("tabs").getJSONObject(position);
                     args.putString("title", tab.getString("title"));
                     args.putString("type", tab.getString("type"));
@@ -86,7 +91,7 @@ public class CategoryFragment extends Fragment {
                         tab.get("imageAddress");
                         args.putString("imageAddress", tab.getString("imageAddress"));
                     } catch (JSONException ignored) { }
-                    Toast.makeText(MyApplication.getMyApplicationContext(), activity.fragment, Toast.LENGTH_LONG).show();
+                    Toast.makeText(MyApplication.getMyApplicationContext(), activity.category, Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -102,7 +107,7 @@ public class CategoryFragment extends Fragment {
 
         args.putInt("position", position);
 
-        Toast.makeText(MyApplication.getMyApplicationContext(), activity.fragment, Toast.LENGTH_LONG).show();
+        Toast.makeText(MyApplication.getMyApplicationContext(), activity.category, Toast.LENGTH_LONG).show();
 
         CategoryFragment fragment = new CategoryFragment();
         fragment.setArguments(args);

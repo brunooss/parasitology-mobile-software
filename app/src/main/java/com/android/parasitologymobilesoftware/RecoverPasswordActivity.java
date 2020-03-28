@@ -34,7 +34,7 @@ public class RecoverPasswordActivity extends AppCompatActivity {
 
     private TextView textViewErrorButton; // Error message
     private ProgressBar progressBar;     // Progress Bar
-    private Button buttonSendEmail;     // Button above the frame_container, preventing the fragment from overlapping
+    private Button buttonSendEmail;     // Button above the frame_container, preventing the category from overlapping
 
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
