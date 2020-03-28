@@ -6,7 +6,7 @@
              android:fitsSystemWindows="true"
              tools:context=".IntroductionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank category layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraindLayoutIntroduction"
         android:layout_width="match_parent" android:layout_height="match_parent">

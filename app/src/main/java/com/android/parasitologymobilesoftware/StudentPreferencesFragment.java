@@ -170,7 +170,7 @@ public class StudentPreferencesFragment extends Fragment {
                 }
             }
         });
-        // Inflate the layout for this fragment
+        // Inflate the layout for this category
         return rootView;
     }
 

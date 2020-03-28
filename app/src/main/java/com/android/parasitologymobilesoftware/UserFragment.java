@@ -270,7 +270,7 @@ public class UserFragment extends Fragment {
         textViewChangeSchoolYear.setTextColor(Color.TRANSPARENT);
 
 
-        // Inflate the layout for this fragment
+        // Inflate the layout for this category
         return rootView;
     }
 

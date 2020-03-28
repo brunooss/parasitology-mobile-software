@@ -7,10 +7,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.NotificationCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
@@ -24,6 +24,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.core.Tag;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -34,6 +35,8 @@ import java.util.Map;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private static final String TAG = "HomeActivity";
 
     private int progressStatus;
     private ProgressBar progressBar;
@@ -50,11 +53,13 @@ public class HomeActivity extends AppCompatActivity
     private String schoolGrade;
     private String completeName;
 
-    public static String fragment = "notNull";
+    public static String category = "notNull";
 
     private View dialogView;
 
     private AlertDialog alertDialogFeedback;
+
+    private CategoryFragment categoryFragment;
 
     public String searchSubcategories[][] = {
             {"Protozoários", "Doença de Chagas", "Tricomonose", "Balantidíase","Malária", "Giardíase", "Leishmanioses"},
@@ -67,7 +72,7 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
+        categoryFragment = new CategoryFragment();
 
         firebaseAuth = FirebaseAuth.getInstance();
         dataBase = FirebaseFirestore.getInstance();
@@ -302,71 +307,135 @@ public class HomeActivity extends AppCompatActivity
 
     public void onCategoryButtonClick(View view) {
         if (view.getBackground().getConstantState() == getDrawable(R.drawable.category_button_background_blocked).getConstantState()){
-            //TODO OR NOT: user is not able to get into this category because he has not accomplished the previous one
+            //TODO OR NOT: user is not able to get into this category because he has not accomplished the previous ones
+            Log.i(TAG, "User is not allowed to get into this category because he has not accomplished the previsous one");
         } else {
             Intent intent = new Intent(this, CategoryActivity.class);
-            if (getResources().getResourceEntryName(view.getId()).contains("Ecologia"))
-                fragment = "Ecologia Parasitária";
-            else if (getResources().getResourceEntryName(view.getId()).contains("ConceitosGerais"))
-                fragment = "Conceitos Gerais";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Classificacao"))
-                fragment = "Classificação dos Parasitos";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Atualidades"))
-                fragment = "Atualidades";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Amebiase"))
-                fragment = "Amebíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Giardiase"))
-                fragment = "Giardíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Leishmanioses"))
-                fragment = "Leishmanioses";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Tricomonose"))
-                fragment = "Tricomonose";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Chagas"))
-                fragment = "Doença de Chagas";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Malaria"))
-                fragment = "Malária";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Toxoplasmose"))
-                fragment = "Toxoplasmose";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Balantidiase"))
-                fragment = "Balantidíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Protozooses"))
-                fragment = "Protozooses";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Esquistossomose"))
-                fragment = "Esquistossomose";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Fascioliase"))
-                fragment = "Fasciolíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Teniase"))
-                fragment = "Teníase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Cisticercose"))
-                fragment = "Cisticercose";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Hidatidose"))
-                fragment = "Hidatidose";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Himenolepiase"))
-                fragment = "Himenoleíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Estrongiloidíase"))
-                fragment = "Estrongiloidíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Tricuriase"))
-                fragment = "Tricuríase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Ancilostomiase"))
-                fragment = "Ancilostomíase e Necatoriase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Enterobiase"))
-                fragment = "Enterobíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Ascaridiase"))
-                fragment = "Ascaridíase";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Migrans"))
-                fragment = "Larva Migrans";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Filarioses"))
-                fragment = "Filarioses";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Outras"))
-                fragment = "Outras Helmintoses";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Hemipteros"))
-                fragment = "Hemípteros";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Mosquitos"))
-                fragment = "Mosquitos";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Moscas"))
-                fragment = "Moscas";
-            else if (getResources().getResourceEntryName(view.getId()).contains("Ectoparasitos"))
-                fragment = "Ectoparasitos";
+            Log.i(TAG, "category with id");
+            switch (view.getId()) {
+                case R.id.categoryHomeFragmentIntroduction:
+                    category = "Introdução";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionEcologia:
+                    category = "Ecologia";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionConceitosGerais:
+                    category = "Conceitos Gerais";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionClassificacao:
+                    category = "Classificação";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionReproducao:
+                    category = "Reprodução";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionCicloBiologico:
+                    category = "Ciclo Biológico";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionAtualidades:
+                    category = "Atualidades";
+                    break;
+                case R.id.categoryHomeFragmentProtozoarios:
+                    category = "Protozoários";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosAmebiase:
+                    category = "Amebíase";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosGiardiase:
+                    category = "Giardíase";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosLeishmanioses:
+                    category = "Leishmanioses";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosTricomonose:
+                    category = "Tricomonose";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosChagas:
+                    category = "Doença de Chagas";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosMalaria:
+                    category = "Malária";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosToxoplasmose:
+                    category = "Toxoplasmose";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosBalantidiase:
+                    category = "Balantidíase";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosProtozooses:
+                    category = "Protozooses";
+                    break;
+                case R.id.categoryHomeFragmentHelmintos:
+                    category = "Helmintos";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosEsquistossomose:
+                    category = "Esquistossomose";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosFascioliase:
+                    category = "Fasciolíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosTeniase:
+                    category = "Teníase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosCisticercose:
+                    category = "Cisticercose";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosHidatidose:
+                    category = "Hidatidose";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosHimenolepiase:
+                    category = "Himenolepíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosEstrongiloidiase:
+                    category = "Estrongiloidíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosTricuriase:
+                    category = "Tricuríase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosAncilostomiase:
+                    category = "Ancilostomíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosNecatoriase:
+                    category = "Necatoríase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosEnterobiase:
+                    category = "Enterobíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosAscaridiase:
+                    category = "Ascaridíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosLarvaMigrans:
+                    category = "Larva Migrans";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosFilarioses:
+                    category = "Filarioses";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosOutrasHelmintoses:
+                    category = "Outras Helmintoses";
+                    break;
+                case R.id.categoryHomeFragmentArtropodes:
+                    category = "Artrópodes";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesHemipteros:
+                    category = "Hemípteros";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesMosquitos:
+                    category = "Mosquitos";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesMoscas:
+                    category = "Moscas";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesEctoparasitos:
+                    category = "Ectoparasitos";
+                    break;
+            }
+
+            Bundle extra = new Bundle();
+            extra.putString("category", category);
+
+            // Passing caterory's name to activity
+            intent.putExtras(extra);
+            // Passing category's name to fragment
+            categoryFragment.setArguments(extra);
 
             startActivity(intent);
         }
@@ -428,6 +497,11 @@ public class HomeActivity extends AppCompatActivity
 
         manager.notify(id, builder.build());
     }
+
+    public static String getCategory() {
+        return category;
+    }
+
 }
 
 
