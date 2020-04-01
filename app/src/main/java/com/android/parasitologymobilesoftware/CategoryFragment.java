@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 import android.text.Html;
+import android.text.Layout;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ public class CategoryFragment extends Fragment {
         } else if (getArguments().getString("type").equals("text")) {
             textViewTitle.setText(this.getArguments().getString("title"));
             textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+            //textViewText.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
             imageView.setVisibility(ImageView.INVISIBLE);
         }
         if (getArguments().getString("type") != null) {
@@ -54,6 +56,7 @@ public class CategoryFragment extends Fragment {
             } else if (getArguments().getString("type").equals("text")) {
                 textViewTitle.setText(this.getArguments().getString("title"));
                 textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+
                 imageView.setVisibility(ImageView.INVISIBLE);
             }
         }
