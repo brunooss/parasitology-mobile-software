@@ -116,6 +116,9 @@
         <item name="android:fontFamily">@font/futura_medium_bt</item>
         <item name="android:textAllCaps">true</item>
     </style>
+    <style name="StyleAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
 
 
 </resources>

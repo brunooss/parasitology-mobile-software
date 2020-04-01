@@ -59,7 +59,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 }
                 finish();
             }
-        }, 2000);
+        }, 3000);
 
     }
     public void setStudentPrefSetted(boolean studentPrefSetted){
