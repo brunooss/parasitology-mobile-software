@@ -10,29 +10,26 @@
         android:layout_marginLeft="9dp" android:layout_marginRight="9dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textViewCategoryTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp" android:fontFamily="@font/futura_heavy"
-                android:text="TextView" android:textSize="36sp" android:textColor="@color/colorAccent"
+                android:text="TextView" android:textColor="@color/colorAccent" android:textSize="36sp"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
 
-            <TextView
-                android:id="@+id/textViewCategoryText"
-                android:layout_width="0dp"
+            <WebView
+                android:id="@+id/webViewCategoryText"
+                android:layout_width=" "
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="TextView"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryTitle"/>
 
             <ImageView
                 android:id="@+id/imageViewCategoryImage"
@@ -46,7 +43,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryText" />
+                app:layout_constraintTop_toBottomOf="@+id/webViewCategoryText"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </FrameLayout>
