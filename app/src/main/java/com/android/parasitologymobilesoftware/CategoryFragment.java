@@ -2,8 +2,8 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 import android.text.Html;
-import android.text.Layout;
 import android.util.Log;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,30 +32,30 @@ public class CategoryFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_category, container, false);
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
-        TextView textViewText = rootView.findViewById(R.id.textViewCategoryText);
+        WebView webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
 
         if(getArguments().getString("type").equals("textAndImage")) {
             textViewTitle.setText(this.getArguments().getString("title"));
-            textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+            webViewText.loadData("<body><style>* {text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
             imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
         } else if (getArguments().getString("type").equals("text")) {
             textViewTitle.setText(this.getArguments().getString("title"));
-            textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
-            //textViewText.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
+            webViewText.loadData("<body><style>* {text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
             imageView.setVisibility(ImageView.INVISIBLE);
         }
         if (getArguments().getString("type") != null) {
             Toast.makeText(MyApplication.getMyApplicationContext(), getArguments().getString("type"), Toast.LENGTH_LONG).show();
             if(getArguments().getString("type").equals("textAndImage")) {
                 textViewTitle.setText(this.getArguments().getString("title"));
-                textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+                webViewText.loadData("<body><style>* {text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
                 imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
             } else if (getArguments().getString("type").equals("text")) {
+                webViewText.loadData("<body><style>* {text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
                 textViewTitle.setText(this.getArguments().getString("title"));
-                textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+                //webViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
 
                 imageView.setVisibility(ImageView.INVISIBLE);
             }
