@@ -1,13 +1,22 @@
 package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
+
+    public int count;
+
     public CategoryFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
+
+        count = CategoryActivity.getNumberOfTabs() != 0? CategoryActivity.getNumberOfTabs(): 2;
+
+        Log.e("TAG", String.valueOf(count));
     }
 
     @Override
@@ -21,6 +30,6 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 9;
+        return count;
     }
 }
