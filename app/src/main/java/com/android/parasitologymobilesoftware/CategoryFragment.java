@@ -2,8 +2,8 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 import android.text.Html;
-import android.text.Layout;
 import android.util.Log;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,7 +32,7 @@ public class CategoryFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_category, container, false);
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
-        TextView textViewText = rootView.findViewById(R.id.textViewCategoryText);
+        WebView webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
 
         if(getArguments().getString("type").equals("textAndImage")) {
@@ -55,7 +55,6 @@ public class CategoryFragment extends Fragment {
             } else if (getArguments().getString("type").equals("text")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
                 textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
-
                 imageView.setVisibility(ImageView.INVISIBLE);
             }
         }
