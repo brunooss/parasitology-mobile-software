@@ -9,18 +9,27 @@ import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.*;
 import android.widget.SearchView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
+import com.android.MyApplication;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class CategoryActivity extends AppCompatActivity {
 
     //public String category = "Ascaridíase";
     public String category;
     private static final String TAG = "CategoryActivity";
+    public static int numberOfTabs;
 
     private AlertDialog.Builder exitAlert;
     private AlertDialog alertDialogExit;
@@ -85,6 +94,32 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
+        try {
+            InputStream inputStream;
+            inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            String JSON = new String(buffer, "UTF-8");
+            JSONArray jsonArray = new JSONArray(JSON);
+
+            for(int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                if(jsonObject.getString("categoryName").equals(category)) {
+                    numberOfTabs = jsonObject.getInt("numberOfTabs");
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast.makeText(MyApplication.getMyApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(MyApplication.getMyApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
+        }
+
 
         final ViewPager viewPager = findViewById(R.id.viewPagerSubject);
         viewPager.setAdapter(new CategoryFragmentPagerAdapter(getSupportFragmentManager()));
@@ -93,7 +128,6 @@ public class CategoryActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
             }
 
             @Override
@@ -102,8 +136,8 @@ public class CategoryActivity extends AppCompatActivity {
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
             }
+
         }); //2643 x 1900
 
     }
@@ -141,6 +175,10 @@ public class CategoryActivity extends AppCompatActivity {
 
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public static int getNumberOfTabs() {
+        return numberOfTabs;
     }
 
 }

@@ -36,25 +36,24 @@ public class CategoryFragment extends Fragment {
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
 
         if(getArguments().getString("type").equals("textAndImage")) {
-            textViewTitle.setText(this.getArguments().getString("title"));
+            textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
             textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
             imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
         } else if (getArguments().getString("type").equals("text")) {
-            textViewTitle.setText(this.getArguments().getString("title"));
+            textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
             textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
             //textViewText.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
             imageView.setVisibility(ImageView.INVISIBLE);
         }
         if (getArguments().getString("type") != null) {
-            Toast.makeText(MyApplication.getMyApplicationContext(), getArguments().getString("type"), Toast.LENGTH_LONG).show();
             if(getArguments().getString("type").equals("textAndImage")) {
-                textViewTitle.setText(this.getArguments().getString("title"));
+                textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
                 textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
                 imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
             } else if (getArguments().getString("type").equals("text")) {
-                textViewTitle.setText(this.getArguments().getString("title"));
+                textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
                 textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
 
                 imageView.setVisibility(ImageView.INVISIBLE);
@@ -90,6 +89,7 @@ public class CategoryFragment extends Fragment {
                     args.putString("title", tab.getString("title"));
                     args.putString("type", tab.getString("type"));
                     args.putString("text", tab.getString("text"));
+
                     try {
                         tab.get("imageAddress");
                         args.putString("imageAddress", tab.getString("imageAddress"));
@@ -109,8 +109,6 @@ public class CategoryFragment extends Fragment {
         }
 
         args.putInt("position", position);
-
-        Toast.makeText(MyApplication.getMyApplicationContext(), activity.category, Toast.LENGTH_LONG).show();
 
         CategoryFragment fragment = new CategoryFragment();
         fragment.setArguments(args);

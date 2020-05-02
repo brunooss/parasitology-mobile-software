@@ -1,5 +1,96 @@
 [
   {
+    "categoryName" : "Ecologia",
+    "numberOfTabs" : 16,
+    "tabs" : [
+      {
+        "title" : "Introdução I:",
+        "type" : "text",
+        "text" : "<p>    Ainda no final do século XIX e no início do século XX, a parasitologia era uma ciência considerada recente, que se preocupava em descrever a forma dos agentes ediológicos, a sua biologia, forma de transmissão e patogenia. De certa forma, assemelhava-se à uma zoologia parasitária. A partir da primeira década do século XX até as décadas de 1970 e 1980, a parasitologia se desenvolveu muito nos aspectos citados acima, que buscava decifrar acerca dos parasitos, com a adição de outros, tais como a nutrição, a epidemiologia, os métodos de diagnóstico, a profilaxia e a terapêutica mais eficaz para cada um.\n    De 1990 até meados de 2013, a parasitologia deu continuidade ao seu avanço, utilizando como ferramentas complementares a genética, a bioquímica, a ultraestrutura, a biologia molecular e a reação entre o parasito e o hospedeiro, a fim de aperfeiçoar os mesmos tópicos supracitados.\n    Como pode-se observar, a ciência parasitológica, desde sua criação, foi um campo abrangente e vasto para pesquisas. Sob o ponto de vista biológico, o ser humano é apenas uma das milhares de espécies existentes na comunidade biológica, onde cada uma participa e gera efeitos para todos os outros. A espécie humana tem capacidade de controlar parcialmente o meio na qual ela vive, mas é totalmente dependente deste, isto é, caso não haja uma boa qualidade do solo, da água e do ar, os humanos não sobreviveriam.\n</p>"
+      },
+      {
+        "title" : "Introdução II:",
+        "type" : "text",
+        "text" : "<p>    Caso a ação humana seja demasiada, tal como tem sido ultimamente, a tendência será a ocorrência de um desequilíbrio social e ambiental que, por consequência, ocasionará a saúde pública e as parasitoses, em particular. Pode-se considerar a Terra como um sistema fechado, onde nada pode ser desperdiçado ou descartado, caso contrário fará falta para os demais pertencentes a esse conjunto. Além disso, todos esses indivíduos devem ser tratados com o mesmo valor ecológico e, ao ser humano, a espécie mais desenvolvida e capaz de decidir o próprio destino e o de outros seres vivos, cabe compreender que, quanto maior o desequilíbrio que este possa causar, menor será a duração da vida na Terra.\n    Como foi dito acima, o ser humano pertence à natureza, e compõe a ordem natural da vida, a qual é regida por três principais leis, existentes desde tempos imensuráveis:\n<ul><li><p>Interdependência: os seres vivos e não vivos possuem uma relação de interdependência.</p></li>\n<li><p>Reciclagem: De acordo com Lavoisier, “na natureza, nada se cria, nada se perde, tudo se transforma”, isto é, a constante reciclagem dos componentes bióticos e abióticos permite a circulação e a renovação da vida.</p></li>\n<li><p>Pressão Evolutiva: há uma permanente pressão evolutiva sobre os seres vivos, que permite a adaptação e a sobrevivência das espécies, bem como a formação de novas.</p></li></ul>\n</p>"
+      },
+      {
+        "title" : "Introdução III:",
+        "type" : "text",
+        "text" : "<p>    Os humanos, que possuem inteligência, criatividade e emoções ilimitadas, também são afetados por estas leis citadas anteriormente. Por outro lado, estes também são capazes de utilizar os recursos naturais para a construção de sociedades, religiões e exércitos. De tribos isoladas, os humanos evoluíram para tribos, cidades, nações e, atualmente, para a globalização. Tal fato, porém, ocorreu apenas com o uso deliberado e inconsciente dos recursos naturais, o que coloca em risco a nossa espécie e as demais.</p>"
+      },
+      {
+        "title" : "Introdução IV:",
+        "type" : "text",
+        "text" : "<p>    Atualmente, a saúde pública e individual são os maiores bens existentes em uma sociedade, devido a maior capacidade dos indivíduos viverem mais e de forma saudável. Pelo exposto, pode-se observar a importância da “ecologia médica”, isto é, o amplo e específico conhecimento das doenças e de suas causas, a fim de obter a sua efetiva profilaxia. Assim, a epidemiologia e a ecologia médica devem atuar em conjunto para entender os componentes bióticos e abióticos que propiciam a existência de uma doença. Deve-se, portanto, buscar a saúde ambiental, econômica e social, para que todos disponham das qualidades citadas.\n    A saúde é, por conseguinte, decorrente de três principais fatores:\n<ol><li><p>Genéticos;</p></li>\n<li><p>Interação entre humanos e destes com a natureza;</p></li>\n<li><p>Cuidados pessoais e sociais com a alimentação, atividades físicas e condições apropriadas de higiene.</p></li></ol>\nNesse caso, deve-se levar em consideração diversas variáveis, como a cultura, tipo de comunidade, qualidade e disposição igualitária de alimento e de água, tipo de habitação, urbanização, estímulos para a prática esportiva, dentre outras. De acordo com a organização Mundial de Saúde (OMS), os determinantes sociais da saúde estão relacionados às condições em que uma pessoa vive e trabalha. \n    Em relação aos aspectos genéticos, apenas nas últimas décadas foi possível perceber a sua importância, bem como a detecção do genoma humano e as possíveis medidas preventivas e de tratamento existentes em cada situação.\n    Quanto à interação entre os humanos e o meio ambiente, esta gera possibilidades de sermos acometidos por diferentes agentes etiológicos: vírus, fungos, bactérias, helmintos, protozoários, artrópodes. Por isso, um cidadão se torna mais vulnerável em ambientes de baixas condições sociais e sanitárias, onde as doenças existem por ignorância ou desleixo do mesmo.\n</p>"
+      },
+      {
+        "title" : "Introdução V:",
+        "type" : "text",
+        "text" : "<p><p>&nbsp; &nbsp; Por tudo isso, o estudo da ecologia parasit&aacute;ria se mostra essencial para a prote&ccedil;&atilde;o ambiental e para a profilaxia de doen&ccedil;as. A ecologia geral e parasit&aacute;ria se relaciona diretamente com alguns termos:</p>\n<ul style=\"list-style-type: disc;margin-left:29.35px;\">\n    <li>Ecossistema</li>\n    <li>Nivel Tr&oacute;fico</li>\n    <li>Clima</li>\n    <li>Bioma</li>\n    <li>Biota</li>\n    <li>Biocenose</li>\n    <li>Bi&oacute;topo, Ec&oacute;topo ou H&aacute;bitat</li>\n    <li>Ec&oacute;tono</li>\n    <li>Nicho Ecol&oacute;gico</li>\n    <li>Potencial Bi&oacute;tico</li>\n    <li>Cadeia Alimentar</li>\n    <li>Focos Naturais e Artificiais das Parasitoses</li>\n    <li>Parasitos de Animais Dom&eacute;sticos e Silvestres</li>\n</ul></p>"
+      },
+      {
+        "title" : "Ecossistema:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; De acordo com A. G. Tansley, &eacute; a unidade funcional b&aacute;sica da ecologia, ou seja, representa uma comunidade ecol&oacute;gica ou um ambiente natural com estreito relacionamento dentre todas as esp&eacute;cies e o meio no qual eles vivem. Os Ecossistemas s&atilde;o a consequ&ecirc;ncia dos processos geol&oacute;gicos e evolutivos, que levam as esp&eacute;cies a se adaptarem ao ambiente f&iacute;sico. Exemplos de ecossistemas s&atilde;o: o oceano, as florestas, geleiras, desertos, savanas.</p>\n<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:\"Segoe UI\",sans-serif;'>Obs.: Biogeocenose &eacute; um sin&ocirc;nimo de ecossistema.\n</p>"
+      },
+      {
+        "title" : "Nível Trófico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A intera&ccedil;&atilde;o entre os organismos em um ecossistema pode ser comparada a uma m&aacute;quina termodin&acirc;mica, de modo que o seu luxo de energia segue a cadeia alimentar:</p>\n<p>Vegetais obt&eacute;m energia pela fotoss&iacute;ntese.</p>\n<p><span>&nbsp; &nbsp; &nbsp;&darr;</span></p>\n<p>Animais herb&iacute;voros. (Consumidores prim&aacute;rios)</p>\n<p><span>&nbsp; &nbsp; &nbsp;&darr;</span></p>\n<p><span>Animais carn&iacute;voros. (Consumidores secund&aacute;rios e terci&aacute;rios)</span></p>\n<p><span>&nbsp; &nbsp; Pensando em uma pir&acirc;mide, os vegetais formam a base, de modo a diminuir at&eacute; chegar nos animais carn&iacute;voros terci&aacute;rios, no topo. Em alguns casos de parasitoses, a transfer&ecirc;ncia de energia do hospedeiro para o parasito &eacute; t&atilde;o grande que pode causar a debilidade do paciente. Esses parasitos est&atilde;o em n&iacute;vel tr&oacute;fico mais elevado.</span></p>"
+      },
+      {
+        "title" : "Clima:",
+        "type" : "text",
+        "text" : "    O clima, definido como o conjunto de fenômenos meteorológicos (chuvas, ventos, umidade relativa do ar) é um importante fator para o equilíbrio do ecossistema. Pode-se dizer que o clima afeta diretamente a distribuição e a evolução das espécies no ambiente, uma vez que influencia a capacidade reprodutiva de diversos parasitos (e de outros seres vivos) – tal fato explica os ciclos de vida mais curtos em regiões de climas quentes. Um importante exemplo da relação do clima com as parasitárias é a ocorrência do El Niño, que intensifica as secas da Região Nordeste brasileira o calor na Amazônia, o que leva as pessoas a migrarem para periferias de grandes cidades: locais de prevalência de parasitoses. Comprovadamente, isso acarreta a incidência de leishmaniose visceral nos anos deste fenômeno. Já as maiores temperaturas na Amazônia geram extremos de estiagem e inundação, que causam, respectivamente, períodos de pouca disponibilidade de água potável para a população e, em seguida, enchentes que carregam consigo fezes e outros contaminantes."
+      },
+      {
+        "title" : "Bioma:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A extensa e uniforme cobertura vegetal formada a partir da atua&ccedil;&atilde;o persistente e rec&iacute;proca entre o clima, o solo e os seres vivos existentes. Os biomas s&atilde;o facilmente identific&aacute;veis, e est&atilde;o em equil&iacute;brio com as diversas formas de vida que nele vivem, tal como o deserto, a floresta tropical, o cerrado, as savanas etc.</p>"
+      },
+      {
+        "title" : "Biota:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; &Eacute; o conjunto de componentes vivos em um ecossistema.</p>"
+      },
+      {
+        "title" : "Biótopo, Ecótopo ou Hábitat:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Local onde determinada esp&eacute;cie vive, isto &eacute;, o abrigo f&iacute;sico desta esp&eacute;cie, o qual mant&eacute;m condi&ccedil;&otilde;es uniformes e constantes. Geralmente, o primeiro termo &eacute; utilizado para abrigos dentro do hospedeiro (intestino, sangue, f&iacute;gado etc.), enquanto os dois &uacute;ltimos s&atilde;o designados para abrigos no ambiente (cavernas, lagos etc.)</p>"
+      },
+      {
+        "title" : "Ecótono:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; &Eacute; uma zona de transi&ccedil;&atilde;o entre dois ecossistemas ou biomas. A exemplo disso temos: as margens de lagoas, limites de florestas, restingas nos limites de praias.</span></p>"
+      },
+      {
+        "title" : "Nicho Ecológico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A fun&ccedil;&atilde;o ou atividade que uma esp&eacute;cie exerce em seu bi&oacute;topo, ec&oacute;topo ou habitat. Por exemplo, o intestino delgado humano &eacute; habitat de dois helmintos com nichos distintos: o <em>Ascaris Lumbricoides</em>, que absorve a&ccedil;&uacute;cares, c&aacute;lcio, f&oacute;sforo e carboidratos; e o <em>Ancylostoma duodenale</em>, que consome sangue, oxig&ecirc;nio e ferro do hospedeiro.</p>"
+      },
+      {
+        "title" : "Potencial Biótico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; &Eacute; a capacidade reprodutiva de uma esp&eacute;cie. Por exemplo, a <em>Musca domestica</em> possui um elevado potencial bi&oacute;tico, enquanto a <em>Dermatobia hominis&nbsp;</em>possui um menor potencial bi&oacute;tico.</p>"
+      },
+      {
+        "title" : "Cadeia Alimentar:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Em todo ecossistema, &eacute; poss&iacute;vel encontrar os seguintes elementos componentes da cadeia alimentar:</p>\n<ul>\n    <li>Autotr&oacute;ficos: seres capazes de sintetizar alimentos a partir de CO<sub>2</sub> e nitrog&ecirc;nio, por meio da fixa&ccedil;&atilde;o da energia solar. S&atilde;o tamb&eacute;m chamados de elementos produtores (vegetais e algas que, num ambiente h&iacute;drico, comp&otilde;em o fitopl&acirc;ncton).</li>\n    <li>Heterotr&oacute;ficos: utilizam as subst&acirc;ncias org&acirc;nicas produzidas pelos seres autotr&oacute;ficos. S&atilde;o elementos consumidores, que podem ser prim&aacute;rios, secund&aacute;rios ou terci&aacute;rios, de acordo com o conceito de n&iacute;vel tr&oacute;fico explicado anteriormente.</li>\n    <li>Decompositores: principalmente fungos e bact&eacute;rias que, ao se alimentarem de seres vivos mortos, d&atilde;o continuidade &agrave; circula&ccedil;&atilde;o de compostos org&acirc;nicos e inorg&acirc;nicos. &Eacute; uma parte fundamental da reciclagem.</li>\n</ul>\n<p>&nbsp; &nbsp; Muitas parasitoses s&atilde;o decorrentes do comportamento dos elos da cadeia alimentar, principalmente atrav&eacute;s da ingest&atilde;o de alimentos crus ou da intera&ccedil;&atilde;o humana com o meio ambiente. Dependendo da ci&ecirc;ncia desse fato nos diferentes povos ou fam&iacute;lias, pode haver maior ou menor preval&ecirc;ncia de determinada parasitose.</p>\n<p>&nbsp; &nbsp; A partir disso, pode-se explicar a diferente distribui&ccedil;&atilde;o dos parasitos na Terra. Por&eacute;m. Com a facilidade e velocidade dos meios de transporte e da globaliza&ccedil;&atilde;o, muitos parasitos se dispersaram, fixando-se em regi&otilde;es distantes de sua origem, A t&iacute;tulo de exemplo, existem a mal&aacute;ria, esquistossomose e leishmaniose.</p>"
+      },
+      {
+        "title" : "Focos Naturais e Artificiais das Parasitoses:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Segundo o russo Pavlovsky, com a Teoria dos Focos naturais, certa parasitose se instala e se propaga em uma regi&atilde;o apenas a partir da exist&ecirc;ncia de condi&ccedil;&otilde;es exigidas e necess&aacute;rias para sua esp&eacute;cie. Essas condi&ccedil;&otilde;es comp&otilde;em o foco natural da doen&ccedil;a, isto &eacute;, propiciam o seu bi&oacute;topo e a sua biocenose. A partir de diversas transforma&ccedil;&otilde;es ambientais produzidas pelo homem, estudiosos da Geografia M&eacute;dica como Pierre George e Olivier Dolfus passaram a compreender a perda dos h&aacute;bitats naturais dos parasitos que, agora, devido a industrializa&ccedil;&atilde;o e mecaniza&ccedil;&atilde;o da agricultura, s&atilde;o regidos pelos problemas sociais e econ&ocirc;micos que estas causam (pobreza, falta de saneamento b&aacute;sico etc.).</p>\n<p>&nbsp; &nbsp; Dessa forma, um grande n&uacute;mero de parasitoses humanas, vegetais ou animais existem em maior ou menor preval&ecirc;ncia em certa regi&atilde;o, em decorr&ecirc;ncia das baixas condi&ccedil;&otilde;es sanit&aacute;rias ou nutricionais vigentes (tipo de moradia, forma de escoa&ccedil;&atilde;o de dejetos, insola&ccedil;&atilde;o e ventila&ccedil;&atilde;o adequados, coleta e tratamento de lixo, dentre outros).</p>\n<p>&nbsp; &nbsp; &nbsp;A ocorr&ecirc;ncia de parasitoses &eacute; dada em fun&ccedil;&atilde;o de tr&ecirc;s condi&ccedil;&otilde;es b&aacute;sicas:</p>\n<ul>\n    <li>Presen&ccedil;a do agente etiol&oacute;gico, de hospedeiros e de vetores adequados, simultaneamente.</li>\n    <li>Densidade populacional de hospedeiros e de vetores suficiente para a dispers&atilde;o do parasito.</li>\n    <li>Condi&ccedil;&otilde;es ambientais favor&aacute;veis para a prolifera&ccedil;&atilde;o dos itens acima.</li>\n</ul>"
+      },
+      {
+        "title" : "Parasitos de Animais Domésticos e Silvestres:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Tanto os animais silvestres quanto os dom&eacute;sticos s&atilde;o capazes de possuir in&uacute;meras esp&eacute;cies de parasitos. Ultimamente, devido aos maiores cuidados oferecidos aos animais dom&eacute;sticos, estes s&atilde;o parasitados por um menor n&uacute;mero de esp&eacute;cies, apesar de cada uma dessas poder alcan&ccedil;ar n&uacute;meros elevados, causando a morte do animal. J&aacute; nos animais silvestres, pode ocorrer uma maior quantidade de esp&eacute;cies, por&eacute;m em menores n&uacute;meros, provocando, dificilmente, a morte do animal.</p>\n<p>&nbsp; &nbsp; Tais diferen&ccedil;as se d&atilde;o a dois fatores b&aacute;sicos:</p>\n<ul>\n    <li>Os animais dom&eacute;sticos vivem, geralmente, confinados em ambientes restritos por longos per&iacute;odos, onde ovos, larvas e cistos se concentram, atingindo os hospedeiros facilmente.</li>\n    <li>Os animais silvestres no ambiente natural equilibrado vivem dispersos, dificultando o contato destes com as formas infectantes de parasitos.</li>\n</ul>\n<p>&nbsp; &nbsp; Por&eacute;m, com a maior facilidade de transporte e turismo podem ocasionar o surgimento de novas zoonoses (doen&ccedil;as que acometem animais e humanos), que demandam pesquisas para seu conhecimento e profilaxia, visto que s&atilde;o desconhecidas e pouco estudadas.</p>"
+      }
+    ]
+  },
+  {
     "categoryName" : "Amebíase",
     "numberOfTabs" : 7,
     "tabs" : [
@@ -86,56 +177,278 @@
     ]
   },
   {
+    "categoryName" : "Ancilostomíase",
+    "numberOfTabs" : 9,
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Nesse cap&iacute;tulo, ser&atilde;o abordados os parasitos respons&aacute;veis pela ancilostom&iacute;ase e pela necator&iacute;ase, uma vez que pertencem &agrave; mesma fam&iacute;lia e possuem grandes semelhan&ccedil;as, apesar de serem esp&eacute;cies morfologicamente bem distintas: <em>Ancylostoma duodenale&nbsp;</em>e <em>Necator americanus</em>. Eles s&atilde;o respons&aacute;veis pelo amarel&atilde;o e pela opila&ccedil;&atilde;o, doen&ccedil;as que atingem milh&otilde;es de pessoas em todo o mundo e causam anemia e defici&ecirc;ncia no crescimento f&iacute;sico e mental de crian&ccedil;as.</p>\n<p>&nbsp; &nbsp; A partir disso, foram feitas diversas campanhas de tratamento das crian&ccedil;as e de saneamento b&aacute;sico. Entretanto, ainda h&aacute; algumas &aacute;reas pobres com preval&ecirc;ncia dessas parasitoses.</p>\n<p>&nbsp; &nbsp; O <em>A. duodenale</em> &eacute; mais frequente no hemisf&eacute;rio Norte, mas tamb&eacute;m ocorre na Am&eacute;rica Latina. <em>N. americanus</em>, por sua vez &eacute; o mais encontrado nas Am&eacute;ricas, na &Aacute;frica e nas ilhas do Oceano Pac&iacute;fico.</p>"
+      },
+      {
+        "title" : "Morfologia do Agente e Habitat:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Do filo Nematoda e fam&iacute;lia Ancylostomidae, o <em>Ancylostoma duodenale&nbsp;</em>e <em>Necator americanus</em> vivem fixados na mucosa do duodeno por sua c&aacute;psula bucal, e apresentam uma diferen&ccedil;a nessa parte do corpo: no <em>A. duodenale</em>, a c&aacute;psula possui dois pares de dentes, enquanto no <em>Necator americanus</em>, existem placas cortantes. Ambos medem cerca de 1 cm de comprimento, de modo que os machos terminam com uma &ldquo;bolsa copuladora&rdquo;. Al&eacute;m da forma adulta, as outras formas s&atilde;o:</p>\n<ul>\n    <li>Ovos: pequenos, eliminados pelas fezes. Apresentam uma fina membrana e transparente, dotados de um formato oval e uma m&oacute;rula evidente.</li>\n    <li>Larvas Rabditoides: Medem 400 &micro;m, com grande vest&iacute;bulo bucal.</li>\n    <li>Larvas Filarioides: Medem 500 &micro;m, dois est&aacute;gios ap&oacute;s o anterior.</li>\n</ul>"
+      },
+      {
+        "title" : "Ciclo Biológico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; O ciclo desse helminto &eacute; monox&ecirc;nico (ocorre em apenas um hospedeiro), mas necessita de uma fase no solo para a eclos&atilde;o das larvas dos ovos e a sua transforma&ccedil;&atilde;o dessas larvas rabditoides (L1) em larvas intermedi&aacute;rias (L2), e larvas filarioides infectantes (L3). Essas s&atilde;o conhecidas por &ldquo;larvas embainhadas&rdquo;, pois a cut&iacute;cula da fase L2 permanece protegendo a L3. Essa forma vive de 1 a 6 meses no solo &uacute;mido e pode infectar o paciente de duas formas: penetra&ccedil;&atilde;o ativa na pele ou nas mucosas da boca, e a ingest&atilde;o de larvas na &aacute;gua ou alimentos. O resto do ciclo depende da forma da contamina&ccedil;&atilde;o:</p>\n<ul>\n    <li>Por via cut&acirc;nea ou mucosa: as larvas caem na corrente circulat&oacute;ria, v&atilde;o ao cora&ccedil;&atilde;o e depois aos pulm&otilde;es, onde perfuram os alv&eacute;olos e sobem a &aacute;rvore br&ocirc;nquica. Ao atingirem a faringe, podem ser eliminadas ou engolidas. Caso estas sejam deglutidas, se desenvolvem no intestino delgado, no duodeno. Cerca de 1 m&ecirc;s depois a infec&ccedil;&atilde;o cut&acirc;nea, os helmintos p&otilde;em ovos que s&atilde;o expelidos nas fezes.</li>\n    <li>Por via oral: as larvas v&atilde;o diretamente ao duodeno, e completam o seu ciclo. Ap&oacute;s 30 dias, os vermes j&aacute; adultos eliminam ovos nas fezes.</li>\n</ul>"
+      },
+      {
+        "title" : "Patogeniae Sintomatologia:",
+        "type" : "text",
+        "text" : "<p><span>&nbsp; &nbsp; As doen&ccedil;as se assemelham em muitas caracter&iacute;sticas, provocando altera&ccedil;&otilde;es locais e gerais. Os sintomas podem apresentar tr&ecirc;s fases, cada uma com seu respectivo sintoma:</span></p>\n<div>\n    <ul>\n        <li><span>1&ordf; fase &ndash; Cut&acirc;nea:&nbsp;</span></li>\n    </ul>\n</div>\n<p><span>Penetra&ccedil;&atilde;o das larvas na pele. Geralmente n&atilde;o &eacute; percebida, mas o paciente se queixa de uma rea&ccedil;&atilde;o urticariforme.</span></p>\n<div>\n    <ul>\n        <li><span>2&ordf; fase &ndash; Pulmonar:&nbsp;</span></li>\n    </ul>\n</div>\n<p><span>Ocorre no momento que as larvas passam pelos pulm&otilde;es, gerando febre, tosse com muco e at&eacute; a s&iacute;ndrome de L&ouml;effler (pneumonite al&eacute;rgica). Essa fase pode durar cerca de 30 dias.</span></p>\n<div>\n    <ul>\n        <li><span>3&ordf; fase &ndash; Intestinal:&nbsp;</span></li>\n    </ul>\n</div>\n<p><span>Ap&oacute;s muitos helmintos se fixarem na mucosa do duodeno, o paciente apresenta dor na por&ccedil;&atilde;o alta e direita do abd&ocirc;men, febre, fraqueza e diarreia com sangue.</span></p>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Aperar do ciclo pulmonar pelas larvas filarioides da ancilostom&iacute;ase/necator&iacute;ase, a resposta imune &eacute; semelhante a que ocorre na tricur&iacute;ase, que n&atilde;o possui ciclo pulmonar. Nessas doen&ccedil;as, tamb&eacute;m acontecem reinfec&ccedil;&otilde;es discretas, causando parasitismos cr&ocirc;nicos. Por outro lado, pessoas que nunca tiveram contato com esses parasitos, caso sejam infectadas por muitas larvas filarioides, desenvolvem quadros graves da doen&ccedil;a.</p>\n<p>&nbsp; &nbsp; Em pacientes cr&ocirc;nicos da regi&atilde;o end&ecirc;mica, pode ser observada a resposta end&ecirc;mica do tipo Th2 e Th1, com produ&ccedil;&atilde;o de interleucinas (1L-4, IL-5, IL-9 e IL-13), al&eacute;m de elevados n&iacute;veis de IgG, IgE e eosin&oacute;filos. O sistema imune &eacute; capaz de eliminar muitas larvas filarioides, reduzindo as infec&ccedil;&otilde;es. Em regi&otilde;es end&ecirc;micas, &eacute; testada uma vacina contra a ancilostom&iacute;ase.</p>"
+      },
+      {
+        "title" : "Diagnóstico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; O diagn&oacute;stico pode ser feito pelo exame de fezes (uma vez que os ovos s&atilde;o encontrados nesses excretos), a partir de um m&eacute;todo chamado Baermann-Moraes. Ovos de outro parasito de ruminantes, o <em>Trichostrongylus sp</em>. E de <em>Meloidogyne sp</em>. Podem ser encontrados nas fezes humanas e se assemelham aos dos ancilostom&iacute;deos, mas se diferem pelo primeiro ter uma extremidade ligeiramente &ldquo;afilada&rdquo;.</p>"
+      },
+      {
+        "title" : "Epidemiologia:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; As doen&ccedil;as possuem porpor&ccedil;&atilde;o mundial, principalmente em regi&otilde;es subdesenvolvidas (h&aacute; cerca de 100 anos atr&aacute;s, a Inglaterra e os Estados Unidos eram vastamente acometidos por esses parasitos). No Brasil. H&aacute; o <em>N. americanus</em>.</p>\n<p>&nbsp; &nbsp; A fonte de infec&ccedil;&atilde;o s&atilde;o os humanos parasitados, e esta se d&aacute; por larvas filarioides infectantes, por meio de ve&iacute;culos como solos &uacute;midos e sombreados.</p>\n<p >&nbsp; &nbsp; A via de penetra&ccedil;&atilde;o &eacute; a penetra&ccedil;&atilde;o ativa das larvas na pele, nos p&eacute;s ou na mucosa bucal, ou a ingest&atilde;o junto com &aacute;gua ou alimentos infectados.</p>"
+      },
+      {
+        "title" : "Profilaxia:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A profilaxia dessas geo-helmintoses depende basicamente do tratamento em massa da popula&ccedil;&atilde;o, instalando-se servi&ccedil;os de saneamento b&aacute;sico, instru&ccedil;&atilde;o de usar cal&ccedil;ados e luvas para manipular solos. Al&eacute;m disso &eacute; recomendada a educa&ccedil;&atilde;o sanit&aacute;ria, ambiental e c&iacute;vica.</p>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Os parasitos devem ser eliminados com o uso de medicamentos espec&iacute;ficos, e deve ocorrer a reposi&ccedil;&atilde;o de ferro, a partir de uma dieta rica no mineral e de sulfato ferroso.</p>"
+      }
+    ]
+  },
+  {
+    "categoryName" : "Necatoríase",
+    "numberOfTabs" : 1,
+    "tabs" : [
+    {
+      "title" : "Semelhanças com Ancilostomíase:",
+      "type" : "text",
+      "text" : "<p>&nbsp; &nbsp; Devido &agrave; sua semelhan&ccedil;a epidemiol&oacute;gica, profil&aacute;tica, quanto &agrave; forma de diagn&oacute;stico e em rela&ccedil;&atilde;o &agrave; morfologia dos parasitos respons&aacute;veis com a ancilostom&iacute;ase, a necator&iacute;ase foi tratada no cap&iacute;tulo anterior, juntamente com a doen&ccedil;a anteriormente citada.</p>"
+    }
+  ]
+  },
+  {
+    "categoryName" : "Enterobíase",
+    "numberOfTabs" : 9,
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A enterob&iacute;ase (ou enterobiose) &eacute; uma doen&ccedil;a provocada pelo <em>Enterobius</em> <em>vermicularis</em>, antigamente denominado <em>Oxyurus vermicularis</em>, de modo que alguns ainda chamem a doen&ccedil;a de oxiurose. Tamb&eacute;m &eacute; popularmente conhecida como &ldquo;caseira&rdquo;, por alcan&ccedil;ar outros indiv&iacute;duos da fam&iacute;lia.</p>\n<p>&nbsp; &nbsp; Sua distribui&ccedil;&atilde;o geogr&aacute;fica se d&aacute; de maneira ampla, ocorrendo em todos os pa&iacute;ses nas mais diversas classes sociais. A doen&ccedil;a, por&eacute;m, acomete mais frequentemente crian&ccedil;as em ambientes mais favor&aacute;veis, como creches e escolas.</p>"
+      },
+      {
+        "title" : "Morfologia do Agente e Habitat:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Do filo Nematoda, classe Secernentea e fam&iacute;lia Oxyuridae, o <em>Enterobius vermicularis</em> pode ser encontrado nas seguintes formas:</p>\n<div>\n    <ul>\n        <li>Vermes adultos: pequenos, com aproximadamente 1 cm de comprimento. Vivem no ceco (regi&atilde;o anterior ao abd&ocirc;men), motivo pelo qual as f&ecirc;meas s&atilde;o encontradas na regi&atilde;o perianal.</li>\n    </ul>\n</div>\n<p>&nbsp;</p>\n<div>\n    <ul>\n        <li>Ovos: Apresentam uma larva em seu interior, e n&atilde;o saem com as fezes, uma vez que as f&ecirc;meas os eliminam no n&iacute;vel do &acirc;nus. Por tal motivo, os ovos podem ser encontrados nessa &aacute;rea ou nas roupas &iacute;ntimas.</li>\n    </ul>\n</div>"
+      },
+      {
+        "title" : "Ciclo Biológico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Ap&oacute;s a c&oacute;pula, as f&ecirc;meas cheias de ovos v&atilde;o para a regi&atilde;o anal, principalmente no per&iacute;odo noturno. Essa migra&ccedil;&atilde;o pode ser influenciada pelo repouso humano ou por raz&otilde;es peculiares do sistema digest&oacute;rio.</p>\n<p>&nbsp; &nbsp; Os ovos eliminados j&aacute; possuem larvas de segundo est&aacute;dio (denominadas L2) que, em poucas horas, se transformam em larvas infectantes (L3). Esses ovos, ent&atilde;o, podem ser ingeridos junto aos alimentos, por meio de m&atilde;os sujas, por exemplo. Tal motivo de d&aacute; pela coceira anal contaminar as m&atilde;os e deixar ovos embaixo das unhas.</p>\n<p>&nbsp; &nbsp; Ao chegar novamente no intestino de um hospedeiro, as larvas eclodem e v&atilde;o para o ceco, transformando-se em vermes adultos. Os machos morrem em 15 dias, em m&eacute;dia, enquanto as m&eacute;dias se dirigem para o &acirc;nus em 50 a 60 dias ap&oacute;s a infec&ccedil;&atilde;o, momento em que est&aacute;s tamb&eacute;m morrem.</p>\n<p>&nbsp; &nbsp; A autoinfec&ccedil;&atilde;o tamb&eacute;m pode ocorrer, sendo interna, quando os ovos eclodem ainda dentro do intestino grosso; ou externa, quando o hospedeiro humano co&ccedil;a o &acirc;nus e leva a m&atilde;o &agrave; boca.</p>"
+      },
+      {
+        "title" : "Patogenia:",
+        "type" : "text",
+        "text" : "<p><span>&nbsp; &nbsp; A manifesta&ccedil;&atilde;o principal dessa helmintose &eacute; o prurido anal (coceira persistente ao redor do &acirc;nus), provocado pela presen&ccedil;a de f&ecirc;meas gr&aacute;vidas, muco e ovos. Em casos raros, os ovos da regi&atilde;o anal podem liberar larvas e retornar ao intestino grosso, causando uma retroinfec&ccedil;&atilde;o do indiv&iacute;duo. No caso de crian&ccedil;as do sexo feminino, as larvas podem atravessar o per&iacute;neo e penetrar na vagina, causando vaginites ou at&eacute; mesmo infec&ccedil;&otilde;es nos ov&aacute;rios, podendo deixar a crian&ccedil;a est&eacute;ril.</span></p>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Devido a efici&ecirc;ncia efetiva do sistema imune em rela&ccedil;&atilde;o &agrave; enterob&iacute;ase, s&atilde;o mais raros os casos de se encontrar pacientes cr&ocirc;nicos. Usualmente, as primeiras infec&ccedil;&otilde;es possuem mais f&ecirc;meas do que as reinfec&ccedil;&otilde;es, que nem sempre ocorrem.</p>"
+      },
+      {
+        "title" : "Diagnóstico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Um forte ind&iacute;cio de enterob&iacute;ase &eacute; uma crian&ccedil;a apresentar coceira na regi&atilde;o anal, o que facilita o diagn&oacute;stico da doen&ccedil;a. Al&eacute;m disso, esta pode ser diagnosticada em um exame convencional de sedimenta&ccedil;&atilde;o espont&acirc;nea (mistura de fezes com &aacute;gua em repouso, que detecta ovos de helmintos e cistos de protozo&aacute;rios nas fezes), tal como pelo exame da &ldquo;fita gomada&rdquo; (&eacute; inserida uma fita gomada na regi&atilde;o perianal, e depois analisada).</p>"
+      },
+      {
+        "title" : "Epidemiologia:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Quanto &agrave; distribui&ccedil;&atilde;o geogr&aacute;fica, a doen&ccedil;a &eacute; mundial, principalmente nos pa&iacute;ses europeus e norte-americanos, devido ao longo inverno que faz as pessoas ficarem mais tempo em ambientes fechados.</p>\n<p>&nbsp; &nbsp; A sua fonte de infec&ccedil;&atilde;o s&atilde;o os humanos, em casas e creches, em que um paciente pode infectar o resto do ambiente, e a forma de transmiss&atilde;o se d&aacute; por ovos do parasito com larvas em seu interior, a partir de alimentos ou m&atilde;os sujas, e objetos que entraram em contato com o indiv&iacute;duo infectado, como dinheiro e ma&ccedil;anetas.</p>"
+      },
+      {
+        "title" : "Profilaxia:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A profilaxia se d&aacute; pelo tratamento dos infectados, visto que estes servem como fonte de infec&ccedil;&atilde;o no mesmo ambiente. Ademais, n&atilde;o se deve sacudir roupas que possam estar com ovos ou roupas de cama dos pacientes, assim como se deve limpar e cortar as unhas. O uso de aspirador de p&oacute; &eacute; recomend&aacute;vel, desde que haja cuidado em rela&ccedil;&atilde;o ao local de descarte de seu conte&uacute;do.</p>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "   O tratamento desse parasito é fácil, e pode ocorrer cura espontânea se não houver reinfecção, já que as fêmeas morrem e são eliminadas 2 meses após a contaminação. Para o caso de invasão do sistema genital feminino, é necessário um tratamento médico."
+      }
+    ]
+  },
+  {
     "categoryName" : "Ascaridíase",
-      "numberOfTabs" : 9,
+    "numberOfTabs" : 9,
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "text",
+        "text" : "<html><p align=justify;>    A ascaridíase é uma doença pelo <i>Ascaris lumbricoides</i>. Este parasito possui distribuição geográfica mundial, e seus ovos foram encontrados em coprólitos1, acompanhando a humanidade desde os primórdios – tal como o <i>Trichuris trichiura</i>, que será mencionado posteriormente. De acordo com estimativas, três a cada dez pessoas no mundo estão parasitadas por este helminto, sendo este o mais prevalente dentre a população. A doença é grave e ainda acomete milhões de pessoas, causando problemas físicos e intelectuais, sendo assim, uma causa e uma consequência do subdesenvolvimento de países e regiões. \n    Esse helminto também é denominado lombriga – por tal motivo, os vermífugos possuem como sinônimo “lombrigueiro”.\n</p></html>"
+      },
+      {
+        "title" : "Morfologia do Agente:",
+        "type" : "textAndImage",
+        "text" : "<p     Do Filo Nematoda, classe Secernentea, família Ascarididae, o <i>Ascaris lumbricoides</i> em sua forma adulta é grande, de modo que a fêmea mede aproximadamente 35 cm de comprimento, enquanto o macho mede cerca de 20cm. Vivem no intestino delgado de humanos, produzindo muitos ovos, que são cobertos por uma camada externa mamilonada e de cor castanha (como a casca de um abacaxi). O verme é um geo-helminto, isto é, necessitam do solo para amadurecer e formar suas larvas.\n    Os suínos podem ser infectados por um parasito semelhante, denominado <i>Ascaris suum</i>, que pode parasitar humanos, porém, neste caso, é eliminado espontaneamente.\n</p>",
+        "imageAddress" : "ascaridiase1"
+      },
+      {
+        "title" : "Ciclo Biológico:",
+        "type" : "textAndImage",
+        "text" : "<p>    Os machos e as fêmeas acasalam no intestino delgado, e estas botam muitos ovos (até 200 mil por dia), que chegam ao exterior com embriões do helminto. Em um ambiente úmido e sombreado, após 15 dias as larvas (L1) se formam dentro de cada ovo, e após mais 15 dias se transformam em L2 e, em mais 15 dias, se tornam larvas infectantes (L3) ainda dentro do ovo. Esses ovos serão ingeridos por um novo hospedeiro humano, onde as larvas irão eclodir no intestino delgado e, devido ao seu metabolismo aeróbio, penetrarão na mucosa intestinal e cairão na circulação sanguínea. Passam pelo fígado, depões vão ao coração e aos pulmões, ao que é dado o nome de ciclo pulmonar (ciclo de Loss). Nos pulmões, as larvas perfuram os alvéolos pulmonares, sobem a árvore brônquica e chegam à faringe, podendo ser expelidas, junto com o muco que é produzido; ou ingeridas, dirigindo-se ao intestino delgado, onde se transformarão em vermes adultos que, após 30 dias, iniciam a ovoposição (desde a ingestão, demora cerca de 60 dias), reiniciando o ciclo.\n</p>",
+        "imageAddress" : "ascaridiase2"
+      },
+      {
+        "title" : "Patogenia:",
+        "type" : "text",
+        "text" : "<p>    A ascaridíase ocorre com frequência no mundo todo e, em conjunto com a ancilostomíase e a necatoríase, é importante para a saúde pública, devido às alterações que causa nos pacientes, sobretudo nas crianças.\n    A patogenia dessa doença se dá por duas fases:\n•\tPulmonar: durante a passagem das larvas, ocorrem manifestações semelhantes às dos helmintos que realizam ciclo pulmonar: tosse produtiva, febre e síndrome de Löffler (pneumonite alérgica).\n•\tIntestinal: de acordo com o número de parasitos (ao que é dado o nome de carga parasitária), variam as consequências, de maneira que, em infecções mais numerosas (100 ou mais vermes), os indivíduos podem apresentar depauperamento físico (enfraquecimento), magreza, palidez e barriga com volume estufado. Isso ocorre em decorrência da alimentação dos vermes, que consome uma grande quantidade de proteínas, lipídios, carboidratos e vitamina A. A carência dessa vitamina pode gerar manchas na pele das pessoas parasitadas. Além disso, os vermes podem provocar irritações na parede do intestino, que ocasiona manifestações nervosas, incluindo ataques epiléticos.\n    Eventualmente, esse indivíduo pode se enovelar no intestino delgado, gerando obstruções e um quadro denominado “abdome agudo”, uma forte dor que necessita de intervenção cirúrgica imediata.\n    O verme pode ser encontrado em locais ectópicos (também chamado de “Ascaris errático”), quando o verme se encontra ora do seu habitat, podendo ser até fatal. Os helmintos podem entrar no apêndice cecal (apendicite aguda), canal colédoco (ducto que transporta a bile), vesícula biliar (colecistite), ducto pancreático (pancreatite aguda), trompa de Eustáquio e e até mesmo no canal lacrimal.\n</p>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p>    A resposta imune das helmintoses é muito semelhante, apresentando a eosifilina elevada, assim como a participação de macrófagos. As larvas, quando estão na corrente sanguínea, morrem por toxicidade, causada pelos eosinófilos. A resposta imune é do tipo Th2 e presença de IgE. A IL-4 estimula a produção de IgE, que implica na expulsão dos vermes adultos, e a IL-13 também o faz. Os mastócitos promovem o aumento da secreção dos locais mediadores da inflamação, como o muco e o aumento da contratilidade da musculatura intestinal. \n    Na ascaridíase, ocorre a eliminação “espontânea” de vermes adultos em pessoas anteriormente infectadas, devido à reativação do sistema imune, por meio de células da memória imunológica.\n    Nessa e em outras helmintoses que apresenta, ciclo pulmonar, ocorre a síndrome de Löffler, uma reação imunológica decorrente das larvas que passaram pelos pulmões e de seus resíduos. Como consequência, o individuo apresenta um infiltrado eosinofílico alérgico, que causa tosse, dispneia e anorexia, que podem regredir em poucos dias após a conclusão dessa fase do ciclo.\n</p>"
+      },
+      {
+        "title" : "Diagnóstico:",
+        "type" : "text",
+        "text" : "<p>    O diagnóstico da ascaridíase é feito por meio de um exame de fezes, utilizando métodos de localização dos ovos característicos desse parasito. Exames por imagens podem ser úteis para visualizar o helminto e possíveis obstruções\n</p>"
+      },
+      {
+        "title" : "Epidemiologia:",
+        "type" : "text",
+        "text" : "<p>    Quanto à distribuição geográfica, a doença é encontrada no mundo todo. Em se tratando de sua fonte de infecção, o <i>Ascaris lumbricoides</i> infecta apenas os humanos, apesar de suínos possuírem um parasito semelhante: <i>Ascaris suum.</i>\n    A forma de transmissão se dá por ovos que contenham larvas infectantes, e o seu veículo são mãos sujas, alimentos ou água contaminados com os ovos, poeira ou moscas. Sua via de penetração é oral.\n    A prevalência dessa helmintose pode ser explicada pelo aspecto dos ovos que permanecem viáveis por mais de um ano, em ambientes domésticos e peridomésticos. Acredita-se que aproximadamente 30% da população mundial esteja parasitada pelo <i>A. lumbricoides</i>, cuja distribuição mundial não é uniforme, sendo mais presente dentre a população mais carente. Estudos evidenciam a presença da ascaridíase em populações de idosos no Brasil.\n</p>"
+      },
+      {
+        "title" : "Profilaxia:",
+        "type" : "text",
+        "text" : "<p>    A profilaxia requer a melhora de fatores sociais como higiene pessoal, lavar corretamente as mãos e verduras, beber somente água filtrada, proteger alimentos contra moscas, educação sanitária, cívica e ambiental. Fatores esses ainda ausentes em muitas localidades, o que contribui para a perpetuação dessa doença.\n</p>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "<p>    O tratamento da ascaridíase se dá por medicamentos específicos, hidratação e jejum, no caso de obstruções. Não se deve utilizar anti-helmínticos sem antes fazer um exame de fezes, uma vez que não é indicado o uso de remédios sem uma razão certa ou prescrição médica.\n</p>"
+      }
+    ]
+  },
+  {
+    "categoryName" : "Larva Migrans",
+      "numberOfTabs" : 4,
       "tabs" : [
         {
           "title" : "Introdução:",
           "type" : "text",
-          "text" : "<html><p align=justify;>    A ascaridíase é uma doença pelo <i>Ascaris lumbricoides</i>. Este parasito possui distribuição geográfica mundial, e seus ovos foram encontrados em coprólitos1, acompanhando a humanidade desde os primórdios – tal como o <i>Trichuris trichiura</i>, que será mencionado posteriormente. De acordo com estimativas, três a cada dez pessoas no mundo estão parasitadas por este helminto, sendo este o mais prevalente dentre a população. A doença é grave e ainda acomete milhões de pessoas, causando problemas físicos e intelectuais, sendo assim, uma causa e uma consequência do subdesenvolvimento de países e regiões. \n    Esse helminto também é denominado lombriga – por tal motivo, os vermífugos possuem como sinônimo “lombrigueiro”.\n</p></html>"
+          "text" : "<p>&nbsp; &nbsp; A larva <em>migrans&nbsp;</em>&eacute; uma s&iacute;ndrome provocada por larvas de helmintos parasitos de animais que, ao alcan&ccedil;ar os humanos, migram na pele ou nas v&iacute;sceras dos pacientes. Dessa forma, &eacute; poss&iacute;vel dividi-las em dois tipos: cut&acirc;nea e visceral, de modo que ambas possuem os humanos como hospedeiros e s&atilde;o acidentais. Elas ocorrem no mundo todo, pois os humanos cada vez mais vivem com c&atilde;es e gatos.</p>"
         },
         {
-          "title" : "Morfologia do Agente:",
-          "type" : "textAndImage",
-          "text" : "<p     Do Filo Nematoda, classe Secernentea, família Ascarididae, o <i>Ascaris lumbricoides</i> em sua forma adulta é grande, de modo que a fêmea mede aproximadamente 35 cm de comprimento, enquanto o macho mede cerca de 20cm. Vivem no intestino delgado de humanos, produzindo muitos ovos, que são cobertos por uma camada externa mamilonada e de cor castanha (como a casca de um abacaxi). O verme é um geo-helminto, isto é, necessitam do solo para amadurecer e formar suas larvas.\n    Os suínos podem ser infectados por um parasito semelhante, denominado <i>Ascaris suum</i>, que pode parasitar humanos, porém, neste caso, é eliminado espontaneamente.\n</p>",
-          "imageAddress" : "ascaridiase1"
-        },
-        {
-          "title" : "Ciclo Biológico:",
-          "type" : "textAndImage",
-          "text" : "<p>    Os machos e as fêmeas acasalam no intestino delgado, e estas botam muitos ovos (até 200 mil por dia), que chegam ao exterior com embriões do helminto. Em um ambiente úmido e sombreado, após 15 dias as larvas (L1) se formam dentro de cada ovo, e após mais 15 dias se transformam em L2 e, em mais 15 dias, se tornam larvas infectantes (L3) ainda dentro do ovo. Esses ovos serão ingeridos por um novo hospedeiro humano, onde as larvas irão eclodir no intestino delgado e, devido ao seu metabolismo aeróbio, penetrarão na mucosa intestinal e cairão na circulação sanguínea. Passam pelo fígado, depões vão ao coração e aos pulmões, ao que é dado o nome de ciclo pulmonar (ciclo de Loss). Nos pulmões, as larvas perfuram os alvéolos pulmonares, sobem a árvore brônquica e chegam à faringe, podendo ser expelidas, junto com o muco que é produzido; ou ingeridas, dirigindo-se ao intestino delgado, onde se transformarão em vermes adultos que, após 30 dias, iniciam a ovoposição (desde a ingestão, demora cerca de 60 dias), reiniciando o ciclo.\n</p>",
-          "imageAddress" : "ascaridiase2"
-        },
-        {
-          "title" : "Patogenia:",
+          "title" : "<p><span>Larva <em>migrans</em> Cut&acirc;nea:</span></p>",
           "type" : "text",
-          "text" : "<p>    A ascaridíase ocorre com frequência no mundo todo e, em conjunto com a ancilostomíase e a necatoríase, é importante para a saúde pública, devido às alterações que causa nos pacientes, sobretudo nas crianças.\n    A patogenia dessa doença se dá por duas fases:\n•\tPulmonar: durante a passagem das larvas, ocorrem manifestações semelhantes às dos helmintos que realizam ciclo pulmonar: tosse produtiva, febre e síndrome de Löffler (pneumonite alérgica).\n•\tIntestinal: de acordo com o número de parasitos (ao que é dado o nome de carga parasitária), variam as consequências, de maneira que, em infecções mais numerosas (100 ou mais vermes), os indivíduos podem apresentar depauperamento físico (enfraquecimento), magreza, palidez e barriga com volume estufado. Isso ocorre em decorrência da alimentação dos vermes, que consome uma grande quantidade de proteínas, lipídios, carboidratos e vitamina A. A carência dessa vitamina pode gerar manchas na pele das pessoas parasitadas. Além disso, os vermes podem provocar irritações na parede do intestino, que ocasiona manifestações nervosas, incluindo ataques epiléticos.\n    Eventualmente, esse indivíduo pode se enovelar no intestino delgado, gerando obstruções e um quadro denominado “abdome agudo”, uma forte dor que necessita de intervenção cirúrgica imediata.\n    O verme pode ser encontrado em locais ectópicos (também chamado de “Ascaris errático”), quando o verme se encontra ora do seu habitat, podendo ser até fatal. Os helmintos podem entrar no apêndice cecal (apendicite aguda), canal colédoco (ducto que transporta a bile), vesícula biliar (colecistite), ducto pancreático (pancreatite aguda), trompa de Eustáquio e e até mesmo no canal lacrimal.\n</p>"
+          "text" : "<p>&nbsp; &nbsp; &Eacute; tamb&eacute;m chamada de dermatite pruriginosa ou &ldquo;bicho geogr&aacute;fico&rdquo;, pois a larva forma um contorno sinuoso na pele. As principais esp&eacute;cies causadoras s&atilde;o: <em>Ancylostoma caninum</em>, <em>A. braziliense</em>, <em>A. tubaeforme&nbsp;</em>e <em>Uncinaria stonecephala</em>, que infectam o intestino delgado de c&atilde;es e gatos; <em>Bunostomum phlebotomum</em>, que ocorre no intestino delgado de bovinos. Esses ovos saem nas fezes dos respectivos animais e, chegando ao solo areno-argiloso, sombreado e &uacute;mido, liberam as larvas, que depois se transformam em larvas filarioides infectantes, que podem penetrar da pele de humanos (nos p&eacute;s, ao andar descal&ccedil;o, nas n&aacute;degas ao se assentar no ch&atilde;o com roupas de banho, por exemplo) e, a partir disso, poder&atilde;o circular entre a derme e a epiderme (o que causa dor ao indiv&iacute;duo, o que implica em retir&aacute;-la) ou morrer por meio da terap&ecirc;utica apropriada, que &eacute; bem eficiente. &nbsp;Essa zoonose deve ser combatida dando um destino adequado &agrave;s fezes dos animais citados anteriormente, muitas vezes presentes em parques, praias e jardins. Existem casos de cegueira no brasil proveniente dessas larvas, denominada neurorretinite subaguda difusa unilateral (NSDU).</p>"
         },
         {
-          "title" : "Imunidade:",
+          "title" : "<p><span>Larva <em>migrans</em> Visceral:</span></p>",
           "type" : "text",
-          "text" : "<p>    A resposta imune das helmintoses é muito semelhante, apresentando a eosifilina elevada, assim como a participação de macrófagos. As larvas, quando estão na corrente sanguínea, morrem por toxicidade, causada pelos eosinófilos. A resposta imune é do tipo Th2 e presença de IgE. A IL-4 estimula a produção de IgE, que implica na expulsão dos vermes adultos, e a IL-13 também o faz. Os mastócitos promovem o aumento da secreção dos locais mediadores da inflamação, como o muco e o aumento da contratilidade da musculatura intestinal. \n    Na ascaridíase, ocorre a eliminação “espontânea” de vermes adultos em pessoas anteriormente infectadas, devido à reativação do sistema imune, por meio de células da memória imunológica.\n    Nessa e em outras helmintoses que apresenta, ciclo pulmonar, ocorre a síndrome de Löffler, uma reação imunológica decorrente das larvas que passaram pelos pulmões e de seus resíduos. Como consequência, o individuo apresenta um infiltrado eosinofílico alérgico, que causa tosse, dispneia e anorexia, que podem regredir em poucos dias após a conclusão dessa fase do ciclo.\n</p>"
-        },
-        {
-          "title" : "Diagnóstico:",
-          "type" : "text",
-          "text" : "<p>    O diagnóstico da ascaridíase é feito por meio de um exame de fezes, utilizando métodos de localização dos ovos característicos desse parasito. Exames por imagens podem ser úteis para visualizar o helminto e possíveis obstruções\n</p>"
-        },
-        {
-          "title" : "Epidemiologia:",
-          "type" : "text",
-          "text" : "<p>    Quanto à distribuição geográfica, a doença é encontrada no mundo todo. Em se tratando de sua fonte de infecção, o <i>Ascaris lumbricoides</i> infecta apenas os humanos, apesar de suínos possuírem um parasito semelhante: <i>Ascaris suum.</i>\n    A forma de transmissão se dá por ovos que contenham larvas infectantes, e o seu veículo são mãos sujas, alimentos ou água contaminados com os ovos, poeira ou moscas. Sua via de penetração é oral.\n    A prevalência dessa helmintose pode ser explicada pelo aspecto dos ovos que permanecem viáveis por mais de um ano, em ambientes domésticos e peridomésticos. Acredita-se que aproximadamente 30% da população mundial esteja parasitada pelo <i>A. lumbricoides</i>, cuja distribuição mundial não é uniforme, sendo mais presente dentre a população mais carente. Estudos evidenciam a presença da ascaridíase em populações de idosos no Brasil.\n</p>"
-        },
-        {
-          "title" : "Profilaxia:",
-          "type" : "text",
-          "text" : "<p>    A profilaxia requer a melhora de fatores sociais como higiene pessoal, lavar corretamente as mãos e verduras, beber somente água filtrada, proteger alimentos contra moscas, educação sanitária, cívica e ambiental. Fatores esses ainda ausentes em muitas localidades, o que contribui para a perpetuação dessa doença.\n</p>"
+          "text" : "<p>&nbsp; &nbsp; &nbsp;As larvas dos helmintos circulam pelas v&iacute;sceras (principalmente pelo f&iacute;gado, pelos pulm&otilde;es e pelo globo ocular; embora o c&eacute;rebro e os linfonodos tamb&eacute;m possam ser atingidos). A principal esp&eacute;cie respons&aacute;vel por essa manifesta&ccedil;&atilde;o &eacute; o <em>Toxocara canis</em>, comum no intestino delgado de c&atilde;es, raposas, gatos e lobos, em todo o mundo. Uma grande quantidade de ovos &eacute; eliminada nas fezes dos hospedeiros, que viram embrionados no exterior. Os animais se infectam ingerindo ovos que contenham a larva infectante (L3), dando continuidade ao ciclo. Se os humanos ingerirem os ovos, as larvas ir&atilde;o eclodir no intestino delgado do paciente, penetrando na mucosa do &oacute;rg&atilde;o, onde podem alcan&ccedil;ar a circula&ccedil;&atilde;o sangu&iacute;nea e atingir diversas outras partes do corpo. De acordo com a quantidade e com o local onde as larvas se encontram, os pacientes v&atilde;o desenvolver manifesta&ccedil;&otilde;es cl&iacute;nicas diferentes, podendo ocorrer manifesta&ccedil;&otilde;es hep&aacute;ticas, pulmonares, cerebrais, oculares etc. Ap&oacute;s aproximadamente 18 meses, por conta de um processo imunoinflamat&oacute;rio, as manifesta&ccedil;&otilde;es cl&iacute;nicas desaparecem espontaneamente, quando as larvas morrem e a rea&ccedil;&atilde;o regride. A terap&ecirc;utica s&oacute; &eacute; recomendada em pacientes sintom&aacute;ticos, ap&oacute;s prescri&ccedil;&atilde;o m&eacute;dica.</p>"
         },
         {
           "title" : "Tratamento:",
           "type" : "text",
-          "text" : "<p>    O tratamento da ascaridíase se dá por medicamentos específicos, hidratação e jejum, no caso de obstruções. Não se deve utilizar anti-helmínticos sem antes fazer um exame de fezes, uma vez que não é indicado o uso de remédios sem uma razão certa ou prescrição médica.\n</p>"
+          "text" : "<p>&nbsp; &nbsp; O tratamento ocorre por meio de medicamentos espec&iacute;ficos.</p>"
         }
       ]
+  },
+  {
+    "categoryName" : "Filarioses",
+    "numberOfTabs" : 8,
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; As filarioses s&atilde;o doen&ccedil;as que ocorrem nos humanos e dependem de um inseto como hospedeiro intermedi&aacute;rio (ciclo heterox&ecirc;nico). No Brasil, as esp&eacute;cies que atingem os humanos s&atilde;o: <em>Wulchereria bancrofti</em>, <em>Onchocerca volvulus&nbsp;</em>e <em>Mansonella ozzardi</em>. As duas primeiras s&atilde;o as mais conhecidas, enquanto a terceira ocorre na Amaz&ocirc;nia e possui baixa patogenidade.</p>"
+      },
+      {
+        "title" : "<p><em><span>Wulchereria bancrofti</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Respons&aacute;vel pela filariose bancroftiana, tamb&eacute;m conhecida como filariose linf&aacute;tica ou elefant&iacute;ase. Os vermes adultos &ndash; o macho mede em m&eacute;dia 4 cm, e a f&ecirc;mea mede 7 cm &ndash; vivem nos vasos linf&aacute;ticos, antes dos linfonodos inguinais, p&eacute;lvicos e mam&aacute;rios.</p>\n<p><em>&nbsp; &nbsp;&nbsp;</em>Ap&oacute;s a fecunda&ccedil;&atilde;o, a f&ecirc;mea bota os ovos larvados que, ao sa&iacute;rem da f&ecirc;mea, formam uma &ldquo;microfil&aacute;ria&rdquo;, que se dirige para a corrente sangu&iacute;nea e apresenta um comportamento peculiar: durante o dia permanece nos capilares profundos; enquanto no per&iacute;odo da noite, se dirige para o sangue perif&eacute;rico. Nesse momento noturno, a f&ecirc;mea do mosquito <em>Culex quinquefasciatus</em> (pernilongo comum, que pica &agrave; noite) pica o indiv&iacute;duo parasitado e se infecta. Aparentemente, esse ciclo das larvas tem rela&ccedil;&atilde;o com a saliva do inseto, que estimula as larvas a se dirigirem ao sangue perif&eacute;rico.</p>\n<p>&nbsp; &nbsp; De 8 a 10 dias depois, as larvas no interior do mosquito se tornam infectantes e v&atilde;o para o aparelho bucal &ndash; chamado prob&oacute;scida &ndash; do inseto que, ao picar outra pessoa, ir&atilde;o parasit&aacute;-la, atingindo o seu sangue e se dirigindo aos vasos linf&aacute;ticos.</p>\n<p>&nbsp; &nbsp; A Patogenia dessa filariose se d&aacute; por uma inflama&ccedil;&atilde;o e obstru&ccedil;&atilde;o dos vasos linf&aacute;ticos, em uma lenta evolu&ccedil;&atilde;o. As primeiras manifesta&ccedil;&otilde;es s&atilde;o a linfangiectasia (os vasos linf&aacute;ticos se dilatam), estase linf&aacute;tica, edema linf&aacute;tico, acsite linf&aacute;tica, linf&uacute;ria (linfa &eacute; eliminada na urina) e elefant&iacute;ase, ap&oacute;s alguns anos. As manifesta&ccedil;&otilde;es de elefant&iacute;ase podem ser, ap&oacute;s 8 a 10 anos, o aumento acentuado do volume do &oacute;rg&atilde;o (membros inferiores e test&iacute;culos, principalmente), acompanhado da derme mais espessa ou queratinizada.</p>\n<p>&nbsp; &nbsp; O diagn&oacute;stico do parasita pode ser obtido por meio de um exame de sangue, colhido entre 22 e 2 horas &ndash; de modo a se obter as microfil&aacute;rias, que estar&atilde;o na circula&ccedil;&atilde;o perif&eacute;rica. Com o sangue colhido, s&atilde;o feitos esfrega&ccedil;os em l&acirc;minas que ser&atilde;o examinadas, em busca dos parasitos.</p>\n<p>&nbsp; &nbsp; A doen&ccedil;a possui grande distribui&ccedil;&atilde;o geogr&aacute;fica, sendo encontrada na &Aacute;frica, na &Aacute;sia, nas ilhas do Pac&iacute;fico e nas Am&eacute;ricas central e do Sul. J&aacute; no Brasil, essa filarioses era encontrada, principalmente, em Macei&oacute; Olinda Recife etc. Essa concentra&ccedil;&atilde;o, por&eacute;m, ocorreu apenas at&eacute; o ano de 2005, quando houve um dedicado trabalho de controle, de modo que os focos de Bel&eacute;m e de Macei&oacute; foram considerados extintos, e houve uma redu&ccedil;&atilde;o nas demais cidades.</p>\n<p>&nbsp; &nbsp; O seu tratamento ocorre de maneira eficiente, e quanto antes este ocorrer, melhor, sobre os pontos de vista profil&aacute;tico, est&eacute;tico &mdash; devido &agrave;s deforma&ccedil;&otilde;es causadas pela elefant&iacute;ase &mdash; e terap&ecirc;utico.</p>"
+      },
+      {
+        "title" : "<p><em><span>Orchocerca volvulus</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p><em>&nbsp; &nbsp;&nbsp;</em>Nessa fil&aacute;ria, os vermes adultos s&atilde;o encontrados em n&oacute;dulos e tumores subcut&acirc;neos chamados &ldquo;oncocercomas&rdquo;, situados principalmente na cabe&ccedil;a e no tronco. A f&ecirc;mea mede 60 cm de comprimento, e o macho apenas 4 cm. Estes vivem enovelados nos tumores e, na pele pr&oacute;xima desses n&oacute;dulos, encontram-se persistentemente as microfil&aacute;rias, provocando doen&ccedil;as como a &ldquo;filariose cut&acirc;nea&rdquo; ou &ldquo;cegueira dos rios&rdquo;, visto que o transmissor &eacute; um borrachudo (ser vivo do g&ecirc;nero Simulium) que se cria em cachoeiras de rios e c&oacute;rregos. Este animal, ao picar o indiv&iacute;duo, ingere as microfil&aacute;rias presentes em sua pele que, ap&oacute;s 8 dias, tornam-se infectantes, penetrando na pele de outro indiv&iacute;duo e formando os n&oacute;dulos citados.</p>\n<p><em>&nbsp; &nbsp;&nbsp;</em>A sua patogenia &eacute; vari&aacute;vel, pois seus pacientes v&atilde;o desde assintom&aacute;ticos at&eacute; o que possui diversos n&oacute;dulos, dermatite pela presen&ccedil;a de microfil&aacute;rias e cegueira, causada pela migra&ccedil;&atilde;o de larvas na c&oacute;rnea, desenvolvendo assim um processo inflamat&oacute;rio que causa a opacifica&ccedil;&atilde;o da estrutura ocular e a perda total ou parcial da vis&atilde;o.</p>\n<p>&nbsp; &nbsp; Essa parasitose &eacute; encontrada principalmente na &Aacute;frica, no norte da Am&eacute;rica do Sul, na Am&eacute;rica Central e no M&eacute;xico. No Brasil, &eacute; encontrada apenas em Amazonas e Roraima.</p>"
+      },
+      {
+        "title" : "<p><em><span>Mansonella ozzardi</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Ocorre da Argentina e vai at&eacute; o M&eacute;xico, demonstrando a sua vasta abrang&ecirc;ncia no continente americano. No Brasil, assim como a filariose anterior, &eacute; encontrada nos estados de Roraima e Amazonas. Os vermes adultos s&atilde;o encontrados no mesent&eacute;rio (envolt&oacute;rio dos &oacute;rg&atilde;os do intestino, que os prende na parede abdominal) e na cavidade peritoneal (localizado dentro da cavidade abdominal) dos humanos, sem promover danos ao paciente, apesar de alguns poderem apresentar febre, cefaleia, dores nas articula&ccedil;&otilde;es e frieza nas pernas.</p>\n<p>&nbsp; &nbsp; As microfil&aacute;rias s&atilde;o encontradas no sangue durante o dia todo, e s&atilde;o transmitidas pela picada de insetos &ndash; no Brasil, por borrachudos, isto &eacute;, mosquitos do g&ecirc;nero <em>Simulium</em>; e por maruins, mosquitos do g&ecirc;nero <em>Culicoides</em>, na Am&eacute;rica central. A <em>Mansonella streptocerca</em> (chamada antigamente <em>Dipetalonema streptocerca</em>) &eacute; encontrada apenas na &Aacute;frica, sobretudo nos pa&iacute;ses Congo, Zaire e Gana, sendo tamb&eacute;m transmitido pelos <em>Culicoides</em>. Por fim, tamb&eacute;m &eacute; encontrada a <em>M. perstans</em> no continente africano.</p>"
+      },
+      {
+        "title" : "<p><em><span>Dracunculus medinensis</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Popularmente conhecida como &ldquo;fil&aacute;ria de Medina&rdquo;, devido &agrave; sua descri&ccedil;&atilde;o ter ocorrido nesta cidade, possui um aspecto peculiar, visto que a f&ecirc;mea se exp&otilde;e nas pernas dos pacientes, ao entrarem em contato com a &aacute;gua. Por tal motivo, nativos africanos a retiram das pernas parasitadas, enrolando-a em um peda&ccedil;o de pau. A f&ecirc;mea possui 1 metro e o macho apenas 5 cm.</p>\n<p>&nbsp; &nbsp; Os vermes adultos se encontram abaixo da pele das pernas de pacientes. As f&ecirc;meas gr&aacute;vidas v&atilde;o para a pele, gerando um pequeno orif&iacute;cio por onde a f&ecirc;mea se exterioriza quando o paciente entra na &aacute;gua. Ap&oacute;s a sua exposi&ccedil;&atilde;o ao meio externo, a f&ecirc;mea libera milhares de embri&otilde;es que nadam e s&atilde;o ingeridos por <em>Cyclops</em> &ndash; um pequeno crust&aacute;ceo &ndash;, onde os embri&otilde;es tornam-se infectantes. Humanos, ao beber &aacute;gua em que existe o crust&aacute;ceo, se infectam. As larvas, ao chegarem no est&ocirc;mago, migram para o intestino, penetrando em sua mucosa e atingindo a corrente sangu&iacute;nea, onde podem se dirigir para o tecido subcut&acirc;neo das pernas dos pacientes.</p>\n<p>&nbsp; &nbsp; Durante o per&iacute;odo de escravid&atilde;o no Brasil, essa fil&aacute;ria apresentou um foco na regi&atilde;o de Feira de Santana, Bahia, que foi rapidamente extinto.</p>"
+      },
+      {
+        "title" : "<p><em><span>Loa loa</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Essa filariose &eacute; popularmente conhecida como &ldquo;tumor de Calabar&rdquo;, visto que foi descoberta nesta cidade, na Nig&eacute;ria. Ocorre em &aacute;reas de floresta tropical na &Aacute;frica. No Brasil, em Pirapora, MG, no ano de 1979, foram encontrados franceses com essa fil&aacute;ria, que se infectaram no continente africano. Tamb&eacute;m durante o per&iacute;odo de escravid&atilde;o, v&aacute;rios escravos contaminados vieram ao Brasil, por&eacute;m, essa fil&aacute;ria, que possui um ser do g&ecirc;nero <em>Crysops</em> como hospedeiro intermedi&aacute;rio, n&atilde;o se adaptou &agrave; nenhuma esp&eacute;cie de mosca existente no brasil.</p>\n<p>&nbsp; &nbsp; As f&ecirc;meas medem aproximadamente 6 cm, enquanto os machos medem 3 cm de comprimento. Os casais s&atilde;o geralmente encontrados no tecido subcut&acirc;neo, onde geram um processo inflamat&oacute;rio tempor&aacute;rio (tumor de Calabar) e, algumas vezes, atingem at&eacute; mesmo a c&acirc;mara anterior do olho, onde podem ser visualizadas pelo oftalmosc&oacute;pio.</p>\n<p>&nbsp; &nbsp; As microfil&aacute;rias s&atilde;o encontradas no sangue perif&eacute;rico, com periodicidade diurna (a hematofagia das mutucas ocorre nesse hor&aacute;rio).</p>"
+      },
+      {
+        "title" : "<p><em><span>Dirofilaria immitis</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; &Eacute; vastamente conhecida como &ldquo;verme do cora&ccedil;&atilde;o&rdquo;, devido ao habitat onde s&atilde;o encontrados os vermes adultos. Essa fil&aacute;ria ocorre em todo o mundo, parasitando c&atilde;es, lobos, raposas e fel&iacute;deos, ocorrendo raramente em humanos. As f&ecirc;meas medem cerca de 30 cm de comprimento, enquanto os machos medem apenas 15 cm.</p>\n<p>&nbsp; &nbsp; Os parasitos vivem enovelados no ventr&iacute;culo esquerdo e na art&eacute;ria pulmonar. As microfil&aacute;rias s&atilde;o encontradas no sangue perif&eacute;rico, durante o dia e a noite, de acordo com os h&aacute;bitos alimentares de seus mosquitos hospedeiros intermedi&aacute;rios: <em>Anopheles</em>, <em>Mansonia</em>, <em>Aedes</em> e <em>Psorophora</em>.</p>\n<p>&nbsp; &nbsp; No Brasil, essa doen&ccedil;a &eacute; pouco conhecida, at&eacute; mesmo dentre os can&iacute;deos, devido a falta de um trabalho epidemiol&oacute;gico mais amplo. As maiores quantidades de c&atilde;es infectados com esta doen&ccedil;a ocorreram no Rio de Janeiro, Niter&oacute;i e Macei&oacute;.</p>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A resposta imune nas filarioses ainda &eacute; vastamente estudada, de modo que grande parte dos conhecimentos atuais se deram por infec&ccedil;&otilde;es experimentais em camundongos, ocasionadas por <em>Brugia malayi</em> e <em>W. bancrofti</em>, assim como por infec&ccedil;&otilde;es em humanos pela &uacute;ltima filariose.</p>\n<p>&nbsp; &nbsp; As infec&ccedil;&otilde;es de filarioses, em geral, s&atilde;o cr&ocirc;nicas, visto que os parasitos apresentam muitas formas de escape &agrave; resposta imune do paciente. Nestes pacientes, &eacute; poss&iacute;vel observar respostas antig&ecirc;nicas espec&iacute;ficas e produ&ccedil;&atilde;o de interferon, na produ&ccedil;&atilde;o de imunidade celular e de interleucina (IL) para o desenvolvimento de imunoglobulinas.</p>\n<p>&nbsp; &nbsp; Na fase ativa das doen&ccedil;as, s&atilde;o observados altos n&iacute;veis de IgG4, enquanto os de IgG3 e IgE s&atilde;o baixos. Quando as microfil&aacute;rias se encontram no sangue dos pacientes, percebe-se a eleva&ccedil;&atilde;o de IgG1 e IgG2. Por fim, IgA possui um n&iacute;vel elevado quando h&aacute; baixos n&iacute;veis de microfilariemia, denotando a sua a&ccedil;&atilde;o imunol&oacute;gica protetora.</p>\n<p>&nbsp; &nbsp; Al&eacute;m disso, as concentra&ccedil;&otilde;es de determinadas imunoglobulinas s&atilde;o diferentes de acordo com o sexo do paciente. Nos homens, encontram-se n&iacute;veis mais baixos de IgA, enquanto os n&iacute;veis de IgE e IgA s&atilde;o mais elevados nas mulheres. Tal fato pode explicar a maior preval&ecirc;ncia desse tipo de doen&ccedil;a nos homens.</p>"
+      }
+    ]
+  },
+  {
+    "categoryName" : "Outras Helmintoses",
+    "numberOfTabs" : 6,
+
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Neste cap&iacute;tulo, alguns helmintos incomuns, mas que devem ser melhor conhecidos por profissionais de sa&uacute;de, ser&atilde;o apresentados, uma vez que foram apresentados diversos casos ultimamente.</p>"
+      },
+      {
+        "title" : "<p><em><span>Angiostrongylus costaricensis</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Esse helminto possui dois nomes: dibotriocefalose e difilobotriose, em fun&ccedil;&atilde;o do parasito antigamente ter sido denominado <em>Dibothriocephalus latus</em>. As larvas desse helminto s&atilde;o conhecidas como espargano e, quando atingem humanos, podem provocar a esparganose.</p>\n<p>&nbsp; &nbsp; Os vermes adultos medem de 8 a 10 cm de comprimento, e habitam o intestino delgado de humanos. Esses parasitos s&atilde;o encontrados em pa&iacute;ses em que a popula&ccedil;&atilde;o possui o h&aacute;bito de ingerir peixe cru fresco, como o Jap&atilde;o, as duas Coreias, parte dos Estados unidos, Chile, Filipinas, R&uacute;ssia e alguns pa&iacute;ses do norte da Europa. No Brasil, devido aos novos h&aacute;bitos de se comer comida japonesa, j&aacute; foram diagnosticados cinco casos em Belo Horizonte e 52 em S&atilde;o Paulo.</p>\n<p>&nbsp; &nbsp; O ciclo biol&oacute;gico desse helminto ocorre da seguinte forma: os ovos dos helmintos saem nas fezes de humanos e, ao alcan&ccedil;ar &aacute;gua limpa, liberam uma larva ciliada chamada corac&iacute;dio, que &eacute; ingerida pelo primeiro hospedeiro intermedi&aacute;rio, <em>Cyclops</em> ou <em>Diaptomus</em>. Depois, esses artr&oacute;podes s&atilde;o ingeridos por peixes, o segundo hospedeiro intermedi&aacute;rio, onde se desenvolve o espargano, que fica preso em sua musculatura. Ap&oacute;s a ingest&atilde;o de peixes ou de <em>Cyclops</em> infectados, os humanos adquirem os vermes adultos.</p>\n<p>&nbsp; &nbsp; O <em>D. latum</em> vive de 10 a 30 dias no intestino humano, usualmente ocorrendo dois ou tr&ecirc;s parasitos por pessoa.</p>\n<p>&nbsp; &nbsp; A dibotriocefalose pode ser assintom&aacute;tica ou provocar anorexia, emagrecimento, n&aacute;useas e dores abdominais por&eacute;m, em sua manifesta&ccedil;&atilde;o mais grave, tamb&eacute;m causa anemia botriocef&aacute;lica, em que o helminto compete com a dieta deficiente em vitamina B<sub>12</sub>.</p>\n<p>&nbsp; &nbsp; O diagn&oacute;stico dessa helmintose se d&aacute; pelo exame de fezes do paciente e a localiza&ccedil;&atilde;o dos ovos t&iacute;picos. Os ovos possuem uma casca lisa, de cor castanho-amarelada, sendo assim facilmente identific&aacute;veis.</p>"
+      },
+      {
+        "title" : "<p><em><span>Angiostrongylus cantonensis</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A esp&eacute;cie <em>Angiostrongylus cantonensis</em> &eacute; o agente etiol&oacute;gico da meningite eosinof&iacute;lica, conhecida como &ldquo;verme do pulm&atilde;o do rato&rdquo;. &Eacute; considerada uma zoonose, que possui como hospedeiros definitivos ratos pertencentes &agrave;s esp&eacute;cies <em>Rattus norvegicus</em>, <em>Rattus rattus</em> e roedores silvestres. Os hospedeiros intermedi&aacute;rios s&atilde;o algumas esp&eacute;cies de moluscos como a <em>Achatinafulica</em>, o caramujo africano, que tem se espalhado por todo o mundo e disseminado a doen&ccedil;a. Por se tratar de uma esp&eacute;cie ex&oacute;tica, n&atilde;o possui predadores naturais em outros pa&iacute;ses, o que contribui para a prolifera&ccedil;&atilde;o da doen&ccedil;a.</p>\n<p>&nbsp; &nbsp; A meningite eosinof&iacute;lica, tamb&eacute;m chamada de angiostrongil&iacute;ase cerebral, j&aacute; foi parasitada em seis estados brasileiros, nas regi&otilde;es Sudeste, Sul e Nordeste. No Sudeste da &Aacute;sia, o h&aacute;bito de comer moluscos aumenta a dissemina&ccedil;&atilde;o da doen&ccedil;a. J&aacute; no brasil, a transmiss&atilde;o ocorre pela ingest&atilde;o acidental destes animais ou do muco que eles liberam. O consumo de verduras, legumes e frutas crus que n&atilde;o possuam higieniza&ccedil;&atilde;o adequada tamb&eacute;m pode ocasionar na infec&ccedil;&atilde;o, visto que o muco secretado pelos moluscos pode infectar os alimentos.</p>\n<p>&nbsp; &nbsp; Ao serem ingeridas, as larvas do verme v&atilde;o para o sistema nervoso central, alojando-se nas meninges, causando a meningite, que pode levar &agrave; morte.</p>\n<p>&nbsp; &nbsp; Os sintomas, em geral, s&atilde;o os mesmos das meningites provocadas por outros agentes e, uma das formas de obter-se o diagn&oacute;stico da doen&ccedil;a &eacute; a partir da pun&ccedil;&atilde;o do liquor da medula &oacute;ssea, onde se encontram os eosin&oacute;filos em maior n&uacute;mero e fora do padr&atilde;o. O controle da doen&ccedil;a &eacute; dif&iacute;cil, visto que o caramujo vetor, o <em>A. fulica</em>, se dispersa e se reproduz rapidamente. Deve-se descartar o caramujo no lixo, quebrando as suas conchas, de modo a diminuir a sua transmiss&atilde;o. Ainda n&atilde;o h&aacute; um m&eacute;todo efetivo para o controle dessa helmintose.</p>"
+      },
+      {
+        "title" : "<p><em><span>Lagochilascaris minor</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Esse helminto pertence &agrave; fam&iacute;lia Ascarididae, e ocorre em fel&iacute;deos silvestres e em humanos. &Eacute; um parasito cuja cor se assemelha a leite, e o macho mede 8 mm, enquanto a f&ecirc;mea mede 10 mm de comprimento. Os vermes ocorrem em n&oacute;dulos purulentos na regi&atilde;o cervical dos animais infectados, que se infectam ao ingerir ratos (que s&atilde;o os hospedeiros intermedi&aacute;rios) contaminados com larvas infectantes. Nos n&oacute;dulos, as f&ecirc;meas p&otilde;em os ovos t&iacute;picos (tal como uma tampa de cerveja) que, no exterior, s&atilde;o ingeridos por ratos. Nesses animais hospedeiros, os ovos geram larvas, que saem de seu tubo digestivo e v&atilde;o para a musculatura dos ratos, que s&atilde;o ingeridos pelos gatos. N&atilde;o se sabe exatamente qual &eacute; o modo de infec&ccedil;&atilde;o dos humanos, e os casos existentes at&eacute; o momento ocorreram apenas na Regi&atilde;o Amaz&ocirc;nica.</p>\n<p>&nbsp; &nbsp; O diagn&oacute;stico da doen&ccedil;a &eacute; feito pela localiza&ccedil;&atilde;o dos helmintos nas les&otilde;es purulentas dos pacientes.</p>"
+      },
+      {
+        "title" : "<p><em><span>Syngamus laringeus</span></em>:</p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Pertencente &agrave; familia Syngamidae, o parasito &eacute; tamb&eacute;m conhecido como <em>Mammonogamus laringeus</em>. Ocorre em laringe e br&ocirc;nquios de bovinos, b&uacute;falos, caprinos e, ocasionalmente, em humanos. O verme ocorre em todo o mundo, acometendo diversos humanos em diferentes pa&iacute;ses. No Brasil, pouco mais de 20 casos foram diagnosticados, apesar de esse n&uacute;mero seja bem maior, devido a dificuldade de se obter o diagn&oacute;stico.</p>\n<p>&nbsp; &nbsp; Esse helminto tem a cor avermelhada, o macho mede 3 mm e a f&ecirc;mea mede 8 mm de comprimento. Ambos vivem permanentemente acasalados, e as f&ecirc;meas eliminam diariamente grandes quantidades de ovos (que, por sua vez, assemelham-se aos de ancilostom&iacute;deos, mas com a casca dupla), que saem pelas fezes do animal infectados. No ambiente exterior, esses ovos formam uma larva infectante (L3), que pode penetrar em alguns moluscos ou artr&oacute;podes; quando esses hospedeiros s&atilde;o ingeridos pelos animais ou por humanos, as larvas perfuram a parede intestinal, chegam &agrave; corrente sangu&iacute;nea, e dirigem-se para os pulm&otilde;es e &agrave; laringe do novo hospedeiro.</p>\n<p>&nbsp; &nbsp; Os pacientes humanos com singamose apresentam quadros de tosse cr&ocirc;nica, que dura um per&iacute;odo de at&eacute; 6 meses, algumas vezes com fortes acessos e elimina&ccedil;&atilde;o de muco sanguiar nolento, principalmente quando o paciente se encontra deitado.</p>\n<p>&nbsp; &nbsp; O diagn&oacute;stico do helminto tem sido realizado a partir da localiza&ccedil;&atilde;o dos vermes expelidos durante os acessos de tosse. At&eacute; o momento, todos os pacientes relatados tiveram rela&ccedil;&atilde;o frequente, se n&atilde;o constante, com os animais reservat&oacute;rios da doen&ccedil;a.</p>"
+      },
+      {
+        "title" : "Filo Acanthocephala:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Nesse filo, s&atilde;o encontradas duas esp&eacute;cies de helmintos frequentes em animais, mas que raramente atingem os humanos. Estas s&atilde;o: <em>Macracanthorhynchus hirudinaceus</em>, cujo macho mede de 5 a 10 cm, enquanto a sua f&ecirc;mea, de 20 a 35 cm. S&atilde;o parasitos de intestino delgado de su&iacute;nos. A outra esp&eacute;cie &eacute; o <em>Moniliformes moniliformes</em>, cujo macho mede 4 a 8 cm e a f&ecirc;mea, 7 a 11 cm. S&atilde;o parasitos de intestino delgado de ratos.</p>\n<p>&nbsp; &nbsp; O ciclo biol&oacute;gico desses helmintos tem in&iacute;cio quando saem nas fezes e s&atilde;o ingeridos por larvas de seu hospedeiro intermedi&aacute;rio, que s&atilde;o principalmente seres cole&oacute;pteros. Su&iacute;nos, ratos e, em alguns casos, humanos s&atilde;o infectados ap&oacute;s a ingest&atilde;o de larvas ou cole&oacute;pteros adultos que contenham as larvas infectantes do parasito em seu interior.</p>\n<p>&nbsp; &nbsp; Os parasitos adultos fixam-se &agrave; mucosa do intestino delgado do animal infectado, por meio de sua forte prob&oacute;scida, repleta de ganchos. Tal fixa&ccedil;&atilde;o causa les&otilde;es intestinais (&uacute;lceras) ou at&eacute; mesmo a perfura&ccedil;&atilde;o do intestino.</p>\n<p>&nbsp; &nbsp; As manifesta&ccedil;&otilde;es mais comuns e frequentes dessa parasitose s&atilde;o diarreia, emagrecimento e dor abdominal. Por fim, o seu diagn&oacute;stico &eacute; feito pelo exame de fezes e localiza&ccedil;&atilde;o dos ovos t&iacute;picos desse helminto.</p>"
+      }
+    ]
   }
 ]
