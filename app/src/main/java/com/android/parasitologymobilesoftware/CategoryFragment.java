@@ -35,26 +35,15 @@ public class CategoryFragment extends Fragment {
         WebView webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
 
-        if(getArguments().getString("type").equals("textAndImage")) {
-            textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-            textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
-            imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
-
-        } else if (getArguments().getString("type").equals("text")) {
-            textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-            textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
-            //textViewText.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
-            imageView.setVisibility(ImageView.INVISIBLE);
-        }
         if (getArguments().getString("type") != null) {
             if(getArguments().getString("type").equals("textAndImage")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-                textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+                webViewText.loadData("<body><style>* {text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
                 imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
             } else if (getArguments().getString("type").equals("text")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-                textViewText.setText(Html.fromHtml(this.getArguments().getString("text"), Html.FROM_HTML_MODE_COMPACT));
+                webViewText.loadData("<body><style>* {text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
                 imageView.setVisibility(ImageView.INVISIBLE);
             }
         }
