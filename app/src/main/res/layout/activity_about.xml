@@ -50,19 +50,20 @@
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
+
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="70dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/futura_light_bt"
-                android:textStyle="bold"
                 android:text="O &quot;Parasite Combat&quot; é um aplicativo cujo intuito é auxiliar os alunos a estudarem parasitologia de uma maneira mais rápida, eficaz e interativa!"
                 android:textAlignment="viewStart"
                 android:textColor="@color/colorAccent"
-                android:textSize="18sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -75,7 +76,7 @@
                 android:fontFamily="@font/futura_light_bt"
                 android:text="As enfermidades infecto-parasitárias, conforme a Organização Mundial de Saúde (OMS), são uma das principais causas mundiais de morte. Logo, as pesquisas e os estudos complexos de Parasitologia, vitais para todos no controle de parasitos/vetores e suas graves consequências, podem ser facilitados pelo uso de aplicativos interativos/didáticos, que atuam como alavancas potenciadoras do processo de ensino-aprendizagem/de orientação de políticas públicas, para estimular o progresso pessoal e o desenvolvimento em geral."
                 android:textColor="@color/colorAccent"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/textView10"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -88,7 +89,7 @@
                 android:fontFamily="@font/futura_light_bt"
                 android:text="O projeto é uma iniciativa da professora Márcia Teles Filogônio, bacharel e licenciada em Ciências Biológicas/UFMG e mestranda e especialista em Parasitologia/UFMG. Bacharel em Farmácia/Bioquímica/UFMG e em Direito, é professora de Biologia/Ciências Naturais e responsável pelo Laboratório de Biologia/Clube de Ciências do Colégio Militar de Belo Horizonte (CMBH). Criou o projeto com o objetivo de avaliar a contribuição do aplicativo &quot;Parasite Combat&quot; no ensino de Parasitologia para alunos motivados e preparados."
                 android:textColor="@color/colorAccent"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/textView10"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
