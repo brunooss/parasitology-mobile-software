@@ -314,6 +314,418 @@
 
 
   {
+    "categoryName" : "Helmintos",
+    "numberOfTabs" : 2,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : "<p>\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n</p>\n<div class=\"OutlineElement Ltr  BCX0 SCXW20101126\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; color: rgb(0, 0, 0); font-family: \"Segoe UI\", \"Segoe UI Web\", Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;'>\n    <p class=\"Paragraph SCXW20101126 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: justify; text-indent: 0px;\"><span class=\"TextRun SCXW20101126 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW20101126 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp; &nbsp;Os helmintos ou vermes s&atilde;o organismos pluricelulares. Podem ser encontrados no mundo todo e ocorrem usualmente em n&uacute;mero reduzido de exemplares, mantendo certo equil&iacute;brio entre o parasito e o hospedeiro, j&aacute; que ambos precisam viver.&nbsp;</span></span><span class=\"EOP SCXW20101126 BCX0\" data-ccp-props='{\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></p>\n</div>\n<div class=\"OutlineElement Ltr  BCX0 SCXW20101126\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; color: rgb(0, 0, 0); font-family: \"Segoe UI\", \"Segoe UI Web\", Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;'>\n    <p class=\"Paragraph SCXW20101126 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: justify; text-indent: 0px;\"><span class=\"TextRun SCXW20101126 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW20101126 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp; &nbsp;Entretanto, quando os vegetais, animais ou os humanos vivem em ambiente inadequado, ocorre o desequil&iacute;brio a favor dos helmintos, que se reproduzem e se propagam intensamente, tornando-se graves pragas agr&iacute;colas ou provocando doen&ccedil;as debilitantes ou mortais em animais e humanos. As condi&ccedil;&otilde;es que levam ao desequil&iacute;brio est&atilde;o mais associadas &agrave; pobreza, promiscuidade, popula&ccedil;&atilde;o adensada, nutri&ccedil;&atilde;o deficiente. Por&eacute;m, em regi&otilde;es com climas de temperaturas elevadas, os ciclos biol&oacute;gicos dos parasitos s&atilde;o encurtados.&nbsp;</span></span><span class=\"EOP SCXW20101126 BCX0\" data-ccp-props='{\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></p>\n</div>"
+      },
+      {
+        "title" : "Taxonomia",
+        "type" : "text",
+        "text" : "<p>\n    meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n</p>\n<div class=\"SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; color: rgb(0, 0, 0); font-family: \"Segoe UI\", \"Segoe UI_MSFontService\", sans-serif; font-size: 14.6667px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;'>\n    <div class=\"OutlineElement Ltr  BCX0 SCXW188529537\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr;\">\n        <p class=\"Paragraph SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: justify; text-indent: 0px;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Os helmintos est&atilde;o classificados da seguinte forma:</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></p>\n    </div>\n    <div class=\"ListContainerWrapper SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; position: relative;\">\n        <ul>\n            <li class=\"Paragraph SCXW188529537 BCX0\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; text-indent: 0px;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Imp&eacute;rio Eucariota&nbsp;</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span>\n                <ul>\n                    <li class=\"Paragraph SCXW188529537 BCX0\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; text-indent: 0px;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Reino&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Animalia</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span>\n                        <ul>\n                            <li><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">F</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">i</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">lo</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Platyhelminthes</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">:</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">s&atilde;o conhecidos pela forma achatada, usualmente&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">hermafroditas</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">, havendo poucas esp&eacute;cies com sexos separadas, podendo apresentar-se em forma de folha ou de fita, que os dividem em&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">duas classes</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">:</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span>\n                                <ul>\n                                    <li><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Classe&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Trematoda</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: helmintos em forma de&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-weight: bold; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">folha</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">, apresentando simetria bilateral. Possui uma subclasse com esp&eacute;cies que iremos aprofundar:&nbsp;</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span>\n                                        <ul>\n                                            <li style=\"text-align: justify;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Subclasse&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Digenea</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: fam&iacute;lias&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Schitosomatidae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;(</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Schitosoma</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;mansoni</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">) e&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Fasciolidae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;(</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Fasciola</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>hepatica</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">).</span></span></li>\n                                        </ul>\n                                    </li>\n                                    <li style=\"text-align: justify;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Classe&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Cestoda</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: s&atilde;o conhecidos pela forma de&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-weight: bold; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">fita</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">, com simetria bilateral. Todas as esp&eacute;cies s&atilde;o parasitos de vertebrados e&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>hemafroditas</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">.</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></li>\n                                </ul>\n                            </li>\n                            <li><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Filo&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Nematoda</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: s&atilde;o os vermes alongados, com corpo cil&iacute;ndrico, e os sexos s&atilde;o geralmente separados, com as f&ecirc;meas normalmente sendo maiores que os machos.</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span>\n                                <ul>\n                                    <li style=\"text-align: justify;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Classe&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Adenophorea</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: com esp&eacute;cies que n&atilde;o ocorrem em humanos.</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></li>\n                                    <li style=\"text-align: justify;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Classe&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Sercenentea</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: com as fam&iacute;lias&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Ancylostomidae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">,&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Oxyuridae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">,&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Strongyloididae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">,&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Trichuridae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;e&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Onchocercidae</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">&nbsp;de maior interesse m&eacute;dico/veterin&aacute;rio.</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></li>\n                                </ul>\n                            </li>\n                            <li style=\"text-align: justify;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Filo&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Acathocephala</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: vermes alongados, cil&iacute;ndricos, pseudocelomados,&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>pseudossegmentados</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">.</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></li>\n                            <li style=\"text-align: justify;\"><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">Filo&nbsp;</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-style: italic; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"SpellingError SCXW188529537 BCX0\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(\"data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==\"); border-bottom: 1px solid transparent; background-color: inherit;'>Annelida</span></span><span class=\"TextRun SCXW188529537 BCX0\" data-contrast=\"auto\" lang=\"PT-BR\" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-variant-ligatures: none !important; font-size: 11pt; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif; font-kerning: none; line-height: 19.425px;'><span class=\"NormalTextRun SCXW188529537 BCX0\" style=\"margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;\">: no qual encontramos as minhocas e as sanguessugas.</span></span><span class=\"EOP SCXW188529537 BCX0\" data-ccp-props='{\"134233279\":true,\"201341983\":0,\"335559739\":160,\"335559740\":259}' style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 19.425px; font-family: \"Segoe UI\", \"Segoe UI_EmbeddedFont\", \"Segoe UI_MSFontService\", sans-serif;'>&nbsp;</span></li>\n                        </ul>\n                    </li>\n                </ul>\n            </li>\n        </ul>\n    </div>\n</div>"
+      },
+      {
+        "title" : "Um pouco mais sobre os helmintos...",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Esquistossomose",
+    "numberOfTabs" : 10,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Agente Etiológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Morfologia e Habitat",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Ciclo Biológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Patogenia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Imunidade",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Diagnóstico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Epidemiologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Profilaxia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Tratamento",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Fasciolíase",
+    "numberOfTabs" : 9,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Agente Etiológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Morfologia e Habitat",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Ciclo Biológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Patogenia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Diagnóstico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Epidemiologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Profilaxia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Tratamento",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Teníase",
+    "numberOfTabs" : 10,
+    "tabs": [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" :  ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Cisticercose",
+    "numberOfTabs" : 10,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Agente Etiológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Morfologia e Habitat",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Ciclo Biológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Patogenia e Sintomatologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Imunidade",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Diagnóstico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Epidemiologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Profilaxia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Tratamento",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Hidatidose",
+    "numberOfTabs" : 10,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Agente Etiológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Morfologia e Habitat",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Ciclo Biológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Patogenia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Imunidade",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Diagnóstico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Epidemiologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Profilaxia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Tratamento",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Estrongiloidíase",
+    "numberOfTabs" : 10,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Agente Etiológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Morfologia e Habitat",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Ciclo Biológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Patogenia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Imunidade",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Diagnóstico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Epidemiologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Profilaxia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Tratamento",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+  {
+    "categoryName" : "Tricuríase",
+    "numberOfTabs" : 9,
+    "tabs" : [
+      {
+        "title" : "Introdução",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Morfologia do Agente",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Ciclo Biológico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Patogenia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Imunidade",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Diagnóstico",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Epidemiologia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Profilaxia",
+        "type" : "text",
+        "text" : ""
+      },
+      {
+        "title" : "Tratamento",
+        "type" : "text",
+        "text" : ""
+      }
+    ]
+  },
+
+
+  {
     "categoryName" : "Ancilostomíase",
     "numberOfTabs" : 9,
     "tabs" : [
