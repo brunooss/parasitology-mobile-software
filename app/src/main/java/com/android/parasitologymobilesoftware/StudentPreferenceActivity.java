@@ -45,8 +45,8 @@ public class StudentPreferenceActivity extends AppCompatActivity {
         dataBase = FirebaseFirestore.getInstance();                 // Cloud Firestore
         firebaseAuth = FirebaseAuth.getInstance();                 // Firebase Auth
 
-        studentFirstPref = findViewById(R.id.constraintLayoutStudentFirst);
-        studentSecondPref = findViewById(R.id.constraintLayoutStudentSecond);
+        //           studentFirstPref = findViewById(R.id.constraintLayoutStudentFirst);
+        //           studentSecondPref = findViewById(R.id.constraintLayoutStudentSecond);
         progressBar = findViewById(R.id.progressBarPreferenceActivity);
         progressBar.setVisibility(View.INVISIBLE);
 
@@ -54,7 +54,7 @@ public class StudentPreferenceActivity extends AppCompatActivity {
         email = firebaseAuth.getCurrentUser().getEmail();               // Getting user's email from Firebase Auth
     }
 
-    public void onButtonStudentFirst(View view){
+    /* public void onButtonStudentFirst(View view){
         if (studentPreference == 0 || studentPreference == 2) {
             studentFirstPref.setElevation(30);
             studentSecondPref.setElevation(1);
@@ -76,7 +76,7 @@ public class StudentPreferenceActivity extends AppCompatActivity {
             studentSecondPref.setElevation(1);
             studentPreference = 0;
         }
-    }
+    } */
 
     public void onButtonStudentPreferenceClick(View view){
         if (studentPreference != 0) {
