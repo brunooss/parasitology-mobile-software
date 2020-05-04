@@ -2,7 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -20,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
     private FirebaseFirestore dataBase;
     private FirebaseUser mFirebaseUser;
-    private boolean studentPrefSetted = false;
+    private boolean studentSurveyState = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
-                    setStudentPrefSetted(documentSnapshot.getBoolean("preference state"));
+                    setStudentSurveyState(documentSnapshot.getBoolean("previous survey state"));
                 }
             });
         }
@@ -47,22 +47,22 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
                 Intent intentUnauthenticated =  new Intent(getBaseContext(), SigninActivity.class);
                 Intent intentAuthenticated = new Intent(getBaseContext(), HomeActivity.class);
-                Intent intentAuthenticatedWithoutPreference = new Intent(getBaseContext(), HomeActivity.class);
+                Intent intentAuthenticatedWithoutSurvey = new Intent(getBaseContext(), StudentPreferenceActivity.class);
                 if(mFirebaseUser == null){                      // User is unauthenticated
                     startActivity(intentUnauthenticated);       // Send him to SignIn Activity, so he can Authenticate
                 } else {                                        // User is authenticated
-                    if (!studentPrefSetted) {
+                    if (!studentSurveyState) {
                         //Toast.makeText(getBaseContext(), mFirebaseUser.toString(), Toast.LENGTH_SHORT).show();
-                        startActivity(intentAuthenticatedWithoutPreference);
+                        startActivity(intentAuthenticatedWithoutSurvey);
                     }
-                    else if (studentPrefSetted) startActivity(intentAuthenticated);         // Send him to Home Activity
+                    else if (studentSurveyState) startActivity(intentAuthenticated);         // Send him to Home Activity
                 }
                 finish();
             }
         }, 3000);
 
     }
-    public void setStudentPrefSetted(boolean studentPrefSetted){
-        this.studentPrefSetted = studentPrefSetted;
+    public void setStudentSurveyState(boolean studentSurveyState){
+        this.studentSurveyState = studentSurveyState;
     }
 }

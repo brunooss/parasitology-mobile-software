@@ -202,7 +202,7 @@ public class SignupActivity extends AppCompatActivity {
                                 users.put("email", editTextEmail.getText().toString());
 
                                 Map<String, Object> state = new HashMap<>();
-                                state.put("preference state", false);
+                                state.put("previous survey state", false);
                                 state.put("alert state", false);
 
                                 dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
