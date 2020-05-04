@@ -38,12 +38,12 @@ public class CategoryFragment extends Fragment {
         if (getArguments().getString("type") != null) {
             if(getArguments().getString("type").equals("textAndImage")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-                webViewText.loadData("<body><style> @font-face {font-family: Futura; src: url(\"file:///android_asset/font/futura_light_bt.ttf\")} * {text-align: justify; font-family: Futura;}</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
+                webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
                 imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
             } else if (getArguments().getString("type").equals("text")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-                webViewText.loadData("<body><style> @font-face { font-family: Futura; src: url(\"file:///android_asset/font/futura_light_bt.ttf)\"} * {text-align: justify; font-family: Futura; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
+                webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
                 imageView.setVisibility(ImageView.INVISIBLE);
             }
         }
