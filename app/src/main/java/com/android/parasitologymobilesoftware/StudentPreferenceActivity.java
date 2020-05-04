@@ -2,8 +2,11 @@ package com.android.parasitologymobilesoftware;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 
@@ -37,6 +40,11 @@ public class StudentPreferenceActivity extends AppCompatActivity {
     private ConstraintLayout studentSecondPref;
     private ProgressBar progressBar;
 
+    private RadioGroup radioGroup01, radioGroup02, radioGroup03, radioGroup04;
+    private RadioButton radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6, radioButton7, radioButton8, radioButton9, radioButton10, radioButton11;
+
+    private String answer1, answer2, answer3, answer4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,81 +60,91 @@ public class StudentPreferenceActivity extends AppCompatActivity {
 
         completeName = firebaseAuth.getCurrentUser().getDisplayName();   // Getting user's complete name from Firebase Auth
         email = firebaseAuth.getCurrentUser().getEmail();               // Getting user's email from Firebase Auth
-    }
 
-    /* public void onButtonStudentFirst(View view){
-        if (studentPreference == 0 || studentPreference == 2) {
-            studentFirstPref.setElevation(30);
-            studentSecondPref.setElevation(1);
-            studentPreference = 1;
-        }
-        else {  // The student preference is already this one (1)
-            studentFirstPref.setElevation(1);
-            studentPreference = 0;
-        }
+        radioGroup01 = findViewById(R.id.radioGroup);
+        radioGroup02 = findViewById(R.id.radioGroup2);
+        radioGroup03 = findViewById(R.id.radioGroup3);
+        radioGroup04 = findViewById(R.id.radioGroup4);
     }
-
-    public void onButtonStudentSecond(View view){
-        if (studentPreference == 0 || studentPreference == 1) {
-            studentFirstPref.setElevation(1);
-            studentSecondPref.setElevation(30);
-            studentPreference = 2;
-        }
-        else {  // The student preference is already this one (2)
-            studentSecondPref.setElevation(1);
-            studentPreference = 0;
-        }
-    } */
 
     public void onButtonStudentPreferenceClick(View view){
-        if (studentPreference != 0) {
-            progressBar.setVisibility(View.VISIBLE);
+            boolean allOptions = true;
+            switch (radioGroup01.getCheckedRadioButtonId()) {
+                case R.id.radioButton:
+                    answer1 = "Baixo";
+                    break;
+                case R.id.radioButton2:
+                    answer1 = "Razoável";
+                    break;
+                case R.id.radioButton3:
+                    answer1 = "Alto";
+                    break;
+                default: // user hasnt made any choice
+                    allOptions = false;
+            }
+            switch (radioGroup02.getCheckedRadioButtonId()) {
+                case R.id.radioButton4:
+                    answer2 = "Baixo";
+                    break;
+                case R.id.radioButton5:
+                    answer2 = "Razoável";
+                    break;
+                case R.id.radioButton6:
+                    answer2 = "Alto";
+                    break;
+                default: // user hasnt made any choice
+                    allOptions = false;
+            }
+            switch (radioGroup03.getCheckedRadioButtonId()) {
+                case R.id.radioButton7:
+                    answer3 = "Baixa";
+                    break;
+                case R.id.radioButton8:
+                    answer3 = "Razoável";
+                    break;
+                case R.id.radioButton9:
+                    answer3 = "Alta";
+                    break;
+                default: // user hasnt made any choice
+                    allOptions = false;
+            }
+            switch (radioGroup04.getCheckedRadioButtonId()) {
+                case R.id.radioButton10:
+                    answer4 = "Não";
+                    break;
+                case R.id.radioButton11:
+                    answer4 = "Sim";
+                    break;
+                default: // user hasnt made any choice
+                    allOptions = false;
+            }
+            if (allOptions) {
+                Log.i("buttonStudentPref", "All the options are selected!");
+                progressBar.setVisibility(View.VISIBLE);
+                DocumentReference docRef = dataBase.collection("generalUserInfo").document(email).collection("surveys").document("previousUse");
 
-            DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);       // Getting the school grade from the data base
-            docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                @Override
-                public void onSuccess(DocumentSnapshot documentSnapshot) {
-                    setSchoolGrade(documentSnapshot.getString("school grade"));
+                Map<String, Object> answers = new HashMap<>();
+                answers.put("Qual é o seu nível de conhecimento em Parasitologia?", answer1);
+                answers.put("Qual é o seu interesse por Parasitologia?", answer2);
+                answers.put("Como você avalia a importância do estudo das parasitoses?", answer3);
+                answers.put("Tem interesse pelas Ciências Biológicas e materiais científicos da área?", answer4);
+                docRef.set(answers, SetOptions.merge());
+
+                Map<String, Object> previousSurvey = new HashMap<>();
+                previousSurvey.put("previous survey state", true);
+                dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
+                        .update(previousSurvey);
+
+                Intent intent = new Intent(getBaseContext(), HomeActivity.class);
+                startActivity(intent);
+                finish();
+            } else {
+                Log.i("buttonStudentPref", "Some of the options are not selected!");
+                //TODO: tell user he hasnt answered all questions
+            }
 
 
-                    Map<String, Object> progressStatus = new HashMap<>();
-                    progressStatus.put("progress status", 0);
-                    progressStatus.put("progress introduction", 0);
-                    progressStatus.put("progress protozoarios", 0);
-                    progressStatus.put("progress helmintos", 0);
-                    progressStatus.put("progress artropodes", 0);
-
-                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
-                            .set(progressStatus, SetOptions.merge());
-
-                    if (studentPreference == 1) studentPref = "tradicional";
-                    else studentPref = "modern";
-
-                    Map<String, Object> studentPrefInt = new HashMap<>();
-                    studentPrefInt.put("student preference", studentPreference);
-
-                    Map<String, Object> prefereState = new HashMap<>();
-                    prefereState.put("preference state", true);
-
-                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
-                            .update(prefereState);
-
-                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
-                            .set(studentPrefInt, SetOptions.merge());
-
-                    Map<String, Object> studentPrefString = new HashMap<>();
-                    studentPrefString.put("student preference", studentPref);
-
-                    dataBase.collection(schoolGrade).document(completeName)
-                            .set(studentPrefString, SetOptions.merge());
-
-                    Intent intent = new Intent(getBaseContext(), HomeActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-            });
         }
-    }
 
     public void setSchoolGrade(String schoolGrade){
         this.schoolGrade = schoolGrade;
