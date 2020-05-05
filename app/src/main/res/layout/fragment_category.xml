@@ -33,9 +33,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryTitle"/>
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryTitle" app:layout_constraintVertical_bias="0.0"/>
 
             <ImageView
                 android:id="@+id/imageViewCategoryImage"
@@ -44,12 +45,53 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="64dp"
                 android:src="@color/colorAccent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/webViewCategoryText"/>
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/webViewCategoryText"
+                app:layout_constraintVertical_bias="0.0"/>
+            <Button
+                android:id="@+id/buttonCategoryNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_buttom_blue_background"
+                android:fontFamily="@font/futura_light_bt"
+                android:onClick="nextPage"
+                android:text="Próxima"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorTextPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewCategoryImage"
+            />
+            <Button
+                android:id="@+id/buttonCategoryPrevious"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_buttom_blue_background"
+                android:fontFamily="@font/futura_light_bt"
+                android:onClick="previousPage"
+                android:text="Anterior"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorTextPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageViewCategoryImage"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="Para navegar por entre as páginas, aperte os botões ou deslize a tela!"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonCategoryNext"
+                app:layout_constraintEnd_toStartOf="@+id/buttonCategoryNext" app:layout_constraintStart_toEndOf="@+id/buttonCategoryPrevious"
+                app:layout_constraintTop_toTopOf="@+id/buttonCategoryNext"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </FrameLayout>

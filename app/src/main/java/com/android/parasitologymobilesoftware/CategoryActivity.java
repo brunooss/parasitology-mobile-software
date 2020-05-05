@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.*;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +40,9 @@ public class CategoryActivity extends AppCompatActivity {
     private String firstMessage = "Tem certeza que deseja abandonar ";
     private String secondMessage;
     private String thirdMessage = "? Seu progresso nesta categoria será perdido";
+    private ViewPager viewPager;
+
+    private CategoryFragment fragment = new CategoryFragment();
 
 
     @Override
@@ -121,7 +126,7 @@ public class CategoryActivity extends AppCompatActivity {
         }
 
 
-        final ViewPager viewPager = findViewById(R.id.viewPagerSubject);
+        viewPager = findViewById(R.id.viewPagerSubject);
         viewPager.setAdapter(new CategoryFragmentPagerAdapter(getSupportFragmentManager()));
 
 
@@ -140,20 +145,31 @@ public class CategoryActivity extends AppCompatActivity {
 
         }); //2643 x 1900
 
+
+
     }
 
+    @Override
+    public void onBackPressed() {
+        alertDialogExit.show();
+
+        //super.onBackPressed();
+        return ;
+    }
+
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.home, menu);
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
+        final SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
                 if(s != null && !s.isEmpty()) {
-                    // @Todo
+                    fragment.updateWebViewSearch(s);
                 }
                 else {
                     return false;
@@ -163,11 +179,26 @@ public class CategoryActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String s) {
-                return false;
+                if(s != null && !s.isEmpty()) {
+                    fragment.updateWebViewSearchSelectWord(s);
+                }
+                else {
+                    return false;
+                }
+                return true;
+            }
+        });
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                fragment.updateWebViewClearMatches();
+                searchView.onActionViewCollapsed();
+                return true;
             }
         });
         return true;
     }
+    */
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -179,6 +210,14 @@ public class CategoryActivity extends AppCompatActivity {
 
     public static int getNumberOfTabs() {
         return numberOfTabs;
+    }
+
+    public void nextPage(View view) {
+        viewPager.setCurrentItem(viewPager.getCurrentItem() + 1, true);
+    }
+
+    public void previousPage(View view) {
+        viewPager.setCurrentItem(viewPager.getCurrentItem() - 1, true);
     }
 
 }
