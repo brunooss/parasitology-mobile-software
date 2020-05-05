@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,9 @@ public class CategoryFragment extends Fragment {
 
     static InputStream inputStream;
     public static String category;
+    private WebView webViewText;
+    private static Button buttonNext;
+    private static Button buttonPrevious;
 
     @Nullable
     @Override
@@ -32,8 +36,10 @@ public class CategoryFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_category, container, false);
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
-        WebView webViewText = rootView.findViewById(R.id.webViewCategoryText);
+        webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
+        buttonNext = rootView.findViewById(R.id.buttonCategoryNext);
+        buttonPrevious = rootView.findViewById(R.id.buttonCategoryPrevious);
 
         if (getArguments().getString("type") != null) {
             if(getArguments().getString("type").equals("textAndImage")) {
@@ -48,6 +54,19 @@ public class CategoryFragment extends Fragment {
             }
         }
 
+        if (getArguments().getInt("position") == 0) {
+            buttonPrevious.setBackgroundResource(R.drawable.custom_button_category_gray);
+        } else if (getArguments().getInt("number") == (getArguments().getInt("position") + 1)) {
+            buttonNext.setBackgroundResource(R.drawable.custom_button_category_yellow);
+            buttonNext.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    getActivity().finish();
+                }
+            });
+            buttonNext.setText("Completar");
+        }
+
         return rootView;
     }
 
@@ -56,7 +75,7 @@ public class CategoryFragment extends Fragment {
         HomeActivity activity = new HomeActivity();
 
         category = activity.getCategory();
-        Log.d("CategoryFragment", "Category's name received: " +category);
+        Log.d("CategoryFragment", "Category's name received: " + category);
 
 
         try {
@@ -77,12 +96,13 @@ public class CategoryFragment extends Fragment {
                     args.putString("title", tab.getString("title"));
                     args.putString("type", tab.getString("type"));
                     args.putString("text", tab.getString("text"));
+                    args.putInt("number", jsonObject.getInt("numberOfTabs"));
 
                     try {
                         tab.get("imageAddress");
                         args.putString("imageAddress", tab.getString("imageAddress"));
                     } catch (JSONException ignored) { }
-                    Toast.makeText(MyApplication.getMyApplicationContext(), activity.category, Toast.LENGTH_LONG).show();
+
                 }
             }
 
@@ -101,5 +121,16 @@ public class CategoryFragment extends Fragment {
         CategoryFragment fragment = new CategoryFragment();
         fragment.setArguments(args);
         return fragment;
+    }
+
+    public void updateWebViewSearch(String s) {
+        this.webViewText.findAll(s);
+    }
+    public void updateWebViewSearchSelectWord(String s) {
+        this.webViewText.findAll(s);
+        this.webViewText.findNext(true);
+    }
+    public void updateWebViewClearMatches() {
+        this.webViewText.clearMatches();
     }
 }
