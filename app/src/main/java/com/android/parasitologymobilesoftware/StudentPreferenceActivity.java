@@ -135,6 +135,15 @@ public class StudentPreferenceActivity extends AppCompatActivity {
                 dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
                         .update(previousSurvey);
 
+                Map<String, Object> progressStatus = new HashMap<>();
+                progressStatus.put("progress status", 0);
+                progressStatus.put("progress introduction", 0);
+                progressStatus.put("progress protozoarios", 0);
+                progressStatus.put("progress helmintos", 0);
+                progressStatus.put("progress artropodes", 0);
+                dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
+                        .set(progressStatus, SetOptions.merge());
+
                 Intent intent = new Intent(getBaseContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();
