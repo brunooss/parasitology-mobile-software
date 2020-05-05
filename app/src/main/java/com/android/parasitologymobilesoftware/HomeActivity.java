@@ -210,8 +210,8 @@ public class HomeActivity extends AppCompatActivity
             sendNotification(0,
                     "CHANNEL_ID",
                     "CHANNEL_NAME",
-                    "Notificação de Teste!",
-                    "Subtítulo com sucesso!",
+                    "Alertas definidos com sucesso!",
+                    "Alertas do Parasite Combat aparecerão em breve !",
                     "Essa notificação será responsável por notificar quantos módulos você ainda precisa estudar.",
                      NotificationCompat.PRIORITY_HIGH,
                      Color.parseColor("#FF4500"));
