@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
+             android:layout_width="match_parent" android:elevation="1dp"
              android:layout_height="match_parent"
              tools:context=".CategoryFragment">
+
     <ScrollView
-        android:layout_width="match_parent" android:background="@drawable/custom_square_white" android:elevation="5dp"
-        android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="7dp"
-        android:layout_marginLeft="9dp" android:layout_marginRight="9dp">
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_square_white"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCategoryGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -24,7 +36,7 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="36sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <WebView
                 android:id="@+id/webViewCategoryText"
@@ -34,9 +46,11 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="64dp"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryTitle" app:layout_constraintVertical_bias="0.0"/>
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoryTitle"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
                 android:id="@+id/imageViewCategoryImage"
@@ -45,53 +59,69 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="64dp"
                 android:src="@color/colorAccent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/webViewCategoryText"
-                app:layout_constraintVertical_bias="0.0"/>
-            <Button
-                android:id="@+id/buttonCategoryNext"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/custom_buttom_blue_background"
-                android:fontFamily="@font/futura_light_bt"
-                android:onClick="nextPage"
-                android:text="Próxima"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/colorTextPrimary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageViewCategoryImage"
-            />
-            <Button
-                android:id="@+id/buttonCategoryPrevious"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content" android:layout_marginStart="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/custom_buttom_blue_background"
-                android:fontFamily="@font/futura_light_bt"
-                android:onClick="previousPage"
-                android:text="Anterior"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/colorTextPrimary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/imageViewCategoryImage"/>
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="@font/futura_medium_bt"
-                android:text="Para navegar por entre as páginas, aperte os botões ou deslize a tela!"
-                android:textAlignment="center"
-                android:textColor="@color/colorAccent"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@+id/buttonCategoryNext"
-                app:layout_constraintEnd_toStartOf="@+id/buttonCategoryNext" app:layout_constraintStart_toEndOf="@+id/buttonCategoryPrevious"
-                app:layout_constraintTop_toTopOf="@+id/buttonCategoryNext"/>
+                app:layout_constraintVertical_bias="0.0" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-</FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonCategoryGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonCategoryNext2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttom_blue_background"
+            android:fontFamily="@font/futura_light_bt"
+            android:onClick="nextPage"
+            android:text="Próxima"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCategoryPrevious2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttom_blue_background"
+            android:fontFamily="@font/futura_light_bt"
+            android:onClick="previousPage"
+            android:text="Anterior"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTeste3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="Para navegar por entre as páginas, aperte os botões ou deslize a tela!"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCategoryNext2"
+            app:layout_constraintStart_toEndOf="@+id/buttonCategoryPrevious2"
+            app:layout_constraintTop_toTopOf="@+id/buttonCategoryPrevious2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

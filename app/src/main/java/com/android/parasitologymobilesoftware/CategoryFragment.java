@@ -38,8 +38,8 @@ public class CategoryFragment extends Fragment {
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
         webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
-        buttonNext = rootView.findViewById(R.id.buttonCategoryNext);
-        buttonPrevious = rootView.findViewById(R.id.buttonCategoryPrevious);
+        buttonNext = rootView.findViewById(R.id.buttonCategoryGroup).findViewById(R.id.buttonCategoryNext2);
+        buttonPrevious = rootView.findViewById(R.id.buttonCategoryGroup).findViewById(R.id.buttonCategoryPrevious2);
 
         if (getArguments().getString("type") != null) {
             if(getArguments().getString("type").equals("textAndImage")) {
