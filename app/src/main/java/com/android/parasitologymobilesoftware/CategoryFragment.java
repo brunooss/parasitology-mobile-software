@@ -56,7 +56,8 @@ public class CategoryFragment extends Fragment {
 
         if (getArguments().getInt("position") == 0) {
             buttonPrevious.setBackgroundResource(R.drawable.custom_button_category_gray);
-        } else if (getArguments().getInt("number") == (getArguments().getInt("position") + 1)) {
+        }
+        if (getArguments().getInt("number") == (getArguments().getInt("position") + 1)) {
             buttonNext.setBackgroundResource(R.drawable.custom_button_category_yellow);
             buttonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
