@@ -104,8 +104,8 @@ public class StudentPreferencesFragment extends Fragment {
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                setStudentPreference(documentSnapshot.getLong("student preference").intValue());    // Student's preference
-                studentPreference = documentSnapshot.getLong("student preference").intValue();
+                //setStudentPreference(documentSnapshot.getLong("student preference").intValue());    // Student's preference
+                //studentPreference = documentSnapshot.getLong("student preference").intValue();
 
                 alertState = documentSnapshot.getBoolean("alert state");
                 if (alertState)
@@ -117,7 +117,7 @@ public class StudentPreferencesFragment extends Fragment {
                 }
 
                 if (studentPreference == 1) {
-                    //           constraintLayoutStudentFirst.setElevation(20);
+                    //      2      constraintLayoutStudentFirst.setElevation(20);
                     //           constraintLayoutStudentSecond.setElevation(1);
                 }
                 else if (studentPreference == 2) {

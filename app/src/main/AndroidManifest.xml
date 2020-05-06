@@ -16,7 +16,7 @@
             android:theme="@style/AppTheme.About" />
         <activity
             android:name=".FeedbackActivity"
-            android:parentActivityName=".FeedbackActivity"
+            android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Feedback" />
         <activity
