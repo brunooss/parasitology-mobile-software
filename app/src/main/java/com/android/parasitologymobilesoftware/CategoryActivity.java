@@ -54,6 +54,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         category = extras.getString("category");
+        categoryId = extras.getInt("CategoryId");
         Log.d(TAG, "Category received: " +category);
         Log.d(TAG, "Category Id received: " +categoryId);
 
