@@ -166,7 +166,6 @@ public class HomeActivity extends AppCompatActivity
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    finish();
                     System.exit(0);
                 }
             }, 1000);
@@ -394,7 +393,11 @@ public class HomeActivity extends AppCompatActivity
         }
     }
 
-    public void onButtonReview(View view){
+    public void onButtonReview(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(getLayoutInflater().inflate(R.layout.dialog_not_ready, null));
+        builder.setPositiveButton("OK", null);
+        builder.create().show();
     }
 
     public void setProgressStatus(int progressStatus){
