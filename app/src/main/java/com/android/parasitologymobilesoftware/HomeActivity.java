@@ -62,11 +62,7 @@ public class HomeActivity extends AppCompatActivity
 
     private CategoryFragment categoryFragment;
 
-    public String searchSubcategories[][] = {
-            {"Protozoários", "Doença de Chagas", "Tricomonose", "Balantidíase","Malária", "Giardíase", "Leishmanioses"},
-            {"Helmintos", "Esquistossomose mansoni", "Teníase", "Cisticercose", "Ascaridíase", "Enterobíase", "Hidatidose"},
-            {"Artrópodes", "Hemípteros", "Mosquitos", "Moscas", "Piolhos", "Pulgas", "Ácaros"}
-    };
+    public int categoriesIds[] = {R.id.categoryHomeFragmentIntroduction, R.id.categoryHomeFragmentIntroductionEcologia, R.id.categoryHomeFragmentIntroductionConceitosGerais, R.id.categoryHomeFragmentIntroductionClassificacao, R.id.categoryHomeFragmentIntroductionReproducao, R.id.categoryHomeFragmentIntroductionCicloBiologico, R.id.categoryHomeFragmentIntroductionAtualidades, R.id.categoryHomeFragmentProtozoarios, R.id.categoryHomeFragmentProtozoariosAmebiase, R.id.categoryHomeFragmentProtozoariosGiardiase, R.id.categoryHomeFragmentProtozoariosLeishmanioses, R.id.categoryHomeFragmentProtozoariosTricomonose, R.id.categoryHomeFragmentProtozoariosChagas, R.id.categoryHomeFragmentProtozoariosMalaria, R.id.categoryHomeFragmentProtozoariosBalantidiase, R.id.categoryHomeFragmentHelmintos, R.id.categoryHomeFragmentHelmintosEsquistossomose, R.id.categoryHomeFragmentHelmintosFascioliase, R.id.categoryHomeFragmentHelmintosTeniase, R.id.categoryHomeFragmentHelmintosCisticercose, R.id.categoryHomeFragmentHelmintosHidatidose, R.id.categoryHomeFragmentHelmintosHimenolepiase, R.id.categoryHomeFragmentHelmintosEstrongiloidiase, R.id.categoryHomeFragmentHelmintosTricuriase, R.id.categoryHomeFragmentHelmintosAncilostomiase, R.id.categoryHomeFragmentHelmintosNecatoriase, R.id.categoryHomeFragmentHelmintosEnterobiase, R.id.categoryHomeFragmentHelmintosAscaridiase, R.id.categoryHomeFragmentHelmintosLarvaMigrans, R.id.categoryHomeFragmentHelmintosFilarioses, R.id.categoryHomeFragmentHelmintosOutrasHelmintoses, R.id.categoryHomeFragmentArtropodes, R.id.categoryHomeFragmentArtropodesHemipteros, R.id.categoryHomeFragmentArtropodesMosquitos, R.id.categoryHomeFragmentArtropodesMoscas, R.id.categoryHomeFragmentArtropodesEctoparasitos};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

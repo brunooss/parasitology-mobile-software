@@ -66,7 +66,14 @@ public class CategoryFragment extends Fragment {
             buttonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    getActivity().getParent();
+                    CategoryActivity categoryActivity = (CategoryActivity) getActivity();
+                    HomeActivity homeActivity = new HomeActivity();
+                    for(int i = 0; i < homeActivity.categoriesIds.length; i++) {
+                        if(homeActivity.categoriesIds[i] == categoryActivity.categoryId) {
+                            HomeFragment homeFragment = new HomeFragment();
+                            homeFragment.updateId(homeActivity.categoriesIds[i + 1]);
+                        }
+                    }
                     getActivity().finish();
 
                     Log.d("CategoryFragment", "Category's id received here: " + categoryId);
