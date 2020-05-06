@@ -72,7 +72,7 @@ public class IntroductionFragment extends Fragment {
                 imageViewIcon.setImageResource(R.drawable.icons8_happy_100);
                 //TODO Change setText to string resource.
                 textViewTitle.setText(hello.concat(firstName));
-                textViewDescription.setText("Seja muito bem-vindo ao Parasite Combat, é um imenso prazer tê-lo conosco!");
+                textViewDescription.setText("Seja muito bem-vindo(a) ao Parasite Combat, é um imenso prazer tê-lo(a) conosco!");
                 break;
             case 2:
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.colorBackgroundIntroductionSecond, getResources().newTheme()));
