@@ -27,6 +27,48 @@ public class HomeFragment extends Fragment {
     private FirebaseFirestore firebaseFirestore;
     private FirebaseAuth firebaseAuth;
 
+    public static final int introductionConclude = 14;
+    public static final int introductionEcologiaConclude = 28;
+    public static final int introductionConceitosConclude = 42;
+    public static final int introductionClassificacaoConclude = 56;
+    public static final int introductionReproducaoConclude = 70;
+    public static final int introductionCicloBiologicoConclude = 85;
+    public static final int introductionAtualidadesConclude = 100;
+
+    public static final int protozoariosIntroducaoConclude = 10;
+    public static final int protozoariosAmebiaseConclude = 20;
+    public static final int protozoariosGiardiaseConclude = 30;
+    public static final int protozoariosLeishmaniosesIntroducaoConclude = 40;
+    public static final int protozoariosTricomonoseConclude = 50;
+    public static final int protozoariosChagasConclude = 60;
+    public static final int protozoariosMalariaConclude = 70;
+    public static final int protozoariosToxoplasmoseConclude = 80;
+    public static final int protozoariosBalantidiaseConclude = 90;
+    public static final int protozoariosProtozooseConclude = 100;
+
+    public static final int helmintosIntroducaoConclude = 6;
+    public static final int helmintosEsquistossomoseConclude = 12;
+    public static final int helmintosFascioliaseConclude = 18;
+    public static final int helmintosTeniaseConclude = 24;
+    public static final int helmintosCisticercoseConclude = 30;
+    public static final int helmintosHidatidoseConclude = 36;
+    public static final int helmintosHimenolepiaseConclude = 42;
+    public static final int helmintosEstrongiloidiaseConclude = 48;
+    public static final int helmintosTricuriaseConclude = 54;
+    public static final int helmintosAncilostomiaseConclude = 60;
+    public static final int helmintosNecatoriaseConclude = 66;
+    public static final int helmintosEnterobiaseConclude = 72;
+    public static final int helmintosAscaridiaseConclude = 79;
+    public static final int helmintosLarvaMigransConclude = 86;
+    public static final int helmintosFilariosesConclude = 93;
+    public static final int helmintosOutrasHelmintosesConclude = 100;
+
+    public static final int artropodesIntroducaoConclude = 20;
+    public static final int artropodesHemipterosConclude = 40;
+    public static final int artropodesMosquitosConclude = 60;
+    public static final int artropodesMoscasConclude = 80;
+    public static final int artropodesEctoparasitosConclude = 100;
+
     private String email, nome;
 
     private ProgressBar progressBarIntroduction, progressBarProtozoarios,
@@ -148,30 +190,29 @@ public class HomeFragment extends Fragment {
                         case 0:
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 14 :
+                        case introductionConclude :
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
-                            constraintLayoutIntroductionEcologia.setElevation(4);
                             break;
-                        case 28 :
+                        case introductionEcologiaConclude :
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 42 :
+                        case introductionConceitosConclude :
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionClassificacao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 56 :
+                        case introductionClassificacaoConclude :
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionClassificacao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionReproducao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 70 :
+                        case introductionReproducaoConclude :
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -179,7 +220,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutIntroductionReproducao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionCiclo.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 85 :
+                        case introductionCicloBiologicoConclude :
                             constraintLayoutIntroduction.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -193,7 +234,7 @@ public class HomeFragment extends Fragment {
 //                            constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
 //                            constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
 //                            constraintLayoutIntroductionClassificacao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
-//                            constraintLayoutIntroductionReproducao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+//                            constraintLayoutIntrohelmintosFilariosesConcludeductionReproducao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
 //                            constraintLayoutIntroductionCiclo.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
 //                            constraintLayoutIntroductionAtualidades.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
 //
@@ -204,32 +245,32 @@ public class HomeFragment extends Fragment {
                     setProgressIntroduction();
                     constraintLayoutProtozoarios.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                     switch (progressBarProtozoariosValue) {
-                        case 10 :
+                        case protozoariosIntroducaoConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 20 :
+                        case protozoariosAmebiaseConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 30 :
+                        case protozoariosGiardiaseConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 40 :
+                        case protozoariosLeishmaniosesIntroducaoConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosTricomonose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 50 :
+                        case protozoariosTricomonoseConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosTricomonose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosChagas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 60 :
+                        case protozoariosChagasConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -237,7 +278,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutProtozoariosChagas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosMalaria.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 70 :
+                        case protozoariosMalariaConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -246,7 +287,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutProtozoariosMalaria.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosToxoplasmose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 80 :
+                        case protozoariosToxoplasmoseConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -256,7 +297,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutProtozoariosToxoplasmose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosBalantidiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 90 :
+                        case protozoariosBalantidiaseConclude :
                             constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -286,32 +327,32 @@ public class HomeFragment extends Fragment {
                     setProgressProtozoarios();
                     constraintLayoutHelmintos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                     switch (progressBarHelmintosValue) {
-                        case 6 :
+                        case helmintosIntroducaoConclude:
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 12 :
+                        case helmintosEsquistossomoseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 18 :
+                        case helmintosFascioliaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 24 :
+                        case helmintosTeniaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosCisticercose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 30 :
+                        case helmintosCisticercoseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosCisticercose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosHidatidose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 36 :
+                        case helmintosHidatidoseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -319,7 +360,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosHidatidose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosHimenolepíase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 42 :
+                        case helmintosHimenolepiaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -328,7 +369,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosHimenolepíase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosEstrongiloidiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 48 :
+                        case helmintosEstrongiloidiaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -338,7 +379,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosEstrongiloidiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTricuriase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 54 :
+                        case helmintosTricuriaseConclude:
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -349,7 +390,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosTricuriase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosAncilostomiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 60 :
+                        case helmintosAncilostomiaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -361,7 +402,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosAncilostomiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosNecatoriase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 66 :
+                        case helmintosNecatoriaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -374,7 +415,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosNecatoriase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosEnterobiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 72 :
+                        case helmintosEnterobiaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -388,7 +429,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosEnterobiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosAscaridiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 79 :
+                        case helmintosAscaridiaseConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -403,7 +444,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosAscaridiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosLarvaMigrans.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 86 :
+                        case helmintosLarvaMigransConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -419,7 +460,7 @@ public class HomeFragment extends Fragment {
                             constraintLayoutHelmintosLarvaMigrans.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFilarioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 93 :
+                        case helmintosFilariosesConclude :
                             constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
@@ -460,25 +501,25 @@ public class HomeFragment extends Fragment {
                     setProgressHelmintos();
                     constraintLayoutArtropodes.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                     switch (progressBarArtropodesValue) {
-                        case 20 :
+                        case artropodesIntroducaoConclude :
                             constraintLayoutArtropodesHemipteros.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 40 :
+                        case artropodesHemipterosConclude :
                             constraintLayoutArtropodesHemipteros.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMosquitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 60 :
+                        case artropodesMosquitosConclude :
                             constraintLayoutArtropodesHemipteros.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMosquitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMoscas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 80 :
+                        case artropodesMoscasConclude :
                             constraintLayoutArtropodesHemipteros.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMosquitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMoscas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesEctoparasitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             break;
-                        case 100 :
+                        case artropodesEctoparasitosConclude :
                             constraintLayoutArtropodesHemipteros.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMosquitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
                             constraintLayoutArtropodesMoscas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
