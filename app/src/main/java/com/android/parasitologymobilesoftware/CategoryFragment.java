@@ -1,5 +1,6 @@
 package com.android.parasitologymobilesoftware;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,11 +27,13 @@ import java.io.InputStream;
 public class CategoryFragment extends Fragment {
 
     static InputStream inputStream;
-    public static String category;
     private WebView webViewText;
+
     private static Button buttonNext;
     private static Button buttonPrevious;
 
+    public static String category;
+    public static int categoryId;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -63,6 +67,12 @@ public class CategoryFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     getActivity().finish();
+
+                    Log.d("CategoryFragment", "Category's id received here: " + categoryId);
+
+                    //getActivity().getLayoutInflater(R.layout.activity_home);
+
+                    //TODO: here we will refresh the home fragment interface by updating components and the data base
                 }
             });
             buttonNext.setText("Completar");
@@ -76,7 +86,9 @@ public class CategoryFragment extends Fragment {
         HomeActivity activity = new HomeActivity();
 
         category = activity.getCategory();
+        categoryId = activity.getCategoryId();
         Log.d("CategoryFragment", "Category's name received: " + category);
+        Log.d("CategoryFragment", "Category's id received: " + categoryId);
 
 
         try {

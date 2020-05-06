@@ -29,9 +29,11 @@ import java.io.InputStream;
 public class CategoryActivity extends AppCompatActivity {
 
     //public String category = "Ascaridíase";
-    public String category;
     private static final String TAG = "CategoryActivity";
     public static int numberOfTabs;
+
+    public String category;
+    public int categoryId;
 
     private AlertDialog.Builder exitAlert;
     private AlertDialog alertDialogExit;
@@ -53,6 +55,7 @@ public class CategoryActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         category = extras.getString("category");
         Log.d(TAG, "Category received: " +category);
+        Log.d(TAG, "Category Id received: " +categoryId);
 
         // Alert Dialog config
         secondMessage = category;

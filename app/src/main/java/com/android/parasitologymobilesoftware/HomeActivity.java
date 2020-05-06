@@ -54,6 +54,7 @@ public class HomeActivity extends AppCompatActivity
     private String completeName;
 
     public static String category = "notNull";
+    public static int categoryId;
 
     private View dialogView;
 
@@ -239,6 +240,8 @@ public class HomeActivity extends AppCompatActivity
             Log.i(TAG, "User is not allowed to get into this category because he has not accomplished the previsous one");
         } else {
             Intent intent = new Intent(this, CategoryActivity.class);
+            categoryId = view.getId();
+            Log.d(TAG, "category id: "+categoryId);
             Log.i(TAG, "category with id");
             switch (view.getId()) {
                 case R.id.categoryHomeFragmentIntroduction:
@@ -359,6 +362,7 @@ public class HomeActivity extends AppCompatActivity
 
             Bundle extra = new Bundle();
             extra.putString("category", category);
+            extra.putInt("CategoryId", categoryId);
 
             // Passing caterory's name to activity
             intent.putExtras(extra);
@@ -428,6 +432,10 @@ public class HomeActivity extends AppCompatActivity
 
     public static String getCategory() {
         return category;
+    }
+
+    public static int getCategoryId() {
+        return categoryId;
     }
 
 }
