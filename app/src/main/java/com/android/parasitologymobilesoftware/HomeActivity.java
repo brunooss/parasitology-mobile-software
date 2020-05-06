@@ -359,7 +359,7 @@ public class HomeActivity extends AppCompatActivity
             Bundle extra = new Bundle();
             extra.putString("category", category);
 
-            // Passing caterory's name to activity
+            // Passing category's name to activity
             intent.putExtras(extra);
             // Passing category's name to fragment
             categoryFragment.setArguments(extra);

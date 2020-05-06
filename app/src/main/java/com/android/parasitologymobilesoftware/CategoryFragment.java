@@ -62,6 +62,7 @@ public class CategoryFragment extends Fragment {
             buttonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    getActivity().getParent();
                     getActivity().finish();
                 }
             });
