@@ -159,18 +159,6 @@ public class SignupActivity extends AppCompatActivity {
         return password.equals(passwordConfirm); // Returns true only if the password is equals to the confirmation.
     }
 
-    public String getFirstName(String name) { // If name is valid, returns the first name.
-        if (isNameValid(name)) {
-            String regexName = "\\S+"; //Capture only blank spaces.
-
-            Pattern pattern = Pattern.compile(regexName);
-            Matcher matcher = pattern.matcher(name);
-            if (matcher.find()) return matcher.group(0);
-            else return name; // Returns the name before the blank space or the entire name.
-        }
-        return null;
-    }
-
     public void onButtonCloseWindow(View view) {
         finish();
     }
@@ -215,7 +203,10 @@ public class SignupActivity extends AppCompatActivity {
                                         .set(state);
 
                                 progressBar.setVisibility(View.INVISIBLE);
+
                                 Intent intent = new Intent(getBaseContext(), IntroductionActivity.class);
+                                intent.putExtra("username", editTextName.getText().toString());
+
                                 startActivity(intent);
                                 finish();
                             } else {

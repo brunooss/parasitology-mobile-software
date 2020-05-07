@@ -1,7 +1,24 @@
 [
   {
+    "categoryName" : "Introdução",
+    "numberOfTabs" : 1,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361908,
+    "concludeProgress" : 14,
+    "tabs" : [
+      {
+        "title" : "Sobre o desenvolvimento do aplicativo:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; O aplicativo &ldquo;Parasite Combat&rdquo; &eacute; uma iniciativa da professora do Col&eacute;gio Militar de Belo Horizonte (CMBH) M&aacute;rcia Teles Filog&ocirc;nio, e faz parte de seu projeto de Mestrado em Parasitologia na Universidade Federal de Minas Gerais (UFMG). Em seu projeto de pesquisa, a docente explica a import&acirc;ncia do desenvolvimento de tecnologias educacionais, como este aplicativo, no estudo de Parasitologia:</p>\n<p>&nbsp; &nbsp;&ldquo;As enfermidades infecto-parasit&aacute;rias, conforme a Organiza&ccedil;&atilde;o Mundial de Sa&uacute;de (OMS), s&atilde;o uma das principais causas mundiais de morte, sendo uma em cada dez pessoas, portadoras de Parasitos como <em>Ascaris lumbricoides</em>, ancilostom&iacute;deos, <em>Plasmodium</em>sp,<em>Trichuris trichiura, Entamoeba histolytica</em>, fil&aacute;rias, <em>Schistosoma</em>sp, <em>Giardia lamblia</em>, <em>Trypanosoma</em>sp, <em>Leishmania</em>sp al&eacute;m de outros que afligem as pessoas, os quais causam defici&ecirc;ncias org&acirc;nicas, que prejudicam o desenvolvimento normal das crian&ccedil;as e a capacidade de trabalho dos adultos, o que pesa nos or&ccedil;amentos estatais e familiares (REY,2015).&nbsp;</p>\n<p>&nbsp; &nbsp;Com o uso de bons aplicativo educacionais, &eacute; o professor que tem condi&ccedil;&otilde;es de educar o discente para a autonomia, levando-o a interagir mais com o conte&uacute;do, a preparar-se melhor, motivando-o, ainda mais, no que tange a sua pr&oacute;pria aprendizagem, &agrave;s quest&otilde;es relativas &agrave; cultura e ao conhecimento (HORNINK(org), 2018), como as rela&ccedil;&otilde;es entre o homem e seus Parasitos, no controle destes.&nbsp;</p>\n<p>&nbsp; &nbsp;Da&iacute; a pensar-se, como justificativa dessa pesquisa, na necessidade de elabora&ccedil;&atilde;o de estrat&eacute;gias did&aacute;ticas equivalentes, espec&iacute;ficas de <em>Parasitologia</em>, capazes de facilitar o ensino, o estudo e a aprendizagem de Parasitos e vetores, que tanto prejudicam seres humanos e outros. Estrat&eacute;gicas especificamente dirigidas a este campo do conhecimento s&atilde;o de vital, de extrema import&acirc;ncia na vida de todos (para controle/profilaxia/preven&ccedil;&atilde;o das Parasitoses), na escola, mais ainda para os cursos ligados &agrave; sa&uacute;de e biologia, uma vez que este saber fundamenta a compreens&atilde;o das rela&ccedil;&otilde;es entre esses seres vivos e, tamb&eacute;m, entre eles e o ambiente.&rdquo;</p>"
+      }
+    ]
+  },
+  {
     "categoryName" : "Ecologia",
     "numberOfTabs" : 16,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361907 ,
+    "concludeProgress" : 28,
     "tabs" : [
       {
         "title" : "Introdução I:",
@@ -92,19 +109,11 @@
   },
 
   {
-    "categoryName" : "Introdução",
-    "numberOfTabs" : 1,
-    "tabs" : [
-      {
-        "title" : "Sobre o desenvolvimento do aplicativo:",
-        "type" : "text",
-        "text" : "<p>&nbsp; &nbsp; O aplicativo &ldquo;Parasite Combat&rdquo; &eacute; uma iniciativa da professora do Col&eacute;gio Militar de Belo Horizonte (CMBH) M&aacute;rcia Teles Filog&ocirc;nio, e faz parte de seu projeto de Mestrado em Parasitologia na Universidade Federal de Minas Gerais (UFMG). Em seu projeto de pesquisa, a docente explica a import&acirc;ncia do desenvolvimento de tecnologias educacionais, como este aplicativo, no estudo de Parasitologia:</p>\n<p>&nbsp; &nbsp;&ldquo;As enfermidades infecto-parasit&aacute;rias, conforme a Organiza&ccedil;&atilde;o Mundial de Sa&uacute;de (OMS), s&atilde;o uma das principais causas mundiais de morte, sendo uma em cada dez pessoas, portadoras de Parasitos como <em>Ascaris lumbricoides</em>, ancilostom&iacute;deos, <em>Plasmodium</em>sp,<em>Trichuris trichiura, Entamoeba histolytica</em>, fil&aacute;rias, <em>Schistosoma</em>sp, <em>Giardia lamblia</em>, <em>Trypanosoma</em>sp, <em>Leishmania</em>sp al&eacute;m de outros que afligem as pessoas, os quais causam defici&ecirc;ncias org&acirc;nicas, que prejudicam o desenvolvimento normal das crian&ccedil;as e a capacidade de trabalho dos adultos, o que pesa nos or&ccedil;amentos estatais e familiares (REY,2015).&nbsp;</p>\n<p>&nbsp; &nbsp;Com o uso de bons aplicativo educacionais, &eacute; o professor que tem condi&ccedil;&otilde;es de educar o discente para a autonomia, levando-o a interagir mais com o conte&uacute;do, a preparar-se melhor, motivando-o, ainda mais, no que tange a sua pr&oacute;pria aprendizagem, &agrave;s quest&otilde;es relativas &agrave; cultura e ao conhecimento (HORNINK(org), 2018), como as rela&ccedil;&otilde;es entre o homem e seus Parasitos, no controle destes.&nbsp;</p>\n<p>&nbsp; &nbsp;Da&iacute; a pensar-se, como justificativa dessa pesquisa, na necessidade de elabora&ccedil;&atilde;o de estrat&eacute;gias did&aacute;ticas equivalentes, espec&iacute;ficas de <em>Parasitologia</em>, capazes de facilitar o ensino, o estudo e a aprendizagem de Parasitos e vetores, que tanto prejudicam seres humanos e outros. Estrat&eacute;gicas especificamente dirigidas a este campo do conhecimento s&atilde;o de vital, de extrema import&acirc;ncia na vida de todos (para controle/profilaxia/preven&ccedil;&atilde;o das Parasitoses), na escola, mais ainda para os cursos ligados &agrave; sa&uacute;de e biologia, uma vez que este saber fundamenta a compreens&atilde;o das rela&ccedil;&otilde;es entre esses seres vivos e, tamb&eacute;m, entre eles e o ambiente.&rdquo;</p>"
-      }
-    ]
-  },
-  {
     "categoryName" : "Conceitos Gerais",
     "numberOfTabs" : 8,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361906,
+    "concludeProgress" : 42,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -156,6 +165,9 @@
   {
     "categoryName" : "Classificação",
     "numberOfTabs" : 4,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361909 ,
+    "concludeProgress" : 56,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -179,9 +191,33 @@
       }
     ]
   },
+
+  {
+    "categoryName" : "Reprodução",
+    "numberOfTabs" : 2,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361905,
+    "concludeProgress" : 70,
+    "tabs" : [
+      {
+        "title" : "Tipos de Reprodução dos Parasitos:",
+        "type" : "text",
+        "text" : "<p>Os parasitos apresentam dois tipos b&aacute;sicos de reprodu&ccedil;&atilde;o - sexuado e assexuado &ndash; que podem apresentar algumas vari&aacute;veis:</p>\n<ul>\n    <li>Sexuada: quando um espermatozoide fecunda no &oacute;vulo, do seguinte modo: a) entre os helmintos, um macho copula com uma f&ecirc;mea e a fertiliza; b) entre os protozo&aacute;rios, um gameta masculino (microgameta) fecunda o gameta feminino (macrogameta), produzindo o zigoto ou o oocisto.</li>\n    <li>Assexuada: quando um parasito se reproduz sem a participa&ccedil;&atilde;o de estruturas reprodutoras especiais. Os principais tipos s&atilde;o:<ol style=\"list-style-type: circle;\">\n            <li><strong>divis&atilde;o bin&aacute;ria</strong> ou <strong>cissiparidade</strong>: quando a c&eacute;lula-m&atilde;e d&aacute; origem a duas c&eacute;lulas-filhas, conforme ocorre nas amebas;</li>\n            <li><strong>esquizogonia</strong>: quando o n&uacute;cleo da c&eacute;lula-m&atilde;e (esquizonte) se divide rapidamente, junto com a fragmenta&ccedil;&atilde;o do citoplasma, ficando em torno de cada part&iacute;cula nuclear e formando os merozo&iacute;tos;</li>\n            <li><strong>partenog&ecirc;nese</strong>: quando uma f&ecirc;mea produz seus descendentes, sem a participa&ccedil;&atilde;o do macho;</li>\n            <li><strong>poliembrionia</strong>: quando um parasito em sua forma jovem (por exemplo, um esporocisto) se reproduz intensamente, produzindo numerosas formas jovens iguais (esporocistos-filhos).</li>\n        </ol>\n    </li>\n</ul>"
+      },
+      {
+        "title" : "Formas de Vida dos Parasitos:",
+        "type" : "text",
+        "text" : "<p>Os parasitos durante sua vida passam por diversas formas ou fases biol&oacute;gicas, entre elas:</p>\n<ul >\n    <li><strong>trofozo&iacute;to</strong>: &eacute; a forma ativa do protozo&aacute;rio, que se alimenta e se reproduz;</li>\n    <li><strong>cisto</strong>: &eacute; a forma de resist&ecirc;ncia ou transmiss&atilde;o de diversos protozo&aacute;rios, geralmente oriunda da transforma&ccedil;&atilde;o do pr&oacute;prio trofozo&iacute;to;</li>\n    <li><strong>oocisto</strong>: &eacute; uma forma de resist&ecirc;ncia ou transmiss&atilde;o oriunda de uma reprodu&ccedil;&atilde;o sexuada e presente entre os protozo&aacute;rios do filo Apicomplexa;</li>\n    <li><strong>ovo</strong>: &eacute; a forma resultante da fecunda&ccedil;&atilde;o sexuada, encontrada entre os helmintos e os artr&oacute;podes;</li>\n    <li><strong>larva</strong>: &eacute; a forma usualmente originada de um ovo, que evoluir&aacute; para a fase adulta, podendo ser infectante (como nos helmintos) ou evoluir para a fase de pupa (como nos insetos), que ent&atilde;o dar&aacute; origem ao adulto;</li>\n    <li><strong>adulto</strong>: &eacute; a fase reprodutiva do helminto ou do artr&oacute;pode.</li>\n</ul>"
+      }
+    ]
+  },
+
   {
     "categoryName" : "Ciclo Biológico",
     "numberOfTabs" : 4,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361904 ,
+    "concludeProgress" : 85,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -205,25 +241,13 @@
       }
     ]
   },
-  {
-    "categoryName" : "Reprodução",
-    "numberOfTabs" : 2,
-    "tabs" : [
-      {
-        "title" : "Tipos de Reprodução dos Parasitos:",
-        "type" : "text",
-        "text" : "<p>Os parasitos apresentam dois tipos b&aacute;sicos de reprodu&ccedil;&atilde;o - sexuado e assexuado &ndash; que podem apresentar algumas vari&aacute;veis:</p>\n<ul>\n    <li>Sexuada: quando um espermatozoide fecunda no &oacute;vulo, do seguinte modo: a) entre os helmintos, um macho copula com uma f&ecirc;mea e a fertiliza; b) entre os protozo&aacute;rios, um gameta masculino (microgameta) fecunda o gameta feminino (macrogameta), produzindo o zigoto ou o oocisto.</li>\n    <li>Assexuada: quando um parasito se reproduz sem a participa&ccedil;&atilde;o de estruturas reprodutoras especiais. Os principais tipos s&atilde;o:<ol style=\"list-style-type: circle;\">\n            <li><strong>divis&atilde;o bin&aacute;ria</strong> ou <strong>cissiparidade</strong>: quando a c&eacute;lula-m&atilde;e d&aacute; origem a duas c&eacute;lulas-filhas, conforme ocorre nas amebas;</li>\n            <li><strong>esquizogonia</strong>: quando o n&uacute;cleo da c&eacute;lula-m&atilde;e (esquizonte) se divide rapidamente, junto com a fragmenta&ccedil;&atilde;o do citoplasma, ficando em torno de cada part&iacute;cula nuclear e formando os merozo&iacute;tos;</li>\n            <li><strong>partenog&ecirc;nese</strong>: quando uma f&ecirc;mea produz seus descendentes, sem a participa&ccedil;&atilde;o do macho;</li>\n            <li><strong>poliembrionia</strong>: quando um parasito em sua forma jovem (por exemplo, um esporocisto) se reproduz intensamente, produzindo numerosas formas jovens iguais (esporocistos-filhos).</li>\n        </ol>\n    </li>\n</ul>"
-      },
-      {
-        "title" : "Formas de Vida dos Parasitos:",
-        "type" : "text",
-        "text" : "<p>Os parasitos durante sua vida passam por diversas formas ou fases biol&oacute;gicas, entre elas:</p>\n<ul >\n    <li><strong>trofozo&iacute;to</strong>: &eacute; a forma ativa do protozo&aacute;rio, que se alimenta e se reproduz;</li>\n    <li><strong>cisto</strong>: &eacute; a forma de resist&ecirc;ncia ou transmiss&atilde;o de diversos protozo&aacute;rios, geralmente oriunda da transforma&ccedil;&atilde;o do pr&oacute;prio trofozo&iacute;to;</li>\n    <li><strong>oocisto</strong>: &eacute; uma forma de resist&ecirc;ncia ou transmiss&atilde;o oriunda de uma reprodu&ccedil;&atilde;o sexuada e presente entre os protozo&aacute;rios do filo Apicomplexa;</li>\n    <li><strong>ovo</strong>: &eacute; a forma resultante da fecunda&ccedil;&atilde;o sexuada, encontrada entre os helmintos e os artr&oacute;podes;</li>\n    <li><strong>larva</strong>: &eacute; a forma usualmente originada de um ovo, que evoluir&aacute; para a fase adulta, podendo ser infectante (como nos helmintos) ou evoluir para a fase de pupa (como nos insetos), que ent&atilde;o dar&aacute; origem ao adulto;</li>\n    <li><strong>adulto</strong>: &eacute; a fase reprodutiva do helminto ou do artr&oacute;pode.</li>\n</ul>"
-      }
-    ]
-  },
+
   {
     "categoryName" : "Atualidades",
     "numberOfTabs" : 5,
+    "parentCategory" : "Introdução",
+    "nextCategoryId" : 2131361910,
+    "concludeProgress" : 100,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -257,6 +281,9 @@
   {
     "categoryName" : "Protozoários",
     "numberOfTabs" : 8,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361911,
+    "concludeProgress" : 10,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -303,6 +330,9 @@
   {
     "categoryName" : "Amebíase",
     "numberOfTabs" : 7,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361914,
+    "concludeProgress" : 20,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -346,6 +376,9 @@
   {
     "categoryName" : "Giardíase",
     "numberOfTabs" : 1,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361915,
+    "concludeProgress" : 30,
     "tabs" : [
       {
         "title" : "Informações:",
@@ -357,6 +390,9 @@
   {
     "categoryName" : "Leishmanioses",
     "numberOfTabs" : 3,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361919,
+    "concludeProgress" : 40,
     "tabs" : [
       {
         "title" : "Informações:",
@@ -378,6 +414,9 @@
   {
     "categoryName" : "Tricomonose",
     "numberOfTabs" : 7,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361913 ,
+    "concludeProgress" : 50,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -421,6 +460,9 @@
   {
     "categoryName" : "Doença de Chagas",
     "numberOfTabs" : 8,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361916 ,
+    "concludeProgress" : 60,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -466,9 +508,13 @@
       }
     ]
   },
+
   {
     "categoryName" : "Malária",
     "numberOfTabs" : 1,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361918 ,
+    "concludeProgress" : 70,
     "tabs" : [
       {
         "title" : "Informações:",
@@ -478,9 +524,29 @@
       }
     ]
   },
+
+  {
+    "categoryName" : "Toxoplasmose",
+    "numberOfTabs" : 1,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361912 ,
+    "concludeProgress" : 80,
+    "tabs" : [
+      {
+        "title" : "Informações:",
+        "type" : "textAndImage",
+        "text" : "<p>\n    &nbsp; &nbsp; A malária é uma doença causada por protozoários do gênero <i><b>Plasmodium</b></i> (<i>P. falciparum</i>, <i>P. vivax</i> e <i>P. malariae</i>), os quais pertencem ao filo <i>Apicomplexa</i> e à família <i>Plasmodiidae</i>. Tal doença, apesar de quase erradicada na década de 1950, ainda é um grave problema para a saúde mundial, uma vez que são registrados, anualmente, cerca de 500 mil novos casos, existindo por volta de 200 milhões de pessoas infectadas no mundo. Outro problema é a alta taxa de mortalidade que a doença causa, com um valor aproximado de dois milhões de mortes por ano, sendo a doença parasitária que mais mata no mundo.\n    Essa parasitose ocorria em praticamente todos os continentes, mas foi erradicada nos países desenvolvidos e hoje está restrita à América Latina, à África, à Ásia e à parte insular da Oceania. Esse fato comprova a urgência em investimentos nas áreas de saúde e educação sanitária nos países em desenvolvimento, uma vez que, unidas ao combate ao vetor e ao tratamento dos indivíduos já infectados, são as principais formas de profilaxia da doença. No Brasil, é uma endemia que acomete a região amazônica.\n    O ciclo de vida do plasmódio é heteroxênico, com reprodução sexuada ocorrendo no mosquito do gênero Anopheles e reprodução assexuada, no humano. A figura abaixo representa o ciclo de vida de um <i>Plasmodium</i>:\n    &nbsp; &nbsp; O diagnóstico da doença é feito por meio de hemoscopia, processo no qual faz-se um esfregaço com uma gota de sangue do paciente e analisada a presença ou não dos protozoários. É recomendado que esse método seja feito na fase inicial, já que há maior quantidade de plasmódios no sangue periférico.\n    Os sintomas gerais da malária são anemia, por conta da destruição das hemácias, o paroxismo malárico, no qual o doente passa por alternâncias de frio e calor seguidas de sudorese, os episódios de febre com intervalos de cerca de 72 horas (febre terçã), podendo existir complicações maiores como insuficiência renal e lesões no cérebro.\n    Existem três mecanismos capazes de proteger um indivíduo da malária: a resistência adquirida, a imunidade inata e a resistência inata. O primeiro ocorre pela atuação do parasito no doente, com a estimulação do sistema imunitário capaz de eliminar a infecção ainda em seu começo ou mesmo reduzir a carga parasitária, diminuindo a letalidade da doença. Esse tipo de resposta é comum em áreas onde a doença é endêmica. No segundo, o indivíduo não desenvolve a doença ainda que esteja infectado devido a uma resposta imune que envolve receptores da membrana plasmática de macrófagos. O terceiro caso é o que a resistência independe de um contato anterior com o plasmódio. Essa situação ocorre em crianças com anemia falciforme e pessoas que não apresentam determinados antígenos.\n    O tratamento dos doentes é de fundamental importância para a profilaxia dessa parasitose e ocorre por meio de medicamentos antimaláricos que podem ser usados individualmente ou combinados administrados de acordo com a espécie do plasmódio, com a gravidade da doença, com a história de exposição anterior à infecção e com a idade do paciente. Alguns desses remédios são cloroquina, primaquina (usados para <i>P. vivax</i>, <i>P. ovale</i> e <i>P. malariae</i>), artemeter, lumefantrina, artesunato e mefloquina (<i>P. falciparum</i>).\n</p>",
+        "imageAddress" : "malaria1"
+      }
+    ]
+  },
+
   {
     "categoryName" : "Balantidíase",
     "numberOfTabs" : 7,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361917 ,
+    "concludeProgress" : 90,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -523,8 +589,27 @@
   },
 
   {
+    "categoryName" : "Protozooses",
+    "numberOfTabs" : 1,
+    "parentCategory" : "Protozoários",
+    "nextCategoryId" : 2131361887 ,
+    "concludeProgress" : 100,
+    "tabs" : [
+      {
+        "title" : "Informações:",
+        "type" : "textAndImage",
+        "text" : "<p>\n    &nbsp; &nbsp; A malária é uma doença causada por protozoários do gênero <i><b>Plasmodium</b></i> (<i>P. falciparum</i>, <i>P. vivax</i> e <i>P. malariae</i>), os quais pertencem ao filo <i>Apicomplexa</i> e à família <i>Plasmodiidae</i>. Tal doença, apesar de quase erradicada na década de 1950, ainda é um grave problema para a saúde mundial, uma vez que são registrados, anualmente, cerca de 500 mil novos casos, existindo por volta de 200 milhões de pessoas infectadas no mundo. Outro problema é a alta taxa de mortalidade que a doença causa, com um valor aproximado de dois milhões de mortes por ano, sendo a doença parasitária que mais mata no mundo.\n    Essa parasitose ocorria em praticamente todos os continentes, mas foi erradicada nos países desenvolvidos e hoje está restrita à América Latina, à África, à Ásia e à parte insular da Oceania. Esse fato comprova a urgência em investimentos nas áreas de saúde e educação sanitária nos países em desenvolvimento, uma vez que, unidas ao combate ao vetor e ao tratamento dos indivíduos já infectados, são as principais formas de profilaxia da doença. No Brasil, é uma endemia que acomete a região amazônica.\n    O ciclo de vida do plasmódio é heteroxênico, com reprodução sexuada ocorrendo no mosquito do gênero Anopheles e reprodução assexuada, no humano. A figura abaixo representa o ciclo de vida de um <i>Plasmodium</i>:\n    &nbsp; &nbsp; O diagnóstico da doença é feito por meio de hemoscopia, processo no qual faz-se um esfregaço com uma gota de sangue do paciente e analisada a presença ou não dos protozoários. É recomendado que esse método seja feito na fase inicial, já que há maior quantidade de plasmódios no sangue periférico.\n    Os sintomas gerais da malária são anemia, por conta da destruição das hemácias, o paroxismo malárico, no qual o doente passa por alternâncias de frio e calor seguidas de sudorese, os episódios de febre com intervalos de cerca de 72 horas (febre terçã), podendo existir complicações maiores como insuficiência renal e lesões no cérebro.\n    Existem três mecanismos capazes de proteger um indivíduo da malária: a resistência adquirida, a imunidade inata e a resistência inata. O primeiro ocorre pela atuação do parasito no doente, com a estimulação do sistema imunitário capaz de eliminar a infecção ainda em seu começo ou mesmo reduzir a carga parasitária, diminuindo a letalidade da doença. Esse tipo de resposta é comum em áreas onde a doença é endêmica. No segundo, o indivíduo não desenvolve a doença ainda que esteja infectado devido a uma resposta imune que envolve receptores da membrana plasmática de macrófagos. O terceiro caso é o que a resistência independe de um contato anterior com o plasmódio. Essa situação ocorre em crianças com anemia falciforme e pessoas que não apresentam determinados antígenos.\n    O tratamento dos doentes é de fundamental importância para a profilaxia dessa parasitose e ocorre por meio de medicamentos antimaláricos que podem ser usados individualmente ou combinados administrados de acordo com a espécie do plasmódio, com a gravidade da doença, com a história de exposição anterior à infecção e com a idade do paciente. Alguns desses remédios são cloroquina, primaquina (usados para <i>P. vivax</i>, <i>P. ovale</i> e <i>P. malariae</i>), artemeter, lumefantrina, artesunato e mefloquina (<i>P. falciparum</i>).\n</p>",
+        "imageAddress" : "malaria1"
+      }
+    ]
+  },
+
+  {
     "categoryName" : "Helmintos",
     "numberOfTabs" : 3,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361892,
+    "concludeProgress" : 6,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -546,6 +631,9 @@
   {
     "categoryName" : "Esquistossomose",
     "numberOfTabs" : 10,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361894,
+    "concludeProgress" : 12,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -603,6 +691,9 @@
   {
     "categoryName" : "Fasciolíase",
     "numberOfTabs" : 9,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361901,
+    "concludeProgress" : 18,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -654,6 +745,9 @@
   {
     "categoryName" : "Teníase",
     "numberOfTabs" : 9,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361890,
+    "concludeProgress" : 24,
     "tabs": [
       {
         "title" : "Introdução",
@@ -705,6 +799,9 @@
   {
     "categoryName" : "Cisticercose",
     "numberOfTabs" : 10,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361896,
+    "concludeProgress" : 30,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -761,6 +858,9 @@
   {
     "categoryName" : "Hidatidose",
     "numberOfTabs" : 10,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361897,
+    "concludeProgress" : 36,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -817,6 +917,9 @@
   {
     "categoryName" : "Himenolepíase",
     "numberOfTabs" : 10,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361893,
+    "concludeProgress" : 42,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -873,6 +976,9 @@
   {
     "categoryName" : "Estrongiloidíase",
     "numberOfTabs" : 10,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361902,
+    "concludeProgress" : 48,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -929,6 +1035,9 @@
   {
     "categoryName" : "Tricuríase",
     "numberOfTabs" : 9,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361888,
+    "concludeProgress" : 54,
     "tabs" : [
       {
         "title" : "Introdução",
@@ -980,6 +1089,9 @@
   {
     "categoryName" : "Ancilostomíase",
     "numberOfTabs" : 9,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361899,
+    "concludeProgress" : 60,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1031,6 +1143,9 @@
   {
     "categoryName" : "Necatoríase",
     "numberOfTabs" : 1,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361891,
+    "concludeProgress" : 66,
     "tabs" : [
     {
       "title" : "Semelhanças com Ancilostomíase:",
@@ -1042,6 +1157,9 @@
   {
     "categoryName" : "Enterobíase",
     "numberOfTabs" : 9,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361889,
+    "concludeProgress" : 72,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1093,6 +1211,9 @@
   {
     "categoryName" : "Ascaridíase",
     "numberOfTabs" : 9,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361898,
+    "concludeProgress" : 79,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1146,6 +1267,9 @@
   {
     "categoryName" : "Larva Migrans",
       "numberOfTabs" : 4,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361895,
+    "concludeProgress" : 86,
       "tabs" : [
         {
           "title" : "Introdução:",
@@ -1172,6 +1296,9 @@
   {
     "categoryName" : "Filarioses",
     "numberOfTabs" : 8,
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361900,
+    "concludeProgress" : 93,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1218,7 +1345,9 @@
   {
     "categoryName" : "Outras Helmintoses",
     "numberOfTabs" : 6,
-
+    "parentCategory" : "Helmintos",
+    "nextCategoryId" : 2131361882,
+    "concludeProgress" : 100,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1256,6 +1385,9 @@
   {
     "categoryName" : "Artrópodes",
     "numberOfTabs" : 3,
+    "parentCategory" : "Artrópodes",
+    "nextCategoryId" : 2131361884,
+    "concludeProgress" : 20,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1277,7 +1409,9 @@
   {
     "categoryName" : "Hemípteros",
     "numberOfTabs" : 1,
-
+    "parentCategory" : "Artrópodes",
+    "nextCategoryId" : 2131361886,
+    "concludeProgress" : 40,
     "tabs" : [
       {
         "title" : "Barbeiro:",
@@ -1290,6 +1424,9 @@
   {
     "categoryName" : "Mosquitos",
     "numberOfTabs" : 3,
+    "parentCategory" : "Artrópodes",
+    "nextCategoryId" : 2131361885,
+    "concludeProgress" : 60,
     "tabs" : [
       {
         "title" : "Culex:",
@@ -1311,7 +1448,9 @@
   {
     "categoryName" : "Moscas",
     "numberOfTabs" : 1,
-
+    "parentCategory" : "Artrópodes",
+    "nextCategoryId" : 2131361883,
+    "concludeProgress" : 80,
     "tabs" : [
       {
         "title" : "Introdução:",
@@ -1323,7 +1462,9 @@
   {
     "categoryName" : "Ectoparasitos",
     "numberOfTabs" : 3,
-
+    "parentCategory" : "Artrópodes",
+    "nextCategoryId" : 0,
+    "concludeProgress" : 100,
     "tabs" : [
       {
         "title" : "Escabiose Humana:",
