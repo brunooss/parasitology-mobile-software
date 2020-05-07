@@ -144,6 +144,50 @@ public class StudentPreferenceActivity extends AppCompatActivity {
                 dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
                         .set(progressStatus, SetOptions.merge());
 
+                // boolean values - indicates user hasnt made any progress yet
+                Map<String, Object> categoriesProgress = new HashMap<>();
+                categoriesProgress.put("Introdução", false);
+                categoriesProgress.put("Ecologia", false);
+                categoriesProgress.put("Conceitos Gerais", false);
+                categoriesProgress.put("Classificação", false);
+                categoriesProgress.put("Reprodução", false);
+                categoriesProgress.put("Ciclo Biológico", false);
+                categoriesProgress.put("Atualidades", false);
+                categoriesProgress.put("Protozoários", false);
+                categoriesProgress.put("Amebíase", false);
+                categoriesProgress.put("Giardíase", false);
+                categoriesProgress.put("Leishmanioses", false);
+                categoriesProgress.put("Tricomonose", false);
+                categoriesProgress.put("Doença de Chagas", false);
+                categoriesProgress.put("Malária", false);
+                categoriesProgress.put("Toxoplasmose", false);
+                categoriesProgress.put("Balantidíase", false);
+                categoriesProgress.put("Protozooses", false);
+                categoriesProgress.put("Helmintos", false);
+                categoriesProgress.put("Esquistossomose", false);
+                categoriesProgress.put("Fasciolíase", false);
+                categoriesProgress.put("Teníase", false);
+                categoriesProgress.put("Cisticercose", false);
+                categoriesProgress.put("Hidatidose", false);
+                categoriesProgress.put("Himenolepíase", false);
+                categoriesProgress.put("Estrongiloidíase", false);
+                categoriesProgress.put("Tricuríase", false);
+                categoriesProgress.put("Ancilostomíase", false);
+                categoriesProgress.put("Necatoríase", false);
+                categoriesProgress.put("Enterobíase", false);
+                categoriesProgress.put("Ascaridíase", false);
+                categoriesProgress.put("Larva Migrans", false);
+                categoriesProgress.put("Filarioses", false);
+                categoriesProgress.put("Outras Helmintoses", false);
+                categoriesProgress.put("Artrópodes", false);
+                categoriesProgress.put("Hemípteros", false);
+                categoriesProgress.put("Mosquitos", false);
+                categoriesProgress.put("Moscas", false);
+                categoriesProgress.put("Ectoparasitos", false);
+                dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress categories")
+                        .set(categoriesProgress,
+                                SetOptions.merge());
+
                 Intent intent = new Intent(getBaseContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();

@@ -17,12 +17,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.android.MyApplication;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CategoryFragment extends Fragment {
 
@@ -32,11 +40,29 @@ public class CategoryFragment extends Fragment {
     private static Button buttonNext;
     private static Button buttonPrevious;
 
-    public static String category;
+    private FirebaseFirestore dataBase;
+    private FirebaseAuth firebaseAuth;
+
+    private String email;
+
+    private static String categoryParent = null;
+    private static int nextCategoryId = 0, concludeProgress = 0;
+
+    private static boolean categoryStatus;
+
+    private int progressApp;
+    private String databaseCategoryProgress;
+
+    public static String category = "notNull";
     public static int categoryId;
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        dataBase = FirebaseFirestore.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        email = firebaseAuth.getCurrentUser().getEmail();
 
         View rootView = inflater.inflate(R.layout.fragment_category, container, false);
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
@@ -49,11 +75,13 @@ public class CategoryFragment extends Fragment {
             if(getArguments().getString("type").equals("textAndImage")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
                 webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
+                webViewText.scrollTo(0, 0);
                 imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
 
             } else if (getArguments().getString("type").equals("text")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
                 webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
+                webViewText.scrollTo(0, 0);
                 imageView.setVisibility(ImageView.INVISIBLE);
             }
         }
@@ -66,20 +94,77 @@ public class CategoryFragment extends Fragment {
             buttonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    nextCategoryId = getArguments().getInt("nextCategoryId");
+                    categoryParent = getArguments().getString("parentCategory");
+                    setConcludeProgress(getArguments().getInt("concludeProgress"));
+                    Log.d("CategoryFragment", ""+concludeProgress);
+
+                    final Map<String, Object> newProgressInfo = new HashMap<>();
+
+                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress categories")
+                            .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                        @Override
+                        public void onSuccess(DocumentSnapshot documentSnapshot) {
+                            setCategoryStatus(documentSnapshot.getBoolean(category));
+
+                            Log.i("CategoryFragment", "solicitou status da categoria do banco de dados");
+
+                            Log.d("CategoryFragment", "Status da categoria: " + categoryStatus);
+
+                            if (categoryStatus == false) {
+
+                                dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
+                                        .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                    @Override
+                                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                        Log.d("CategoryFragment", ""+getConcludeProgress());
+                                        switch (categoryParent) {
+                                            case "Introdução":
+                                                //setConcludeProgress(documentSnapshot.getLong("progress introduction").intValue());
+                                                databaseCategoryProgress = "progress introduction";
+                                                progressApp = concludeProgress / 4;
+                                                break;
+                                            case "Protozoários":
+                                                //setConcludeProgress(documentSnapshot.getLong("progress protozoarios").intValue());
+                                                databaseCategoryProgress = "progress protozoarios";
+                                                progressApp = 25 + concludeProgress / 4;
+                                                break;
+                                            case "Helmintos":
+                                                //setConcludeProgress(documentSnapshot.getLong("progress helmintos").intValue());
+                                                databaseCategoryProgress = "progress helmintos";
+                                                progressApp = 50 + concludeProgress / 4;
+                                                break;
+                                            case "Artrópodes":
+                                                //setConcludeProgress(documentSnapshot.getLong("progress status").intValue());
+                                                databaseCategoryProgress = "progress artropodes";
+                                                progressApp = 75 + concludeProgress / 4;
+                                                break;
+                                        }
+                                        Log.d("CategoryFragment", "Progresso do app: "+progressApp);
+                                        Map<String, Object> newProgressInfo = new HashMap<>();
+                                        newProgressInfo.put(databaseCategoryProgress, concludeProgress);
+                                        newProgressInfo.put("progress status", progressApp);
+                                        dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
+                                                .update(newProgressInfo);
+                                    }
+                                });
+                                Log.d("CategoryFragment", "Category's status: " + categoryStatus);
+                                Log.d("CategoryFragment", "Next Category's id received here: " + nextCategoryId);
+                                Log.d("CategoryFragment", "Category's parent received here: " + categoryParent);
+                                Log.d("CategoryFragment", "O progresso concluído na categoria é: " + concludeProgress);
+                            } else {
+                                Log.i("CategoryFragment", "Esta categoria já está feita");
+                            }
+                        }
+                    });
                     getActivity().finish();
-
-                    Log.d("CategoryFragment", "Category's id received here: " + categoryId);
-
-                    //getActivity().getLayoutInflater(R.layout.activity_home);
-
-                    //TODO: here we will refresh the home fragment interface by updating components and the data base
                 }
             });
             buttonNext.setText("Completar");
         }
-
         return rootView;
     }
+
 
     public static CategoryFragment newInstance(int position) {
         Bundle args = new Bundle();
@@ -87,8 +172,6 @@ public class CategoryFragment extends Fragment {
 
         category = activity.getCategory();
         categoryId = activity.getCategoryId();
-        Log.d("CategoryFragment", "Category's name received: " + category);
-        Log.d("CategoryFragment", "Category's id received: " + categoryId);
 
 
         try {
@@ -110,6 +193,9 @@ public class CategoryFragment extends Fragment {
                     args.putString("type", tab.getString("type"));
                     args.putString("text", tab.getString("text"));
                     args.putInt("number", jsonObject.getInt("numberOfTabs"));
+                    args.putString("parentCategory", jsonObject.getString("parentCategory"));
+                    args.putInt("nextCategoryId", jsonObject.getInt("nextCategoryId"));
+                    args.putInt("concludeProgress", jsonObject.getInt("concludeProgress"));
 
                     try {
                         tab.get("imageAddress");
@@ -145,5 +231,41 @@ public class CategoryFragment extends Fragment {
     }
     public void updateWebViewClearMatches() {
         this.webViewText.clearMatches();
+    }
+
+    public void setCategoryStatus(boolean categoryStatus) {
+        this.categoryStatus = categoryStatus;
+    }
+
+    public void setConcludeProgress(int concludeProgress) {
+        this.concludeProgress = concludeProgress;
+    }
+
+    public String getCategoryParent() {
+        return categoryParent;
+    }
+
+    public int getNextCategoryId() {
+        return nextCategoryId;
+    }
+
+    public int getConcludeProgress() {
+        return concludeProgress;
+    }
+
+    public boolean isCategoryStatus() {
+        return categoryStatus;
+    }
+
+    public static String getCategory() {
+        return category;
+    }
+
+    public int getProgressApp() {
+        return progressApp;
+    }
+
+    public void setProgressApp(int progressApp) {
+        this.progressApp = progressApp;
     }
 }

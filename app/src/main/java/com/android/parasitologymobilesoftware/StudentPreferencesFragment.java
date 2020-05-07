@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 
+import android.util.Log;
 import android.widget.RadioGroup;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
@@ -30,17 +31,11 @@ public class StudentPreferencesFragment extends Fragment {
 
     private Button buttonSetCalendar;
 
-    private int studentPreference;
-    private int studentPreferenceDataBase;
-    //           private String studentPref;
-
     private String email;
     private String completeName;
-
-    //           private ConstraintLayout constraintLayoutStudentFirst;
-    //           private ConstraintLayout constraintLayoutStudentSecond;
-
     //           private Button buttonReview;
+
+    private int progressToGo;
 
     private String schoolGrade;
 
@@ -50,6 +45,8 @@ public class StudentPreferencesFragment extends Fragment {
     private RadioGroup radioGroupInitial1;
     private RadioGroup radioGroupInitial2;
     private RadioGroup radioGroupInitial3;
+
+    private DocumentReference docRef;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +60,7 @@ public class StudentPreferencesFragment extends Fragment {
         email = firebaseAuth.getCurrentUser().getEmail();
         completeName = firebaseAuth.getCurrentUser().getDisplayName();
 
-        DocumentReference docRef = dataBase.collection("generalUserInfo").document(email);
+        docRef = dataBase.collection("generalUserInfo").document(email);
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -84,9 +81,6 @@ public class StudentPreferencesFragment extends Fragment {
         //           buttonReview = rootView.findViewById(R.id.buttonReview);
         progressBar = rootView.findViewById(R.id.progressApp);
 
-        //           constraintLayoutStudentFirst = rootView.findViewById(R.id.constraintLayoutStudentFirstFrag);
-        //           constraintLayoutStudentSecond = rootView.findViewById(R.id.constraintLayoutStudentSecondFrag);
-
         radioGroupInitial1 = rootView.findViewById(R.id.radioGroup);
         radioGroupInitial2 = rootView.findViewById(R.id.radioGroup2);
         radioGroupInitial3 = rootView.findViewById(R.id.radioGroup3);
@@ -104,8 +98,6 @@ public class StudentPreferencesFragment extends Fragment {
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                //setStudentPreference(documentSnapshot.getLong("student preference").intValue());    // Student's preference
-                //studentPreference = documentSnapshot.getLong("student preference").intValue();
 
                 alertState = documentSnapshot.getBoolean("alert state");
                 if (alertState)
@@ -115,75 +107,30 @@ public class StudentPreferencesFragment extends Fragment {
                     buttonSetCalendar.setElevation(0);
                     buttonSetCalendar.setClickable(false);
                 }
-
-                if (studentPreference == 1) {
-                    //      2      constraintLayoutStudentFirst.setElevation(20);
-                    //           constraintLayoutStudentSecond.setElevation(1);
-                }
-                else if (studentPreference == 2) {
-                    //           constraintLayoutStudentSecond.setElevation(20);
-                    //           constraintLayoutStudentFirst.setElevation(1);
-                }
             }
         });
-
-        /*           constraintLayoutStudentFirst.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (constraintLayoutStudentFirst.getElevation() == 1){
-                    studentPreference = 1;
-
-                    // Sending int preference to data base
-                    Map<String, Object> studentPreferenceInt = new HashMap<>();
-                    studentPreferenceInt.put("student preference", studentPreference);
-                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
-                            .update(studentPreferenceInt);
-
-                    // Sending String preference to data base
-                    Map<String, Object> studentPreferenceString = new HashMap<>();
-                    studentPreferenceString.put("student preference", "tradicional");
-                    dataBase.collection(schoolGrade).document(completeName)
-                            .update(studentPreferenceString);
-
-                    constraintLayoutStudentFirst.setElevation(20);
-                    constraintLayoutStudentSecond.setElevation(1);
-                }
-            }
-        });
-
-        constraintLayoutStudentSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (constraintLayoutStudentSecond.getElevation() == 1){
-                    studentPreference = 2;
-
-                    // Sending int preference to data base
-                    Map<String, Object> studentPreferenceInt = new HashMap<>();
-                    studentPreferenceInt.put("student preference", studentPreference);
-                    dataBase.collection("generalUserInfo").document(email).collection("specific info").document("state")
-                            .update(studentPreferenceInt);
-
-                    // Sending String preference to data base
-                    Map<String, Object> studentPreferenceString = new HashMap<>();
-                    studentPreferenceString.put("student preference", "modern");
-                    dataBase.collection(schoolGrade).document(completeName)
-                            .update(studentPreferenceString);
-
-                    constraintLayoutStudentSecond.setElevation(20);
-                    constraintLayoutStudentFirst.setElevation(1);
-                }
-            }
-        });      */
-        // Inflate the layout for this category
         return rootView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        Log.i("StudentPreferenceFragment", "OnResume");
+        docRef.collection("specific info").document("progress")
+                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                setProgressToGo(documentSnapshot.getLong("progress status").intValue());
+                Log.i("StudentPreferenceFragment", "vamos entender melhor isso");
+            }
+        });
+        progressBar.setProgress(progressToGo, true);
+        Log.d("StudentPreferenceFragment", "Everything ok here. Our new app progress is: "+progressToGo);
     }
 
     public void setSchoolGrade(String schoolGrade){
         this.schoolGrade = schoolGrade;
-    }
-
-    public void setStudentPreference(int studentPreference){
-        this.studentPreferenceDataBase = studentPreference;
     }
 
     public void setAlertState(boolean alertState){
@@ -192,5 +139,9 @@ public class StudentPreferencesFragment extends Fragment {
 
     public void setProgressStatus(int progressStatus){
         this.progressStatus = progressStatus;
+    }
+
+    public void setProgressToGo(int progressToGo) {
+        this.progressToGo = progressToGo;
     }
 }

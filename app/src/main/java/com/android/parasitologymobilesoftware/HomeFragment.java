@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -19,7 +20,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentNavigableMap;
 
 public class HomeFragment extends Fragment {
@@ -69,10 +73,14 @@ public class HomeFragment extends Fragment {
     public static final int artropodesMoscasConclude = 80;
     public static final int artropodesEctoparasitosConclude = 100;
 
+    private int progressToGo, nextCategoryId;
+    private String parentCategory, category;
+    private boolean categoryStatus;
+
     private String email, nome;
 
     private ProgressBar progressBarIntroduction, progressBarProtozoarios,
-            progressBarHelmintos, progressBarArtropodes;
+            progressBarHelmintos, progressBarArtropodes, progressBarApp;
 
     private int progressBarIntroductionValue, progressBarProtozoariosValue,
             progressBarHelmintosValue, progressBarArtropodesValue;
@@ -113,7 +121,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         // Progress Bars
         progressBarIntroduction = rootView.findViewById(R.id.progressAppIntroduction);
         progressBarProtozoarios = rootView.findViewById(R.id.progressAppProtozoarios);
@@ -125,8 +132,8 @@ public class HomeFragment extends Fragment {
         constraintLayoutIntroduction = rootView.findViewById(R.id.categoryHomeFragmentIntroduction);
         constraintLayoutIntroductionEcologia = rootView.findViewById(R.id.categoryHomeFragmentIntroductionEcologia);
         // teste settando icon
-        ImageView teste = constraintLayoutIntroductionEcologia.findViewById(R.id.imageViewCategoryBackgroundIcon);
-        teste.setImageDrawable(getActivity().getDrawable(R.drawable.icons8_happy_100));
+        //ImageView teste = constraintLayoutIntroductionEcologia.findViewById(R.id.imageViewCategoryBackgroundIcon);
+        //teste.setImageDrawable(getActivity().getDrawable(R.drawable.icons8_happy_100));
 
         constraintLayoutIntroductionConceitos = rootView.findViewById(R.id.categoryHomeFragmentIntroductionConceitosGerais);
         constraintLayoutIntroductionClassificacao = rootView.findViewById(R.id.categoryHomeFragmentIntroductionClassificacao);
@@ -551,7 +558,187 @@ public class HomeFragment extends Fragment {
         return rootView;
     }
 
-    public void setProgressBarIntroductionValue(int progressBarIntroductionValue) {
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        CategoryFragment categoryFragment = new CategoryFragment();
+
+        parentCategory = categoryFragment.getCategoryParent();
+        progressToGo = categoryFragment.getConcludeProgress();
+        nextCategoryId = categoryFragment.getNextCategoryId();
+        categoryStatus = categoryFragment.isCategoryStatus();
+        category = categoryFragment.getCategory();
+
+        Log.d("HomeFragment", "Next Category's id received here: " + nextCategoryId);
+        Log.d("HomeFragment", "Category's parent received here: " + parentCategory);
+        Log.d("HomeFragment", "O progresso concluído é: " + progressToGo);
+        Log.d("HomeFragment", "O nome da categoria que estamos é: " + category);
+
+
+        if (parentCategory == null && progressToGo == 0 && nextCategoryId == 0) {
+            Log.i("HomeFragment", "esse é o primeiro onResume!");
+        } else {
+            Log.i("HomeFragment", "outros onResume!");
+            DocumentReference docRef = firebaseFirestore.collection("generalUserInfo").document(email).collection("specific info").document("progress categories");
+            docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    setCategoryStatus(documentSnapshot.getBoolean(getCategory()));
+                    Log.i("HomeFragment", "solicitou status da categoria do banco de dados");
+
+                    Log.d("HomeFragment", "Status da categoria: " + categoryStatus);
+                    if (categoryStatus == false) { //não completou a categoria
+                        switch (parentCategory) {
+                            case "Introdução":
+                                progressBarIntroduction.setProgress(progressToGo, true);
+                                break;
+                            case "Protozoários":
+                                progressBarProtozoarios.setProgress(progressToGo, true);
+                                break;
+                            case "Helmintos":
+                                progressBarHelmintos.setProgress(progressToGo, true);
+                                break;
+                            case "Artrópodes":
+                                progressBarArtropodes.setProgress(progressToGo, true);
+                                break;
+                        }
+                        switch (nextCategoryId) {
+                            //introdução
+                            case R.id.categoryHomeFragmentIntroductionEcologia:
+                                constraintLayoutIntroductionEcologia.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentIntroductionConceitosGerais:
+                                constraintLayoutIntroductionConceitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentIntroductionClassificacao:
+                                constraintLayoutIntroductionClassificacao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentIntroductionReproducao:
+                                constraintLayoutIntroductionReproducao.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentIntroductionCicloBiologico:
+                                constraintLayoutIntroductionCiclo.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentIntroductionAtualidades:
+                                constraintLayoutIntroductionAtualidades.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            //protozoários
+                            case R.id.categoryHomeFragmentProtozoarios:
+                                constraintLayoutProtozoarios.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosAmebiase:
+                                constraintLayoutProtozoariosAmebiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosGiardiase:
+                                constraintLayoutProtozoariosGiardiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosLeishmanioses:
+                                constraintLayoutProtozoariosLeishmanioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosTricomonose:
+                                constraintLayoutProtozoariosTricomonose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosChagas:
+                                constraintLayoutProtozoariosChagas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosMalaria:
+                                constraintLayoutProtozoariosMalaria.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosToxoplasmose:
+                                constraintLayoutProtozoariosToxoplasmose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosBalantidiase:
+                                constraintLayoutProtozoariosBalantidiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentProtozoariosProtozooses:
+                                constraintLayoutProtozoariosProtozooses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            //helmintos
+                            case R.id.categoryHomeFragmentHelmintos:
+                                constraintLayoutHelmintos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosEsquistossomose:
+                                constraintLayoutHelmintosEsquistossomose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosFascioliase:
+                                constraintLayoutHelmintosFascioliase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosTeniase:
+                                constraintLayoutHelmintosTeniase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosCisticercose:
+                                constraintLayoutHelmintosCisticercose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosHidatidose:
+                                constraintLayoutHelmintosHidatidose.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosHimenolepiase:
+                                constraintLayoutHelmintosHimenolepíase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosEstrongiloidiase:
+                                constraintLayoutHelmintosEstrongiloidiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosTricuriase:
+                                constraintLayoutHelmintosTricuriase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosAncilostomiase:
+                                constraintLayoutHelmintosAncilostomiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosNecatoriase:
+                                constraintLayoutHelmintosNecatoriase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosEnterobiase:
+                                constraintLayoutHelmintosEnterobiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosAscaridiase:
+                                constraintLayoutHelmintosAscaridiase.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosLarvaMigrans:
+                                constraintLayoutHelmintosLarvaMigrans.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosFilarioses:
+                                constraintLayoutHelmintosFilarioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentHelmintosOutrasHelmintoses:
+                                constraintLayoutHelmintosOutrasHelmintoses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            //artrópodes
+                            case R.id.categoryHomeFragmentArtropodes:
+                                constraintLayoutArtropodes.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentArtropodesHemipteros:
+                                constraintLayoutArtropodesHemipteros.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentArtropodesMosquitos:
+                                constraintLayoutArtropodesMosquitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentArtropodesMoscas:
+                                constraintLayoutArtropodesMoscas.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+                            case R.id.categoryHomeFragmentArtropodesEctoparasitos:
+                                constraintLayoutArtropodesEctoparasitos.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                break;
+
+                        }
+
+                        Log.d("HomeFragment", "Next Category's id received here: " + nextCategoryId);
+                        Log.d("HomeFragment", "Category's parent received here: " + parentCategory);
+                        Log.d("HomeFragment", "O progresso concluído é: " + progressToGo);
+
+
+                        Map<String, Object> newStatusCategory = new HashMap<>();
+                        newStatusCategory.put(category, true);
+                        firebaseFirestore.collection("generalUserInfo").document(email).collection("specific info").document("progress categories")
+                                .update(newStatusCategory);
+                    }
+                }
+            });
+
+        }
+    }
+
+    public void setProgressBarIntroductionValue(int progressBarIntroductionVaIntroductionlue) {
         this.progressBarIntroductionValue = progressBarIntroductionValue;
     }
 
@@ -608,5 +795,16 @@ public class HomeFragment extends Fragment {
         constraintLayoutHelmintosLarvaMigrans.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutHelmintosFilarioses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
         constraintLayoutHelmintosOutrasHelmintoses.setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+    }
+
+    public void setCategoryStatus(boolean categoryStatus) {
+        this.categoryStatus = categoryStatus;
+    }
+    public boolean isCategoryStatus() {
+        return categoryStatus;
+    }
+
+    public String getCategory() {
+        return category;
     }
 }
