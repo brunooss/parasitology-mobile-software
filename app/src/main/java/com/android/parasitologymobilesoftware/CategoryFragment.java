@@ -97,9 +97,14 @@ public class CategoryFragment extends Fragment {
                     nextCategoryId = getArguments().getInt("nextCategoryId");
                     categoryParent = getArguments().getString("parentCategory");
                     setConcludeProgress(getArguments().getInt("concludeProgress"));
-                    Log.d("CategoryFragment", ""+concludeProgress);
-
-                    final Map<String, Object> newProgressInfo = new HashMap<>();
+//                    CategoryActivity categoryActivity = (CategoryActivity) getActivity();
+//                    HomeActivity homeActivity = new HomeActivity();
+//                    for(int i = 0; i < homeActivity.categoriesIds.length; i++) {
+//                        if(homeActivity.categoriesIds[i] == categoryActivity.categoryId) {
+//                            HomeFragment homeFragment = new HomeFragment();
+//                            homeFragment.updateId(homeActivity.categoriesIds[i + 1]);
+//                        }
+//                    }
 
                     dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress categories")
                             .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {

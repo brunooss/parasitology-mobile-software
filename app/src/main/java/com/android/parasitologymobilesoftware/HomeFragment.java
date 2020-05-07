@@ -1,5 +1,6 @@
 package com.android.parasitologymobilesoftware;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -85,6 +86,8 @@ public class HomeFragment extends Fragment {
     private int progressBarIntroductionValue, progressBarProtozoariosValue,
             progressBarHelmintosValue, progressBarArtropodesValue;
 
+    public static int id = 0;
+
 
     private ConstraintLayout constraintLayoutIntroduction, constraintLayoutIntroductionEcologia, constraintLayoutIntroductionConceitos,
                              constraintLayoutIntroductionClassificacao, constraintLayoutIntroductionReproducao, constraintLayoutIntroductionCiclo,
@@ -103,6 +106,10 @@ public class HomeFragment extends Fragment {
     private TextView textViewCategoryIntroduction, textViewCategoryProtozoarios,
             textViewCategoryHelmintos, textViewCategoryArtropodes;
 
+    public void updateId(int id) {
+        this.id = id;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,10 +123,22 @@ public class HomeFragment extends Fragment {
         nome = firebaseAuth.getCurrentUser().getDisplayName();
     }
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        if (id != 0) {
+            View nextView = rootView.findViewById(id);
+            Toast.makeText(getContext(), String.valueOf(nextView.getId()), Toast.LENGTH_LONG).show();
+            nextView.setBackgroundResource(R.drawable.category_button_background_filled);
+            nextView.setClickable(true);
+        }
+
+
 
         // Progress Bars
         progressBarIntroduction = rootView.findViewById(R.id.progressAppIntroduction);
@@ -174,6 +193,7 @@ public class HomeFragment extends Fragment {
         constraintLayoutArtropodesMosquitos = rootView.findViewById(R.id.categoryHomeFragmentArtropodesMosquitos);
         constraintLayoutArtropodesMoscas = rootView.findViewById(R.id.categoryHomeFragmentArtropodesMoscas);
         constraintLayoutArtropodesEctoparasitos = rootView.findViewById(R.id.categoryHomeFragmentArtropodesEctoparasitos);
+
 
 
 
