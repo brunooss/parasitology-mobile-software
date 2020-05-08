@@ -1,6 +1,7 @@
 package com.android.parasitologymobilesoftware;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,13 +41,16 @@ public class HomeFragment extends Fragment {
     private int [] artropodesValuesConclude = {0, 20, 40, 60, 80, 100};
 
     private int progressToGo, nextCategoryId;
-    private String parentCategory, category;
+    private static String parentCategory, category;
     private boolean categoryStatus;
     private String email, nome;
     private ProgressBar progressBarIntroduction, progressBarProtozoarios, progressBarHelmintos, progressBarArtropodes, progressBarApp;
     private int progressBarIntroductionValue, progressBarProtozoariosValue, progressBarHelmintosValue, progressBarArtropodesValue;
     private HomeActivity homeActivity = new HomeActivity();
     private View rootView;
+
+    public static int categoryId;
+    private CategoryFragment categoryFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,10 +96,12 @@ public class HomeFragment extends Fragment {
                         if(progressBarIntroductionValue == introductionValuesConclude[i]) {
                             for (int b = 0; b <= i; b++) {
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                Log.i("HomeFragment",  "Oi!");
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        homeActivity.onCategoryButtonClick(view);
+                                        Log.i("HomeFragment",  "O onClick das categorias estão sendo criados e chamados!");
+                                        onCategoryButtonClick(view);
                                     }
                                 });
                             }
@@ -108,7 +116,7 @@ public class HomeFragment extends Fragment {
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        homeActivity.onCategoryButtonClick(view);
+                                        onCategoryButtonClick(view);
                                     }
                                 });
                             }
@@ -123,7 +131,7 @@ public class HomeFragment extends Fragment {
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        homeActivity.onCategoryButtonClick(view);
+                                        onCategoryButtonClick(view);
                                     }
                                 });
                             }
@@ -138,7 +146,7 @@ public class HomeFragment extends Fragment {
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                         homeActivity.onCategoryButtonClick(view);
+                                         onCategoryButtonClick(view);
                                     }
                                 });
 
@@ -231,11 +239,150 @@ public class HomeFragment extends Fragment {
         }
     }
 
+    public void onCategoryButtonClick(View view) {
+        if (true) { //@Todo Arrumar isso ae
+            Intent intent = new Intent(getActivity(), CategoryActivity.class);
+            categoryId = view.getId();
+
+            switch (categoryId) {
+                case R.id.categoryHomeFragmentIntroduction:
+                    category = "Introdução";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionEcologia:
+                    category = "Ecologia";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionConceitosGerais:
+                    category = "Conceitos Gerais";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionClassificacao:
+                    category = "Classificação";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionReproducao:
+                    category = "Reprodução";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionCicloBiologico:
+                    category = "Ciclo Biológico";
+                    break;
+                case R.id.categoryHomeFragmentIntroductionAtualidades:
+                    category = "Atualidades";
+                    break;
+                case R.id.categoryHomeFragmentProtozoarios:
+                    category = "Protozoários";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosAmebiase:
+                    category = "Amebíase";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosGiardiase:
+                    category = "Giardíase";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosLeishmanioses:
+                    category = "Leishmanioses";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosTricomonose:
+                    category = "Tricomonose";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosChagas:
+                    category = "Doença de Chagas";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosMalaria:
+                    category = "Malária";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosToxoplasmose:
+                    category = "Toxoplasmose";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosBalantidiase:
+                    category = "Balantidíase";
+                    break;
+                case R.id.categoryHomeFragmentProtozoariosProtozooses:
+                    category = "Protozooses";
+                    break;
+                case R.id.categoryHomeFragmentHelmintos:
+                    category = "Helmintos";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosEsquistossomose:
+                    category = "Esquistossomose";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosFascioliase:
+                    category = "Fasciolíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosTeniase:
+                    category = "Teníase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosCisticercose:
+                    category = "Cisticercose";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosHidatidose:
+                    category = "Hidatidose";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosHimenolepiase:
+                    category = "Himenolepíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosEstrongiloidiase:
+                    category = "Estrongiloidíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosTricuriase:
+                    category = "Tricuríase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosAncilostomiase:
+                    category = "Ancilostomíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosNecatoriase:
+                    category = "Necatoríase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosEnterobiase:
+                    category = "Enterobíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosAscaridiase:
+                    category = "Ascaridíase";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosLarvaMigrans:
+                    category = "Larva Migrans";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosFilarioses:
+                    category = "Filarioses";
+                    break;
+                case R.id.categoryHomeFragmentHelmintosOutrasHelmintoses:
+                    category = "Outras Helmintoses";
+                    break;
+                case R.id.categoryHomeFragmentArtropodes:
+                    category = "Artrópodes";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesHemipteros:
+                    category = "Hemípteros";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesMosquitos:
+                    category = "Mosquitos";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesMoscas:
+                    category = "Moscas";
+                    break;
+                case R.id.categoryHomeFragmentArtropodesEctoparasitos:
+                    category = "Ectoparasitos";
+                    break;
+            }
+            Bundle extra = new Bundle();
+            extra.putString("category", category);
+            extra.putInt("CategoryId", categoryId);
+
+            // Passing category's name to activity
+            intent.putExtras(extra);
+
+            Log.i("HomeFragment", "nome da categoria ao clicar o botão: "+category);
+
+            startActivity(intent);
+        }
+
+    }
+
     public void setCategoryStatus(boolean categoryStatus) {
         this.categoryStatus = categoryStatus;
     }
 
     public String getCategory() {
         return category;
+    }
+
+    public static int getCategoryId() {
+        return categoryId;
     }
 }

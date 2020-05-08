@@ -55,6 +55,13 @@ public class CategoryFragment extends Fragment {
 
     public static String category = "notNull";
     public static int categoryId;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -173,10 +180,12 @@ public class CategoryFragment extends Fragment {
 
     public static CategoryFragment newInstance(int position) {
         Bundle args = new Bundle();
-        HomeActivity activity = new HomeActivity();
+        HomeFragment homeFragment = new HomeFragment();
 
-        category = activity.getCategory();
-        categoryId = activity.getCategoryId();
+        category = homeFragment.getCategory();
+        categoryId = homeFragment.getCategoryId();
+        Log.d("CategoryFragmentInstance", "Category received: " +category);
+        Log.d("CategoryFragmentInstance", "Category Id received: " +categoryId);
 
 
         try {
@@ -261,5 +270,13 @@ public class CategoryFragment extends Fragment {
 
     public void setProgressApp(int progressApp) {
         this.progressApp = progressApp;
+    }
+
+    public static void setCategory(String category) {
+        CategoryFragment.category = category;
+    }
+
+    public static void setCategoryId(int categoryId) {
+        CategoryFragment.categoryId = categoryId;
     }
 }
