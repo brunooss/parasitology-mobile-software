@@ -226,6 +226,12 @@ public class HomeFragment extends Fragment {
                         for (int i = 0; i < homeActivity.categoriesIds.length; i++) {
                             if(nextCategoryId == homeActivity.categoriesIds[i]) {
                                 rootView.findViewById(homeActivity.categoriesIds[i]).setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                                rootView.findViewById(homeActivity.categoriesIds[i]).setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        onCategoryButtonClick(view);
+                                    }
+                                });
                             }
                         }
 
