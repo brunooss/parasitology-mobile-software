@@ -5,41 +5,41 @@
                                                    android:id="@+id/constraintLayout4"
                                                    android:layout_width="wrap_content"
                                                    android:layout_height="wrap_content"
-                                                   android:elevation="3dp"
                                                    android:background="@drawable/category_button_background_blocked"
-                                                   android:onClick="onCategoryButtonClick">
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView3" android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:elevation="4dp"-->
-<!--        android:scaleType="fitXY"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/imageViewCategoryBackgroundIcon"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/imageViewCategoryBackgroundIcon"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/imageViewCategoryBackgroundIcon"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/imageViewCategoryBackgroundIcon"-->
-<!--        app:layout_constraintVertical_bias="1.0"-->
-<!--        app:srcCompat="@drawable/category_button_background_filled"/>-->
+                                                   android:elevation="3dp"
+>
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3" android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:elevation="4dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageViewCategoryBackgroundIcon"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/imageViewCategoryBackgroundIcon"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/imageViewCategoryBackgroundIcon"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageViewCategoryBackgroundIcon"-->
+    <!--        app:layout_constraintVertical_bias="1.0"-->
+    <!--        app:srcCompat="@drawable/category_button_background_filled"/>-->
 
     <ImageView
         android:id="@+id/imageViewCategoryBackgroundIcon"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+        android:layout_width="32dp" android:layout_height="32dp"
+        android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:id="@+id/textViewCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/roman_font"
-        android:textStyle="bold"
-        android:visibility="invisible"
         android:gravity="center"
-        android:textColor="@color/colorWhite"
-        android:textSize="45sp"
-        android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+        android:text="1"
+        android:textColor="@color/colorWhite" android:textSize="45sp"
+        android:textStyle="bold" android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

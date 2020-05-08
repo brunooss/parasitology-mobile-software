@@ -161,49 +161,6 @@ public class CategoryActivity extends AppCompatActivity {
         return ;
     }
 
-    /*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        final SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                if(s != null && !s.isEmpty()) {
-                    fragment.updateWebViewSearch(s);
-                }
-                else {
-                    return false;
-                }
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                if(s != null && !s.isEmpty()) {
-                    fragment.updateWebViewSearchSelectWord(s);
-                }
-                else {
-                    return false;
-                }
-                return true;
-            }
-        });
-        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
-            @Override
-            public boolean onClose() {
-                fragment.updateWebViewClearMatches();
-                searchView.onActionViewCollapsed();
-                return true;
-            }
-        });
-        return true;
-    }
-    */
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

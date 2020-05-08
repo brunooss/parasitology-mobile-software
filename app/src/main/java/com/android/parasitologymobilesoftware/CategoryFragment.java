@@ -227,17 +227,6 @@ public class CategoryFragment extends Fragment {
         return fragment;
     }
 
-    public void updateWebViewSearch(String s) {
-        this.webViewText.findAll(s);
-    }
-    public void updateWebViewSearchSelectWord(String s) {
-        this.webViewText.findAll(s);
-        this.webViewText.findNext(true);
-    }
-    public void updateWebViewClearMatches() {
-        this.webViewText.clearMatches();
-    }
-
     public void setCategoryStatus(boolean categoryStatus) {
         this.categoryStatus = categoryStatus;
     }
