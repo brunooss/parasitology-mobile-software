@@ -64,7 +64,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentIntroductionConceitosGerais"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentIntroductionConceitosGerais"/>
@@ -89,7 +88,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/textViewCategoryIntroduction"
                 app:layout_constraintStart_toStartOf="@+id/textViewCategoryIntroduction"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryIntroduction"/>
@@ -115,7 +113,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentIntroductionConceitosGerais"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentIntroductionConceitosGerais"/>
@@ -139,7 +136,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroductionEcologia"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroductionEcologia"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentIntroductionCicloBiologico"/>
@@ -164,7 +160,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="10dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroductionConceitosGerais"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroductionConceitosGerais"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryIntroductionConceitosGerais"/>
@@ -188,7 +183,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentIntroductionClassificacao"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentIntroductionClassificacao"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentIntroductionReproducao"/>
@@ -215,7 +209,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -259,7 +252,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosGiardiase"/>
@@ -283,7 +275,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/textViewCategoryProtozoarios"
                 app:layout_constraintStart_toStartOf="@+id/textViewCategoryProtozoarios"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryProtozoarios"/>
@@ -308,7 +299,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosGiardiase"/>
@@ -335,7 +325,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
@@ -360,7 +349,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosGiardiase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosMalaria"/>
@@ -387,7 +375,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentProtozoariosChagas"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryProtozoariosLeishmanioses"/>
@@ -433,7 +420,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentProtozoariosChagas"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentProtozoariosChagas"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentProtozoariosToxoplasmose"/>
@@ -482,7 +468,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -525,7 +510,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintosFascioliase"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosFascioliase"/>
@@ -549,7 +533,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/textViewCategoryHelmintos"
                 app:layout_constraintStart_toStartOf="@+id/textViewCategoryHelmintos"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryHelmintos"/>
@@ -574,7 +557,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintosFascioliase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosFascioliase"/>
@@ -600,7 +582,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintosFascioliase"
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
@@ -624,7 +605,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 android:clipChildren="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosFascioliase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosFascioliase"
@@ -650,7 +630,6 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintosHidatidose"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosCisticercose"/>
@@ -674,7 +653,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="20dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosCisticercose"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosCisticercose"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosCisticercose"/>
@@ -697,7 +675,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosHidatidose"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosHidatidose"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosEstrongiloidiase" />
@@ -720,7 +697,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosHimenolepiase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosHimenolepiase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosEstrongiloidiase" />
@@ -745,7 +721,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="20dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosEstrongiloidiase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosEstrongiloidiase"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosEstrongiloidiase" />
@@ -768,7 +743,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosTricuriase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosTricuriase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosNecatoriase" />
@@ -792,7 +766,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosAncilostomiase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosAncilostomiase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosNecatoriase" />
@@ -817,7 +790,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="20dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosNecatoriase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosNecatoriase"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosNecatoriase" />
@@ -841,7 +813,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosEnterobiase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosEnterobiase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosLarvaMigrans" />
@@ -865,7 +836,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentHelmintosAscaridiase"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentHelmintosAscaridiase"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentHelmintosLarvaMigrans" />
@@ -893,7 +863,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewSubcategoryHelmintosOutrasHelmintoses" />
@@ -933,7 +902,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintosOutrasHelmintoses"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintosFilarioses"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodes" />
@@ -956,7 +924,6 @@
                 layout="@layout/home_category_button"
                 android:layout_width="70dp"
                 android:layout_height="45dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toStartOf="@+id/categoryHomeFragmentHelmintosFilarioses"
                 app:layout_constraintStart_toEndOf="@+id/categoryHomeFragmentHelmintosLarvaMigrans"
                 app:layout_constraintTop_toTopOf="@+id/categoryHomeFragmentArtropodesMosquitos" />
@@ -982,7 +949,6 @@
 
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesHemipteros"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesHemipteros"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodesHemipteros" />
@@ -1006,7 +972,6 @@
                 android:layout_width="70dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="16dp"
-                android:clickable="false"
                 app:layout_constraintEnd_toEndOf="@+id/categoryHomeFragmentArtropodesMosquitos"
                 app:layout_constraintStart_toStartOf="@+id/categoryHomeFragmentArtropodesMosquitos"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCategoryArtropodesMosquitos" />

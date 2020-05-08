@@ -4,7 +4,9 @@ import android.app.*;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -64,7 +66,16 @@ public class HomeActivity extends AppCompatActivity
 
     private CategoryFragment categoryFragment;
 
-    //public int categoriesIds[] = {R.id.categoryHomeFragmentIntroduction, R.id.categoryHomeFragmentIntroductionEcologia, R.id.categoryHomeFragmentIntroductionConceitosGerais, R.id.categoryHomeFragmentIntroductionClassificacao, R.id.categoryHomeFragmentIntroductionReproducao, R.id.categoryHomeFragmentIntroductionCicloBiologico, R.id.categoryHomeFragmentIntroductionAtualidades, R.id.categoryHomeFragmentProtozoarios, R.id.categoryHomeFragmentProtozoariosAmebiase, R.id.categoryHomeFragmentProtozoariosGiardiase, R.id.categoryHomeFragmentProtozoariosLeishmanioses, R.id.categoryHomeFragmentProtozoariosTricomonose, R.id.categoryHomeFragmentProtozoariosChagas, R.id.categoryHomeFragmentProtozoariosMalaria, R.id.categoryHomeFragmentProtozoariosBalantidiase, R.id.categoryHomeFragmentHelmintos, R.id.categoryHomeFragmentHelmintosEsquistossomose, R.id.categoryHomeFragmentHelmintosFascioliase, R.id.categoryHomeFragmentHelmintosTeniase, R.id.categoryHomeFragmentHelmintosCisticercose, R.id.categoryHomeFragmentHelmintosHidatidose, R.id.categoryHomeFragmentHelmintosHimenolepiase, R.id.categoryHomeFragmentHelmintosEstrongiloidiase, R.id.categoryHomeFragmentHelmintosTricuriase, R.id.categoryHomeFragmentHelmintosAncilostomiase, R.id.categoryHomeFragmentHelmintosNecatoriase, R.id.categoryHomeFragmentHelmintosEnterobiase, R.id.categoryHomeFragmentHelmintosAscaridiase, R.id.categoryHomeFragmentHelmintosLarvaMigrans, R.id.categoryHomeFragmentHelmintosFilarioses, R.id.categoryHomeFragmentHelmintosOutrasHelmintoses, R.id.categoryHomeFragmentArtropodes, R.id.categoryHomeFragmentArtropodesHemipteros, R.id.categoryHomeFragmentArtropodesMosquitos, R.id.categoryHomeFragmentArtropodesMoscas, R.id.categoryHomeFragmentArtropodesEctoparasitos};
+    public int [] categoriesIds = {R.id.categoryHomeFragmentIntroduction,
+            R.id.categoryHomeFragmentIntroductionEcologia,
+            R.id.categoryHomeFragmentIntroductionConceitosGerais,
+            R.id.categoryHomeFragmentIntroductionClassificacao,
+            R.id.categoryHomeFragmentIntroductionReproducao,
+            R.id.categoryHomeFragmentIntroductionCicloBiologico,
+            R.id.categoryHomeFragmentIntroductionAtualidades,
+            R.id.categoryHomeFragmentProtozoarios,
+            R.id.categoryHomeFragmentProtozoariosAmebiase, R.id.categoryHomeFragmentProtozoariosGiardiase,
+            R.id.categoryHomeFragmentProtozoariosLeishmanioses, R.id.categoryHomeFragmentProtozoariosTricomonose, R.id.categoryHomeFragmentProtozoariosChagas, R.id.categoryHomeFragmentProtozoariosMalaria, R.id.categoryHomeFragmentProtozoariosToxoplasmose, R.id.categoryHomeFragmentProtozoariosBalantidiase, R.id.categoryHomeFragmentProtozoariosProtozooses, R.id.categoryHomeFragmentHelmintos, R.id.categoryHomeFragmentHelmintosEsquistossomose, R.id.categoryHomeFragmentHelmintosFascioliase, R.id.categoryHomeFragmentHelmintosTeniase, R.id.categoryHomeFragmentHelmintosCisticercose, R.id.categoryHomeFragmentHelmintosHidatidose, R.id.categoryHomeFragmentHelmintosHimenolepiase, R.id.categoryHomeFragmentHelmintosEstrongiloidiase, R.id.categoryHomeFragmentHelmintosTricuriase, R.id.categoryHomeFragmentHelmintosAncilostomiase, R.id.categoryHomeFragmentHelmintosNecatoriase, R.id.categoryHomeFragmentHelmintosEnterobiase, R.id.categoryHomeFragmentHelmintosAscaridiase, R.id.categoryHomeFragmentHelmintosLarvaMigrans, R.id.categoryHomeFragmentHelmintosFilarioses, R.id.categoryHomeFragmentHelmintosOutrasHelmintoses, R.id.categoryHomeFragmentArtropodes, R.id.categoryHomeFragmentArtropodesHemipteros, R.id.categoryHomeFragmentArtropodesMosquitos, R.id.categoryHomeFragmentArtropodesMoscas, R.id.categoryHomeFragmentArtropodesEctoparasitos};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -239,14 +250,10 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onCategoryButtonClick(View view) {
-        if (view.getBackground().getConstantState() == getDrawable(R.drawable.category_button_background_blocked).getConstantState()){
-            //TODO OR NOT: user is not able to get into this category because he has not accomplished the previous ones
-            Log.i(TAG, "User is not allowed to get into this category because he has not accomplished the previsous one");
-        } else {
-            Intent intent = new Intent(this, CategoryActivity.class);
+        if (true) { //@Todo Arrumar isso ae
+            Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
             categoryId = view.getId();
-            Log.d(TAG, "category id: "+categoryId);
-            Log.i(TAG, "category with id");
+
             switch (view.getId()) {
                 case R.id.categoryHomeFragmentIntroduction:
                     category = "Introdução";
@@ -363,7 +370,6 @@ public class HomeActivity extends AppCompatActivity
                     category = "Ectoparasitos";
                     break;
             }
-
             Bundle extra = new Bundle();
             extra.putString("category", category);
             extra.putInt("CategoryId", categoryId);
@@ -375,6 +381,7 @@ public class HomeActivity extends AppCompatActivity
 
             startActivity(intent);
         }
+
     }
 
     public void settingProgress(int progressToGo){                      // Call this function to change the progress bar, passing an int variable that goes from 0 to 100
