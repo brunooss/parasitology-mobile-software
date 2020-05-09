@@ -193,6 +193,54 @@ public class SignupActivity extends AppCompatActivity {
                                 state.put("previous survey state", false);
                                 state.put("alert state", false);
 
+                                Map<String, Object> progress = new HashMap<>();
+                                progress.put("progress artropodes", 0);
+                                progress.put("progress helmintos", 0);
+                                progress.put("progress introduction", 0);
+                                progress.put("progress protozoarios", 0);
+                                progress.put("progress status", 0);
+
+                                Map<String, Object> progressCategories = new HashMap<>();
+                                progressCategories.put("Amebíase", false);
+                                progressCategories.put("Ancilostomíase", false);
+                                progressCategories.put("Artrópodes", false);
+                                progressCategories.put("Ascaridíase", false);
+                                progressCategories.put("Atualidades", false);
+                                progressCategories.put("Balantidíase", false);
+                                progressCategories.put("Ciclo Biológico", false);
+                                progressCategories.put("Cisticercose", false);
+                                progressCategories.put("Classificação", false);
+                                progressCategories.put("Conceitos Gerais", false);
+                                progressCategories.put("Doença de Chagas", false);
+                                progressCategories.put("Ecologia", false);
+                                progressCategories.put("Ectoparasitos", false);
+                                progressCategories.put("Enterobíase", false);
+                                progressCategories.put("Esquistossomose", false);
+                                progressCategories.put("Estrongiloidíase", false);
+                                progressCategories.put("Fasciolíase", false);
+                                progressCategories.put("Filarioses", false);
+                                progressCategories.put("Giardíase", false);
+                                progressCategories.put("Helmintos", false);
+                                progressCategories.put("Hemípteros", false);
+                                progressCategories.put("Hidatidose", false);
+                                progressCategories.put("Himenolepíase", false);
+                                progressCategories.put("Introdução", false);
+                                progressCategories.put("Larva Migrans", false);
+                                progressCategories.put("Leishmanioses", false);
+                                progressCategories.put("Malária", false);
+                                progressCategories.put("Moscas", false);
+                                progressCategories.put("Mosquitos", false);
+                                progressCategories.put("Necatoríase", false);
+                                progressCategories.put("Outras Helmintoses", false);
+                                progressCategories.put("Protozooses", false);
+                                progressCategories.put("Protozoários", false);
+                                progressCategories.put("Reprodução", false);
+                                progressCategories.put("Teníase", false);
+                                progressCategories.put("Toxoplasmose", false);
+                                progressCategories.put("Tricomonose", false);
+                                progressCategories.put("Tricuríase", false);
+
+
                                 dataBase.collection(spinner.getSelectedItem().toString()).document(editTextName.getText().toString())
                                         .set(users);
 
@@ -201,6 +249,12 @@ public class SignupActivity extends AppCompatActivity {
 
                                 dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString()).collection("specific info").document("state")
                                         .set(state);
+
+                                dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString()).collection("specific info").document("progress")
+                                        .set(progress);
+
+                                dataBase.collection("generalUserInfo").document(editTextEmail.getText().toString()).collection("specific info").document("progress categories")
+                                        .set(progressCategories);
 
                                 progressBar.setVisibility(View.INVISIBLE);
 

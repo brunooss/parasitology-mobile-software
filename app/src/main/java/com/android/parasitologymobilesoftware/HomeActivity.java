@@ -66,16 +66,25 @@ public class HomeActivity extends AppCompatActivity
 
     private CategoryFragment categoryFragment;
 
-    public int [] categoriesIds = {R.id.categoryHomeFragmentIntroduction,
-            R.id.categoryHomeFragmentIntroductionEcologia,
-            R.id.categoryHomeFragmentIntroductionConceitosGerais,
-            R.id.categoryHomeFragmentIntroductionClassificacao,
-            R.id.categoryHomeFragmentIntroductionReproducao,
-            R.id.categoryHomeFragmentIntroductionCicloBiologico,
-            R.id.categoryHomeFragmentIntroductionAtualidades,
-            R.id.categoryHomeFragmentProtozoarios,
+    public int [] categoriesIds = {R.id.categoryHomeFragmentIntroduction, R.id.categoryHomeFragmentIntroductionEcologia,
+            R.id.categoryHomeFragmentIntroductionConceitosGerais, R.id.categoryHomeFragmentIntroductionClassificacao,
+            R.id.categoryHomeFragmentIntroductionReproducao, R.id.categoryHomeFragmentIntroductionCicloBiologico,
+            R.id.categoryHomeFragmentIntroductionAtualidades, R.id.categoryHomeFragmentProtozoarios,
             R.id.categoryHomeFragmentProtozoariosAmebiase, R.id.categoryHomeFragmentProtozoariosGiardiase,
-            R.id.categoryHomeFragmentProtozoariosLeishmanioses, R.id.categoryHomeFragmentProtozoariosTricomonose, R.id.categoryHomeFragmentProtozoariosChagas, R.id.categoryHomeFragmentProtozoariosMalaria, R.id.categoryHomeFragmentProtozoariosToxoplasmose, R.id.categoryHomeFragmentProtozoariosBalantidiase, R.id.categoryHomeFragmentProtozoariosProtozooses, R.id.categoryHomeFragmentHelmintos, R.id.categoryHomeFragmentHelmintosEsquistossomose, R.id.categoryHomeFragmentHelmintosFascioliase, R.id.categoryHomeFragmentHelmintosTeniase, R.id.categoryHomeFragmentHelmintosCisticercose, R.id.categoryHomeFragmentHelmintosHidatidose, R.id.categoryHomeFragmentHelmintosHimenolepiase, R.id.categoryHomeFragmentHelmintosEstrongiloidiase, R.id.categoryHomeFragmentHelmintosTricuriase, R.id.categoryHomeFragmentHelmintosAncilostomiase, R.id.categoryHomeFragmentHelmintosNecatoriase, R.id.categoryHomeFragmentHelmintosEnterobiase, R.id.categoryHomeFragmentHelmintosAscaridiase, R.id.categoryHomeFragmentHelmintosLarvaMigrans, R.id.categoryHomeFragmentHelmintosFilarioses, R.id.categoryHomeFragmentHelmintosOutrasHelmintoses, R.id.categoryHomeFragmentArtropodes, R.id.categoryHomeFragmentArtropodesHemipteros, R.id.categoryHomeFragmentArtropodesMosquitos, R.id.categoryHomeFragmentArtropodesMoscas, R.id.categoryHomeFragmentArtropodesEctoparasitos};
+            R.id.categoryHomeFragmentProtozoariosLeishmanioses, R.id.categoryHomeFragmentProtozoariosTricomonose,
+            R.id.categoryHomeFragmentProtozoariosChagas, R.id.categoryHomeFragmentProtozoariosMalaria,
+            R.id.categoryHomeFragmentProtozoariosToxoplasmose, R.id.categoryHomeFragmentProtozoariosBalantidiase,
+            R.id.categoryHomeFragmentProtozoariosProtozooses, R.id.categoryHomeFragmentHelmintos,
+            R.id.categoryHomeFragmentHelmintosEsquistossomose, R.id.categoryHomeFragmentHelmintosFascioliase,
+            R.id.categoryHomeFragmentHelmintosTeniase, R.id.categoryHomeFragmentHelmintosCisticercose,
+            R.id.categoryHomeFragmentHelmintosHidatidose, R.id.categoryHomeFragmentHelmintosHimenolepiase,
+            R.id.categoryHomeFragmentHelmintosEstrongiloidiase, R.id.categoryHomeFragmentHelmintosTricuriase,
+            R.id.categoryHomeFragmentHelmintosAncilostomiase, R.id.categoryHomeFragmentHelmintosNecatoriase,
+            R.id.categoryHomeFragmentHelmintosEnterobiase, R.id.categoryHomeFragmentHelmintosAscaridiase,
+            R.id.categoryHomeFragmentHelmintosLarvaMigrans, R.id.categoryHomeFragmentHelmintosFilarioses,
+            R.id.categoryHomeFragmentHelmintosOutrasHelmintoses, R.id.categoryHomeFragmentArtropodes,
+            R.id.categoryHomeFragmentArtropodesHemipteros, R.id.categoryHomeFragmentArtropodesMosquitos,
+            R.id.categoryHomeFragmentArtropodesMoscas, R.id.categoryHomeFragmentArtropodesEctoparasitos};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -166,7 +175,7 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        // Handle navigation  view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_about) {
@@ -176,10 +185,11 @@ public class HomeActivity extends AppCompatActivity
             startActivity(new Intent(this, FeedbackActivity.class));
         } else if (id == R.id.nav_out) {
             Toast.makeText(this, "Aguarde, saindo de sua conta.", Toast.LENGTH_SHORT).show();
-            FirebaseAuth.getInstance().signOut();
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
+                    FirebaseAuth.getInstance().signOut();
+                    finish();
                     System.exit(0);
                 }
             }, 1000);
@@ -187,7 +197,7 @@ public class HomeActivity extends AppCompatActivity
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
+        return false;
     }
 
     public void onSignOutButtonClick(View view) {

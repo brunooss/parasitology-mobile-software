@@ -80,6 +80,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <ProgressBar
+            android:id="@+id/progressBarCategoryComplete"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:progressTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/buttonCategoryNext2" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewTeste3" app:layout_constraintTop_toTopOf="parent"/>
         <Button
             android:id="@+id/buttonCategoryNext2"
             android:layout_width="100dp"

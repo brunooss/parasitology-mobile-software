@@ -2,6 +2,7 @@ package com.android.parasitologymobilesoftware;
 
 import android.os.Bundle;
 
+import android.os.Handler;
 import android.util.Log;
 import android.widget.RadioGroup;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,6 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class StudentPreferencesFragment extends Fragment {
 
@@ -101,9 +103,9 @@ public class StudentPreferencesFragment extends Fragment {
 
                 alertState = documentSnapshot.getBoolean("alert state");
                 if (alertState)
-                    buttonAlert.setBackground(getActivity().getDrawable(R.drawable.custom_linear_layout_alert_true));
+                    buttonAlert.setBackground(Objects.requireNonNull(getActivity()).getDrawable(R.drawable.custom_linear_layout_alert_true));
                 else {
-                    buttonAlert.setBackground(getActivity().getDrawable(R.drawable.custom_linear_layout_alert_false));
+                    buttonAlert.setBackground(Objects.requireNonNull(getActivity()).getDrawable(R.drawable.custom_linear_layout_alert_false));
                     buttonSetCalendar.setElevation(0);
                     buttonSetCalendar.setClickable(false);
                 }
@@ -125,7 +127,12 @@ public class StudentPreferencesFragment extends Fragment {
                 Log.i("StudentPreferenceFragment", "vamos entender melhor isso");
             }
         });
-        progressBar.setProgress(progressToGo, true);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                progressBar.setProgress(progressToGo, true);
+            }
+        }, 1000);
         Log.d("StudentPreferenceFragment", "Everything ok here. Our new app progress is: "+progressToGo);
     }
 
