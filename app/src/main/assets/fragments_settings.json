@@ -513,7 +513,7 @@
     "categoryName" : "Malária",
     "numberOfTabs" : 1,
     "parentCategory" : "Protozoários",
-    "nextCategoryId" : 2131361918 ,
+    "nextCategoryId" : 2131361918,
     "concludeProgress" : 70,
     "tabs" : [
       {
@@ -524,19 +524,67 @@
       }
     ]
   },
-
   {
     "categoryName" : "Toxoplasmose",
-    "numberOfTabs" : 1,
+    "numberOfTabs" : 11,
     "parentCategory" : "Protozoários",
-    "nextCategoryId" : 2131361912 ,
+    "nextCategoryId" : 2131361912,
     "concludeProgress" : 80,
     "tabs" : [
       {
-        "title" : "Informações:",
-        "type" : "textAndImage",
-        "text" : "<p>\n    &nbsp; &nbsp; A malária é uma doença causada por protozoários do gênero <i><b>Plasmodium</b></i> (<i>P. falciparum</i>, <i>P. vivax</i> e <i>P. malariae</i>), os quais pertencem ao filo <i>Apicomplexa</i> e à família <i>Plasmodiidae</i>. Tal doença, apesar de quase erradicada na década de 1950, ainda é um grave problema para a saúde mundial, uma vez que são registrados, anualmente, cerca de 500 mil novos casos, existindo por volta de 200 milhões de pessoas infectadas no mundo. Outro problema é a alta taxa de mortalidade que a doença causa, com um valor aproximado de dois milhões de mortes por ano, sendo a doença parasitária que mais mata no mundo.\n    Essa parasitose ocorria em praticamente todos os continentes, mas foi erradicada nos países desenvolvidos e hoje está restrita à América Latina, à África, à Ásia e à parte insular da Oceania. Esse fato comprova a urgência em investimentos nas áreas de saúde e educação sanitária nos países em desenvolvimento, uma vez que, unidas ao combate ao vetor e ao tratamento dos indivíduos já infectados, são as principais formas de profilaxia da doença. No Brasil, é uma endemia que acomete a região amazônica.\n    O ciclo de vida do plasmódio é heteroxênico, com reprodução sexuada ocorrendo no mosquito do gênero Anopheles e reprodução assexuada, no humano. A figura abaixo representa o ciclo de vida de um <i>Plasmodium</i>:\n    &nbsp; &nbsp; O diagnóstico da doença é feito por meio de hemoscopia, processo no qual faz-se um esfregaço com uma gota de sangue do paciente e analisada a presença ou não dos protozoários. É recomendado que esse método seja feito na fase inicial, já que há maior quantidade de plasmódios no sangue periférico.\n    Os sintomas gerais da malária são anemia, por conta da destruição das hemácias, o paroxismo malárico, no qual o doente passa por alternâncias de frio e calor seguidas de sudorese, os episódios de febre com intervalos de cerca de 72 horas (febre terçã), podendo existir complicações maiores como insuficiência renal e lesões no cérebro.\n    Existem três mecanismos capazes de proteger um indivíduo da malária: a resistência adquirida, a imunidade inata e a resistência inata. O primeiro ocorre pela atuação do parasito no doente, com a estimulação do sistema imunitário capaz de eliminar a infecção ainda em seu começo ou mesmo reduzir a carga parasitária, diminuindo a letalidade da doença. Esse tipo de resposta é comum em áreas onde a doença é endêmica. No segundo, o indivíduo não desenvolve a doença ainda que esteja infectado devido a uma resposta imune que envolve receptores da membrana plasmática de macrófagos. O terceiro caso é o que a resistência independe de um contato anterior com o plasmódio. Essa situação ocorre em crianças com anemia falciforme e pessoas que não apresentam determinados antígenos.\n    O tratamento dos doentes é de fundamental importância para a profilaxia dessa parasitose e ocorre por meio de medicamentos antimaláricos que podem ser usados individualmente ou combinados administrados de acordo com a espécie do plasmódio, com a gravidade da doença, com a história de exposição anterior à infecção e com a idade do paciente. Alguns desses remédios são cloroquina, primaquina (usados para <i>P. vivax</i>, <i>P. ovale</i> e <i>P. malariae</i>), artemeter, lumefantrina, artesunato e mefloquina (<i>P. falciparum</i>).\n</p>",
-        "imageAddress" : "malaria1"
+        "title" : "Apresentação:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Toxoplasmose &eacute; a infec&ccedil;&atilde;o ou doen&ccedil;a causada pelo <em>Toxoplasma gondii</em>. A toxoplasmose &eacute; considerada a infec&ccedil;&atilde;o parasit&aacute;ria mais comum no mundo como preval&ecirc;ncia oscilado entre 10 e 68% da popula&ccedil;&atilde;o humana. &Eacute; uma zoonose t&iacute;pica, que ocorre em grande n&uacute;mero de animais, sendo os felinos os hospedeiros definitivos, j&aacute; que &eacute; neles que ocorre o ciclo sexuado do parasito. J&aacute; os demais animais e os humanos s&atilde;o os hospedeiros intermedi&aacute;rios, pois neles ocorrem apenas o ciclo assexuado do toxoplasma.</p>"
+      },
+      {
+        "title" : "Agente Etiológico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; O agente causador da toxoplasmose pertence ao filo Apicomplexa, &agrave; fam&iacute;lia Sarcocystidae e sua esp&eacute;cie &eacute; <em>Toxoplasma gondii.</em></p>"
+      },
+      {
+        "title" : "Morfologia e Hábitat:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp;O <em>Toxoplasma gondii</em> se apresenta sob tr&ecirc;s formas fundamentais: 1) <em>taquizo&iacute;tos</em>, encontrados nos l&iacute;quidos org&acirc;nico, especialmente durante a fase aguda da doen&ccedil;a; os taquizo&iacute;tos t&ecirc;m a forma de arco, da&iacute; o nome do parasito (<em>toxon&nbsp;</em>= arco); 2) bradizo&iacute;tos ou cistozo&iacute;tos, encontrados nos tecidos durante a fase cr&ocirc;nica da doen&ccedil;a. 3) oocistos, encontrados em fezes de felinos jovens n&atilde;o imunes (isto &eacute;, que se infectaram ainda jovens e apresentam o ciclo sexuado em seu intestino).</p>"
+      },
+      {
+        "title" : "Ciclo Biológico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp;O protozo&aacute;rio possui dois tipos de ciclos, semelhantes aos plasm&oacute;dios, agentes da Mal&aacute;ria.</p>\n<ul>\n    <li>Assexuado: que se passa em todos os mam&iacute;feros e aves do mundo, nos quais os taquizo&iacute;tos se reproduzem assexuadamente por endodiogenia ou endopoligenia. Por esses processos, o parasito se reproduz dentro dele mesmo, gerando dois ou v&aacute;rios filhos, que rompem a c&eacute;lula-m&atilde;e e v&atilde;o se disseminando pelo organismo do paciente. Ap&oacute;s a fase de multiplica&ccedil;&atilde;o intensa (fase aguda da doen&ccedil;a), o sistema imune atua no protozo&aacute;rio, que se refugia dentro dos tecidos, formando os bradizo&iacute;tos ou cistos, que permanecem ali por anos at&eacute; que o sistema imune se torne ineficiente e eles voltem a se reproduzir.</li>\n    <li>Sexuado: passa-se no intestino de felinos jovens, que se infectam ingerindo formas diferentes do parasito, quer pela amamenta&ccedil;&atilde;o na gata doente, quer ingerindo camundongos infectados. O parasito, ao chegar ao intestino do gatinho, passa por um processo de reprodu&ccedil;&atilde;o, que ocorre no epit&eacute;lio intestinal, com participa&ccedil;&atilde;o de gametas, cujo produto final constitui-se de oocistos que saem nas fezes desses felinos, indo infectar novos hospedeiros.</li>\n</ul>"
+      },
+      {
+        "title" : "Mecanismos e Formas de Transmissão:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp;Dos mecanismos e formas de transmiss&atilde;o do <em>T. gondii,&nbsp;</em>a preda&ccedil;&atilde;o (carnivorismo) e a ingest&atilde;o de oocistos s&atilde;o as mais importantes. Entre os humanos, os mecanismos a seguir podem ser elencados: 1) ingest&atilde;o de carne crua ou mal passada contendo bradizo&iacute;to os cistos; 2) a ingest&atilde;o de leite cru contendo taquizo&iacute;tos; 3) ingest&atilde;o de oocistos presentes em caixas de areia (onde gatos defecam e crian&ccedil;as brincam); 4) cong&ecirc;nita ou transplacent&aacute;ria: quando a m&atilde;e est&aacute; na fase aguda da doen&ccedil;a e os taquizo&iacute;tos atravessam a barreira placent&aacute;ria.</p>"
+      },
+      {
+        "title" : "Patogenia e Sintomatologia:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp;&Eacute; importante ressaltar que os altos &iacute;ndices de toxoplasmose nos mam&iacute;feros e aves adv&eacute;m da &ldquo;infec&ccedil;&atilde;o&rdquo; e n&atilde;o da &ldquo;doen&ccedil;a&rdquo; em si. Portanto, sua patogenia e a consequente sintomatologia dependeram muito da forma como o paciente se contaminou.</p>\n<p>&nbsp; &nbsp;A sintomatologia depender&aacute; do mecanismo de transmiss&atilde;o:</p>\n<ul>\n    <li>Quando a transmiss&atilde;o se d&aacute; por via oral (crian&ccedil;as e adultos), o paciente apresentar&aacute;: febre, mal-estar, enfartamento ganglionar cervical e fadiga; essa fase dura cerca de 1 a 2 semanas, quando o paciente sai da fase aguda e pela a&ccedil;&atilde;o do sistema imune, evolui para fase cr&ocirc;nica, n&atilde;o sentindo nada. Algumas vezes, em alguns pacientes, pode ocorrer, na fase aguda, o comprometimento da retina e da coroide, afetando a vis&atilde;o.</li>\n    <li>Quando a transmiss&atilde;o se d&aacute; congenitamente, o feto poder&aacute; apresentar diferentes altera&ccedil;&otilde;es conforme a fase da gesta&ccedil;&atilde;o: entre a concep&ccedil;&atilde;o e a sexta semana de gravidez, ocorre o aborto; entre a sexta e a d&eacute;cima sexta semana de gravidez, a crian&ccedil;a poder&aacute; nascer normal ou nascer com malforma&ccedil;&otilde;es grav&iacute;ssimas. Se o feto se infectar no terceiro trimestre da gesta&ccedil;&atilde;o, poder&aacute; nascer normal e apresentar sinais da doen&ccedil;a meses depois do parto.</li>\n</ul>"
+      },
+      {
+        "title" : "Imunidade:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp;As respostas imunes manifestam-se de formas variadas e efetivas, indicando uma longa e antiga rela&ccedil;&atilde;o evolutiva parasito/hospedeiro. Os n&iacute;veis das respostas imunol&oacute;gicas variam muito dependendo da fase da doen&ccedil;a: na fase aguda, quando h&aacute; uma prolifera&ccedil;&atilde;o ativa do parasito, os n&iacute;veis usualmente s&atilde;o elevados; j&aacute; na fase cr&ocirc;nica, quando h&aacute; uma redu&ccedil;&atilde;o acentuada da prolifera&ccedil;&atilde;o e parasito est&aacute; quiescente sob a forma de cistos (bradizo&iacute;tos), as taxas s&atilde;o baixas. Assim, a resposta imune &eacute; vari&aacute;vel.</p>"
+      },
+      {
+        "title" : "Diagnóstico:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp;Mesmo o diagn&oacute;stico parasitol&oacute;gico sendo pouco usado na rotina, pode-se obter taquizo&iacute;tos durante a fase aguda da doen&ccedil;a ao se centrifugar o sangue, o l&iacute;quor, o leite, a saliva, a placenta. Normalmente, o diagn&oacute;stico da toxoplasmose &eacute; feito por exames imunol&oacute;gicos, destacando-se a imunofluoresc&ecirc;ncia e a ELISA, que podem ser usados tanto na fase aguda quanto na cr&ocirc;nica. Por&eacute;m, &eacute; importante ressaltar que, em mulheres gr&aacute;vidas, o caso deve ser observado de forma mais espec&iacute;fica. &nbsp;&nbsp;</p>"
+      },
+      {
+        "title" : "Epidemiologia:",
+        "type" : "text",
+        "text" : "<ul>\n    <li>Distribui&ccedil;&atilde;o geogr&aacute;fica: mundial;</li>\n    <li>Fonte de infec&ccedil;&atilde;o: todos os animais dom&eacute;sticos, principalmente o gato jovem, verdadeiro reservat&oacute;rio do protozo&aacute;rio.</li>\n    <li>Formas de transmiss&atilde;o: taquizo&iacute;tos, bradizo&iacute;tos ou oocistos, presentes respectivamente nos l&iacute;quidos org&acirc;nicos, nos m&uacute;sculos, tecidos e nas fezes de gato jovem.</li>\n    <li>Ve&iacute;culos de transmiss&atilde;o: ingest&atilde;o das formas citadas, ou transmiss&atilde;o cong&ecirc;nita por taquizo&iacute;tos.</li>\n    <li>Via de penetra&ccedil;&atilde;o: boca ou placenta.</li>\n</ul>"
+      },
+      {
+        "title" : "Profilaxia:",
+        "type" : "text",
+        "text" : "<ul>\n    <li>&nbsp; &nbsp;Consiste nas seguintes medidas: 1) n&atilde;o ingerir nenhum tipo de alimento de origem animal cru ou malcozido; 2) n&atilde;o deixar gatos frequentarem caixas de areia onde as crian&ccedil;as costumam brincar; 3) lavar bem verduras ingeridas cruas; 4) beber somente &aacute;gua filtrada ou fervida; 5) acompanhar sorologicamente as gestantes, especialmente as que t&ecirc;m hist&oacute;ria de aborto.</li>\n</ul>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "<ul>\n    <li>&nbsp; &nbsp;Em crian&ccedil;as e adultos, o tratamento &eacute; oral e relativamente f&aacute;cil de ser feito, pois existem medicamentos eficientes. Entretanto, para a fase cr&ocirc;nica, n&atilde;o existe tratamento, e a terap&ecirc;utica de gestantes requer muito cuidado.</li>\n</ul>"
       }
     ]
   },
@@ -596,10 +644,9 @@
     "concludeProgress" : 100,
     "tabs" : [
       {
-        "title" : "Informações:",
-        "type" : "textAndImage",
-        "text" : "<p>\n    &nbsp; &nbsp; A malária é uma doença causada por protozoários do gênero <i><b>Plasmodium</b></i> (<i>P. falciparum</i>, <i>P. vivax</i> e <i>P. malariae</i>), os quais pertencem ao filo <i>Apicomplexa</i> e à família <i>Plasmodiidae</i>. Tal doença, apesar de quase erradicada na década de 1950, ainda é um grave problema para a saúde mundial, uma vez que são registrados, anualmente, cerca de 500 mil novos casos, existindo por volta de 200 milhões de pessoas infectadas no mundo. Outro problema é a alta taxa de mortalidade que a doença causa, com um valor aproximado de dois milhões de mortes por ano, sendo a doença parasitária que mais mata no mundo.\n    Essa parasitose ocorria em praticamente todos os continentes, mas foi erradicada nos países desenvolvidos e hoje está restrita à América Latina, à África, à Ásia e à parte insular da Oceania. Esse fato comprova a urgência em investimentos nas áreas de saúde e educação sanitária nos países em desenvolvimento, uma vez que, unidas ao combate ao vetor e ao tratamento dos indivíduos já infectados, são as principais formas de profilaxia da doença. No Brasil, é uma endemia que acomete a região amazônica.\n    O ciclo de vida do plasmódio é heteroxênico, com reprodução sexuada ocorrendo no mosquito do gênero Anopheles e reprodução assexuada, no humano. A figura abaixo representa o ciclo de vida de um <i>Plasmodium</i>:\n    &nbsp; &nbsp; O diagnóstico da doença é feito por meio de hemoscopia, processo no qual faz-se um esfregaço com uma gota de sangue do paciente e analisada a presença ou não dos protozoários. É recomendado que esse método seja feito na fase inicial, já que há maior quantidade de plasmódios no sangue periférico.\n    Os sintomas gerais da malária são anemia, por conta da destruição das hemácias, o paroxismo malárico, no qual o doente passa por alternâncias de frio e calor seguidas de sudorese, os episódios de febre com intervalos de cerca de 72 horas (febre terçã), podendo existir complicações maiores como insuficiência renal e lesões no cérebro.\n    Existem três mecanismos capazes de proteger um indivíduo da malária: a resistência adquirida, a imunidade inata e a resistência inata. O primeiro ocorre pela atuação do parasito no doente, com a estimulação do sistema imunitário capaz de eliminar a infecção ainda em seu começo ou mesmo reduzir a carga parasitária, diminuindo a letalidade da doença. Esse tipo de resposta é comum em áreas onde a doença é endêmica. No segundo, o indivíduo não desenvolve a doença ainda que esteja infectado devido a uma resposta imune que envolve receptores da membrana plasmática de macrófagos. O terceiro caso é o que a resistência independe de um contato anterior com o plasmódio. Essa situação ocorre em crianças com anemia falciforme e pessoas que não apresentam determinados antígenos.\n    O tratamento dos doentes é de fundamental importância para a profilaxia dessa parasitose e ocorre por meio de medicamentos antimaláricos que podem ser usados individualmente ou combinados administrados de acordo com a espécie do plasmódio, com a gravidade da doença, com a história de exposição anterior à infecção e com a idade do paciente. Alguns desses remédios são cloroquina, primaquina (usados para <i>P. vivax</i>, <i>P. ovale</i> e <i>P. malariae</i>), artemeter, lumefantrina, artesunato e mefloquina (<i>P. falciparum</i>).\n</p>",
-        "imageAddress" : "malaria1"
+        "title" : "Categoria não disponível:",
+        "type" : "text",
+        "text" : "<p>\n    &nbsp; &nbsp; Esta categoria ainda não está disponível. Aguarde futuras atualizações!"
       }
     ]
   },
@@ -1147,12 +1194,12 @@
     "nextCategoryId" : 2131361891,
     "concludeProgress" : 66,
     "tabs" : [
-    {
-      "title" : "Semelhanças com Ancilostomíase:",
-      "type" : "text",
-      "text" : "<p>&nbsp; &nbsp; Devido &agrave; sua semelhan&ccedil;a epidemiol&oacute;gica, profil&aacute;tica, quanto &agrave; forma de diagn&oacute;stico e em rela&ccedil;&atilde;o &agrave; morfologia dos parasitos respons&aacute;veis com a ancilostom&iacute;ase, a necator&iacute;ase foi tratada no cap&iacute;tulo anterior, juntamente com a doen&ccedil;a anteriormente citada.</p>"
-    }
-  ]
+      {
+        "title" : "Semelhanças com Ancilostomíase:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; Devido &agrave; sua semelhan&ccedil;a epidemiol&oacute;gica, profil&aacute;tica, quanto &agrave; forma de diagn&oacute;stico e em rela&ccedil;&atilde;o &agrave; morfologia dos parasitos respons&aacute;veis com a ancilostom&iacute;ase, a necator&iacute;ase foi tratada no cap&iacute;tulo anterior, juntamente com a doen&ccedil;a anteriormente citada.</p>"
+      }
+    ]
   },
   {
     "categoryName" : "Enterobíase",
@@ -1266,32 +1313,32 @@
   },
   {
     "categoryName" : "Larva Migrans",
-      "numberOfTabs" : 4,
+    "numberOfTabs" : 4,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361895,
     "concludeProgress" : 86,
-      "tabs" : [
-        {
-          "title" : "Introdução:",
-          "type" : "text",
-          "text" : "<p>&nbsp; &nbsp; A larva <em>migrans&nbsp;</em>&eacute; uma s&iacute;ndrome provocada por larvas de helmintos parasitos de animais que, ao alcan&ccedil;ar os humanos, migram na pele ou nas v&iacute;sceras dos pacientes. Dessa forma, &eacute; poss&iacute;vel dividi-las em dois tipos: cut&acirc;nea e visceral, de modo que ambas possuem os humanos como hospedeiros e s&atilde;o acidentais. Elas ocorrem no mundo todo, pois os humanos cada vez mais vivem com c&atilde;es e gatos.</p>"
-        },
-        {
-          "title" : "<p><span>Larva <em>migrans</em> Cut&acirc;nea:</span></p>",
-          "type" : "text",
-          "text" : "<p>&nbsp; &nbsp; &Eacute; tamb&eacute;m chamada de dermatite pruriginosa ou &ldquo;bicho geogr&aacute;fico&rdquo;, pois a larva forma um contorno sinuoso na pele. As principais esp&eacute;cies causadoras s&atilde;o: <em>Ancylostoma caninum</em>, <em>A. braziliense</em>, <em>A. tubaeforme&nbsp;</em>e <em>Uncinaria stonecephala</em>, que infectam o intestino delgado de c&atilde;es e gatos; <em>Bunostomum phlebotomum</em>, que ocorre no intestino delgado de bovinos. Esses ovos saem nas fezes dos respectivos animais e, chegando ao solo areno-argiloso, sombreado e &uacute;mido, liberam as larvas, que depois se transformam em larvas filarioides infectantes, que podem penetrar da pele de humanos (nos p&eacute;s, ao andar descal&ccedil;o, nas n&aacute;degas ao se assentar no ch&atilde;o com roupas de banho, por exemplo) e, a partir disso, poder&atilde;o circular entre a derme e a epiderme (o que causa dor ao indiv&iacute;duo, o que implica em retir&aacute;-la) ou morrer por meio da terap&ecirc;utica apropriada, que &eacute; bem eficiente. &nbsp;Essa zoonose deve ser combatida dando um destino adequado &agrave;s fezes dos animais citados anteriormente, muitas vezes presentes em parques, praias e jardins. Existem casos de cegueira no brasil proveniente dessas larvas, denominada neurorretinite subaguda difusa unilateral (NSDU).</p>"
-        },
-        {
-          "title" : "<p><span>Larva <em>migrans</em> Visceral:</span></p>",
-          "type" : "text",
-          "text" : "<p>&nbsp; &nbsp; &nbsp;As larvas dos helmintos circulam pelas v&iacute;sceras (principalmente pelo f&iacute;gado, pelos pulm&otilde;es e pelo globo ocular; embora o c&eacute;rebro e os linfonodos tamb&eacute;m possam ser atingidos). A principal esp&eacute;cie respons&aacute;vel por essa manifesta&ccedil;&atilde;o &eacute; o <em>Toxocara canis</em>, comum no intestino delgado de c&atilde;es, raposas, gatos e lobos, em todo o mundo. Uma grande quantidade de ovos &eacute; eliminada nas fezes dos hospedeiros, que viram embrionados no exterior. Os animais se infectam ingerindo ovos que contenham a larva infectante (L3), dando continuidade ao ciclo. Se os humanos ingerirem os ovos, as larvas ir&atilde;o eclodir no intestino delgado do paciente, penetrando na mucosa do &oacute;rg&atilde;o, onde podem alcan&ccedil;ar a circula&ccedil;&atilde;o sangu&iacute;nea e atingir diversas outras partes do corpo. De acordo com a quantidade e com o local onde as larvas se encontram, os pacientes v&atilde;o desenvolver manifesta&ccedil;&otilde;es cl&iacute;nicas diferentes, podendo ocorrer manifesta&ccedil;&otilde;es hep&aacute;ticas, pulmonares, cerebrais, oculares etc. Ap&oacute;s aproximadamente 18 meses, por conta de um processo imunoinflamat&oacute;rio, as manifesta&ccedil;&otilde;es cl&iacute;nicas desaparecem espontaneamente, quando as larvas morrem e a rea&ccedil;&atilde;o regride. A terap&ecirc;utica s&oacute; &eacute; recomendada em pacientes sintom&aacute;ticos, ap&oacute;s prescri&ccedil;&atilde;o m&eacute;dica.</p>"
-        },
-        {
-          "title" : "Tratamento:",
-          "type" : "text",
-          "text" : "<p>&nbsp; &nbsp; O tratamento ocorre por meio de medicamentos espec&iacute;ficos.</p>"
-        }
-      ]
+    "tabs" : [
+      {
+        "title" : "Introdução:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; A larva <em>migrans&nbsp;</em>&eacute; uma s&iacute;ndrome provocada por larvas de helmintos parasitos de animais que, ao alcan&ccedil;ar os humanos, migram na pele ou nas v&iacute;sceras dos pacientes. Dessa forma, &eacute; poss&iacute;vel dividi-las em dois tipos: cut&acirc;nea e visceral, de modo que ambas possuem os humanos como hospedeiros e s&atilde;o acidentais. Elas ocorrem no mundo todo, pois os humanos cada vez mais vivem com c&atilde;es e gatos.</p>"
+      },
+      {
+        "title" : "<p><span>Larva <em>migrans</em> Cut&acirc;nea:</span></p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; &Eacute; tamb&eacute;m chamada de dermatite pruriginosa ou &ldquo;bicho geogr&aacute;fico&rdquo;, pois a larva forma um contorno sinuoso na pele. As principais esp&eacute;cies causadoras s&atilde;o: <em>Ancylostoma caninum</em>, <em>A. braziliense</em>, <em>A. tubaeforme&nbsp;</em>e <em>Uncinaria stonecephala</em>, que infectam o intestino delgado de c&atilde;es e gatos; <em>Bunostomum phlebotomum</em>, que ocorre no intestino delgado de bovinos. Esses ovos saem nas fezes dos respectivos animais e, chegando ao solo areno-argiloso, sombreado e &uacute;mido, liberam as larvas, que depois se transformam em larvas filarioides infectantes, que podem penetrar da pele de humanos (nos p&eacute;s, ao andar descal&ccedil;o, nas n&aacute;degas ao se assentar no ch&atilde;o com roupas de banho, por exemplo) e, a partir disso, poder&atilde;o circular entre a derme e a epiderme (o que causa dor ao indiv&iacute;duo, o que implica em retir&aacute;-la) ou morrer por meio da terap&ecirc;utica apropriada, que &eacute; bem eficiente. &nbsp;Essa zoonose deve ser combatida dando um destino adequado &agrave;s fezes dos animais citados anteriormente, muitas vezes presentes em parques, praias e jardins. Existem casos de cegueira no brasil proveniente dessas larvas, denominada neurorretinite subaguda difusa unilateral (NSDU).</p>"
+      },
+      {
+        "title" : "<p><span>Larva <em>migrans</em> Visceral:</span></p>",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; &nbsp;As larvas dos helmintos circulam pelas v&iacute;sceras (principalmente pelo f&iacute;gado, pelos pulm&otilde;es e pelo globo ocular; embora o c&eacute;rebro e os linfonodos tamb&eacute;m possam ser atingidos). A principal esp&eacute;cie respons&aacute;vel por essa manifesta&ccedil;&atilde;o &eacute; o <em>Toxocara canis</em>, comum no intestino delgado de c&atilde;es, raposas, gatos e lobos, em todo o mundo. Uma grande quantidade de ovos &eacute; eliminada nas fezes dos hospedeiros, que viram embrionados no exterior. Os animais se infectam ingerindo ovos que contenham a larva infectante (L3), dando continuidade ao ciclo. Se os humanos ingerirem os ovos, as larvas ir&atilde;o eclodir no intestino delgado do paciente, penetrando na mucosa do &oacute;rg&atilde;o, onde podem alcan&ccedil;ar a circula&ccedil;&atilde;o sangu&iacute;nea e atingir diversas outras partes do corpo. De acordo com a quantidade e com o local onde as larvas se encontram, os pacientes v&atilde;o desenvolver manifesta&ccedil;&otilde;es cl&iacute;nicas diferentes, podendo ocorrer manifesta&ccedil;&otilde;es hep&aacute;ticas, pulmonares, cerebrais, oculares etc. Ap&oacute;s aproximadamente 18 meses, por conta de um processo imunoinflamat&oacute;rio, as manifesta&ccedil;&otilde;es cl&iacute;nicas desaparecem espontaneamente, quando as larvas morrem e a rea&ccedil;&atilde;o regride. A terap&ecirc;utica s&oacute; &eacute; recomendada em pacientes sintom&aacute;ticos, ap&oacute;s prescri&ccedil;&atilde;o m&eacute;dica.</p>"
+      },
+      {
+        "title" : "Tratamento:",
+        "type" : "text",
+        "text" : "<p>&nbsp; &nbsp; O tratamento ocorre por meio de medicamentos espec&iacute;ficos.</p>"
+      }
+    ]
   },
   {
     "categoryName" : "Filarioses",
