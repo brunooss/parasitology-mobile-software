@@ -5,10 +5,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
 import android.webkit.WebView;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -71,7 +68,7 @@ public class CategoryFragment extends Fragment {
 
         email = firebaseAuth.getCurrentUser().getEmail();
 
-        View rootView = inflater.inflate(R.layout.fragment_category, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_category, container, false);
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
         webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
@@ -101,6 +98,9 @@ public class CategoryFragment extends Fragment {
             buttonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    ProgressBar progressBar = rootView.findViewById(R.id.progressBarCategoryComplete);
+                    progressBar.setVisibility(View.VISIBLE);
+                    buttonNext.setClickable(false);
                     nextCategoryId = getArguments().getInt("nextCategoryId");
                     categoryParent = getArguments().getString("parentCategory");
                     setConcludeProgress(getArguments().getInt("concludeProgress"));
@@ -123,7 +123,7 @@ public class CategoryFragment extends Fragment {
 
                             Log.d("CategoryFragment", "Status da categoria: " + categoryStatus);
 
-                            if (categoryStatus == false) {
+                            if (!categoryStatus) {
 
                                 dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress")
                                         .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -169,6 +169,7 @@ public class CategoryFragment extends Fragment {
                             }
                         }
                     });
+                    progressBar.setVisibility(View.INVISIBLE);
                     getActivity().finish();
                 }
             });

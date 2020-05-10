@@ -63,7 +63,6 @@ public class FeedbackActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent intent = new Intent(FeedbackActivity.this, HomeActivity.class);
-                startActivity(intent);
             }
         });
         alertDialogConfirmFeedback = builderDialogConfirmFeedback.create();

@@ -28,6 +28,7 @@ import com.google.firebase.firestore.SetOptions;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.ConcurrentNavigableMap;
 
 public class HomeFragment extends Fragment {
@@ -100,7 +101,6 @@ public class HomeFragment extends Fragment {
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        Log.i("HomeFragment",  "O onClick das categorias estão sendo criados e chamados!");
                                         onCategoryButtonClick(view);
                                     }
                                 });
@@ -141,8 +141,8 @@ public class HomeFragment extends Fragment {
                 else if (progressBarArtropodesValue <= 100) {
                     for (int i = 0; i < artropodesValuesConclude.length; i++) {
                         if(progressBarArtropodesValue == artropodesValuesConclude[i]) {
-                            for (int b = 0; b <= i + 7 + 10 + 16; b++) {
-                                rootView.findViewById(homeActivity.categoriesIds[b]).setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
+                            for (int b = 0; b <= i + 7 + 10 + 16 && b < 38; b++) {
+                                rootView.findViewById(homeActivity.categoriesIds[b]).setBackground(Objects.requireNonNull(getActivity()).getDrawable(R.drawable.category_button_background_filled));
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
@@ -159,7 +159,7 @@ public class HomeFragment extends Fragment {
 
         for (int i = 1; i < homeActivity.categoriesIds.length; i++) {
             if (i < 7) {
-                rootView.findViewById(homeActivity.categoriesIds[i]).findViewById(R.id.imageViewCategoryBackgroundIcon).setBackgroundResource(R.drawable.icons8_books_64);
+                rootView.findViewById(homeActivity.categoriesIds[i]).findViewById(R.id.imageViewCategoryBackgroundIcon).setBackgroundResource(R.drawable.icons8_open_book_50);
             } else if (i > 7 && i < 17) {
                 rootView.findViewById(homeActivity.categoriesIds[i]).findViewById(R.id.imageViewCategoryBackgroundIcon).setBackgroundResource(R.drawable.icons8_microorganismos_50);
             } else if (i > 17 && i < 33) {
@@ -188,11 +188,9 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this category
         return rootView;
     }
-
     @Override
     public void onResume() {
         super.onResume();
-
         CategoryFragment categoryFragment = new CategoryFragment();
 
         parentCategory = categoryFragment.getCategoryParent();
@@ -373,7 +371,7 @@ public class HomeFragment extends Fragment {
             // Passing category's name to activity
             intent.putExtras(extra);
 
-            Log.i("HomeFragment", "nome da categoria ao clicar o botão: "+category);
+            Log.i("HomeFragment", "nome da categoria ao clicar o botão: "+ category);
 
             startActivity(intent);
         }
