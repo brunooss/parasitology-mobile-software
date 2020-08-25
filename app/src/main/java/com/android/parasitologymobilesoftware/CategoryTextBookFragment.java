@@ -1,6 +1,5 @@
 package com.android.parasitologymobilesoftware;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
@@ -8,7 +7,6 @@ import android.webkit.WebView;
 import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +16,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.SetOptions;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +26,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CategoryFragment extends Fragment {
+public class CategoryTextBookFragment extends Fragment {
 
     static InputStream inputStream;
     private WebView webViewText;
@@ -42,12 +39,14 @@ public class CategoryFragment extends Fragment {
 
     private String email;
 
+    private StudentPreferencesFragment studentPreferencesFragment;
+
     private static String categoryParent = null;
     private static int nextCategoryId = 0, concludeProgress = 0;
 
     private static boolean categoryStatus;
 
-    private int progressApp;
+    private static int progressApp = -1;
     private String databaseCategoryProgress;
 
     public static String category = "notNull";
@@ -66,9 +65,11 @@ public class CategoryFragment extends Fragment {
         dataBase = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
+        studentPreferencesFragment = new StudentPreferencesFragment();
+
         email = firebaseAuth.getCurrentUser().getEmail();
 
-        final View rootView = inflater.inflate(R.layout.fragment_category, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_category_textbook, container, false);
         TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
         webViewText = rootView.findViewById(R.id.webViewCategoryText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
@@ -104,7 +105,7 @@ public class CategoryFragment extends Fragment {
                     nextCategoryId = getArguments().getInt("nextCategoryId");
                     categoryParent = getArguments().getString("parentCategory");
                     setConcludeProgress(getArguments().getInt("concludeProgress"));
-//                    CategoryActivity categoryActivity = (CategoryActivity) getActivity();
+//                    CategoryTextBookActivity categoryActivity = (CategoryTextBookActivity) getActivity();
 //                    HomeActivity homeActivity = new HomeActivity();
 //                    for(int i = 0; i < homeActivity.categoriesIds.length; i++) {
 //                        if(homeActivity.categoriesIds[i] == categoryActivity.categoryId) {
@@ -119,9 +120,9 @@ public class CategoryFragment extends Fragment {
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
                             setCategoryStatus(documentSnapshot.getBoolean(category));
 
-                            Log.i("CategoryFragment", "solicitou status da categoria do banco de dados");
+                            Log.i("CategoryTextBookFragment", "solicitou status da categoria do banco de dados");
 
-                            Log.d("CategoryFragment", "Status da categoria: " + categoryStatus);
+                            Log.d("CategoryTextBookFragment", "Status da categoria: " + categoryStatus);
 
                             if (!categoryStatus) {
 
@@ -129,7 +130,7 @@ public class CategoryFragment extends Fragment {
                                         .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                     @Override
                                     public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                        Log.d("CategoryFragment", ""+getConcludeProgress());
+                                        Log.d("CategoryTextBookFragment", ""+getConcludeProgress());
                                         switch (categoryParent) {
                                             case "Introdução":
                                                 //setConcludeProgress(documentSnapshot.getLong("progress introduction").intValue());
@@ -152,7 +153,9 @@ public class CategoryFragment extends Fragment {
                                                 progressApp = 75 + concludeProgress / 4;
                                                 break;
                                         }
-                                        Log.d("CategoryFragment", "Progresso do app: "+progressApp);
+                                        studentPreferencesFragment.setProgressToGo(progressApp);
+
+                                        Log.d("CategoryTextBookFragment", "Progresso do app: "+progressApp);
                                         Map<String, Object> newProgressInfo = new HashMap<>();
                                         newProgressInfo.put(databaseCategoryProgress, concludeProgress);
                                         newProgressInfo.put("progress status", progressApp);
@@ -160,12 +163,12 @@ public class CategoryFragment extends Fragment {
                                                 .update(newProgressInfo);
                                     }
                                 });
-                                Log.d("CategoryFragment", "Category's status: " + categoryStatus);
-                                Log.d("CategoryFragment", "Next Category's id received here: " + nextCategoryId);
-                                Log.d("CategoryFragment", "Category's parent received here: " + categoryParent);
-                                Log.d("CategoryFragment", "O progresso concluído na categoria é: " + concludeProgress);
+                                Log.d("CategoryTextBookFragment", "Category's status: " + categoryStatus);
+                                Log.d("CategoryTextBookFragment", "Next Category's id received here: " + nextCategoryId);
+                                Log.d("CategoryTextBookFragment", "Category's parent received here: " + categoryParent);
+                                Log.d("CategoryTextBookFragment", "O progresso concluído na categoria é: " + concludeProgress);
                             } else {
-                                Log.i("CategoryFragment", "Esta categoria já está feita");
+                                Log.i("CategoryTextBookFragment", "Esta categoria já está feita");
                             }
                         }
                     });
@@ -179,7 +182,7 @@ public class CategoryFragment extends Fragment {
     }
 
 
-    public static CategoryFragment newInstance(int position) {
+    public static CategoryTextBookFragment newInstance(int position) {
         Bundle args = new Bundle();
         HomeFragment homeFragment = new HomeFragment();
 
@@ -232,7 +235,7 @@ public class CategoryFragment extends Fragment {
 
         args.putInt("position", position);
 
-        CategoryFragment fragment = new CategoryFragment();
+        CategoryTextBookFragment fragment = new CategoryTextBookFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -274,10 +277,10 @@ public class CategoryFragment extends Fragment {
     }
 
     public static void setCategory(String category) {
-        CategoryFragment.category = category;
+        CategoryTextBookFragment.category = category;
     }
 
     public static void setCategoryId(int categoryId) {
-        CategoryFragment.categoryId = categoryId;
+        CategoryTextBookFragment.categoryId = categoryId;
     }
 }

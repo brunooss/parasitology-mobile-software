@@ -1,19 +1,14 @@
 package com.android.parasitologymobilesoftware;
 
 import android.app.*;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.NotificationCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.GravityCompat;
@@ -27,7 +22,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.core.Tag;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -64,7 +58,7 @@ public class HomeActivity extends AppCompatActivity
 
     private AlertDialog alertDialogFeedback;
 
-    private CategoryFragment categoryFragment;
+    private CategoryTextBookFragment categoryTextBookFragment;
 
     public int [] categoriesIds = {R.id.categoryHomeFragmentIntroduction, R.id.categoryHomeFragmentIntroductionEcologia,
             R.id.categoryHomeFragmentIntroductionConceitosGerais, R.id.categoryHomeFragmentIntroductionClassificacao,
@@ -91,7 +85,7 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        categoryFragment = new CategoryFragment();
+        categoryTextBookFragment = new CategoryTextBookFragment();
 
         progressBarProtozoarios = findViewById(R.id.progressAppProtozoarios);
         progressBarHelmintos = findViewById(R.id.progressAppHelmintos);
@@ -188,7 +182,11 @@ public class HomeActivity extends AppCompatActivity
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    FirebaseAuth.getInstance().signOut();
+                    try {
+                        FirebaseAuth.getInstance().signOut();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     finish();
                     System.exit(0);
                 }
@@ -210,8 +208,6 @@ public class HomeActivity extends AppCompatActivity
 
         buttonAlert = (Button) findViewById(R.id.buttonStudentPreferencesSetAlert);
         buttonSetCalendar = (Button) findViewById(R.id.buttonStudentPreferencesSetDate);
-        progressBarIntroduction = (ProgressBar) findViewById(R.id.progressAppIntroduction);
-        progressBarIntroduction.setProgress(100, true);
 
         if (alertState) {
             buttonAlert.setBackground(getDrawable(R.drawable.custom_linear_layout_alert_false));
