@@ -20,7 +20,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Feedback" />
         <activity
-            android:name=".CategoryActivity"
+            android:name=".CategoryTextBookActivity"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.CategoryActivity"
             android:screenOrientation="portrait">
@@ -62,6 +62,18 @@
             android:largeHeap="true"
             android:parentActivityName=".SigninActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryMenuActivity"
+            android:largeHeap="true"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CategoryActivity"/>
+        <activity
+            android:name=".CategoryVideosActivity"
+            android:largeHeap="true"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CategoryActivity"/>
     </application>
 
 </manifest>

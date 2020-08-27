@@ -1,35 +1,26 @@
 package com.android.parasitologymobilesoftware;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.SetOptions;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-import java.util.concurrent.ConcurrentNavigableMap;
 
 public class HomeFragment extends Fragment {
 
@@ -51,7 +42,7 @@ public class HomeFragment extends Fragment {
     private View rootView;
 
     public static int categoryId;
-    private CategoryFragment categoryFragment;
+    private CategoryTextBookFragment categoryTextBookFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -191,13 +182,13 @@ public class HomeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        CategoryFragment categoryFragment = new CategoryFragment();
+        CategoryTextBookFragment categoryTextBookFragment = new CategoryTextBookFragment();
 
-        parentCategory = categoryFragment.getCategoryParent();
-        progressToGo = categoryFragment.getConcludeProgress();
-        nextCategoryId = categoryFragment.getNextCategoryId();
-        categoryStatus = categoryFragment.isCategoryStatus();
-        category = categoryFragment.getCategory();
+        parentCategory = categoryTextBookFragment.getCategoryParent();
+        progressToGo = categoryTextBookFragment.getConcludeProgress();
+        nextCategoryId = categoryTextBookFragment.getNextCategoryId();
+        categoryStatus = categoryTextBookFragment.isCategoryStatus();
+        category = categoryTextBookFragment.getCategory();
 
         if (!(parentCategory == null && progressToGo == 0 && nextCategoryId == 0)) {
             DocumentReference docRef = firebaseFirestore.collection("generalUserInfo").document(email).collection("specific info").document("progress categories");
@@ -244,8 +235,8 @@ public class HomeFragment extends Fragment {
     }
 
     public void onCategoryButtonClick(View view) {
-        if (true) { //@Todo Arrumar isso ae
-            Intent intent = new Intent(getActivity(), CategoryActivity.class);
+        if (true) {
+            Intent intent = new Intent(getActivity(), CategoryMenuActivity.class);
             categoryId = view.getId();
 
             switch (categoryId) {

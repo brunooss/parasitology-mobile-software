@@ -37,7 +37,7 @@ public class StudentPreferencesFragment extends Fragment {
     private String completeName;
     //           private Button buttonReview;
 
-    private int progressToGo;
+    private int progressToGo = -1;
 
     private String schoolGrade;
 
@@ -117,27 +117,42 @@ public class StudentPreferencesFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
         Log.i("StudentPreferenceFragment", "OnResume");
-        docRef.collection("specific info").document("progress")
-                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-            @Override
-            public void onSuccess(DocumentSnapshot documentSnapshot) {
-                setProgressToGo(documentSnapshot.getLong("progress status").intValue());
-                Log.i("StudentPreferenceFragment", "vamos entender melhor isso");
-            }
-        });
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                progressBar.setProgress(progressToGo, true);
-            }
-        }, 1000);
-        Log.d("StudentPreferenceFragment", "Everything ok here. Our new app progress is: "+progressToGo);
+        Log.d("StudentPreferenceFragment", "Variavel Progress app: "+progressToGo);
+        if (getProgressToGo() == -1) {
+            // CategoryFrag não foi chamado
+            docRef.collection("specific info").document("progress")
+                    .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    setProgressToGo(documentSnapshot.getLong("progress status").intValue());
+                    Log.d("StudentPreferenceFragment", "if. Our app progress is from db: "+progressToGo);
+                }
+            });
+        } else {
+            // Category Frag já foi executado alguma vez!
+            progressBar.setProgress(getProgressToGo(), true);
+            Log.d("StudentPreferenceFragment", "Else. Our new app progress is: "+progressToGo);
+        }
+
+//        Log.i("StudentPreferenceFragment", "OnResume");
+//        docRef.collection("specific info").document("progress")
+//                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+//            @Override
+//            public void onSuccess(DocumentSnapshot documentSnapshot) {
+//                setProgressToGo(documentSnapshot.getLong("progress status").intValue());
+//                Log.i("StudentPreferenceFragment", "vamos entender melhor isso");
+//            }
+//        });
+//        Log.d("StudentPreferenceFragment", "Everything ok here. Our new app progress is: "+progressToGo);
     }
 
     public void setSchoolGrade(String schoolGrade){
         this.schoolGrade = schoolGrade;
+    }
+
+    public int getProgressToGo() {
+        return progressToGo;
     }
 
     public void setAlertState(boolean alertState){

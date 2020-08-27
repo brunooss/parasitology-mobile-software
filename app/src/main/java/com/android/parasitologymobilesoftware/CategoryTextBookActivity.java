@@ -1,16 +1,9 @@
 package com.android.parasitologymobilesoftware;
 
 import android.app.AlertDialog;
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.*;
-import android.webkit.WebView;
-import android.widget.Button;
-import android.widget.SearchView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,10 +19,10 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class CategoryActivity extends AppCompatActivity {
+public class CategoryTextBookActivity extends AppCompatActivity {
 
     //public String category = "Ascaridíase";
-    private static final String TAG = "CategoryActivity";
+    private static final String TAG = "CategoryTextBookActivity";
     public static int numberOfTabs;
 
     public String category;
@@ -44,13 +37,13 @@ public class CategoryActivity extends AppCompatActivity {
     private String thirdMessage = "? Seu progresso nesta categoria será perdido";
     private ViewPager viewPager;
 
-    private CategoryFragment fragment = new CategoryFragment();
+    private CategoryTextBookFragment fragment = new CategoryTextBookFragment();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.activity_category_textbook);
 
         Bundle extras = getIntent().getExtras();
         category = extras.getString("category");
@@ -58,13 +51,13 @@ public class CategoryActivity extends AppCompatActivity {
         Log.d(TAG, "Category received: " +category);
         Log.d(TAG, "Category Id received: " +categoryId);
 
-        // Alert Dialog config
+        // Exit Alert Dialog config
         secondMessage = category;
         LayoutInflater inflater = getLayoutInflater();
         dialogExitActivity = inflater.inflate(R.layout.dialog_change_exit_activity, null);
         textViewMessageExitActivity = dialogExitActivity.findViewById(R.id.textViewDialogMessageExitActivity);
         textViewMessageExitActivity.setText(firstMessage.concat(secondMessage.concat(thirdMessage)));
-        exitAlert = new AlertDialog.Builder(CategoryActivity.this, R.style.Theme_AppCompat_Light_Dialog_Alert)
+        exitAlert = new AlertDialog.Builder(CategoryTextBookActivity.this, R.style.Theme_AppCompat_Light_Dialog_Alert)
                 .setView(dialogExitActivity);
         exitAlert.setNegativeButton("Retomar", new DialogInterface.OnClickListener() {
             @Override
@@ -131,7 +124,7 @@ public class CategoryActivity extends AppCompatActivity {
 
 
         viewPager = findViewById(R.id.viewPagerSubject);
-        viewPager.setAdapter(new CategoryFragmentPagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(new CategoryTextBookFragmentPagerAdapter(getSupportFragmentManager()));
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
