@@ -41,6 +41,8 @@ public class HomeFragment extends Fragment {
     private HomeActivity homeActivity = new HomeActivity();
     private View rootView;
 
+    private ProgressBar progressBar;
+
     public static int categoryId;
     private CategoryTextBookFragment categoryTextBookFragment;
 
@@ -67,6 +69,8 @@ public class HomeFragment extends Fragment {
         progressBarProtozoarios = rootView.findViewById(R.id.progressAppProtozoarios);
         progressBarHelmintos = rootView.findViewById(R.id.progressAppHelmintos);
         progressBarArtropodes = rootView.findViewById(R.id.progressAppArtropodes);
+
+        //progressBar = rootView.findViewById(R.id.progressBarFragmentHome);
 
         DocumentReference docRef = firebaseFirestore.collection("generalUserInfo").document(email).collection("specific info").document("progress");
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -236,6 +240,7 @@ public class HomeFragment extends Fragment {
 
     public void onCategoryButtonClick(View view) {
         if (true) {
+            //setProgressBar();
             Intent intent = new Intent(getActivity(), CategoryMenuActivity.class);
             categoryId = view.getId();
 
@@ -379,5 +384,10 @@ public class HomeFragment extends Fragment {
 
     public static int getCategoryId() {
         return categoryId;
+    }
+
+    public void setProgressBar(){
+
+        progressBar.setVisibility(View.VISIBLE);
     }
 }
