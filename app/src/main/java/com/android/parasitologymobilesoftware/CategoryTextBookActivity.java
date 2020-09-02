@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 import android.view.*;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -84,7 +83,7 @@ public class CategoryTextBookActivity extends AppCompatActivity {
 
 
         // Toolbar config
-        final Toolbar toolbar = findViewById(R.id.toolbarSubject);
+        final Toolbar toolbar = findViewById(R.id.toolbarSubjectCategoryMenu);
         toolbar.setTitle(category);
         toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
         setSupportActionBar(toolbar);

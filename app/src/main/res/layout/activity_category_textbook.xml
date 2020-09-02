@@ -5,7 +5,7 @@
                                                android:layout_width="match_parent"
                                                android:layout_height="match_parent"
                                                tools:context=".CategoryTextBookActivity">
-    <include android:id="@+id/toolbarSubject" layout="@layout/include_toolbar_alternative"
+    <include android:id="@+id/toolbarSubjectCategoryMenu" layout="@layout/include_toolbar_alternative"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
@@ -20,6 +20,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarSubject"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSubjectCategoryMenu"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
