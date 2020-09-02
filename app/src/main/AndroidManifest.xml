@@ -21,7 +21,7 @@
             android:theme="@style/AppTheme.Feedback" />
         <activity
             android:name=".CategoryTextBookActivity"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName=".CategoryMenuActivity"
             android:theme="@style/AppTheme.CategoryActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -71,7 +71,7 @@
         <activity
             android:name=".CategoryVideosActivity"
             android:largeHeap="true"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName=".CategoryMenuActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.CategoryActivity"/>
     </application>

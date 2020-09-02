@@ -10,12 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import org.w3c.dom.Text;
-
 public class CategoryMenuActivity extends AppCompatActivity {
 
-    private String category;
-    private int categoryId;
+    private static String category;
+    private static int categoryId;
 
     private TextView textViewCategoryMenuTextBook, textViewCategoryMenuVideos,
             textViewCategoryMenuExercises, textViewCategoryMenuForum;
@@ -30,12 +28,14 @@ public class CategoryMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_category_menu);
 
         Bundle extras = getIntent().getExtras();
-        category = extras.getString("category");
-        categoryId = extras.getInt("categoryId");
+        if (extras != null) {
+            category = extras.getString("category");
+            categoryId = extras.getInt("categoryId");
+        }
 
 
         // Toolbar config
-        final Toolbar toolbar = findViewById(R.id.toolbarSubject);
+        final Toolbar toolbar = findViewById(R.id.toolbarSubjectCategoryMenu);
         toolbar.setTitle(category);
         toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
         setSupportActionBar(toolbar);

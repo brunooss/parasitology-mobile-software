@@ -6,9 +6,13 @@ import android.os.Bundle;
 
 import android.view.View;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,13 +24,26 @@ public class CategoryVideosActivity extends AppCompatActivity {
     protected RecyclerView recyclerView;
 
     private List<VideoCard> videosList;
+
+    private String category;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
-        videosList = new ArrayList<>();
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_videos);
+
+        // Toolbar Configuration
+        final Toolbar toolbar = findViewById(R.id.toolbarSubjectCategoryVideos);
+        toolbar.setTitle("Vídeos");
+        toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
+        videosList = new ArrayList<>();
+
         VideoCard video = new VideoCard();
         video.titleSite = "ESQUISTOSSOMOSE - PARASITOLOGIA | Biologia com Samuel Cunha";
         video.urlSite = "https://www.youtube.com/watch?v=Fiup02BGTvM";
