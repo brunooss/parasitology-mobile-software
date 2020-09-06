@@ -1,11 +1,11 @@
 [
   {
     "categoryName" : "Introdução",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361908,
     "concludeProgress" : 14,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Sobre o desenvolvimento do aplicativo:",
         "type" : "text",
@@ -15,11 +15,11 @@
   },
   {
     "categoryName" : "Ecologia",
-    "numberOfTabs" : 16,
+    "numberOftextBookTabs" : 16,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361907 ,
     "concludeProgress" : 28,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução I:",
         "type" : "text",
@@ -110,11 +110,11 @@
 
   {
     "categoryName" : "Conceitos Gerais",
-    "numberOfTabs" : 8,
+    "numberOftextBookTabs" : 8,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361906,
     "concludeProgress" : 42,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -164,11 +164,11 @@
   },
   {
     "categoryName" : "Classificação",
-    "numberOfTabs" : 4,
+    "numberOftextBookTabs" : 4,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361909 ,
     "concludeProgress" : 56,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -194,11 +194,11 @@
 
   {
     "categoryName" : "Reprodução",
-    "numberOfTabs" : 2,
+    "numberOftextBookTabs" : 2,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361905,
     "concludeProgress" : 70,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Tipos de Reprodução dos Parasitos:",
         "type" : "text",
@@ -214,11 +214,11 @@
 
   {
     "categoryName" : "Ciclo Biológico",
-    "numberOfTabs" : 4,
+    "numberOftextBookTabs" : 4,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361904 ,
     "concludeProgress" : 85,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -244,11 +244,11 @@
 
   {
     "categoryName" : "Atualidades",
-    "numberOfTabs" : 5,
+    "numberOftextBookTabs" : 5,
     "parentCategory" : "Introdução",
     "nextCategoryId" : 2131361910,
     "concludeProgress" : 100,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -280,11 +280,11 @@
 
   {
     "categoryName" : "Protozoários",
-    "numberOfTabs" : 8,
+    "numberOftextBookTabs" : 8,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361911,
     "concludeProgress" : 10,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -329,11 +329,11 @@
   },
   {
     "categoryName" : "Amebíase",
-    "numberOfTabs" : 7,
+    "numberOftextBookTabs" : 7,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361914,
     "concludeProgress" : 20,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -372,7 +372,7 @@
         "text" : "<p>&nbsp; &nbsp; A ameb&iacute;ase pode ser curada espontaneamente, por a&ccedil;&atilde;o do sistema imune. Quando constatada a presen&ccedil;a da infec&ccedil;&atilde;o, por&eacute;m, &eacute; recomendada a ado&ccedil;&atilde;o de uma dieta mais leve, com vasta reposi&ccedil;&atilde;o de l&iacute;quidos e de sais minerais, mas pobre em fibras. Tamb&eacute;m se recomenda a ingest&atilde;o de medicamentos espec&iacute;ficos.</p>"
       }
     ],
-    "external" : [
+    "videos" : [
       {
         "title" : "Entamoeba histolytica/dispar",
         "url" : "https://www.youtube.com/watch?v=bj42BFZ1UCw&feature=youtu.be"
@@ -385,11 +385,11 @@
   },
   {
     "categoryName" : "Giardíase",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361915,
     "concludeProgress" : 30,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Informações:",
         "type" : "text",
@@ -399,11 +399,11 @@
   },
   {
     "categoryName" : "Leishmanioses",
-    "numberOfTabs" : 3,
+    "numberOftextBookTabs" : 3,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361919,
     "concludeProgress" : 40,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Informações:",
         "type" : "text",
@@ -423,11 +423,11 @@
   },
   {
     "categoryName" : "Tricomonose",
-    "numberOfTabs" : 7,
+    "numberOftextBookTabs" : 7,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361913 ,
     "concludeProgress" : 50,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -469,11 +469,11 @@
   },
   {
     "categoryName" : "Doença de Chagas",
-    "numberOfTabs" : 8,
+    "numberOftextBookTabs" : 8,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361916 ,
     "concludeProgress" : 60,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -530,11 +530,11 @@
 
   {
     "categoryName" : "Malária",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361918,
     "concludeProgress" : 70,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Informações:",
         "type" : "textAndImage",
@@ -545,11 +545,11 @@
   },
   {
     "categoryName" : "Toxoplasmose",
-    "numberOfTabs" : 11,
+    "numberOftextBookTabs" : 11,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361912,
     "concludeProgress" : 80,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Apresentação:",
         "type" : "text",
@@ -610,11 +610,11 @@
 
   {
     "categoryName" : "Balantidíase",
-    "numberOfTabs" : 7,
+    "numberOftextBookTabs" : 7,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361917 ,
     "concludeProgress" : 90,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -657,11 +657,11 @@
 
   {
     "categoryName" : "Protozooses",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Protozoários",
     "nextCategoryId" : 2131361887 ,
     "concludeProgress" : 100,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Categoria não disponível:",
         "type" : "text",
@@ -672,11 +672,11 @@
 
   {
     "categoryName" : "Helmintos",
-    "numberOfTabs" : 3,
+    "numberOftextBookTabs" : 3,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361892,
     "concludeProgress" : 6,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -696,11 +696,11 @@
   },
   {
     "categoryName" : "Esquistossomose",
-    "numberOfTabs" : 10,
+    "numberOftextBookTabs" : 10,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361894,
     "concludeProgress" : 12,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -756,11 +756,11 @@
   },
   {
     "categoryName" : "Fasciolíase",
-    "numberOfTabs" : 9,
+    "numberOftextBookTabs" : 9,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361901,
     "concludeProgress" : 18,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -810,11 +810,11 @@
   },
   {
     "categoryName" : "Teníase",
-    "numberOfTabs" : 9,
+    "numberOftextBookTabs" : 9,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361890,
     "concludeProgress" : 24,
-    "tabs": [
+    "textBook": [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -864,11 +864,11 @@
   },
   {
     "categoryName" : "Cisticercose",
-    "numberOfTabs" : 10,
+    "numberOftextBookTabs" : 10,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361896,
     "concludeProgress" : 30,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -923,11 +923,11 @@
   },
   {
     "categoryName" : "Hidatidose",
-    "numberOfTabs" : 10,
+    "numberOftextBookTabs" : 10,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361897,
     "concludeProgress" : 36,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -982,11 +982,11 @@
   },
   {
     "categoryName" : "Himenolepíase",
-    "numberOfTabs" : 10,
+    "numberOftextBookTabs" : 10,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361893,
     "concludeProgress" : 42,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -1041,11 +1041,11 @@
   },
   {
     "categoryName" : "Estrongiloidíase",
-    "numberOfTabs" : 10,
+    "numberOftextBookTabs" : 10,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361902,
     "concludeProgress" : 48,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -1100,11 +1100,11 @@
   },
   {
     "categoryName" : "Tricuríase",
-    "numberOfTabs" : 9,
+    "numberOftextBookTabs" : 9,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361888,
     "concludeProgress" : 54,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução",
         "type" : "text",
@@ -1154,11 +1154,11 @@
   },
   {
     "categoryName" : "Ancilostomíase",
-    "numberOfTabs" : 9,
+    "numberOftextBookTabs" : 9,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361899,
     "concludeProgress" : 60,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1205,7 +1205,7 @@
         "text" : "<p>&nbsp; &nbsp; Os parasitos devem ser eliminados com o uso de medicamentos espec&iacute;ficos, e deve ocorrer a reposi&ccedil;&atilde;o de ferro, a partir de uma dieta rica no mineral e de sulfato ferroso.</p>"
       }
     ],
-    "external" : [
+    "videos" : [
       {
         "title" : "ANCILOSTOMÍASE - PARASITOLOGIA #9",
         "url" : "https://youtu.be/8EmPjTGI1Fc"
@@ -1214,11 +1214,11 @@
   },
   {
     "categoryName" : "Necatoríase",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361891,
     "concludeProgress" : 66,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Semelhanças com Ancilostomíase:",
         "type" : "text",
@@ -1228,11 +1228,11 @@
   },
   {
     "categoryName" : "Enterobíase",
-    "numberOfTabs" : 9,
+    "numberOftextBookTabs" : 9,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361889,
     "concludeProgress" : 72,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1282,11 +1282,11 @@
   },
   {
     "categoryName" : "Ascaridíase",
-    "numberOfTabs" : 9,
+    "numberOftextBookTabs" : 9,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361898,
     "concludeProgress" : 79,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1335,7 +1335,7 @@
         "text" : "<p>&nbsp; &nbsp; O tratamento da ascaridíase se dá por medicamentos específicos, hidratação e jejum, no caso de obstruções. Não se deve utilizar anti-helmínticos sem antes fazer um exame de fezes, uma vez que não é indicado o uso de remédios sem uma razão certa ou prescrição médica.\n</p>"
       }
     ],
-    "external" : [
+    "videos" : [
       {
         "title" : "ASCARIDÍASE - PARASITOLOGIA #6",
         "url" : "https://youtu.be/7qemvVLjJyk"
@@ -1344,11 +1344,11 @@
   },
   {
     "categoryName" : "Larva Migrans",
-    "numberOfTabs" : 4,
+    "numberOftextBookTabs" : 4,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361895,
     "concludeProgress" : 86,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1373,11 +1373,11 @@
   },
   {
     "categoryName" : "Filarioses",
-    "numberOfTabs" : 8,
+    "numberOftextBookTabs" : 8,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361900,
     "concludeProgress" : 93,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1422,11 +1422,11 @@
   },
   {
     "categoryName" : "Outras Helmintoses",
-    "numberOfTabs" : 6,
+    "numberOftextBookTabs" : 6,
     "parentCategory" : "Helmintos",
     "nextCategoryId" : 2131361882,
     "concludeProgress" : 100,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1462,11 +1462,11 @@
 
   {
     "categoryName" : "Artrópodes",
-    "numberOfTabs" : 3,
+    "numberOftextBookTabs" : 3,
     "parentCategory" : "Artrópodes",
     "nextCategoryId" : 2131361884,
     "concludeProgress" : 20,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1486,11 +1486,11 @@
   },
   {
     "categoryName" : "Hemípteros",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Artrópodes",
     "nextCategoryId" : 2131361886,
     "concludeProgress" : 40,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Barbeiro:",
         "type" : "textAndImage",
@@ -1501,11 +1501,11 @@
   },
   {
     "categoryName" : "Mosquitos",
-    "numberOfTabs" : 3,
+    "numberOftextBookTabs" : 3,
     "parentCategory" : "Artrópodes",
     "nextCategoryId" : 2131361885,
     "concludeProgress" : 60,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Culex:",
         "type" : "text",
@@ -1525,11 +1525,11 @@
   },
   {
     "categoryName" : "Moscas",
-    "numberOfTabs" : 1,
+    "numberOftextBookTabs" : 1,
     "parentCategory" : "Artrópodes",
     "nextCategoryId" : 2131361883,
     "concludeProgress" : 80,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Introdução:",
         "type" : "text",
@@ -1539,11 +1539,11 @@
   },
   {
     "categoryName" : "Ectoparasitos",
-    "numberOfTabs" : 3,
+    "numberOftextBookTabs" : 3,
     "parentCategory" : "Artrópodes",
     "nextCategoryId" : 0,
     "concludeProgress" : 100,
-    "tabs" : [
+    "textBook" : [
       {
         "title" : "Escabiose Humana:",
         "type" : "text",

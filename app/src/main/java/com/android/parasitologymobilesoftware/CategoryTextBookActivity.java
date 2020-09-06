@@ -109,7 +109,7 @@ public class CategoryTextBookActivity extends AppCompatActivity {
             for(int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 if(jsonObject.getString("categoryName").equals(category)) {
-                    numberOfTabs = jsonObject.getInt("numberOfTabs");
+                    numberOfTabs = jsonObject.getInt("numberOftextBookTabs");
                 }
             }
 
