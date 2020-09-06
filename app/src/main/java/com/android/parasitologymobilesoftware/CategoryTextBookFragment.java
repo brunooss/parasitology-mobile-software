@@ -205,12 +205,12 @@ public class CategoryTextBookFragment extends Fragment {
             for(int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-                if(jsonObject.getString("categoryName").equals(category) && !jsonObject.get("numberOfTabs").equals(position)) {
-                    JSONObject tab = jsonObject.getJSONArray("tabs").getJSONObject(position);
+                if(jsonObject.getString("categoryName").equals(category) && !jsonObject.get("numberOftextBookTabs").equals(position)) {
+                    JSONObject tab = jsonObject.getJSONArray("textBook").getJSONObject(position);
                     args.putString("title", tab.getString("title"));
                     args.putString("type", tab.getString("type"));
                     args.putString("text", tab.getString("text"));
-                    args.putInt("number", jsonObject.getInt("numberOfTabs"));
+                    args.putInt("number", jsonObject.getInt("numberOftextBookTabs"));
                     args.putString("parentCategory", jsonObject.getString("parentCategory"));
                     args.putInt("nextCategoryId", jsonObject.getInt("nextCategoryId"));
                     args.putInt("concludeProgress", jsonObject.getInt("concludeProgress"));
