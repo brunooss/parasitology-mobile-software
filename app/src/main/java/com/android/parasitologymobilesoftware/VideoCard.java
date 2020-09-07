@@ -5,4 +5,5 @@ public class VideoCard {
     public String urlImage;
     public String urlSite;
     public String titleSite;
+
 }
