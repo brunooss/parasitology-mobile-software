@@ -92,7 +92,6 @@ public class HomeFragment extends Fragment {
                         if(progressBarIntroductionValue == introductionValuesConclude[i]) {
                             for (int b = 0; b <= i; b++) {
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setBackground(getActivity().getDrawable(R.drawable.category_button_background_filled));
-                                Log.i("HomeFragment",  "Oi!");
                                 rootView.findViewById(homeActivity.categoriesIds[b]).setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
