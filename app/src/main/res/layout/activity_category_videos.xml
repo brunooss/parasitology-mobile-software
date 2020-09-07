@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutCategoryVideos"
         android:layout_width="0dp"
@@ -42,15 +43,32 @@
         <!--            android:textSize="36sp"-->
         <!--            app:layout_constraintStart_toStartOf="parent"-->
         <!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:videoId="S0Q4gqBUs7c"
+            app:autoPlay="false"
+            app:showFullScreenButton="true"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewActivityVideos"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="22dp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutCategoryVideos"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/youtube_player_view" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
