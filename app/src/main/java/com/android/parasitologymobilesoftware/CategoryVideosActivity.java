@@ -29,10 +29,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
+
 
 import okio.Utf8;
 
-public class CategoryVideosActivity extends AppCompatActivity {
+public class CategoryVideosActivity extends AppCompatActivity implements VideoAdapter.VideoOnClickListener {
 
     private static final String TAG = "CategoryVideosActivity";
 
@@ -66,6 +68,9 @@ public class CategoryVideosActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        // Managing video player
+        YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
 
 
         videosList = new ArrayList<>();
@@ -104,54 +109,18 @@ public class CategoryVideosActivity extends AppCompatActivity {
             e.printStackTrace();
             Toast.makeText(MyApplication.getMyApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
         }
-//        VideoCard video = new VideoCard();
-//        video.titleSite = "ESQUISTOSSOMOSE - PARASITOLOGIA | Biologia com Samuel Cunha";
-//        video.urlSite = "https://www.youtube.com/watch?v=Fiup02BGTvM";
-//
-//        String youtubeUrl = "https://www.youtube.com/watch?v=Rxo0Upfz48Q";
-//
-//        Uri uri = Uri.parse(youtubeUrl);
-//        String videoID = uri.getQueryParameter("v");
-//
-//        String imageUrl = "http://img.youtube.com/vi/" + videoID +"/0.jpg";
-//
-//        video.urlImage = imageUrl;
-//
-//        // TODO Change way to add videos
-//
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
-//        videosList.add(video);
 
         recyclerView = findViewById(R.id.recyclerViewActivityVideos);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(new VideoAdapter(getBaseContext(), videosList, onClickVideo()));
+        recyclerView.setAdapter(new VideoAdapter(getBaseContext(), videosList, this));
     }
 
-    private VideoAdapter.VideoOnClickListener onClickVideo() {
-        return new VideoAdapter.VideoOnClickListener() {
-
-            @Override
-            public void onClickVideoCard(View view, int index) {
-                VideoCard v = videosList.get(index);
-                Toast.makeText(getBaseContext(), "Video: " + v.urlSite, Toast.LENGTH_LONG);
-
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(v.urlSite)));
-            }
-        };
+    @Override
+    public void onClickVideoCard(int index) {
+        VideoCard v = videosList.get(index);
+        Log.d(TAG, "onClickVideoCard: clicked");
     }
-
 }
+
