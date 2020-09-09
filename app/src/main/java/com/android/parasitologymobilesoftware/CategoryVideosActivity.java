@@ -1,26 +1,22 @@
 package com.android.parasitologymobilesoftware;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
+;
 import androidx.annotation.Nullable;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.MyApplication;
 
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,10 +25,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
-
-
-import okio.Utf8;
 
 public class CategoryVideosActivity extends AppCompatActivity implements VideoAdapter.VideoOnClickListener {
 
@@ -47,6 +42,9 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
 
     private String category;
     private int categoryId;
+
+    private YouTubePlayerView youTubePlayerView;
+    private YouTubePlayer youTubePlayer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -70,12 +68,17 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         // Managing video player
-        YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
+        youTubePlayerView = findViewById(R.id.youtube_player_view);
+        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NotNull YouTubePlayer youTubePlayer) {
+                super.onReady(youTubePlayer);
+                setYouTubePlayer(youTubePlayer);
+            }
+        });
 
-
+        // Managing json file to get videos
         videosList = new ArrayList<>();
-
-        // Managing json file
         try {
             inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");
             int size = inputStream.available();
@@ -93,10 +96,15 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
                     int videosSize = videosArray.length();
 
                     for (int j = 0; j < videosSize; j++) {
+
                         VideoCard videoCard = new VideoCard();
                         JSONObject video = videosArray.getJSONObject(j);
+
                         videoCard.titleSite = video.getString("title");
                         videoCard.urlSite = video.getString("url");
+                        videoCard.setUrlId(videoCard.urlSite);
+                        videoCard.setUrlImage(videoCard.urlId);
+
                         videosList.add(videoCard);
                     }
                 }
@@ -119,8 +127,14 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
 
     @Override
     public void onClickVideoCard(int index) {
-        VideoCard v = videosList.get(index);
+        VideoCard videoCard = videosList.get(index);
         Log.d(TAG, "onClickVideoCard: clicked");
+        youTubePlayer.loadVideo(videoCard.urlId, 0f);
+    }
+
+    // Setter method of YoutubePlayer
+    public void setYouTubePlayer(YouTubePlayer youTubePlayer) {
+        this.youTubePlayer = youTubePlayer;
     }
 }
 
