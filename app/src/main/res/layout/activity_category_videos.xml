@@ -15,13 +15,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoPlay="false"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSubjectCategoryVideos"
+        app:showFullScreenButton="true"
+        app:videoId="S0Q4gqBUs7c" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutCategoryVideos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_square_white"
@@ -29,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarSubjectCategoryVideos">
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player_view">
 
         <!--        <TextView-->
         <!--            android:id="@+id/textViewCategoryTitle2"-->
@@ -43,20 +54,6 @@
         <!--            android:textSize="36sp"-->
         <!--            app:layout_constraintStart_toStartOf="parent"-->
         <!--            app:layout_constraintTop_toTopOf="parent" />-->
-        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/youtube_player_view"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-
-            app:videoId="S0Q4gqBUs7c"
-            app:autoPlay="false"
-            app:showFullScreenButton="true"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewActivityVideos"
