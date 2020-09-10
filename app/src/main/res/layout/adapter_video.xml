@@ -2,10 +2,9 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                   android:layout_height="80dp" android:backgroundTint="@color/colorWhite"
+                                   android:layout_height="80dp" android:backgroundTint="#CCFFFFFF"
                                    android:layout_marginHorizontal="8dp"
-                                   android:layout_marginVertical="4dp" android:layout_marginTop="30dp"
-                                   app:cardCornerRadius="8dp">
+                                   android:layout_marginVertical="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutVideoAdapter"
@@ -41,5 +40,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageViewVideoThumbnail"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futura_light_bt"
+            android:text="Channel"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewVideoName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVideoName" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
