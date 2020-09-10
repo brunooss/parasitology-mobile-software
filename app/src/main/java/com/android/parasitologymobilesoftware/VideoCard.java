@@ -15,6 +15,6 @@ public class VideoCard {
     }
 
     public void setUrlImage(String urlId) {
-        this.urlImage = "http://img.youtube.com/vi/" + urlId + "/0.jpg";
+        this.urlImage = "http://img.youtube.com/vi/" + urlId + "/hqdefault.jpg";
     }
 }

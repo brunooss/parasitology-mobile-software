@@ -27,6 +27,7 @@ import java.util.*;
 
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerFullScreenListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class CategoryVideosActivity extends AppCompatActivity implements VideoAdapter.VideoOnClickListener {
@@ -72,8 +73,20 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NotNull YouTubePlayer youTubePlayer) {
+                // player is ready. Now we can the YoutubePlayer object
                 super.onReady(youTubePlayer);
                 setYouTubePlayer(youTubePlayer);
+            }
+        });
+        youTubePlayerView.addFullScreenListener(new YouTubePlayerFullScreenListener() {
+            @Override
+            public void onYouTubePlayerEnterFullScreen() {
+
+            }
+
+            @Override
+            public void onYouTubePlayerExitFullScreen() {
+
             }
         });
 
