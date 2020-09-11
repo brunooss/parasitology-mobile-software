@@ -51,18 +51,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/icons8_list_100"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
 
-                android:text="Lista de Reprodução"
-                android:textSize="18sp"
-                android:textColor="@color/colorWhite"
+                android:layout_marginStart="8dp"
                 android:fontFamily="@font/futura_medium_bt"
+                android:text="Lista de Reprodução"
+                android:textColor="@color/colorWhite"
 
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
