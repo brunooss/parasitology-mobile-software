@@ -47,6 +47,8 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
     private YouTubePlayerView youTubePlayerView;
     private YouTubePlayer youTubePlayer;
 
+    private String firstVideoId;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -76,6 +78,7 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
                 // player is ready. Now we can the YoutubePlayer object
                 super.onReady(youTubePlayer);
                 setYouTubePlayer(youTubePlayer);
+                youTubePlayer.loadVideo(firstVideoId, 0f);
             }
         });
         youTubePlayerView.addFullScreenListener(new YouTubePlayerFullScreenListener() {
@@ -117,6 +120,11 @@ public class CategoryVideosActivity extends AppCompatActivity implements VideoAd
                         videoCard.urlSite = video.getString("url");
                         videoCard.setUrlId(videoCard.urlSite);
                         videoCard.setUrlImage(videoCard.urlId);
+
+                        if (j == 0) {
+                            // Loads the first video of the reproduction list
+                            firstVideoId = videoCard.urlId;
+                        }
 
                         videosList.add(videoCard);
                     }
