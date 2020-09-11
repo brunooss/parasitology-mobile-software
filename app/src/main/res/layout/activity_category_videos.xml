@@ -59,7 +59,7 @@
                 android:text="Lista de Reprodução"
                 android:textSize="18sp"
                 android:textColor="@color/colorWhite"
-                android:fontFamily="@font/futura_light_bt"
+                android:fontFamily="@font/futura_medium_bt"
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
