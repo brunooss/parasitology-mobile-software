@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginStart="8dp"
-                android:fontFamily="@font/futura_medium_bt"
+                android:fontFamily="@font/futura_light_bt"
                 android:text="Lista de Reprodução"
                 android:textColor="@color/colorWhite"
 
