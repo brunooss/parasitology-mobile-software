@@ -14,12 +14,12 @@
     ],
     "videos" : [
       {
-        "title" : "AMEBÍASE",
-        "url" : "https://youtube.com/watch?v=AkBASaK6Ct4"
+        "title" : "Parasitologia - Aula 01 - Introdução à Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=ZnZcAsZkyRA"
       },
       {
-        "title" : "ESQUISTOSSOMOSE",
-        "url" : "https://youtube.com/watch?v=Fiup02BGTvM"
+        "title" : "INTRODUÇÃO À PARASITOLOGIA | Biologia com Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=93yFD1VLSFU"
       }
     ]
   },
@@ -115,9 +115,22 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Tanto os animais silvestres quanto os dom&eacute;sticos s&atilde;o capazes de possuir in&uacute;meras esp&eacute;cies de parasitos. Ultimamente, devido aos maiores cuidados oferecidos aos animais dom&eacute;sticos, estes s&atilde;o parasitados por um menor n&uacute;mero de esp&eacute;cies, apesar de cada uma dessas poder alcan&ccedil;ar n&uacute;meros elevados, causando a morte do animal. J&aacute; nos animais silvestres, pode ocorrer uma maior quantidade de esp&eacute;cies, por&eacute;m em menores n&uacute;meros, provocando, dificilmente, a morte do animal.</p>\n<p>&nbsp; &nbsp; Tais diferen&ccedil;as se d&atilde;o a dois fatores b&aacute;sicos:</p>\n<ul>\n    <li>Os animais dom&eacute;sticos vivem, geralmente, confinados em ambientes restritos por longos per&iacute;odos, onde ovos, larvas e cistos se concentram, atingindo os hospedeiros facilmente.</li>\n    <li>Os animais silvestres no ambiente natural equilibrado vivem dispersos, dificultando o contato destes com as formas infectantes de parasitos.</li>\n</ul>\n<p>&nbsp; &nbsp; Por&eacute;m, com a maior facilidade de transporte e turismo podem ocasionar o surgimento de novas zoonoses (doen&ccedil;as que acometem animais e humanos), que demandam pesquisas para seu conhecimento e profilaxia, visto que s&atilde;o desconhecidas e pouco estudadas.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Parasitismo - Ecologia - Biologia",
+        "url" : "https://www.youtube.com/watch?v=uMbJFyCb5wg"
+      },
+      {
+        "title" : "SOS ProEnem: Ecologia | Biologia | Prof. Isabela Santos",
+        "url" : "https://www.youtube.com/watch?v=FzBtrJrH9uo"
+      },
+      {
+        "title" : "Parasitoses e Ecologia",
+        "url" : "https://www.youtube.com/watch?v=5lymNDKLXsw"
+      }
     ]
   },
-
   {
     "categoryName" : "Conceitos Gerais",
     "numberOftextBookTabs" : 8,
@@ -170,6 +183,20 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Entre as milhares de esp&eacute;cies de seres vivos existentes Apenas algumas s&atilde;o nocivos ou podem provocar doen&ccedil;as em humanos, plantas ou animais Pode final Portanto, quase todos os seres vivos s&atilde;o &uacute;teis para a sustenta&ccedil;&atilde;o da vida, trabalhando ativamente na reciclagem, na poliniza&ccedil;&atilde;o, na cadeia alimentar etc., raz&atilde;o pela qual pode-se afirmar que os humanos n&atilde;o existiriam sem que tamb&eacute;m existissem as demais esp&eacute;cies.</p>\n<p>&nbsp; &nbsp; Apesar desse fato, os humanos t&ecirc;m um maior conhecimento acerca das esp&eacute;cies nocivas, devido a preval&ecirc;ncia de ambientes com baixas condi&ccedil;&otilde;es sanit&aacute;rias &ndash; que permitem a reprodu&ccedil;&atilde;o dos parasitos e a preval&ecirc;ncia das parasitoses e de outras doen&ccedil;as &ndash; nas cidades, desconsiderando a maioria das outras esp&eacute;cies &uacute;teis para o equil&iacute;brio do ecossistema.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Relações Ecológicas - Harmônicas - Prof. Paulo Jubilut",
+        "url" : "https://www.youtube.com/watch?v=7opxQ9hGA6Q"
+      },
+      {
+        "title" : "RELAÇÕES ECOLÓGICAS - Harmônicas e Desarmônicas | Biologia com Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=cpmcIciaIWc"
+      },
+      {
+        "title" : "O QUE SÃO RELAÇÕES ECOLÓGICAS E COMO CAEM NO VESTIBULAR? | QUER QUE DESENHE?",
+        "url" : "https://www.youtube.com/watch?v=CBN9WgeGkTA"
+      }
     ]
   },
   {
@@ -199,9 +226,18 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;H&aacute; duas formas de denominar as doen&ccedil;as:</p>\n<ol>\n    <li>Classifica&ccedil;&atilde;o Internacional de Doen&ccedil;as (CID), estabelecida pela Organiza&ccedil;&atilde;o Mundial de Sa&uacute;de (OMS): deve-se acrescentar o sufixo &ldquo;&iacute;ase&rdquo; ao nome do agente etiol&oacute;gico, resultado em giard&iacute;ase, ascarid&iacute;ase, etc.</li>\n    <li>&nbsp;Obedecendo &agrave; forma pr&oacute;pria do Pa&iacute;s de formar palavras: deve-se acrescentar o sufixo &rdquo;ose&quot; ao nome do agente etiol&oacute;gico, resultado em leishmaniose, esquistossomose, etc.</li>\n</ol>\n<p>&nbsp; &nbsp;Em decorr&ecirc;ncia da melhor eufonia, o nome da doen&ccedil;a ser&aacute; a pron&uacute;ncia mais agrad&aacute;vel, usando ora um sufixo, ora outro, resultado em giard&iacute;ase, leishmaniose, toxoplasmose, ten&iacute;ase, etc.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Parasitologia - Aula 02 - Classificação dos principais parasitos do homem e seus vetores",
+        "url" : "https://www.youtube.com/watch?v=-nl8N3_9f5w"
+      },
+      {
+        "title" : "Parasitologia - Aula 02 - Classificação dos principais parasitos do homem e seus vetores",
+        "url" : "https://www.youtube.com/watch?v=-nl8N3_9f5w"
+      }
     ]
   },
-
   {
     "categoryName" : "Reprodução",
     "numberOftextBookTabs" : 2,
@@ -219,9 +255,22 @@
         "type" : "text",
         "text" : "<p>Os parasitos durante sua vida passam por diversas formas ou fases biol&oacute;gicas, entre elas:</p>\n<ul >\n    <li><strong>trofozo&iacute;to</strong>: &eacute; a forma ativa do protozo&aacute;rio, que se alimenta e se reproduz;</li>\n    <li><strong>cisto</strong>: &eacute; a forma de resist&ecirc;ncia ou transmiss&atilde;o de diversos protozo&aacute;rios, geralmente oriunda da transforma&ccedil;&atilde;o do pr&oacute;prio trofozo&iacute;to;</li>\n    <li><strong>oocisto</strong>: &eacute; uma forma de resist&ecirc;ncia ou transmiss&atilde;o oriunda de uma reprodu&ccedil;&atilde;o sexuada e presente entre os protozo&aacute;rios do filo Apicomplexa;</li>\n    <li><strong>ovo</strong>: &eacute; a forma resultante da fecunda&ccedil;&atilde;o sexuada, encontrada entre os helmintos e os artr&oacute;podes;</li>\n    <li><strong>larva</strong>: &eacute; a forma usualmente originada de um ovo, que evoluir&aacute; para a fase adulta, podendo ser infectante (como nos helmintos) ou evoluir para a fase de pupa (como nos insetos), que ent&atilde;o dar&aacute; origem ao adulto;</li>\n    <li><strong>adulto</strong>: &eacute; a fase reprodutiva do helminto ou do artr&oacute;pode.</li>\n</ul>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Relações Ecológicas - Harmônicas - Prof. Paulo Jubilut",
+        "url" : "https://www.youtube.com/watch?v=7opxQ9hGA6Q"
+      },
+      {
+        "title" : "RELAÇÕES ECOLÓGICAS - Harmônicas e Desarmônicas | Biologia com Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=cpmcIciaIWc"
+      },
+      {
+        "title" : "O QUE SÃO RELAÇÕES ECOLÓGICAS E COMO CAEM NO VESTIBULAR? | QUER QUE DESENHE?",
+        "url" : "https://www.youtube.com/watch?v=CBN9WgeGkTA"
+      }
     ]
   },
-
   {
     "categoryName" : "Ciclo Biológico",
     "numberOftextBookTabs" : 4,
@@ -251,7 +300,6 @@
       }
     ]
   },
-
   {
     "categoryName" : "Atualidades",
     "numberOftextBookTabs" : 5,
@@ -335,6 +383,20 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Os protozo&aacute;rios de import&acirc;ncia m&eacute;dica s&atilde;o eucariontes, pertencentes ao reino Protozoa, classificados dentre tr&ecirc;s principais filos:</p>\n<ul>\n    <li>Sarcomastigophora: possuem pseud&oacute;podes, flagelos ou os dois; A sua reprodu&ccedil;&atilde;o &eacute; gera&ccedil;mente assexuada. Esse filo se divide em dois subfilos menores:<ol style=\"list-style-type: circle;\">\n            <li>Sarcodina: os que se movimentam por pseud&oacute;podes. Os g&ecirc;neros pertencentes &agrave; esse filo s&atilde;o <em>Entamoeba</em>, <em>Naegleria</em>.</li>\n            <li>Mastigophora: movimentam-se por flagelos, e os principais g&ecirc;neros s&atilde;o <em>Trypanosoma</em>, <em>Leishmania</em>, <em>Giardia</em>, <em>Thichomonas</em>.</li>\n        </ol>\n    </li>\n    <li>Apicomplexa: apresentam um &ldquo;complexo apical&rdquo; (constitu&iacute;do de anel polar, micronemas, conoide e microt&uacute;bulos) vis&iacute;vel apenas por microsc&oacute;pio eletr&ocirc;nico, movimenta&ccedil;&atilde;o por flex&atilde;o, reprodu&ccedil;&atilde;o assexuada e sexuada. Esse filo &eacute; dividido nas ordens:<ol style=\"list-style-type: circle;\">\n            <li>Eucoccidiida: com os g&ecirc;neros <em>Sarcocystis</em>, <em>Toxoplama</em>, <em>Cryptosporidium</em>.</li>\n            <li>Haemosporida: com o g&ecirc;nero <em>Plasmodium</em>.</li>\n        </ol>\n    </li>\n    <li>Ciliophora: apresentam c&iacute;lios, micro e macron&uacute;cleo; movimenta&ccedil;&atilde;o por meio de c&iacute;lios; reprodu&ccedil;&otilde;es sexuada e assexuada. Apresentam diversas ordens, e a Trichostomatida a que apresenta</li>\n</ul>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "[BIO] Protozoários - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=BmvSyDyuGt0"
+      },
+      {
+        "title" : "PARASITOLOGIA- Protozoários",
+        "url" : "https://www.youtube.com/watch?v=agEUS-5JNc4"
+      },
+      {
+        "title" : "DOENÇAS CAUSADAS POR PROTOZOÁRIOS - Protozooses | Biologia com Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=GiJ44mg5MZw"
+      }
     ]
   },
   {
@@ -384,12 +446,36 @@
     ],
     "videos" : [
       {
-        "title" : "Entamoeba histolytica/dispar",
-        "url" : "https://www.youtube.com/watch?v=bj42BFZ1UCw&feature=youtu.be"
+        "title" : "Amebíase - Entamoeba histolytica",
+        "url" : "https://www.youtube.com/watch?v=10dw0mQ8JvU&feature=youtu.be"
       },
       {
-        "title" : "Entamoeba histolytica| Amebíase 1/2 | Ensino Superior | Prof. Emerson Inácio",
+        "title" : "Amebíase | Parte 1 | Ensino Superior | Prof. Emerson Inácio",
         "url" : "https://www.youtube.com/watch?v=s7hubfEtggM&feature=youtu.be"
+      },
+      {
+        "title" : "Amebíase | Parte 2 | Ensino Superior | Prof. Emerson Inácio",
+        "url" : "https://www.youtube.com/watch?v=jMtlOcZzHvk&feature=youtu.be"
+      },
+      {
+        "title" : "Amebíase (Parasitologia - EP 3) | Biokrill Series",
+        "url" : "https://www.youtube.com/watch?v=1PPhzYlqDsM&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia: Amebíase - Diagnóstico",
+        "url" : "https://www.youtube.com/watch?v=jCHFStGuMgA&feature=youtu.be"
+      },
+      {
+        "title" : "AMEBÍASE (TUDO O QUE VOCÊ PRECISA SABER!)",
+        "url" : "https://www.youtube.com/watch?v=gJNGdPrim_4&feature=youtu.be"
+      },
+      {
+        "title" : "AMEBÍASE - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=AkBASaK6Ct4&feature=youtu.be"
+      },
+      {
+        "title" : "Amebíase",
+        "url" : "https://www.youtube.com/watch?v=oh891Fl8E2c&feature=youtu.be"
       }
     ]
   },
@@ -404,6 +490,32 @@
         "title" : "Informações:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; A giardíase é uma parasitose causada pelo protozoário <i><b>Giardia duodenalis</b></i>, também chamado de <i><b>Giardia lamblia</b></i> ou <i><b>G. intestinalis</b></i>. Faz parte do filo <i>Sarcomastigophora</i>, subfilo <i>Mastigophora</i> e família <i>Hexamitidae</i>. Essa espécie é a única de seu gênero capaz de parasitar seres humanos, sendo que as outras causam doenças em outros mamíferos, aves, répteis e anfíbios.\n    Apresenta dois estágios de desenvolvimento: o de cisto e o de trofozoíto. No primeiro possui formato oval e é envolvido por uma parede de glicoproteína que torna o cisto mais resistente a variações de umidade, temperatura e produtos químicos para desinfecção de ambientes. O segundo apresenta quatro pares de flagelos, formato piriforme, além de simetria bilateral.\n    Seu ciclo é monoxeno e inicia-se com a ingestão dos cistos pelo homem. Após isso, acontece o processo de desencistamento com a acidez do estômago. Cada cisto libera uma forma chamada de excitozoíto, o qual se multiplicará formando quatro trofozoítos binucleados que realizarão divisão binária de modo a colonizar o intestino. O parasito completará seu ciclo na porção final do intestino, o íleo, onde realiza encistamento e será liberado nas fezes, podendo permanecer nessa forma por meses no ambiente.\n    A prevalência dessa parasitose é duvidosa, uma vez que muitos dos doentes possuem um quadro assintomático e em vários casos nos quais há sintomas, esses são confundidos com os de uma virose. Os principais sintomas são diarreia, perda de peso, má absorção de nutrientes como gordura, vitaminas lipossolúveis, ferro e lactose. No caso da infecção em indivíduos adultos, essas deficiências não causam danos significativos, no entanto, podem atrapalhar seriamente o desenvolvimento cognitivo e físico de crianças.\n    O diagnóstico pode ser clínico, em que são analisados os sintomas, laboratorial do tipo parasitológico, com o exame microscópico de fezes, ou laboratorial do tipo imunológico, usando-se o método ELISA.\n    Apesar de ser um mecanismo não totalmente compreendido, sabe-se que o corpo humano é capaz de produzir resposta imune para as infecções por <i>Giardia</i>. A resposta específica ocorre no soro, em que anticorpos do tipo IgG, IgM e IgA atuam, e na mucosa intestinal, ao que IgA é capaz de reconhecer proteínas dos trofozoítos e diminuir a possibilidade de sua adesão às células do epitélio intestinal. Além disso, mecanismos como barreiras naturais existentes no intestino delgado participam no controle da infecção.\n    Para o controle da doença, faz-se necessária a atuação do poder público para que a população possua acesso a saneamento básico e água potável. Além disso, o tratamento dos doentes, a higiene pessoal e a educação sanitária são importantes medidas. Já o tratamento da doença é normalmente feito com o medicamento metronidazol, que elimina a infecção em cerca de 80 a 95% dos pacientes.\n</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "GIARDIA LAMBLIA E GIARDÍASE - Curso de Parasitologia (Aula 5)",
+        "url" : "https://www.youtube.com/watch?v=Q6ImttZjiMs&feature=youtu.be"
+      },
+      {
+        "title" : "Giardíase (GIARDIA) - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=3hXmjRCRbzU&feature=youtu.be"
+      },
+      {
+        "title" : "Giardíase",
+        "url" : "https://www.youtube.com/watch?v=jaIYSkVCpe0&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia – Giardíase (Aula 03) com Prof. Márcio Martins de Lima",
+        "url" : "https://www.youtube.com/watch?v=oi-Se5co0eY&feature=youtu.be"
+      },
+      {
+        "title" : "Ciclo da Giardíase",
+        "url" : "https://www.youtube.com/watch?v=VS1pXY-Ke_o&feature=youtu.be"
+      },
+      {
+        "title" : "REVISÃO DE GIARDÍASE",
+        "url" : "https://www.youtube.com/watch?v=JOX8qzPgW0U&feature=youtu.be"
       }
     ]
   },
@@ -428,6 +540,48 @@
         "title" : "Leishmaniose Tegumentar:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; A L.T.A. é uma doença silvestre, relativamente estável em termos de incidência e prevalência, com raros surtos em áreas de desbravamento de vegetação. As espécies que causam essa parasitose nas Américas são <i><b>L. brasilienses</b></i>, <i><b>L. amazonenses</b></i>, <i><b>L. mexicana</b></i> e <i><b>L. guyanensis</b></i>.\n                O diagnóstico parasitológico da leishmaniose tegumentar é realizado através de uma biópsia da lesão ou ferida. Do pequeno fragmento retirado, é feito um esfregaço em lâmina de microscopia ou, após escarificar a borda da lesão, pode-se, também, comprimir uma lamina de microscopia sobre a área escarificada, obtendo-se um esfregaço por aposição. O material colhido pode ser corado pelo método de Giemsa ou pelo método panótico rápido. Com o material da biópsia também poderão ser feitas culturas de <i>Leishmania</i>, com meios de cultura específicos, como NNN e LIT.\n                Pode ser realizado também o diagnóstico imunológico em que, a intradermorreação de Montenegro, associada à suspeita clínico-epidemiológica, é o método mais utilizado, com injeção intradérmica de 0,1 mL do antígeno na face interna do antebraço e leitura de 49 a 72 horas após. A positividade do teste é determinada pelo aumento da pápula previamente formada.\n                Os protozoários na forma amastigota permanecem na pele, de modo a formar um nódulo que se transformará em uma ferida. Essa ferida pode se espalhar para a pele de outras partes do corpo, podendo atingir o rosto.\n</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "leishmaniose visceral e Leishmaniose tegumentar",
+        "url" : "https://youtu.be/1WTj4LpkVIY"
+      },
+      {
+        "title" : "Leishmaniose Visceral (calazar) - características gerais, sintomas e prevenção.",
+        "url" : "https://www.youtube.com/watch?v=2bFbUa7x6E0&feature=youtu.be"
+      },
+      {
+        "title" : "Leishmaniose visceral | Coluna #55",
+        "url" : "https://www.youtube.com/watch?v=6u5eIY9rOXs&feature=youtu.be"
+      },
+      {
+        "title" : "Leishmaniose tegumentar americana",
+        "url" : "https://www.youtube.com/watch?v=gM3bih9AcC0&feature=youtu.be"
+      },
+      {
+        "title" : "O que é leishmaniose?",
+        "url" : "https://www.youtube.com/watch?v=CCRY2Sp6dYw&feature=youtu.be"
+      },
+      {
+        "title" : "Leishmaniose: sintomas e diagnóstico",
+        "url" : "https://www.youtube.com/watch?v=CwAD_nEGUmE&feature=youtu.be"
+      },
+      {
+        "title" : "Transmissão Leishmaniose",
+        "url" : "https://www.youtube.com/watch?v=yFk-WSEQ2Sg&feature=youtu.be"
+      },
+      {
+        "title" : "Conhece a Leishmaniose?",
+        "url" : "https://www.youtube.com/watch?v=nPC19PXirgI&feature=youtu.be"
+      },
+      {
+        "title" : "MITOS E VERDADES SOBRE A LEISHMANIOSE",
+        "url" : "https://www.youtube.com/watch?v=uJAXS-7edIQ&feature=youtu.be"
+      },
+      {
+        "title" : "Vídeo Educativo sobre Leishmaniose",
+        "url" : "https://www.youtube.com/watch?v=RnHVW75hFGw&feature=youtu.be"
       }
     ]
   },
@@ -474,6 +628,40 @@
         "title" : "Tratamento:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; O tratamento da tricomonose pode ser feito com drogas eficientes como os quimioter&aacute;picos: nitroimidaz&oacute;licos e metronidazol, de administra&ccedil;&atilde;o oral de dose &uacute;nica.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "O que é a Tricomoníase? Dra. Ana Marta Souza",
+        "url" : "https://www.youtube.com/watch?v=sMumJUrN5GA&feature=youtu.be"
+      },
+      {
+        "title" : "O que é tricomoníase? | Vida e evolução | Khan Academy",
+        "url" : "https://www.youtube.com/watch?v=T0k-M9nRv8g&feature=youtu.be"
+      },
+      {
+        "title" : "TRICOMONÍASE - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=woyu86MGMgY&feature=youtu.be"
+      },
+      {
+        "title" : "Tricomoníase: Trichomonas vaginalis | Parte 2 | PARASITOLOGIA #7",
+        "url" : "https://www.youtube.com/watch?v=TaGk1tmJrUU&feature=youtu.be"
+      },
+      {
+        "title" : "Ciclo Biológico do Trichomonas vaginalis | Minutos de parasitologia #4",
+        "url" : "https://www.youtube.com/watch?v=EUNvemOHW7o&feature=youtu.be"
+      },
+      {
+        "title" : "Diagnóstico da Tricomoníase: algumas opções",
+        "url" : "https://www.youtube.com/watch?v=GuLNaDuBAVI&feature=youtu.be"
+      },
+      {
+        "title" : "Tricomoníase",
+        "url" : "https://www.youtube.com/watch?v=TgArqjKI6Sk&feature=youtu.be"
+      },
+      {
+        "title" : "Palestra Tricomoníase",
+        "url" : "https://www.youtube.com/watch?v=XdlK2GIYk2Y&feature=youtu.be"
       }
     ]
   },
@@ -535,9 +723,38 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Atualmente, n&atilde;o existe um tratamento eficaz ap&oacute;s a fase aguda. Durante essa fase, h&aacute; dois medicamentos que agem contra a doen&ccedil;a: o Nifurtimox e o benznidazol</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Chagas",
+        "url" : "https://www.youtube.com/watch?v=TrtWsF3e8H4&feature=youtu.be"
+      },
+      {
+        "title" : "Doença de Chagas - Resumo - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=z7XKeNHEvTw&feature=youtu.be"
+      },
+      {
+        "title" : "\uD83D\uDC7E Doença de Chagas - Mundo Biologia - ENEM",
+        "url" : "https://www.youtube.com/watch?v=GA-G2nAIhtI&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia: Doença de Chagas - Ciclo Biológico",
+        "url" : "https://www.youtube.com/watch?v=_8J0aFCTu1o&feature=youtu.be"
+      },
+      {
+        "title" : "Ciclo de vida do T. cruzi no inseto",
+        "url" : "https://www.youtube.com/watch?v=4gzjFbvCahY&feature=youtu.be"
+      },
+      {
+        "title" : "DOENÇA DE CHAGAS",
+        "url" : "https://www.youtube.com/watch?v=RNdPLMgHImw&feature=youtu.be"
+      },
+      {
+        "title" : "Doença de Chagas - Triagem e diagnóstico sorológico",
+        "url" : "https://www.youtube.com/watch?v=OoUuyfMQZgI&feature=youtu.be"
+      }
     ]
   },
-
   {
     "categoryName" : "Malária",
     "numberOftextBookTabs" : 1,
@@ -550,6 +767,48 @@
         "type" : "textAndImage",
         "text" : "<p>\n    &nbsp; &nbsp; A malária é uma doença causada por protozoários do gênero <i><b>Plasmodium</b></i> (<i>P. falciparum</i>, <i>P. vivax</i> e <i>P. malariae</i>), os quais pertencem ao filo <i>Apicomplexa</i> e à família <i>Plasmodiidae</i>. Tal doença, apesar de quase erradicada na década de 1950, ainda é um grave problema para a saúde mundial, uma vez que são registrados, anualmente, cerca de 500 mil novos casos, existindo por volta de 200 milhões de pessoas infectadas no mundo. Outro problema é a alta taxa de mortalidade que a doença causa, com um valor aproximado de dois milhões de mortes por ano, sendo a doença parasitária que mais mata no mundo.\n    Essa parasitose ocorria em praticamente todos os continentes, mas foi erradicada nos países desenvolvidos e hoje está restrita à América Latina, à África, à Ásia e à parte insular da Oceania. Esse fato comprova a urgência em investimentos nas áreas de saúde e educação sanitária nos países em desenvolvimento, uma vez que, unidas ao combate ao vetor e ao tratamento dos indivíduos já infectados, são as principais formas de profilaxia da doença. No Brasil, é uma endemia que acomete a região amazônica.\n    O ciclo de vida do plasmódio é heteroxênico, com reprodução sexuada ocorrendo no mosquito do gênero Anopheles e reprodução assexuada, no humano. A figura abaixo representa o ciclo de vida de um <i>Plasmodium</i>:\n    &nbsp; &nbsp; O diagnóstico da doença é feito por meio de hemoscopia, processo no qual faz-se um esfregaço com uma gota de sangue do paciente e analisada a presença ou não dos protozoários. É recomendado que esse método seja feito na fase inicial, já que há maior quantidade de plasmódios no sangue periférico.\n    Os sintomas gerais da malária são anemia, por conta da destruição das hemácias, o paroxismo malárico, no qual o doente passa por alternâncias de frio e calor seguidas de sudorese, os episódios de febre com intervalos de cerca de 72 horas (febre terçã), podendo existir complicações maiores como insuficiência renal e lesões no cérebro.\n    Existem três mecanismos capazes de proteger um indivíduo da malária: a resistência adquirida, a imunidade inata e a resistência inata. O primeiro ocorre pela atuação do parasito no doente, com a estimulação do sistema imunitário capaz de eliminar a infecção ainda em seu começo ou mesmo reduzir a carga parasitária, diminuindo a letalidade da doença. Esse tipo de resposta é comum em áreas onde a doença é endêmica. No segundo, o indivíduo não desenvolve a doença ainda que esteja infectado devido a uma resposta imune que envolve receptores da membrana plasmática de macrófagos. O terceiro caso é o que a resistência independe de um contato anterior com o plasmódio. Essa situação ocorre em crianças com anemia falciforme e pessoas que não apresentam determinados antígenos.\n    O tratamento dos doentes é de fundamental importância para a profilaxia dessa parasitose e ocorre por meio de medicamentos antimaláricos que podem ser usados individualmente ou combinados administrados de acordo com a espécie do plasmódio, com a gravidade da doença, com a história de exposição anterior à infecção e com a idade do paciente. Alguns desses remédios são cloroquina, primaquina (usados para <i>P. vivax</i>, <i>P. ovale</i> e <i>P. malariae</i>), artemeter, lumefantrina, artesunato e mefloquina (<i>P. falciparum</i>).\n</p>",
         "imageAddress" : "malaria1"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "Malária - características, sintomas e prevenção",
+        "url" : "https://www.youtube.com/watch?v=rNF9agWWGqI&feature=youtu.be"
+      },
+      {
+        "title" : "MALÁRIA - PARASITOLOGIA #13",
+        "url" : "https://www.youtube.com/watch?v=p05LZND_ayw&feature=youtu.be"
+      },
+      {
+        "title" : "Malária",
+        "url" : "https://www.youtube.com/watch?v=UL6A_sESfdA&feature=youtu.be"
+      },
+      {
+        "title" : "MALÁRIA",
+        "url" : "https://www.youtube.com/watch?v=jsIjB9AOXqU&feature=youtu.be"
+      },
+      {
+        "title" : "Malária - Vídeo Aula",
+        "url" : "https://www.youtube.com/watch?v=N7Fu-FZTkAw&feature=youtu.be"
+      },
+      {
+        "title" : "O que você sabe sobre a Malária?",
+        "url" : "https://www.youtube.com/watch?v=DPYIAJVRSHo&feature=youtu.be"
+      },
+      {
+        "title" : "O papel da vigilância na eliminação da malária",
+        "url" : "https://www.youtube.com/watch?v=LhtBekgdLKs&feature=youtu.be"
+      },
+      {
+        "title" : "Mapa da Malária no Mundo - Espécies de mosquitos vetores",
+        "url" : "https://www.youtube.com/watch?v=F5jxn5ODowI&feature=youtu.be"
+      },
+      {
+        "title" : "Diagnóstico da Malária - Prevenção e forma de combate a doença",
+        "url" : "https://www.youtube.com/watch?v=4n-Hhs6Gq6U&feature=youtu.be"
+      },
+      {
+        "title" : "Ciclo de vida da malária - O mosquito hospedeiro",
+        "url" : "https://www.youtube.com/watch?v=XQAj4Y2cA1c&feature=youtu.be"
       }
     ]
   },
@@ -615,9 +874,42 @@
         "type" : "text",
         "text" : "<ul>\n    <li>&nbsp; &nbsp;Em crian&ccedil;as e adultos, o tratamento &eacute; oral e relativamente f&aacute;cil de ser feito, pois existem medicamentos eficientes. Entretanto, para a fase cr&ocirc;nica, n&atilde;o existe tratamento, e a terap&ecirc;utica de gestantes requer muito cuidado.</li>\n</ul>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Toxoplasmose",
+        "url" : "https://www.youtube.com/watch?v=3bQhjiT-qx0&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia - Aula 05 - O Toxoplasma gondii e a Toxoplasmose",
+        "url" : "https://www.youtube.com/watch?v=yijm3z_ljQI&feature=youtu.be"
+      },
+      {
+        "title" : "O que é a toxoplasmose ocular?",
+        "url" : "https://www.youtube.com/watch?v=lhQUxaX2tco&feature=youtu.be"
+      },
+      {
+        "title" : "Ciclo da Toxoplasmose | Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=-YJhQDSQqNs&feature=youtu.be"
+      },
+      {
+        "title" : "O que você sabe sobre Toxoplasma gondii",
+        "url" : "https://www.youtube.com/watch?v=JpDf5QhlvDg&feature=youtu.be"
+      },
+      {
+        "title" : "Toxoplasmose: toxoplasma gondii | PARASITOLOGIA #4",
+        "url" : "https://www.youtube.com/watch?v=lUhyTlNdPl8&feature=youtu.be"
+      },
+      {
+        "title" : "O que é IgM e IgG - Toxoplasmose | Tati Florentino",
+        "url" : "https://www.youtube.com/watch?v=m6T5auYqx1A&feature=youtu.be"
+      },
+      {
+        "title" : "Toxoplasmose - UEL",
+        "url" : "https://www.youtube.com/watch?v=QqHqAJPKb9w&feature=youtu.be"
+      }
     ]
   },
-
   {
     "categoryName" : "Balantidíase",
     "numberOftextBookTabs" : 7,
@@ -666,21 +958,6 @@
   },
 
   {
-    "categoryName" : "Protozooses",
-    "numberOftextBookTabs" : 1,
-    "parentCategory" : "Protozoários",
-    "nextCategoryId" : 2131361887 ,
-    "concludeProgress" : 100,
-    "textBook" : [
-      {
-        "title" : "Categoria não disponível:",
-        "type" : "text",
-        "text" : "<p>\n    &nbsp; &nbsp; Esta categoria ainda não está disponível. Aguarde futuras atualizações!"
-      }
-    ]
-  },
-
-  {
     "categoryName" : "Helmintos",
     "numberOftextBookTabs" : 3,
     "parentCategory" : "Helmintos",
@@ -701,6 +978,20 @@
         "title" : "Um pouco mais sobre os helmintos...",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;A grande maioria dos helmintos parasita o tubo digestivo dos hospedeiros, mas h&aacute; esp&eacute;cies que possuem habitat diferentes, tais como: <em>S. mansoni&nbsp;</em>vive nos vasos do sistema porta, a <em>W. bancrofti&nbsp;</em>vive nos vasos linf&aacute;ticos, a <em>O. volvulus&nbsp;</em>vive no tecido subcut&acirc;neo. Dessa forma, dependendo do habitat, a esp&eacute;cie do helminto apresentar&aacute; um ciclo que permita ou favore&ccedil;a a sua propaga&ccedil;&atilde;o, podendo usar ou n&atilde;o um hospedeiro intermedi&aacute;rio.&nbsp;</p>\n<p>&nbsp; &nbsp;Os que t&ecirc;m <strong>ciclo direto</strong> s&atilde;o denominados <strong>monoxenos</strong>; os que t&ecirc;m hospedeiro intermedi&aacute;rio s&atilde;o denominados <strong>heteroxenos</strong>. Mas todos eles passam pelas fases de ovo, de larva e adulta, sendo que a larva tem formas e biologias peculiares para cada esp&eacute;cie. Cada fase do ciclo &eacute; denominada <strong>est&aacute;gio&nbsp;</strong>e uma larva passa por tr&ecirc;s ou quatro <strong>est&aacute;dios</strong>. Assim, est&aacute;gios s&atilde;o as formas de transi&ccedil;&atilde;o (imaturos) do helminto (ou de um artr&oacute;pode) e <strong>est&aacute;dio&nbsp;</strong>&eacute; a fase intermedi&aacute;ria ou intervalo entre duas mudas da larva do helminto (ou do artr&oacute;pode).</p>\n<p>&nbsp; &nbsp;Uma denomina&ccedil;&atilde;o muito comum, empregada pelos especialistas em sa&uacute;de p&uacute;blica: <strong><em>geo-helmintos</em></strong>. Refere-se aos helmintos cuja transmiss&atilde;o depende da complementa&ccedil;&atilde;o do ciclo no solo, com forma&ccedil;&atilde;o de larvas infectantes, quer seja dentro do ovo, conforme ocorre em <em>A. lumbricoides&nbsp;</em>e <em>T. trichiura</em>, quer seja livre, conforme ocorre nos ancilostom&iacute;deos e em <em>S. stercoralis</em>.&nbsp;</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "PARASITOLOGIA - HELMINTOS",
+        "url" : "https://www.youtube.com/watch?v=MWNNy4kBypA"
+      },
+      {
+        "title" : "Helmintos - Vermes",
+        "url" : "https://www.youtube.com/watch?v=FlKDbZJirsU"
+      },
+      {
+        "title" : "Principais doenças causadas por vermes - Mundo Biologia - ENEM",
+        "url" : "https://www.youtube.com/watch?v=9cK_1NG7ZAg"
       }
     ]
   },
@@ -762,6 +1053,48 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Existem v&aacute;rias drogas eficientes, que devem ser usadas com crit&eacute;rio e por m&eacute;dicos experientes, al&eacute;m de aplicadas o mais precocemente poss&iacute;vel. A dieta para um paciente esquistossom&oacute;tico &eacute; bastante vari&aacute;vel, dependendo do quadro da doen&ccedil;a, podendo ser institu&iacute;da desde uma dieta normal at&eacute; uma dieta muito leve, com pouco lip&iacute;dio, por&eacute;m rica em prote&iacute;nas de f&aacute;cil digest&atilde;o e assimila&ccedil;&atilde;o.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "ESQUISTOSSOMOSE - PARASITOLOGIA #15",
+        "url" : "https://www.youtube.com/watch?v=7Mu9mhq2tk4&feature=youtu.be"
+      },
+      {
+        "title" : "Esquistossomose (Verminoses) - Aula 12 - Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=28KheafNS5o&feature=youtu.be"
+      },
+      {
+        "title" : "ESQUISTOSSOMOSE - DICA ENEM BIOLOGIA #23 - Prof. Kennedy Ramos",
+        "url" : "https://www.youtube.com/watch?v=L2lO0CQhEN8&feature=youtu.be"
+      },
+      {
+        "title" : "Esquistossomose - Unidade 1 - Ciclo de Vida do Schistosoma mansoni (Produção IAM/Fiocruz-PE)",
+        "url" : "https://www.youtube.com/watch?v=1hMIdLvkP4A&feature=youtu.be"
+      },
+      {
+        "title" : "Esquistossomose - características gerais, sintomas e prevenção",
+        "url" : "https://www.youtube.com/watch?v=gSUOIGjH6q4&feature=youtu.be"
+      },
+      {
+        "title" : "Esquistossomose - Parasitoses - Prof. Paulo Jubilut",
+        "url" : "https://www.youtube.com/watch?v=B1Cxx8RFw1M&feature=youtu.be"
+      },
+      {
+        "title" : "Esquistossomose ou Barriga-d'água",
+        "url" : "https://www.youtube.com/watch?v=NkmtvqHuSYg&feature=youtu.be"
+      },
+      {
+        "title" : "Esquistossomose",
+        "url" : "https://www.youtube.com/watch?v=d-pEGQANTtA&feature=youtu.be"
+      },
+      {
+        "title" : "Animação Informativa Sobre Esquistossomose",
+        "url" : "https://www.youtube.com/watch?v=sSKwJ4GPQT0&feature=youtu.be"
+      },
+      {
+        "title" : "ESQUISTOSSOMOSE | Resumo de Biologia para o Enem",
+        "url" : "https://www.youtube.com/watch?v=fETdrRNrfyQ&feature=youtu.be"
+      }
     ]
   },
   {
@@ -816,6 +1149,20 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;Existem diversos verm&iacute;fugos que apresentam satisfat&oacute;rios resultados no tratamento de humanos e animais.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Aula 2 Fasciola hepatica (Parasitologia e epizootiologia)",
+        "url" : "https://www.youtube.com/watch?v=CGyd6vXj7zI&feature=youtu.be"
+      },
+      {
+        "title" : "Fasciolíase",
+        "url" : "https://www.youtube.com/watch?v=c1yD_wXHVaU&feature=youtu.be"
+      },
+      {
+        "title" : "Video Fasciola hepática (1)",
+        "url" : "https://www.youtube.com/watch?v=qExOHiSF0bk&feature=youtu.be"
+      }
     ]
   },
   {
@@ -869,6 +1216,36 @@
         "title" : "Tratamento",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;Os medicamentos dispon&iacute;veis s&atilde;o eficientes, o que facilita o tratamento. A dieta deve ser rica em carboidratos, lip&iacute;dios, c&aacute;lcio, ferro e vitaminas, pois os helmintos s&atilde;o grandes espoliadores desses nutrientes.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "TENÍASE E CISTICERCOSE - PARASITOLOGIA #4",
+        "url" : "https://www.youtube.com/watch?v=s0HZU0L27Tc&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase e Cisticercose",
+        "url" : "https://www.youtube.com/watch?v=2lLpHYzmhfI&feature=youtu.be"
+      },
+      {
+        "title" : "Você sabe o que é teníase? - Livro Verminose? Aqui não!",
+        "url" : "https://www.youtube.com/watch?v=GO5FFuL2FIc&feature=youtu.be"
+      },
+      {
+        "title" : "Platelmintos - Teníase e cisticercose",
+        "url" : "https://www.youtube.com/watch?v=x82elHeRb_o&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase e Cisticercose (Verminoses) - Aula 11 Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=zPGE16l0zfo&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase e Cisticercose - Resumo - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=N_Bzbxa58XY&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase (Solitária) e Cisticercose - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=Mm5SiLmBTyI&feature=youtu.be"
       }
     ]
   },
@@ -929,6 +1306,32 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;Embora haja medicamento espec&iacute;fico para a cisticercose, o tratamento n&atilde;o &eacute; f&aacute;cil de ser feito. A dificuldade consiste na localiza&ccedil;&atilde;o do cisticerco e das complica&ccedil;&otilde;es advindas ap&oacute;s a morte do parasito, provocada pelo medicamento. Portanto, o tratamento da cisticercose deve ser acompanhado por m&eacute;dicos experientes e especialistas nessa patologia.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "TENÍASE E CISTICERCOSE - PARASITOLOGIA #4",
+        "url" : "https://www.youtube.com/watch?v=s0HZU0L27Tc&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase e Cisticercose",
+        "url" : "https://www.youtube.com/watch?v=2lLpHYzmhfI&feature=youtu.be"
+      },
+      {
+        "title" : "Platelmintos - Teníase e cisticercose",
+        "url" : "https://www.youtube.com/watch?v=x82elHeRb_o&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase e Cisticercose (Verminoses) - Aula 11 Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=zPGE16l0zfo&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase e Cisticercose - Resumo - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=N_Bzbxa58XY&feature=youtu.be"
+      },
+      {
+        "title" : "Teníase (Solitária) e Cisticercose - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=Mm5SiLmBTyI&feature=youtu.be"
+      }
     ]
   },
   {
@@ -987,6 +1390,20 @@
         "title" : "Tratamento",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;Para a equinococose canina, existe tratamento eficiente. J&aacute; para os casos de hidatidose humana, o tratamento pode ser atrav&eacute;s de medicamentos e cirurgia.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "Echinococcus granulosus - HIDATIDOSE | Ensino superior",
+        "url" : "https://www.youtube.com/watch?v=wPDRzUKlKO4&feature=youtu.be"
+      },
+      {
+        "title" : "HIDATIDOSE - PARASITOLOGIA 18",
+        "url" : "https://www.youtube.com/watch?v=4GhK1v-QXtg&feature=youtu.be"
+      },
+      {
+        "title" : "Vídeo Hidatidose",
+        "url" : "https://www.youtube.com/watch?v=VpM2OugOduk&feature=youtu.be"
       }
     ]
   },
@@ -1047,6 +1464,28 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;Os medicamentos de combate &agrave; himenolep&iacute;ase s&atilde;o eficientes, o que facilita o tratamento. Al&eacute;m disso, caso n&atilde;o haja reinfec&ccedil;&otilde;es, haver&aacute; cura espont&acirc;nea do paciente.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Parasitologia - Himenolepíase. Prof Lucas Barbosa",
+        "url" : "https://www.youtube.com/watch?v=CLZr5RocxUg&feature=youtu.be"
+      },
+      {
+        "title" : "HIDATIDOSE - PARASITOLOGIA 18",
+        "url" : "https://www.youtube.com/watch?v=4GhK1v-QXtg&feature=youtu.be"
+      },
+      {
+        "title" : "HIMENOLEPÍASE - HYMENOLEPIS NANA - PARASITOLOGIA 21",
+        "url" : "https://www.youtube.com/watch?v=h1wqUP870nI&feature=youtu.be"
+      },
+      {
+        "title" : "Hymenolepis nana e H. diminuta- Ensino Superior",
+        "url" : "https://www.youtube.com/watch?v=0ZfDFwYPtCw&feature=youtu.be"
+      },
+      {
+        "title" : "Hymenolepis nana - Demonstração dos Ovos",
+        "url" : "https://www.youtube.com/watch?v=z9059sQFKhA&feature=youtu.be"
+      }
     ]
   },
   {
@@ -1106,6 +1545,24 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;Os medicamentos dispon&iacute;veis s&atilde;o eficientes no tratamento da estrongiloid&iacute;ase, com resultados muito positivos nos pacientes com uma situa&ccedil;&atilde;o imunol&oacute;gica n&atilde;o comprometida. Com estes pacientes, o tratamento &eacute; mais complicado, o que pode levar ao &oacute;bito. Para o paciente diagnosticado com essa parasitose, &eacute; recomendada uma dieta leve, pobre em fibras, de f&aacute;cil absor&ccedil;&atilde;o e rica em nutrientes para repor as perdas nos per&iacute;odos diarreicos.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "ESTRONGILOIDÍASE - PARASITOLOGIA #14",
+        "url" : "https://www.youtube.com/watch?v=eK1azBkNiU0&feature=youtu.be"
+      },
+      {
+        "title" : "ESTRONGILOIDÍASE - STRONGYLOIDES STERCORALIS - PARASITOLOGIA 16",
+        "url" : "https://www.youtube.com/watch?v=RRwLURTW10w&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia: Strongyloides Stercoralis - Habitat e Ciclo Biológico",
+        "url" : "https://www.youtube.com/watch?v=NvsHyJLSK0M&feature=youtu.be"
+      },
+      {
+        "title" : "Larva rabditoide de Strongyloides sp",
+        "url" : "https://www.youtube.com/watch?v=7ZBgZMqxPYs&feature=youtu.be"
+      }
     ]
   },
   {
@@ -1159,6 +1616,20 @@
         "title" : "Tratamento",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp;O tratamento de geo-helmintoses como a tricur&iacute;ase se d&aacute; por dietas leves, com muito l&iacute;quido e pouca fibra, a fim de se evitar o prolapso renal. Caso ocorra, pode ser tratado por meio de medicamentos, dietas e tratamento cir&uacute;rgico.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "TRICURÍASE - PARASITOLOGIA #7",
+        "url" : "https://www.youtube.com/watch?v=2mVfPc5rgsM&feature=youtu.be"
+      },
+      {
+        "title" : "TRICURÍASE - TRICHURIS TRICHIURA - PARASITOLOGIA 7",
+        "url" : "https://www.youtube.com/watch?v=w0cGehwBcPA&feature=youtu.be"
+      },
+      {
+        "title" : "Tricuríase - Trichuris trichiura - Parasitologia | Prof. Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=VvQ7nBr17Ps&feature=youtu.be"
       }
     ]
   },
@@ -1219,6 +1690,29 @@
       {
         "title" : "ANCILOSTOMÍASE - PARASITOLOGIA #9",
         "url" : "https://youtu.be/8EmPjTGI1Fc"
+      },
+      {
+        "title" : "Ancilostomose (Parasitologia - EP 9) | Biokrill Series",
+        "url" : "https://www.youtube.com/watch?v=HDIBH7MH8cA&feature=youtu.be"
+      },{
+        "title" : "Ancilostomose (Amarelão) e Bicho-geográfico - Aula 15 - Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=n2N6S0_GysU&feature=youtu.be"
+      },
+      {
+        "title" : "O que é ancilostomose? - Livro Verminose? Aqui não!",
+        "url" : "https://www.youtube.com/watch?v=UP_-3DFIUZQ&feature=youtu.be"
+      },
+      {
+        "title" : "Ascaridíase - Parasito e Ciclo Biológico",
+        "url" : "https://www.youtube.com/watch?v=zQRu4YZQVW4&feature=youtu.be"
+      },
+      {
+        "title" : "Ancilostomose - Parasitologia - Biologia",
+        "url" : "https://www.youtube.com/watch?v=8tlF_scRjVQ&feature=youtu.be"
+      },
+      {
+        "title" : "Ancilostomose (Amarelão) | Apresentação Escolar",
+        "url" : "https://www.youtube.com/watch?v=nPT2wTGoaDU&feature=youtu.be"
       }
     ]
   },
@@ -1233,6 +1727,35 @@
         "title" : "Semelhanças com Ancilostomíase:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Devido &agrave; sua semelhan&ccedil;a epidemiol&oacute;gica, profil&aacute;tica, quanto &agrave; forma de diagn&oacute;stico e em rela&ccedil;&atilde;o &agrave; morfologia dos parasitos respons&aacute;veis com a ancilostom&iacute;ase, a necator&iacute;ase foi tratada no cap&iacute;tulo anterior, juntamente com a doen&ccedil;a anteriormente citada.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "ANCILOSTOMÍASE - PARASITOLOGIA #9",
+        "url" : "https://youtu.be/8EmPjTGI1Fc"
+      },
+      {
+        "title" : "Ancilostomose (Parasitologia - EP 9) | Biokrill Series",
+        "url" : "https://www.youtube.com/watch?v=HDIBH7MH8cA&feature=youtu.be"
+      },{
+        "title" : "Ancilostomose (Amarelão) e Bicho-geográfico - Aula 15 - Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=n2N6S0_GysU&feature=youtu.be"
+      },
+      {
+        "title" : "O que é ancilostomose? - Livro Verminose? Aqui não!",
+        "url" : "https://www.youtube.com/watch?v=UP_-3DFIUZQ&feature=youtu.be"
+      },
+      {
+        "title" : "Ascaridíase - Parasito e Ciclo Biológico",
+        "url" : "https://www.youtube.com/watch?v=zQRu4YZQVW4&feature=youtu.be"
+      },
+      {
+        "title" : "Ancilostomose - Parasitologia - Biologia",
+        "url" : "https://www.youtube.com/watch?v=8tlF_scRjVQ&feature=youtu.be"
+      },
+      {
+        "title" : "Ancilostomose (Amarelão) | Apresentação Escolar",
+        "url" : "https://www.youtube.com/watch?v=nPT2wTGoaDU&feature=youtu.be"
       }
     ]
   },
@@ -1287,6 +1810,36 @@
         "title" : "Tratamento:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; O tratamento desse parasito é fácil, e pode ocorrer cura espontânea se não houver reinfecção, já que as fêmeas morrem e são eliminadas 2 meses após a contaminação. Para o caso de invasão do sistema genital feminino, é necessário um tratamento médico.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "ENTEROBÍASE (OXIURÍASE) - PARASITOLOGIA #8",
+        "url" : "https://www.youtube.com/watch?v=x7bCPVpzm64&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia: Enterobius Vermiculares - Diagnóstico e Tratamento",
+        "url" : "https://www.youtube.com/watch?v=C2QENPkXRXU&feature=youtu.be"
+      },
+      {
+        "title" : "Oxiurose (Oxiurus ou Enterobiose) - Enterobius vermicularis - Parasitologia | Prof. Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=v-BCdtKR7eo&feature=youtu.be"
+      },
+      {
+        "title" : "Oxiurose (Enterobiose) - Aula 17 - Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=DEScOyNgoNg&feature=youtu.be"
+      },
+      {
+        "title" : "O que é enterobiose - Livro Verminose? Aqui não!",
+        "url" : "https://www.youtube.com/watch?v=LQ2Z83buNys&feature=youtu.be"
+      },
+      {
+        "title" : "Enterobiose - Parasito e Ciclo Biológico",
+        "url" : "https://www.youtube.com/watch?v=jsy4Lhkotd0&feature=youtu.be"
+      },
+      {
+        "title" : "Enterobius vermicularis | Oxiurose | Ensino Superior| Prof. Emerson Inácio",
+        "url" : "https://www.youtube.com/watch?v=taasNou-_c8&feature=youtu.be"
       }
     ]
   },
@@ -1348,7 +1901,31 @@
     "videos" : [
       {
         "title" : "ASCARIDÍASE - PARASITOLOGIA #6",
-        "url" : "https://youtu.be/7qemvVLjJyk"
+        "url" : "https://www.youtube.com/watch?v=7qemvVLjJyk&feature=youtu.be"
+      },
+      {
+        "title" : "Ascaridíase (Parasitologia - EP 8) | Biokrill Series",
+        "url" : "https://www.youtube.com/watch?v=W71RC33arRQ&feature=youtu.be"
+      },
+      {
+        "title" : "Ascaridíase (lombriga) - Aula 14, Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=q1bRW7ZNNZs&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia: ascaridíase",
+        "url" : "https://www.youtube.com/watch?v=ceMlNpCBHF0&feature=youtu.be"
+      },
+      {
+        "title" : "Entendendo a ascaridíase - Livro Verminose? Aqui não!",
+        "url" : "https://www.youtube.com/watch?v=w2gVTFjBa_4&feature=youtu.be"
+      },
+      {
+        "title" : "Ascaridíase - Parasito e Ciclo Biológico",
+        "url" : "https://www.youtube.com/watch?v=zQRu4YZQVW4&feature=youtu.be"
+      },
+      {
+        "title" : "Ascaris lumbricoides | Ascaridíase | Ensino Superior | Prof. Emerson Inácio",
+        "url" : "https://www.youtube.com/watch?v=X1OC_DRsCLQ&feature=youtu.be"
       }
     ]
   },
@@ -1378,6 +1955,12 @@
         "title" : "Tratamento:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; O tratamento ocorre por meio de medicamentos espec&iacute;ficos.</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "Larva Migrans Cutânea | Bicho-Geográfico | Ensino Superior | Prof. Emerson inácio",
+        "url" : "https://www.youtube.com/watch?v=dGV2HeWDXq8&feature=youtu.be"
       }
     ]
   },
@@ -1428,8 +2011,27 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; A resposta imune nas filarioses ainda &eacute; vastamente estudada, de modo que grande parte dos conhecimentos atuais se deram por infec&ccedil;&otilde;es experimentais em camundongos, ocasionadas por <em>Brugia malayi</em> e <em>W. bancrofti</em>, assim como por infec&ccedil;&otilde;es em humanos pela &uacute;ltima filariose.</p>\n<p>&nbsp; &nbsp; As infec&ccedil;&otilde;es de filarioses, em geral, s&atilde;o cr&ocirc;nicas, visto que os parasitos apresentam muitas formas de escape &agrave; resposta imune do paciente. Nestes pacientes, &eacute; poss&iacute;vel observar respostas antig&ecirc;nicas espec&iacute;ficas e produ&ccedil;&atilde;o de interferon, na produ&ccedil;&atilde;o de imunidade celular e de interleucina (IL) para o desenvolvimento de imunoglobulinas.</p>\n<p>&nbsp; &nbsp; Na fase ativa das doen&ccedil;as, s&atilde;o observados altos n&iacute;veis de IgG4, enquanto os de IgG3 e IgE s&atilde;o baixos. Quando as microfil&aacute;rias se encontram no sangue dos pacientes, percebe-se a eleva&ccedil;&atilde;o de IgG1 e IgG2. Por fim, IgA possui um n&iacute;vel elevado quando h&aacute; baixos n&iacute;veis de microfilariemia, denotando a sua a&ccedil;&atilde;o imunol&oacute;gica protetora.</p>\n<p>&nbsp; &nbsp; Al&eacute;m disso, as concentra&ccedil;&otilde;es de determinadas imunoglobulinas s&atilde;o diferentes de acordo com o sexo do paciente. Nos homens, encontram-se n&iacute;veis mais baixos de IgA, enquanto os n&iacute;veis de IgE e IgA s&atilde;o mais elevados nas mulheres. Tal fato pode explicar a maior preval&ecirc;ncia desse tipo de doen&ccedil;a nos homens.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Filariose (Elefantíase) - Aula 16 - Módulo VI: Zoologia | Prof. Guilherme",
+        "url" : "https://www.youtube.com/watch?v=PWb2HOvDfm8&feature=youtu.be"
+      },
+      {
+        "title" : "Verminoses - Filariose ou Elefantíase",
+        "url" : "https://www.youtube.com/watch?v=k-qRa7MnDXY&feature=youtu.be"
+      },
+      {
+        "title" : "Parasitologia - Aula 10 - Filárias e filarioses",
+        "url" : "https://www.youtube.com/watch?v=9VV09ZKABno&feature=youtu.be"
+      },
+      {
+        "title" : "Filariose - Parasitologia - Biologia",
+        "url" : "https://www.youtube.com/watch?v=YdmDFZ_iFfc&feature=youtu.be"
+      }
     ]
   },
+
   {
     "categoryName" : "Outras Helmintoses",
     "numberOftextBookTabs" : 6,
@@ -1470,6 +2072,8 @@
     ]
   },
 
+
+
   {
     "categoryName" : "Artrópodes",
     "numberOftextBookTabs" : 3,
@@ -1507,6 +2111,16 @@
         "text" : "<p>&nbsp; &nbsp; O barbeiro é um inseto hematófago de hábitos noturno, que tem sua importância dada principalmente por ser vetor da doença de chagas. {O nome popular se referencia aos animais da subfamília <i>Triatominae</i>.}\n    Já em sua viagem à América do Sul, Charles Darwin, descreveu em seu diário, um animal que se encaixa na descrição do barbeiro, {como visto na citação:\n    <br />\n    <i>\n        \"À noite experimentei um ataque, e não merece menos este nome, do Benchuca, grande besouro negro dos Pampas. É muito repugnante sentir insetos sem asas, com cerca de uma polegada de comprimento, caçando sobre o corpo; antes de sugar eles são bastante finos, mas depois [ficam] redondos e inchados de sangue, e nesse estado eles são facilmente esmagados. Eles também são encontrados na parte norte do Chile e no Peru: um que eu peguei em Iquique estava muito vazio; sendo colocado sobre a mesa e embora cercado de pessoas, se um dedo fosse apresentado, seu sugador era estirado, e o inseto ousado começava a tirar sangue. Foi curioso observar a mudança no tamanho do corpo desses insetos em menos de dez minutos. Não houve dor sentida - Esta refeição manteve o inseto gordo por quatro meses. Em uma quinzena, porém, estava pronto, se fosse permitido, a sugar mais sangue.\"\n    </i>\n    <br />\n    Após isso o inseto ganhou ainda maior destaque com o estudo do médico mineiro Carlos Ribeiro Justiniano das Chagas.\n</p>\n<ul>\n    <li>\n        <h2>Morfologia do ectoparasita:</h2>\n        <p>\n            &nbsp; &nbsp; Da ordem <i>Hemiptera</i>, subordem <i>Heteroptera</i> e família <i>Reduviidae</i>, o Barbeiro é um\n            animal de hábitos noturnos, tendo como principais representantes <i>T. brasiliensis</i>,\n            <i>Panstrongylus megistus</i>, <i>T. pseudomaculata</i> e <i>T. sordida</i> e <i>T. infestans</i>.\n            Ele suga sangue, no ambiente silvestre, de cutias, gambás e tatus, já no ambiente doméstico, de cães\n            e gatos. Também afetando humanos, nos quais dão preferência a região da face, o que remete ao seu nome,\n            barbeiro. Aloja-se entre paredes de casas de pau-a-pique, lugar ideal para seus ninhos, em colchões,\n            atrás de móveis, paióis e galinheiros. Pode ser infectado pelo <i>T. cruzi</i> ao ingerir sangue de um\n            organismo infectado, se infectado permanece assim até o fim de sua vida, sendo que sua expectativa\n            é de cerca de até 1 ano.\n            <br />\n            <i>“O <b>T. infestans</b> era outra espécie importante, mas medidas de controle do Ministério da\n                Saúde conseguiram interromper a transmissão da doença de Chagas por este tipo de barbeiro.”</i>\n        </p>\n    </li>\n    <li>\n        <h2>Morfologia do agente:</h2>\n        <p>\n            &nbsp; &nbsp; Do filo <i>Sarcomastigophora</i>, <i>subfilo Mastigophora</i>, família\n            <i>Trypanosomatidae</i>, o <i>Trypanosoma cruzi</i> pode ser\n            encontrado em 3 formas:\n        </p>\n\n        <h2>Ciclo Biológico:</h2>\n\n        <p>\n            &nbsp; &nbsp; Medindo cerca de 2 a 3 cm na fase adulta, possuem ciclo biológico sem estágios larvais\n            {, ou seja, são paurometabólicos, sendo as espécies principalmente univoltinas ou bivoltinas,\n            respectivamente um ciclo e dois ciclos de ovo a adulto por ano}.\n            <br />\n            Como o T. cruzi passa em seu ciclo por dois hospedeiros, ele é\n            classificado como um parasita heteroxênico\n        </p>\n    </li>\n    <li>\n        <h2>Combate:</h2>\n        <ul>\n            <li>Combate ao vetor pode ser realizado por meio da pulverização de inseticidas\n                {piretroides com efeito residual de 6 meses a 1 ano}, além da eliminação de locais para o\n                estabelecimento de seus ninhos.</li>\n            <li>Além da educação sanitária e ambiental da população.</li>\n            <li>Melhoria das habitações, casas sem espaços para barbeiros, limpas, de tijolos e rebocadas.</li>\n        </ul>\n    </li>\n</ul>",
         "imageAddress": "barber1"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "O Barbeiro de Chagas",
+        "url" : "https://www.youtube.com/watch?v=DnN4mI35IGQ&feature=youtu.be"
+      },
+      {
+        "title" : "CHAGAS DESENHO ANIMADO.flv",
+        "url" : "https://www.youtube.com/watch?v=GMcUAmXfB1k&feature=youtu.be"
+      }
     ]
   },
   {
@@ -1531,6 +2145,20 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Pertencentes ao filo dos artrópodes, à família Psychodidae e à subfamília dos flebotomíneos, insetos do gênero <i><b>Lutzomyia</b></i> apresentam importância médica e veterinária por serem vetores, na região das Américas, dos protozoários causadores da leishmaniose. No velho mundo, os transmissores dessa doença são do gênero Phlebotomus.\n    Os Lutzomyia sp. medem cerca de 2 a 4 mm, possuem corpo revestido de cerdas e asas sempre levantadas. As fêmeas costumam picar aves e mamíferos no período noturno e crepuscular, já os machos não são hematófagos e se alimentam principalmente de sucos vegetais. A picada é rápida e dolorosa.\n    A principal espécie desse vetor é <i><b>Lutzomyia longipalpis</b></i>, mas existem também as espécies <i>L. whitmani</i>, <i>L. intermedia</i>, <i>L. flaviscutelata</i>, <i>L. pessoai</i>, entre outras.\n    Seu ciclo biológico inclui quatro etapas: ovo, o qual é elíptico, alongado; larva, vermiforme e que apresenta pseudópodos; pupas, de formato cilíndrico e que mede cerca de 2 mm; e adulto.\n    O controlo desse inseto é muito complexo pois seus ovos são depositados de maneira dispersa em meio à matéria orgânica e sua maioria é silvestre. Porém, existem medidas profiláticas que devem ser tomadas para evitar a infecção de humanos e animais doméstico pela leishmaniose. Entre essas medidas estão o uso de inseticidas na região domiciliar e peridomiciliar, a telagem de portas e janelas, o uso de repelentes em humanos e de coleiras com repelentes em cães, a vacinação desses animais, a limpeza de quintais e praças, de modo a reduzir os focos do vetor. Outra importante medida é a educação sanitária da população, para que possam se prevenir da doença e procurar ajuda ao reconhecer seus sintomas. A aplicação de inseticidas em ambientes silvestres, no entanto não deve ser realizada.\n</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "AEDES AEGYPTI | DOENÇAS TRANSMITIDAS PELO MOSQUITO | BIOLOGIA",
+        "url" : "https://www.youtube.com/watch?v=9QvqZZkNTpg&feature=youtu.be"
+      },
+      {
+        "title" : "Aedes aegypti - características",
+        "url" : "https://www.youtube.com/watch?v=6k6wti3aB6E&feature=youtu.be"
+      },
+      {
+        "title" : "O ciclo do plasmódio no interior do mosquito Anopheles",
+        "url" : "https://www.youtube.com/watch?v=s-SKYfERZd4&feature=youtu.be"
+      }
     ]
   },
   {
@@ -1545,7 +2173,22 @@
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; Neste cap&iacute;tulo, alguns helmintos incomuns, mas que devem ser melhor conhecidos por profissionais de sa&uacute;de, ser&atilde;o apresentados, uma vez que foram apresentados diversos casos ultimamente.</p>"
       }
+    ],
+    "videos" : [
+      {
+        "title" : "Parasitologia - Moscas",
+        "url" : "https://www.youtube.com/watch?v=xCAqzb9B_Y0"
+      },
+      {
+        "title" : "Aedes aegypti - características",
+        "url" : "https://www.youtube.com/watch?v=6k6wti3aB6E&feature=youtu.be"
+      },
+      {
+        "title" : "O ciclo do plasmódio no interior do mosquito Anopheles",
+        "url" : "https://www.youtube.com/watch?v=s-SKYfERZd4&feature=youtu.be"
+      }
     ]
+
   },
   {
     "categoryName" : "Ectoparasitos",
@@ -1568,6 +2211,24 @@
         "title" : "Pulgas:",
         "type" : "text",
         "text" : "<p>&nbsp; &nbsp; As pulgas são ectoparasitas temporários, de corpo achatado lateralmente e que medem cerca de 1 a 3 mm. São artrópodes da classe <i>insecta</i>, ordem <i>Siphonaptera</i> e famílias diversas como a <i>Pulicidae</i> e a <i>Tungidae</i>.\n    O ciclo de vida das pulgas é holometábolo, ou seja, passam pelos estágios de ovo, larva, pupa e adulto. As larvas se alimentam de sangue e detritos nas fezes dos indivíduos adultos, os quais são hematófagos.\n    Estão distribuídas por todo o planeta e são encontradas parasitando animais e seres humanos. Algumas espécies também são vetores de bactérias e vírus, fato que torna as pulgas ainda mais perigosas. Sua picada é incômoda e é capaz de causar dermatite alérgica grave.\n    Esses insetos podem ser transmitidos pelo contato direto com pessoas ou animais infectados, bem como pelo compartilhamento de objetos de uso comum, como cadeiras de cinema e sofás, ou pessoal.\n    O uso de inseticidas é recomendado para o controle desses parasitas, bem como o uso de aspiradores de pó, incinerando-se o pó recolhido.\n    Algumas das principais espécies são <i>Pulex irritans</i> e <i>Xenopsylla cheopis</i>, da família <i>Pulicidae</i>, e <i>Tunga penetrans</i> da família <i>Tungidae</i>.\n    <ul>\n        <li><b><i>Pulex irritans</i></b>: A pulga <i><b>Pulex irritans</b></i> é a que mais acomete o ser humano e também é ectoparasita de outros animais. Sua picada é capaz de causar uma reação de dermatite alérgica grave. É comum em áreas malcuidadas como casas e cinemas antigos. Sua distribuição é mundial e pode ser transmissora da chamada “Tênia anã”, a <i><b>Hymenolepis nana</b></i>.\n        </li>\n        <li>\n            <b><i>Xenopsylla cheopis</i></b>: Conhecida como “pulga dos ratos”, a <i><b>Xenopsylla cheopis</b></i> possui distribuição mundial e é de importância significativa por ser transmissora da bactéria <i><b>Yersinia pestis</b></i>, causadora da peste bubônica, doença que dizimou 1/3 da população europeia na Idade Média. Em seu ciclo de vida, a pulga parasita ratos até que eles morram para que então procurem um novo hospedeiro que poderá ser um humano. Atualmente, essa bactéria está restrita a regiões silvestres, sendo alvo de permanente vigilância epidemiológica.\n                A <i>X. cheopis</i> tem grande prevalência no Brasil, bem como outra espécie pertencente ao mesmo gênero, a <i>X. brasilienses</i>.\n        </li>\n            <li><i><b>Tunga penetrans</b></i>: Essa pulga, que é parasita de homens e outros animais como cães, gatos e suínos, é popularmente conhecida como “bicho de pé” pois penetra nos pés, região em que a fêmea realiza a oviposição. Sua saliva causa um prurido característico para sua identificação.\n                Uma tumoração clara no local da picada e de estabelecimento do ectoparasito pode surgir com os dez primeiros dias. Para que seja retirada, faz-se necessária a aplicação de um bacteriostato local e o uso de uma agulha esterilizada. O buraco deixado deve ser tratado com antissépticos como álcool iodado ou mertiolato.\n                A <i>T. penetrans</i> tem importância também por ser capaz de atuar como vetor mecânico para as bactérias <i>Clostridium tetani</i> e <i>Clostridium perfrigens</i>, causadoras do tétano e da gangrena gasosa respectivamente, e para fungos que podem causar micoses.\n        </li>\n    </ul>\n</p>"
+      }
+    ],
+    "videos" : [
+      {
+        "title" : "Ectoparasitas - Parasitologia",
+        "url" : "https://www.youtube.com/watch?v=DvdECtW9O0g&feature=youtu.be"
+      },
+      {
+        "title" : "Ectoparasitas | Mundo Pet",
+        "url" : "https://www.youtube.com/watch?v=AysGNCZX5LU&feature=youtu.be"
+      },
+      {
+        "title" : "Vídeo | Curso Online de Principais Ectoparasitas de interesse Veterinário - Portal Educação",
+        "url" : "https://www.youtube.com/watch?v=_mNG2mEubzs&feature=youtu.be"
+      },
+      {
+        "title" : "Piolho (Pediculose) - Aula - Parasitologia | Biologia com Samuel Cunha",
+        "url" : "https://www.youtube.com/watch?v=vgM65iJXI10"
       }
     ]
   }
