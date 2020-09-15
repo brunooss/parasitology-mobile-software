@@ -71,6 +71,7 @@
         <activity
             android:name=".CategoryVideosActivity"
             android:largeHeap="true"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:parentActivityName=".CategoryMenuActivity"
             android:theme="@style/AppTheme.CategoryActivity"/>
     </application>

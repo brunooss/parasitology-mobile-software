@@ -2,6 +2,8 @@ package com.android.parasitologymobilesoftware;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
@@ -43,12 +48,26 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideosViewHo
         VideoCard v = videos.get(position);
 
         holder.videoName.setText(v.titleSite);
-        holder.videoUrl.setText(v.urlSite); /*
-        try {
-            holder.videoThumbnail.setImageBitmap(BitmapFactory.decodeStream(new URL(v.urlImage).openStream()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        } */
+
+
+        Picasso.with(context)
+                .load(v.urlImage)
+                .into(holder.videoThumbnail);
+
+
+//        try {
+//            Log.d("VideoAdapter", "URL: "+v.urlImage);
+//            InputStream is = (InputStream) new URL(v.urlImage).getContent();
+//            Drawable d = Drawable.createFromStream(is, "imageVideoThumbnail");
+//            holder.videoThumbnail.setImageDrawable(d);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+////        try {
+////            holder.videoThumbnail.setImageBitmap(BitmapFactory.decodeStream(new URL(v.urlImage).openStream()));
+////        } catch (IOException e) {
+////            e.printStackTrace();
+////        }
     }
 
     public interface VideoOnClickListener {
@@ -60,7 +79,6 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideosViewHo
         VideoOnClickListener videoOnClickListener;
 
         public TextView videoName;
-        public TextView videoUrl;
         public ImageView videoThumbnail;
 
         public VideosViewHolder(View view, VideoOnClickListener videoOnClickListener) {
@@ -69,7 +87,6 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideosViewHo
             this.videoOnClickListener = videoOnClickListener;
 
             videoName = view.findViewById(R.id.textViewVideoName);
-            videoUrl = view.findViewById(R.id.textViewVideoUrl);
             videoThumbnail = view.findViewById(R.id.imageViewVideoThumbnail);
 
             view.setOnClickListener(this);
