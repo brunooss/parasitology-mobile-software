@@ -72,7 +72,6 @@
             android:name=".CategoryVideosActivity"
             android:largeHeap="true"
             android:parentActivityName=".CategoryMenuActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.CategoryActivity"/>
     </application>
 

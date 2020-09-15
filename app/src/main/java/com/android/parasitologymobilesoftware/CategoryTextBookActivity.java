@@ -37,7 +37,7 @@ public class CategoryTextBookActivity extends AppCompatActivity {
     private String thirdMessage = "? Seu progresso nesta categoria será perdido";
     private ViewPager viewPager;
 
-    private CategoryTextBookFragment fragment = new CategoryTextBookFragment();
+//    private CategoryTextBookFragment fragment = new CategoryTextBookFragment();
 
 
     @Override
@@ -48,8 +48,8 @@ public class CategoryTextBookActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         category = extras.getString("category");
         categoryId = extras.getInt("CategoryId");
-        Log.d(TAG, "Category received: " +category);
-        Log.d(TAG, "Category Id received: " +categoryId);
+        Log.i(TAG, "Category received: " +category);
+        Log.i(TAG, "Category Id received: " +categoryId);
 
         // Exit Alert Dialog config
         secondMessage = category;

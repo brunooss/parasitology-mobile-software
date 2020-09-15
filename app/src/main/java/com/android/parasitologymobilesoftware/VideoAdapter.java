@@ -34,7 +34,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideosViewHo
     public VideosViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.adapter_video, viewGroup, false);
 
-        VideosViewHolder holder = new VideosViewHolder(view);
+        VideosViewHolder holder = new VideosViewHolder(view, videoOnClickListener);
         return holder;
     }
 
@@ -52,20 +52,32 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideosViewHo
     }
 
     public interface VideoOnClickListener {
-        public void onClickVideoCard(View view, int index);
+        public void onClickVideoCard(int index);
     }
 
-    public static class VideosViewHolder extends RecyclerView.ViewHolder {
+    public static class VideosViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        VideoOnClickListener videoOnClickListener;
+
         public TextView videoName;
         public TextView videoUrl;
         public ImageView videoThumbnail;
 
-        public VideosViewHolder(View view) {
+        public VideosViewHolder(View view, VideoOnClickListener videoOnClickListener) {
             super(view);
+
+            this.videoOnClickListener = videoOnClickListener;
 
             videoName = view.findViewById(R.id.textViewVideoName);
             videoUrl = view.findViewById(R.id.textViewVideoUrl);
             videoThumbnail = view.findViewById(R.id.imageViewVideoThumbnail);
+
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            videoOnClickListener.onClickVideoCard(getAdapterPosition());
         }
     }
 }

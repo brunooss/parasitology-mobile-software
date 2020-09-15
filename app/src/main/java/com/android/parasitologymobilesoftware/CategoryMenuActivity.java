@@ -104,6 +104,14 @@ public class CategoryMenuActivity extends AppCompatActivity {
         progressBarCategoryMenuVideos.setVisibility(View.VISIBLE);
 
         Intent intent = new Intent(this, CategoryVideosActivity.class);
+
+        Bundle data = new Bundle();
+
+        data.putString("category", category);
+        data.putInt("categoryId", categoryId);
+
+        intent.putExtras(data);
+
         startActivity(intent);
     }
 
