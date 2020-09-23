@@ -74,6 +74,11 @@
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:parentActivityName=".CategoryMenuActivity"
             android:theme="@style/AppTheme.CategoryActivity"/>
+        <activity
+            android:name=".CategoryExercisesActivity"
+            android:largeHeap="true"
+            android:parentActivityName=".CategoryMenuActivity"
+            android:theme="@style/AppTheme.CategoryActivity"/>
     </application>
 
 </manifest>

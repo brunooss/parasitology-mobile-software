@@ -21,6 +21,24 @@
         "title" : "INTRODUÇÃO À PARASITOLOGIA | Biologia com Samuel Cunha",
         "url" : "https://www.youtube.com/watch?v=93yFD1VLSFU"
       }
+    ],
+    "exercises" : [
+      {
+        "type" : "multipleChoice",
+        "title" : "",
+        "body" : "",
+        "img" : "",
+        "source" : "",
+        "choices": {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": "",
+          "E": ""
+        },
+        "correctChoice" : "",
+        "comment" : ""
+      }
     ]
   },
   {

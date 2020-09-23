@@ -118,7 +118,18 @@ public class CategoryMenuActivity extends AppCompatActivity {
     public void onButtonCategoryExercises(View view) {
         // UX/UI settings
         textViewCategoryMenuExercises.setVisibility(View.INVISIBLE);
-        progressBarCategoryMenuVideos.setVisibility(View.VISIBLE);
+        progressBarCategoryMenuExercises.setVisibility(View.VISIBLE);
+
+        Intent intent = new Intent(this, CategoryExercisesActivity.class);
+
+        Bundle data = new Bundle();
+
+        data.putString("category", category);
+        data.putInt("categoryId", categoryId);
+
+        intent.putExtras(data);
+
+        startActivity(intent);
     }
 
 
