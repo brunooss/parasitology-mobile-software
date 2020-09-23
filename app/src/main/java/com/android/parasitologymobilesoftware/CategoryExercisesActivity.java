@@ -1,10 +1,20 @@
 package com.android.parasitologymobilesoftware;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.MyApplication;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class CategoryExercisesActivity extends AppCompatActivity {
 
@@ -13,6 +23,7 @@ public class CategoryExercisesActivity extends AppCompatActivity {
 
     // JSON Exercises attributes
     private String type, title, body, source, correctChoice, comment;
+    public static int numberOfExercises;
     private String[] choices;
 
     // Parasitology Category
@@ -31,5 +42,35 @@ public class CategoryExercisesActivity extends AppCompatActivity {
         Log.i(TAG, "Category received: " +category);
         Log.i(TAG, "Category Id received: " +categoryId);
 
+
+        // Taking number of exercises from JSON - tabs we will need in pagerAdapter
+        try {
+            InputStream inputStream;
+            inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            String JSON = new String(buffer, "UTF-8");
+            JSONArray jsonArray = new JSONArray(JSON);
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                if (jsonObject.getString("categoryName").equals(category)) {
+                    JSONArray exercisesArray = jsonObject.getJSONArray("exercises");
+                    numberOfExercises = exercisesArray.length();
+                    Log.i(TAG, "Número de exercícios: " +numberOfExercises);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static int getNumberOfExercises() {
+        return numberOfExercises;
     }
 }
