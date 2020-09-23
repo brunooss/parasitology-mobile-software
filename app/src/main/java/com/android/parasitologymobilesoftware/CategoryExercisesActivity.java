@@ -21,9 +21,11 @@ public class CategoryExercisesActivity extends AppCompatActivity {
     // Our Activity TAG to LOG
     private static final String TAG = "CategoryExercisesActivity";
 
-    // JSON Exercises attributes
-    private String type, title, body, source, correctChoice, comment;
+    // JSON data
     public static int numberOfExercises;
+
+    // JSON Exercises attributes TODO: move it to FRAGMENT
+    private String type, title, body, source, correctChoice, comment;
     private String[] choices;
 
     // Parasitology Category
@@ -43,7 +45,7 @@ public class CategoryExercisesActivity extends AppCompatActivity {
         Log.i(TAG, "Category Id received: " +categoryId);
 
 
-        // Taking number of exercises from JSON - tabs we will need in pagerAdapter
+        // Taking number of exercises from JSON - tabs we will need to implement with pagerAdapter
         try {
             InputStream inputStream;
             inputStream = MyApplication.getMyApplicationContext().getAssets().open("fragments_settings.json");
