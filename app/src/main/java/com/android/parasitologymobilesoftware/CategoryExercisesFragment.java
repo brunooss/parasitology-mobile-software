@@ -5,7 +5,6 @@ import android.text.Html;
 import android.util.Log;
 import android.webkit.WebView;
 import android.widget.*;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -16,7 +15,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,13 +24,20 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CategoryTextBookFragment extends Fragment {
+public class CategoryExercisesFragment extends Fragment {
 
     static InputStream inputStream;
     private WebView webViewText;
 
     private static Button buttonNext;
     private static Button buttonPrevious;
+
+    public RadioGroup radioGroup;
+    public RadioButton alternativeA;
+    public RadioButton alternativeB;
+    public RadioButton alternativeC;
+    public RadioButton alternativeD;
+    public RadioButton alternativeE;
 
     private FirebaseFirestore dataBase;
     private FirebaseAuth firebaseAuth;
@@ -58,10 +63,13 @@ public class CategoryTextBookFragment extends Fragment {
 
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public CategoryExercisesFragment() {
+        // Required empty public constructor
+    }
 
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         dataBase = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -69,26 +77,28 @@ public class CategoryTextBookFragment extends Fragment {
 
         email = firebaseAuth.getCurrentUser().getEmail();
 
-        final View rootView = inflater.inflate(R.layout.fragment_category_textbook, container, false);
-        TextView textViewTitle = rootView.findViewById(R.id.textViewCategoryTitle);
-        webViewText = rootView.findViewById(R.id.webViewCategoryText);
+        final View rootView = inflater.inflate(R.layout.fragment_category_exercises, container, false);
+        TextView textViewTitle = rootView.findViewById(R.id.textViewExercisesTitle);
+        webViewText = rootView.findViewById(R.id.webViewExercisesText);
         ImageView imageView = rootView.findViewById(R.id.imageViewCategoryImage);
-        buttonNext = rootView.findViewById(R.id.buttonCategoryGroup).findViewById(R.id.buttonCategoryNext);
-        buttonPrevious = rootView.findViewById(R.id.buttonCategoryGroup).findViewById(R.id.buttonCategoryPrevious);
+        buttonNext = rootView.findViewById(R.id.buttonExercisesGroup).findViewById(R.id.buttonExercisesNext);
+        buttonPrevious = rootView.findViewById(R.id.buttonExercisesGroup).findViewById(R.id.buttonExercisesPrevious);
+        radioGroup = rootView.findViewById(R.id.radioGroupExercisesAlternatives);
+        alternativeA = rootView.findViewById(R.id.radioButtonA);
+        alternativeB = rootView.findViewById(R.id.radioButtonB);
+        alternativeC = rootView.findViewById(R.id.radioButtonC);
+        alternativeD = rootView.findViewById(R.id.radioButtonD);
+        alternativeE = rootView.findViewById(R.id.radioButtonE);
 
         if (getArguments().getString("type") != null) {
-            if(getArguments().getString("type").equals("textAndImage")) {
                 textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-                webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
+                webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("body") + "</body>", "text/html", "UTF-8");
                 webViewText.scrollTo(0, 0);
-                imageView.setImageResource(getResources().getIdentifier(getArguments().getString("imageAddress"), "drawable", getContext().getPackageName()));
-
-            } else if (getArguments().getString("type").equals("text")) {
-                textViewTitle.setText(Html.fromHtml(this.getArguments().getString("title"), Html.FROM_HTML_MODE_COMPACT));
-                webViewText.loadData("<body><style>* { text-align: justify; }</style>" + this.getArguments().getString("text") + "</body>", "text/html", "UTF-8");
-                webViewText.scrollTo(0, 0);
-                imageView.setVisibility(ImageView.INVISIBLE);
-            }
+                alternativeA.setText(this.getArguments().getString("A"));
+                alternativeB.setText(this.getArguments().getString("B"));
+                alternativeC.setText(this.getArguments().getString("C"));
+                alternativeD.setText(this.getArguments().getString("D"));
+                alternativeE.setText(this.getArguments().getString("E"));
         }
 
         if (getArguments().getInt("position") == 0) {
@@ -99,20 +109,12 @@ public class CategoryTextBookFragment extends Fragment {
             buttonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    ProgressBar progressBar = rootView.findViewById(R.id.progressBarCategoryComplete);
+                    ProgressBar progressBar = rootView.findViewById(R.id.progressBarExercisesComplete);
                     progressBar.setVisibility(View.VISIBLE);
                     buttonNext.setClickable(false);
                     nextCategoryId = getArguments().getInt("nextCategoryId");
                     categoryParent = getArguments().getString("parentCategory");
                     setConcludeProgress(getArguments().getInt("concludeProgress"));
-//                    CategoryTextBookActivity categoryActivity = (CategoryTextBookActivity) getActivity();
-//                    HomeActivity homeActivity = new HomeActivity();
-//                    for(int i = 0; i < homeActivity.categoriesIds.length; i++) {
-//                        if(homeActivity.categoriesIds[i] == categoryActivity.categoryId) {
-//                            HomeFragment homeFragment = new HomeFragment();
-//                            homeFragment.updateId(homeActivity.categoriesIds[i + 1]);
-//                        }
-//                    }
 
                     dataBase.collection("generalUserInfo").document(email).collection("specific info").document("progress categories")
                             .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -181,8 +183,7 @@ public class CategoryTextBookFragment extends Fragment {
         return rootView;
     }
 
-
-    public static CategoryTextBookFragment newInstance(int position) {
+    public static CategoryExercisesFragment newInstance(int position) {
         Bundle args = new Bundle();
         HomeFragment homeFragment = new HomeFragment();
 
@@ -205,12 +206,19 @@ public class CategoryTextBookFragment extends Fragment {
             for(int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-                if(jsonObject.getString("categoryName").equals(category) && !jsonObject.get("numberOftextBookTabs").equals(position)) {
-                    JSONObject tab = jsonObject.getJSONArray("textBook").getJSONObject(position);
+                if(jsonObject.getString("categoryName").equals(category) && !(jsonObject.getJSONArray("exercises").length() == position)) {
+                    JSONObject tab = jsonObject.getJSONArray("exercises").getJSONObject(position);
                     args.putString("title", tab.getString("title"));
                     args.putString("type", tab.getString("type"));
-                    args.putString("text", tab.getString("text"));
-                    args.putInt("number", jsonObject.getInt("numberOftextBookTabs"));
+                    args.putString("body", tab.getString("body"));
+                    args.putString("A", tab.getJSONObject("choices").getString("A"));
+                    args.putString("B", tab.getJSONObject("choices").getString("B"));
+                    args.putString("C", tab.getJSONObject("choices").getString("C"));
+                    args.putString("D", tab.getJSONObject("choices").getString("D"));
+                    args.putString("E", tab.getJSONObject("choices").getString("E"));
+                    args.putString("correctChoice", tab.getString("correctChoice"));
+                    args.putString("comment", tab.getString("comment"));
+                    args.putInt("number", jsonObject.getJSONArray("exercises").length());
                     args.putString("parentCategory", jsonObject.getString("parentCategory"));
                     args.putInt("nextCategoryId", jsonObject.getInt("nextCategoryId"));
                     args.putInt("concludeProgress", jsonObject.getInt("concludeProgress"));
@@ -235,7 +243,7 @@ public class CategoryTextBookFragment extends Fragment {
 
         args.putInt("position", position);
 
-        CategoryTextBookFragment fragment = new CategoryTextBookFragment();
+        CategoryExercisesFragment fragment = new CategoryExercisesFragment();
         fragment.setArguments(args);
         return fragment;
     }

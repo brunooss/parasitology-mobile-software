@@ -113,7 +113,7 @@ public class HomeActivity extends AppCompatActivity
             }
         });
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbarExercises);
         toolbar.setTitle("");
 
         setSupportActionBar(toolbar);
