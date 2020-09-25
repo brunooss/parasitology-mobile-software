@@ -25,19 +25,19 @@
     "exercises" : [
       {
         "type" : "multipleChoice",
-        "title" : "",
-        "body" : "",
+        "title" : "Título do Exercício",
+        "body" : "Corpo do Exercício",
         "img" : "",
-        "source" : "",
+        "source" : "Fonte",
         "choices": {
-          "A": "",
-          "B": "",
-          "C": "",
-          "D": "",
-          "E": ""
+          "A": "Alternativa A",
+          "B": "Alternativa B",
+          "C": "Alternativa C",
+          "D": "Alternativa D",
+          "E": "Alternativa E"
         },
-        "correctChoice" : "",
-        "comment" : ""
+        "correctChoice" : "A",
+        "comment" : "Comentário"
       }
     ]
   },

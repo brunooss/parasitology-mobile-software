@@ -1,12 +1,19 @@
 package com.android.parasitologymobilesoftware;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 import com.android.MyApplication;
 
 import org.json.JSONArray;
@@ -32,10 +39,21 @@ public class CategoryExercisesActivity extends AppCompatActivity {
     private String category;
     private int categoryId;
 
+    private AlertDialog.Builder exitAlert;
+    private AlertDialog alertDialogExit;
+    private View dialogExitActivity;
+    private TextView textViewMessageExitActivity;
+    private String firstMessage = "Tem certeza que deseja abandonar ";
+    private String secondMessage;
+    private String thirdMessage = "? Seu progresso nos exercícios desta categoria será perdido";
+    private ViewPager viewPager;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_category_exercises);
 
         // This code snippet answers the following question: we want to show the exercises of which category?
         Bundle extras = getIntent().getExtras();
@@ -44,6 +62,50 @@ public class CategoryExercisesActivity extends AppCompatActivity {
         Log.i(TAG, "Category received: " +category);
         Log.i(TAG, "Category Id received: " +categoryId);
 
+        // Exit Alert Dialog config
+        secondMessage = category;
+        LayoutInflater inflater = getLayoutInflater();
+        dialogExitActivity = inflater.inflate(R.layout.dialog_change_exit_activity, null);
+        textViewMessageExitActivity = dialogExitActivity.findViewById(R.id.textViewDialogMessageExitActivity);
+        textViewMessageExitActivity.setText(firstMessage.concat(secondMessage.concat(thirdMessage)));
+        exitAlert = new AlertDialog.Builder(CategoryExercisesActivity.this, R.style.Theme_AppCompat_Light_Dialog_Alert)
+                .setView(dialogExitActivity);
+        exitAlert.setNegativeButton("Retomar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        }).setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        alertDialogExit = exitAlert.create();
+
+        // Changing dialog button text color
+        alertDialogExit.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialogInterface) {
+                alertDialogExit.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getColor(R.color.colorAccent));
+                alertDialogExit.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getColor(R.color.colorAccent));
+            }
+        });
+
+
+        // Toolbar config
+        final Toolbar toolbar = findViewById(R.id.toolbarExercises);
+        toolbar.setTitle(category);
+        toolbar.setTitleTextAppearance(this, R.style.FuturaMediumTextAppearance);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialogExit.show();
+            }
+        });
 
         // Taking number of exercises from JSON - tabs we will need to implement with pagerAdapter
         try {
@@ -61,7 +123,7 @@ public class CategoryExercisesActivity extends AppCompatActivity {
                 if (jsonObject.getString("categoryName").equals(category)) {
                     JSONArray exercisesArray = jsonObject.getJSONArray("exercises");
                     numberOfExercises = exercisesArray.length();
-                    Log.i(TAG, "Número de exercícios: " +numberOfExercises);
+                    Log.i(TAG, "Número de exercícios: " + numberOfExercises);
                 }
             }
         } catch (IOException e) {
@@ -70,9 +132,39 @@ public class CategoryExercisesActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
+        viewPager = findViewById(R.id.viewPagerExercises);
+        viewPager.setAdapter(new CategoryTextBookFragmentPagerAdapter(getSupportFragmentManager()));
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+
+        });
+
     }
 
     public static int getNumberOfExercises() {
         return numberOfExercises;
     }
+
+
+
+    public void nextPage(View view) {
+        viewPager.setCurrentItem(viewPager.getCurrentItem() + 1, true);
+    }
+
+    public void previousPage(View view) {
+        viewPager.setCurrentItem(viewPager.getCurrentItem() - 1, true);
+    }
+
 }
